@@ -1,5 +1,6 @@
+@import "_grid-setting.scss";
+@import "_grid-color.scss";
 @import "compass/css3";
-
 $white: #FFFFFF;
 $brown-dark:#361a0e;
 $brown-medium:#8c8279;
@@ -19,8 +20,8 @@ body {
 }*/
 
 h1 {
-    font-size: 42px;
-    line-height: 67px;
+    font-size: 55px;
+    line-height: 82px;
     margin-top: 10vh;
     margin-bottom: 10vh;
 }
@@ -28,11 +29,12 @@ h1 {
 h2 {
     font-size: 26px;
     line-height: 39px;
-    
+    margin-top: 10vh;
+    margin-bottom: 5vh;
 }
 
 div.section-title {
-  margin-bottom: 10vh;
+    margin-bottom: 10vh;
 }
 
 .bootstrap-size {
@@ -53,6 +55,7 @@ div.section-title {
     font-weight: bold;
     /*font-size: 21px;
     line-height: 31px;*/
+    
     margin-left: 5px;
 }
 
@@ -71,10 +74,9 @@ div.section-title {
 .row {
     margin-bottom: 5vh;
 }
-
-.col {
+/*.col {
     margin-left: 2vw;
-}
+}*/
 
 .col:first-child {
     margin-left: 0%;
@@ -677,4 +679,8 @@ hr.long {
         font-size: 16px;
         line-height: 24px;
     }
+}
+
+.container-fluid.griddy {
+    border: solid 1px red;
 }
