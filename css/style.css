@@ -1,0 +1,670 @@
+body {
+  font-family: "Amplitude-Light", Helvetica, sans-serif;
+  color: #000000;
+}
+
+/*equal, .equal > div[class*='col-'] {  
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    flex:1 0 auto;
+}*/
+h1 {
+  font-size: 42px;
+  line-height: 67px;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+h2 {
+  font-size: 26px;
+  line-height: 39px;
+}
+
+div.section-title {
+  margin-bottom: 10vh;
+}
+
+.bootstrap-size {
+  font-family: "Amplitude-Medium";
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.device {
+  font-family: "Amplitude-Medium";
+  font-size: 21px;
+  line-height: 31px;
+  margin-right: 10px;
+}
+
+.pixel-size {
+  font-family: "Helvetica";
+  font-weight: bold;
+  /*font-size: 21px;
+  line-height: 31px;*/
+  margin-left: 5px;
+}
+
+.number {
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.show-grid [class^="col-"] {
+  /*margin-left: 2%;*/
+  border-top: 1px solid #efefef;
+  padding-top: 10px;
+}
+
+.row {
+  margin-bottom: 5vh;
+}
+
+.col {
+  margin-left: 2vw;
+}
+
+.col:first-child {
+  margin-left: 0%;
+}
+
+.container-fluid {
+  width: 90vw;
+}
+
+@font-face {
+  font-family: "Amplitude-Medium";
+  src: local("Amplitude-Medium");
+  src: url("http://www.liquorvitae.it/temp/Amplitude-Medium.ttf");
+  font-weight: medium;
+}
+@font-face {
+  font-family: "Amplitude-Regular";
+  src: local("Amplitude-Regular");
+  src: url("http://www.liquorvitae.it/temp/Amplitude-Regular.ttf");
+  font-weight: regular;
+}
+@font-face {
+  font-family: "Amplitude-Light";
+  src: local("Amplitude-Light");
+  src: url("http://www.liquorvitae.it/temp/Amplitude-Light.ttf");
+  font-weight: light;
+}
+.light {
+  font-family: "Amplitude-Light";
+  font-weight: light;
+}
+
+.regular {
+  font-family: "Amplitude-Regular";
+  font-weight: regular;
+}
+
+.medium {
+  font-family: "Amplitude-Medium";
+  font-weight: medium;
+}
+
+.intro-h1 {
+  font-family: "Amplitude-Light";
+  font-weight: light;
+  font-size: 55px;
+  line-height: 82px;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.eyebrow {
+  font-family: "Amplitude-Light";
+  font-weight: light;
+  font-size: 21px;
+  line-height: 31px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.subtitle {
+  font-family: "Amplitude-Light";
+  font-weight: light;
+  font-size: 21px;
+  line-height: 31px;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.explore-cta {
+  font-family: "Amplitude-Medium";
+  font-weight: medium;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.anchor-h1 {
+  font-family: "Amplitude-Medium";
+  font-weight: medium;
+  font-size: 21px;
+  line-height: 31px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.anchor-copy {
+  font-family: "Amplitude-Light";
+  font-weight: light;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.promo-eyebrow {
+  font-family: "Amplitude-Medium";
+  font-weight: medium;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.15em;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.highligthed-promo-h1 {
+  font-family: "Amplitude-Light";
+  font-weight: light;
+  font-size: 34px;
+  line-height: 51px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.promo-author {
+  font-family: "Amplitude-Regular";
+  font-weight: regular;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.promo-date {
+  font-family: "Amplitude-Regular";
+  font-weight: regular;
+  font-size: 10px;
+  line-height: 15px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.highlighted-promo-copy {
+  font-family: "Amplitude-Light";
+  font-weight: light;
+  font-size: 21px;
+  line-height: 31px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.promo-h1 {
+  font-family: "Amplitude-Medium";
+  color: #361a0e;
+  font-weight: medium;
+  font-size: 21px;
+  line-height: 31px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.promo-copy {
+  font-family: "Amplitude-Light";
+  font-weight: light;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+button.primary {
+  font-family: "Amplitude-Medium";
+  color: #FFFFFF;
+  font-weight: medium;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.15em;
+  text-align: center;
+  text-transform: uppercase;
+  display: inline-block;
+  height: 50px;
+  padding: 6px 30px;
+  background-color: #361a0e;
+  border: 0;
+}
+
+button.primary:hover {
+  background-color: #1f0d08;
+}
+
+button.primary-inverted {
+  font-family: "Amplitude-Medium";
+  color: #361a0e;
+  font-weight: medium;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.15em;
+  text-align: center;
+  text-transform: uppercase;
+  display: inline-block;
+  height: 50px;
+  padding: 6px 30px;
+  background-color: #FFFFFF;
+  border: 1px solid #d7d2cb;
+}
+
+button.primary-inverted:hover {
+  background-color: #efefef;
+}
+
+.promo-cta,
+a.promo-cta {
+  font-family: "Amplitude-Medium";
+  font-weight: medium;
+  color: #361a0e;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.15em;
+  text-align: left;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.promo-cta,
+a.promo-cta:hover {
+  color: #361a0e;
+  text-decoration: underline;
+}
+
+.legal-copy {
+  font-family: "Amplitude-Light";
+  font-weight: light;
+  font-size: 10px;
+  line-height: 15px;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.footer-h1 {
+  font-family: "Amplitude-Medium";
+  font-weight: medium;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: #361a0e;
+  text-transform: uppercase;
+}
+
+.footer-h2 {
+  font-family: "Amplitude-Medium";
+  font-weight: medium;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: #8c8279;
+  text-transform: uppercase;
+}
+
+.footer-links {
+  font-family: "Amplitude-Light";
+  font-weight: light;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+hr.short {
+  border: solid #361a0e;
+  border-width: 1px 0 0;
+  clear: both;
+  width: 45px;
+  height: 1px;
+}
+
+hr.long {
+  border: solid #d7d2cb;
+  border-width: 1px 0 0;
+  clear: both;
+  width: 100%;
+  height: 1px;
+}
+
+.size,
+.height,
+.tracking,
+.font {
+  color: #8c8279;
+}
+
+.style {
+  font-family: "Amplitude-Medium";
+}
+
+.amplitude-light-10 {
+  font-family: "Amplitude-Light";
+  font-weight: light;
+  font-size: 10px;
+  line-height: 15px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.amplitude-regular-10 {
+  font-family: "Amplitude-Regular";
+  font-weight: regular;
+  font-size: 10px;
+  line-height: 15px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.amplitude-medium-10 {
+  font-family: "Amplitude-Medium";
+  font-weight: medium;
+  font-size: 10px;
+  line-height: 15px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.amplitude-light-13 {
+  font-family: "Amplitude-Light";
+  font-weight: light;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.amplitude-regular-13 {
+  font-family: "Amplitude-Regular";
+  font-weight: regular;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.amplitude-medium-13 {
+  font-family: "Amplitude-Medium";
+  font-weight: medium;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.amplitude-light-16 {
+  font-family: "Amplitude-Light";
+  font-weight: light;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.amplitude-regular-16 {
+  font-family: "Amplitude-Regular";
+  font-weight: regular;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.amplitude-medium-16 {
+  font-family: "Amplitude-Medium";
+  font-weight: medium;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.amplitude-light-21 {
+  font-family: "Amplitude-Light";
+  font-weight: light;
+  font-size: 21px;
+  line-height: 31px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.amplitude-regular-21 {
+  font-family: "Amplitude-Regular";
+  font-weight: regular;
+  font-size: 21px;
+  line-height: 31px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.amplitude-medium-21 {
+  font-family: "Amplitude-Medium";
+  font-weight: medium;
+  font-size: 21px;
+  line-height: 31px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.amplitude-light-26 {
+  font-family: "Amplitude-Light";
+  font-weight: light;
+  font-size: 26px;
+  line-height: 39px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.amplitude-regular-26 {
+  font-family: "Amplitude-Regular";
+  font-weight: regular;
+  font-size: 26px;
+  line-height: 39px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.amplitude-medium-26 {
+  font-family: "Amplitude-Medium";
+  font-weight: medium;
+  font-size: 26px;
+  line-height: 39px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.amplitude-light-34 {
+  font-family: "Amplitude-Light";
+  font-weight: light;
+  font-size: 34px;
+  line-height: 51px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.amplitude-regular-34 {
+  font-family: "Amplitude-Regular";
+  font-weight: regular;
+  font-size: 34px;
+  line-height: 51px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.amplitude-medium-34 {
+  font-family: "Amplitude-Medium";
+  font-weight: medium;
+  font-size: 34px;
+  line-height: 51px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.amplitude-light-42 {
+  font-family: "Amplitude-Light";
+  font-weight: light;
+  font-size: 42px;
+  line-height: 67px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.amplitude-regular-42 {
+  font-family: "Amplitude-Regular";
+  font-weight: regular;
+  font-size: 42px;
+  line-height: 67px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.amplitude-medium-42 {
+  font-family: "Amplitude-Medium";
+  font-weight: medium;
+  font-size: 42px;
+  line-height: 67px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.amplitude-light-55 {
+  font-family: "Amplitude-Light";
+  font-weight: light;
+  font-size: 55px;
+  line-height: 82px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.amplitude-regular-55 {
+  font-family: "Amplitude-Regular";
+  font-weight: regular;
+  font-size: 55px;
+  line-height: 82px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.amplitude-medium-55 {
+  font-family: "Amplitude-Medium";
+  font-weight: medium;
+  font-size: 55px;
+  line-height: 82px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.amplitude-light-68 {
+  font-family: "Amplitude-Light";
+  font-weight: light;
+  font-size: 68px;
+  line-height: 102px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.amplitude-regular-68 {
+  font-family: "Amplitude-Regular";
+  font-weight: regular;
+  font-size: 68px;
+  line-height: 102px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.amplitude-medium-68 {
+  font-family: "Amplitude-Medium";
+  font-weight: medium;
+  font-size: 68px;
+  line-height: 102px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.amplitude-light-89 {
+  font-family: "Amplitude-Light";
+  font-weight: light;
+  font-size: 89px;
+  line-height: 133px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.amplitude-regular-89 {
+  font-family: "Amplitude-Regular";
+  font-weight: regular;
+  font-size: 89px;
+  line-height: 133px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.amplitude-medium-89 {
+  font-family: "Amplitude-Medium";
+  font-weight: medium;
+  font-size: 89px;
+  line-height: 133px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.breakpoint {
+  color: red;
+}
+
+@media (max-width: 991px) {
+  .anchor-h1 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .anchor-copy {
+    font-family: "Amplitude-Regular";
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .highligthed-promo-h1 {
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  .highlighted-promo-copy {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .eyebrow {
+    font-family: "Amplitude-Regular";
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .intro-h1 {
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
