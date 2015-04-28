@@ -1,0 +1,309 @@
+
+.light {
+    font-family: "Amplitude-Light";
+    font-weight: light;
+}
+
+.regular {
+    font-family: "Amplitude-Regular";
+    font-weight: regular;
+}
+
+.medium {
+    font-family: "Amplitude-Medium";
+    font-weight: medium;
+}
+
+.intro-h1 {
+    font-family: "Amplitude-Light";
+    font-weight: light;
+    font-size: 55px;
+    line-height: 73px;
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+
+.eyebrow {
+    font-family: "Amplitude-Light";
+    font-weight: light;
+    font-size: 21px;
+    line-height: 31px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.subtitle {
+    font-family: "Amplitude-Light";
+    font-weight: light;
+    font-size: 21px;
+    line-height: 31px;
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+
+.explore-cta {
+    font-family: "Amplitude-Medium";
+    font-weight: medium;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.anchor-h1 {
+    font-family: "Amplitude-Medium";
+    font-weight: medium;
+    font-size: 21px;
+    line-height: 31px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.anchor-copy {
+    font-family: "Amplitude-Light";
+    font-weight: light;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+
+.promo-eyebrow {
+    font-family: "Amplitude-Medium";
+    font-weight: medium;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.15em;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.highligthed-promo-h1 {
+    font-family: "Amplitude-Light";
+    font-weight: light;
+    font-size: 34px;
+    line-height: 51px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+
+.promo-author {
+    font-family: "Amplitude-Regular";
+    font-weight: regular;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+
+.promo-date {
+    font-family: "Amplitude-Regular";
+    font-weight: regular;
+    font-size: 10px;
+    line-height: 15px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.highlighted-promo-copy {
+    font-family: "Amplitude-Light";
+    font-weight: light;
+    font-size: 21px;
+    line-height: 31px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+
+.promo-h1 {
+    font-family: "Amplitude-Medium";
+    color: $brown-dark;
+    font-weight: medium;
+    font-size: 21px;
+    line-height: 31px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+
+.promo-copy {
+    font-family: "Amplitude-Light";
+    font-weight: light;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+
+button.primary {
+    font-family: "Amplitude-Medium";
+    color: $white;
+    font-weight: medium;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.15em;
+    text-align: center;
+    text-transform: uppercase;
+    display: inline-block;
+    height: 50px;
+    padding: 6px 30px;
+    background-color: $brown-dark;
+    border: 0;
+}
+
+button.primary:hover {
+    background-color: #1f0d08;
+}
+
+button.primary-inverted {
+    font-family: "Amplitude-Medium";
+    color: $brown-dark;
+    font-weight: medium;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.15em;
+    text-align: center;
+    text-transform: uppercase;
+    display: inline-block;
+    height: 50px;
+    padding: 6px 30px;
+    background-color: $white;
+    border: 1px solid $brown-very-light;
+}
+
+button.primary-inverted:hover {
+    background-color: #efefef;
+}
+
+.promo-cta,
+a.promo-cta {
+    font-family: "Amplitude-Medium";
+    font-weight: medium;
+    color: $brown-dark;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.15em;
+    text-align: left;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.promo-cta,
+a.promo-cta:hover {
+    color: $brown-dark;
+    text-decoration: underline;
+}
+
+.legal-copy {
+    font-family: "Amplitude-Light";
+    font-weight: light;
+    font-size: 10px;
+    line-height: 15px;
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+
+.footer-h1 {
+    font-family: "Amplitude-Medium";
+    font-weight: medium;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    color: $brown-dark;
+    text-transform: uppercase;
+}
+
+.footer-h2 {
+    font-family: "Amplitude-Medium";
+    font-weight: medium;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    color: $brown-medium;
+    text-transform: uppercase;
+}
+
+.footer-links {
+    font-family: "Amplitude-Light";
+    font-weight: light;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+
+hr.short {
+    border: solid $brown-dark;
+    border-width: 1px 0 0;
+    clear: both;
+    width: 45px;
+    height: 1px;
+}
+
+hr.long {
+    border: solid $brown-very-light;
+    border-width: 1px 0 0;
+    clear: both;
+    width: 100%;
+    height: 1px;
+}
+
+.size,
+.height,
+.tracking,
+.font {
+    color: $brown-medium;
+}
+
+.style {
+    font-family: "Amplitude-Medium";
+}
+
+
+.breakpoint {
+    color: red;
+}
+
+@media (max-width: 991px) {
+    .anchor-h1 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .anchor-copy {
+        font-family: "Amplitude-Regular";
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .highligthed-promo-h1 {
+        font-size: 26px;
+        line-height: 39px;
+    }
+    .highlighted-promo-copy {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+@media (max-width: 767px) {
+    .eyebrow {
+        font-family: "Amplitude-Regular";
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .intro-h1 {
+        font-size: 26px;
+        line-height: 39px;
+    }
+    .subtitle {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+.container-fluid.griddy {
+    border: solid 1px red;
+}
