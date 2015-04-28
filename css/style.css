@@ -235,39 +235,6 @@ hr.long {
 .breakpoint {
   color: red; }
 
-@media (max-width: 991px) {
-  .anchor-h1 {
-    font-size: 16px;
-    line-height: 24px; }
-
-  .anchor-copy {
-    font-family: "Amplitude-Regular";
-    font-size: 13px;
-    line-height: 20px; }
-
-  .highligthed-promo-h1 {
-    font-size: 26px;
-    line-height: 39px; }
-
-  .highlighted-promo-copy {
-    font-size: 16px;
-    line-height: 24px; } }
-@media (max-width: 767px) {
-  .eyebrow {
-    font-family: "Amplitude-Regular";
-    font-size: 16px;
-    line-height: 24px; }
-
-  .intro-h1 {
-    font-size: 26px;
-    line-height: 39px; }
-
-  .subtitle {
-    font-size: 16px;
-    line-height: 24px; } }
-.container-fluid.griddy {
-  border: solid 1px red; }
-
 /*responsive-grid.css*/
 .clearfix:before, .clearfix:after, .dl-horizontal dd:before, .dl-horizontal dd:after, .container:before, .container:after, .container-fluid:before, .container-fluid:after, .row:before, .row:after, .form-horizontal .form-group:before, .form-horizontal .form-group:after, .btn-toolbar:before, .btn-toolbar:after, .btn-group-vertical > .btn-group:before, .btn-group-vertical > .btn-group:after, .nav:before, .nav:after, .navbar:before, .navbar:after, .navbar-header:before, .navbar-header:after, .navbar-collapse:before, .navbar-collapse:after, .pager:before, .pager:after, .panel-body:before, .panel-body:after, .modal-footer:before, .modal-footer:after {
   content: " ";
@@ -1456,3 +1423,55 @@ div.section-title {
   src: local("Amplitude-Light");
   src: url("http://www.liquorvitae.it/temp/Amplitude-Light.ttf");
   font-weight: light; }
+@media (max-width: 991px) {
+  .anchor-h1 {
+    font-size: 16px;
+    line-height: 24px; }
+
+  .anchor-copy {
+    font-family: "Amplitude-Regular";
+    font-size: 13px;
+    line-height: 20px; }
+
+  .highligthed-promo-h1 {
+    font-size: 26px;
+    line-height: 39px; }
+
+  .highlighted-promo-copy {
+    font-size: 16px;
+    line-height: 24px; }
+
+  .amplitude-light-68,
+  .amplitude-regular-68,
+  .amplitude-medium-68,
+  .amplitude-light-89 {
+    display: none; } }
+@media (max-width: 767px) {
+  .eyebrow {
+    font-family: "Amplitude-Regular";
+    font-size: 16px;
+    line-height: 24px; }
+
+  .intro-h1 {
+    font-size: 26px;
+    line-height: 39px; }
+
+  .subtitle {
+    font-size: 16px;
+    line-height: 24px; }
+
+  .amplitude-light-42,
+  .amplitude-regular-42,
+  .amplitude-medium-42,
+  .amplitude-light-55,
+  .amplitude-regular-55,
+  .amplitude-medium-55,
+  .amplitude-light-68,
+  .amplitude-regular-68,
+  .amplitude-medium-68,
+  .amplitude-light-89,
+  .amplitude-regular-89,
+  .amplitude-medium-89 {
+    display: none; } }
+.container-fluid.griddy {
+  border: solid 1px red; }
