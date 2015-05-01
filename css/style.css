@@ -1439,13 +1439,7 @@ div.section-title {
 
   .highlighted-promo-copy {
     font-size: 16px;
-    line-height: 24px; }
-
-  .amplitude-light-68,
-  .amplitude-regular-68,
-  .amplitude-medium-68,
-  .amplitude-light-89 {
-    display: none; } }
+    line-height: 24px; } }
 @media (max-width: 767px) {
   .eyebrow {
     font-family: "Amplitude-Regular";
@@ -1458,20 +1452,24 @@ div.section-title {
 
   .subtitle {
     font-size: 16px;
-    line-height: 24px; }
-
-  .amplitude-light-42,
-  .amplitude-regular-42,
-  .amplitude-medium-42,
-  .amplitude-light-55,
-  .amplitude-regular-55,
-  .amplitude-medium-55,
-  .amplitude-light-68,
-  .amplitude-regular-68,
-  .amplitude-medium-68,
-  .amplitude-light-89,
-  .amplitude-regular-89,
-  .amplitude-medium-89 {
-    display: none; } }
+    line-height: 24px; } }
 .container-fluid.griddy {
   border: solid 1px red; }
+
+.icon-share-twitter {
+  fill: #8c8279; }
+
+.icon-share-twitter:hover {
+  fill: #361a0e; }
+
+svg:hover #icon-email {
+  fill: #361a0e; }
+
+svg:hover #icon-linkedin {
+  fill: #361a0e; }
+
+svg:hover #icon-facebook {
+  fill: #361a0e; }
+
+svg:hover #icon-twitter {
+  fill: #361a0e; }
