@@ -1404,9 +1404,38 @@ div.section-title {
   margin-left: 0%; }
 
 .container-fluid {
-  margin-left: 5vw;
-  margin-right: 5vw;
+  margin-left: 1.5%;
+  margin-right: 1.5%;
+  max-width: 1600px;
+  width: 97%;
   padding: 0px; }
+
+@media (max-width: 991px) {
+  .container-fluid {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%; } }
+.center {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap; }
 
 @font-face {
   font-family: "Amplitude-Medium";
@@ -1439,7 +1468,11 @@ div.section-title {
 
   .highlighted-promo-copy {
     font-size: 16px;
-    line-height: 24px; } }
+    line-height: 24px; }
+
+  .container-fluid {
+    margin-left: 5vw;
+    margin-right: 5vw; } }
 @media (max-width: 767px) {
   .eyebrow {
     font-family: "Amplitude-Regular";
