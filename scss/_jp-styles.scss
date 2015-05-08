@@ -1,4 +1,3 @@
-
 .light {
     font-family: "Amplitude-Light";
     font-weight: light;
@@ -97,6 +96,7 @@
     line-height: 20px;
     letter-spacing: 0.02em;
     text-align: left;
+    margin-right: 10px;
 }
 
 .promo-date {
@@ -127,6 +127,7 @@
     letter-spacing: 0.02em;
     text-align: left;
 }
+
 
 .promo-copy {
     font-family: "Amplitude-Light";
@@ -190,10 +191,17 @@ a.promo-cta {
     text-decoration: none;
 }
 
-.promo-cta,
-a.promo-cta:hover {
+.promo-cta:hover {
     color: $brown-dark;
     text-decoration: underline;
+    cursor: pointer;
+    cursor: hand;
+}
+
+.promo-cta::after {
+    margin-left: 5px;
+    content: ">";
+    display: inline-block;
 }
 
 .legal-copy {
@@ -244,6 +252,17 @@ hr.short {
     height: 1px;
 }
 
+hr.dash {
+    border: solid $brown-dark;
+    border-width: 1px 0 0;
+    width: 45px;
+    height: 1px;
+    margin-top: 0;
+  margin-bottom: 10px;
+  margin-left: 0;
+}
+
+
 hr.long {
     border: solid $brown-very-light;
     border-width: 1px 0 0;
@@ -262,7 +281,6 @@ hr.long {
 .style {
     font-family: "Amplitude-Medium";
 }
-
 
 .breakpoint {
     color: red;
