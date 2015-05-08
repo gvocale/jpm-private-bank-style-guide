@@ -1565,28 +1565,25 @@ svg:hover #icon-twitter {
   margin-right: 0%; }
 
 .promo-image {
+  position: relative;
+  margin: 20px 0 20px 0;
   overflow: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 20px; }
+  max-height: 435px; }
 
-.promo-1 {
-  height: 30vw;
-  max-height: 533px; }
+.promo-image:before {
+  content: "";
+  display: block;
+  padding-top: 56%;
+  /* set ratio of image to 16/9 */ }
 
 .promo-image img {
   width: 100%;
-  height: auto; }
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto; }
 
 @media (min-width: 47.999em) {
   .no-padding > .promo > p {

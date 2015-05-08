@@ -43,21 +43,27 @@
 }
 
 .promo-image {
+    position: relative;
+    margin: 20px 0 20px 0;
     overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
+    max-height: 435px; // set max height of image container
 }
 
-.promo-1 {
-    height: 30vw;
-    max-height: 533px;
+.promo-image:before {
+    content: "";
+    display: block;
+    padding-top: 56%;
+    /* set ratio of image to 16/9 */
 }
 
 .promo-image img {
-    width: 100%;
-    height: auto;
+	width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto; // this center align the picture in the 16/9 container
 }
 
 @media (min-width: 47.999em) {
