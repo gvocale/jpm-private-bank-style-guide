@@ -42,17 +42,22 @@
 }
 
 .promo-image {
-    max-height: 533px;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 20px;
 }
+
+.promo-1 {
+	height: 30vw;
+	max-height: 533px;
+}
+
 
 .promo-image img {
     width: 100%;
     height: auto;
-    margin-bottom: 20px;
 }
 
 @media (min-width: 47.999em) {

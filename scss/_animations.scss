@@ -1,2 +1,9 @@
-.promo-img > img { transition: all .1s ease-in-out; }
-.promo-img > img:hover { transform: scale(1.05); }
+.promo-image > img {
+    transition: all 0.5s ease-in-out;
+}
+
+.promo-image > img:hover {
+    transform: scale(1.04);
+    cursor: pointer;
+    cursor: hand;
+}
