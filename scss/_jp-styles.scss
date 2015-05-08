@@ -206,8 +206,10 @@ a.promo-cta {
 
 .promo-cta::after {
     margin-left: 5px;
-    content: ">";
+    content: "►";
     display: inline-block;
+    font-size: 0.5em;
+    vertical-align: middle;
 }
 
 .legal-copy {
