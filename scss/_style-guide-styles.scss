@@ -43,10 +43,6 @@ div.section-title {
 .pixel-size {
     font-family: "Helvetica";
     font-weight: bold;
-    /*font-size: 21px;
-    line-height: 31px;*/
-    
-    margin-left: 5px;
 }
 
 .number {
@@ -115,4 +111,16 @@ div.section-title {
     src: local("Amplitude-Light");
     src: url("http://www.liquorvitae.it/temp/Amplitude-Light.ttf");
     font-weight: light;
+}
+
+nav > ul > li {
+    display: inline-block;
+}
+
+nav > ul {
+    -webkit-padding-start: 0px;
+}
+
+nav {
+    margin: 40px 0;
 }
