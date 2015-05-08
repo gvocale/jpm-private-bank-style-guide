@@ -8,15 +8,29 @@
     <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
     <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css'>
     <link rel="stylesheet" href="css/style.css">
-        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
 </head>
 
 <body>
     <div class="center">
+        <div class="placeholder-box breakpoint-bar">
+            <div class="container-fluid">
+                <p><span class="visible-xs"><span class="device">Phone</span><span class="pixel-size">XS < 768</span></span>
+                    <span class="visible-sm"><span class="device">Tablet Portrait</span><span class="pixel-size">SM ≥ 768</span></span>
+                    <span class="visible-md"><span class="device">Desktop</span><span class="pixel-size">MD ≥ 992</span></span>
+                    <span class="visible-lg"><span class="device">Large Desktop</span><span class="pixel-size">LG ≥ 1200</span></span>
+                </p>
+                <p>
+                    <span class="visible-xs"><span class="pixel-size">Margin 5%</span></span>
+                    <span class="visible-sm"><span class="pixel-size">Margin 5%</span></span>
+                    <span class="visible-md"><span class="pixel-size">Margin 5%</span></span>
+                    <span class="visible-lg"><span class="pixel-size">Margin 5% - Max width 1600px</span></span>
+                </p>
+            </div>
+        </div>
         <div class="container-fluid">
-            <h1>Type Styles & Scale</h1>
             <nav>
                 <ul>
                     <li>
@@ -30,35 +44,31 @@
                         </a>
                     </li>
                     <li>
-                        <a href="promos.html" target="_self">
-                            <button class="primary">Promo Component</button>
-                        </a>
+                        <button class="primary">Promo Component</button>
+                        <ul>
+                            <a href="promos-top.html" class="">
+                                <li class="primary-inverted">Headline Top</li>
+                            </a>
+                            <a href="promos-top-no-gutter.html" class="">
+                                <li class="primary-inverted">Headline Top - No Gutter</li>
+                            </a>
+                            <a href="promos-bottom.html" class="">
+                                <li class="primary-inverted">Headline Bottom</li>
+                            </a>
+                            <a href="promos-bottom-no-gutter.html" class="">
+                                <li class="primary-inverted">Headline Bottom - No Gutter</li>
+                            </a>
+                        </ul>
                     </li>
                     <li></li>
                     <li></li>
                 </ul>
             </nav>
-        </div>
-        <!-- BREAKPOINTS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-        <div class="container-fluid">
-            <div class="row equal">
-                <div class="col-xs-12">
-                    <div class="placeholder-box">
-                        <p><span class="visible-xs"><span class="device">Phone</span><span class="pixel-size">XS < 768</span></span>
-                            <span class="visible-sm"><span class="device">Tablet Portrait</span><span class="pixel-size">SM ≥ 768</span></span>
-                            <span class="visible-md"><span class="device">Desktop</span><span class="pixel-size">MD ≥ 992</span></span>
-                            <span class="visible-lg"><span class="device">Large Desktop</span><span class="pixel-size">LG ≥ 1200</span></span>
-                        </p>
-                        <p>
-                            <span class="visible-xs"><span class="pixel-size">Margin 5%</span></span>
-                            <span class="visible-sm"><span class="pixel-size">Margin 5%</span></span>
-                            <span class="visible-md"><span class="pixel-size">Margin 5%</span></span>
-                            <span class="visible-lg"><span class="pixel-size">Margin 5% - Max width 1600px</span></span>
-                        </p>
-                    </div>
-                </div>
+            <div class="page-title">
+                <h1>Type Scale</h1>
             </div>
         </div>
+
         <!-- TYPE STYLES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
         <div class="container-fluid">
             <h2>Type Styles</h2>

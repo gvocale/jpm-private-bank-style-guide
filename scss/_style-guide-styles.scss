@@ -10,18 +10,23 @@ body {
     flex:1 0 auto;
 }*/
 
+.breakpoint-bar {
+    width: 100%;
+    padding: 10px 0 10px 0;
+}
+.page-title {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
 h1 {
     font-size: 55px;
     line-height: 82px;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
 }
 
 h2 {
     font-size: 26px;
     line-height: 39px;
-    margin-top: 10vh;
-    margin-bottom: 5vh;
 }
 
 div.section-title {
@@ -116,6 +121,8 @@ div.section-title {
 
 nav > ul > li {
     display: inline-block;
+      position: relative;
+
 }
 
 nav > ul {
@@ -124,4 +131,30 @@ nav > ul {
 
 nav {
     margin: 40px 0;
+}
+
+
+
+nav > ul li ul {
+  padding: 0;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s;
+}
+
+nav > ul li ul li { 
+  background: $WarmGray1; 
+  display: block; 
+  color: $JPMBrown;
+}
+
+nav > ul li ul li:hover { background: #666; }
+nav > ul li:hover ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
 }

@@ -128,7 +128,6 @@
     text-align: left;
 }
 
-
 .promo-copy {
     font-family: "Amplitude-Light";
     font-weight: light;
@@ -143,7 +142,7 @@ button {
     margin-bottom: 20px;
 }
 
-button.primary {
+.primary {
     font-family: "Amplitude-Medium";
     color: $White;
     font-weight: medium;
@@ -159,11 +158,12 @@ button.primary {
     border: 0;
 }
 
-button.primary:hover {
+.primary:hover {
     background-color: #1f0d08;
+    transition: all $speed;
 }
 
-button.primary-inverted {
+.primary-inverted {
     font-family: "Amplitude-Medium";
     color: $brown-dark;
     font-weight: medium;
@@ -179,8 +179,9 @@ button.primary-inverted {
     border: 1px solid $brown-very-light;
 }
 
-button.primary-inverted:hover {
+.primary-inverted:hover {
     background-color: #efefef;
+    transition: all $speed;
 }
 
 .promo-cta,
@@ -263,10 +264,9 @@ hr.dash {
     width: 45px;
     height: 1px;
     margin-top: 0;
-  margin-bottom: 10px;
-  margin-left: 0;
+    margin-bottom: 10px;
+    margin-left: 0;
 }
-
 
 hr.long {
     border: solid $brown-very-light;

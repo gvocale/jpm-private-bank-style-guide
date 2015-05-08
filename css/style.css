@@ -125,7 +125,7 @@ button {
   margin-right: 20px;
   margin-bottom: 20px; }
 
-button.primary {
+.primary {
   font-family: "Amplitude-Medium";
   color: #FFFFFF;
   font-weight: medium;
@@ -140,10 +140,12 @@ button.primary {
   background-color: #361a0e;
   border: 0; }
 
-button.primary:hover {
-  background-color: #1f0d08; }
+.primary:hover {
+  background-color: #1f0d08;
+  -webkit-transition: all 0.05s;
+          transition: all 0.05s; }
 
-button.primary-inverted {
+.primary-inverted {
   font-family: "Amplitude-Medium";
   color: #361a0e;
   font-weight: medium;
@@ -158,8 +160,10 @@ button.primary-inverted {
   background-color: #FFFFFF;
   border: 1px solid #d7d2cb; }
 
-button.primary-inverted:hover {
-  background-color: #efefef; }
+.primary-inverted:hover {
+  background-color: #efefef;
+  -webkit-transition: all 0.05s;
+          transition: all 0.05s; }
 
 .promo-cta,
 a.promo-cta {
@@ -1373,17 +1377,21 @@ body {
     display: flex;
     flex:1 0 auto;
 }*/
-h1 {
-  font-size: 55px;
-  line-height: 82px;
+.breakpoint-bar {
+  width: 100%;
+  padding: 10px 0 10px 0; }
+
+.page-title {
   margin-top: 10vh;
   margin-bottom: 10vh; }
 
+h1 {
+  font-size: 55px;
+  line-height: 82px; }
+
 h2 {
   font-size: 26px;
-  line-height: 39px;
-  margin-top: 10vh;
-  margin-bottom: 5vh; }
+  line-height: 39px; }
 
 div.section-title {
   margin-bottom: 10vh; }
@@ -1471,13 +1479,38 @@ div.section-title {
   src: url("http://www.liquorvitae.it/temp/Amplitude-Light.ttf");
   font-weight: light; }
 nav > ul > li {
-  display: inline-block; }
+  display: inline-block;
+  position: relative; }
 
 nav > ul {
   -webkit-padding-start: 0px; }
 
 nav {
   margin: 40px 0; }
+
+nav > ul li ul {
+  padding: 0;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.2s;
+          transition: opacity 0.2s; }
+
+nav > ul li ul li {
+  background: #d7d2cb;
+  display: block;
+  color: #310008; }
+
+nav > ul li ul li:hover {
+  background: #666; }
+
+nav > ul li:hover ul {
+  display: block;
+  opacity: 1;
+  visibility: visible; }
 
 @media (max-width: 991px) {
   .anchor-h1 {
