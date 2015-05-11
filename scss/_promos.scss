@@ -1,50 +1,7 @@
-.image-16-9 {
-    background-color: red;
-}
-
-.promo {
-    margin-bottom: 40px;
-    // border: solid 1px red;
-}
-
-@media (min-width: 47.999em) {
-    .col-sm-6.no-padding {
-        padding: 0 1px 0 0;
-        width: 50%;
-    }
-    .col-sm-4.no-padding {
-        padding: 0 1px 0 0;
-        width: 33.3%;
-    }
-}
-
-.no-margin {
-    margin-bottom: 0;
-}
-
-@media (max-width: 47.998em) {
-    .col-sm-4.no-padding {
-        padding: 0;
-        width: 100%;
-    }
-}
-
-.padding {
-    padding: 0;
-    margin-right: 2.72856%;
-}
-
-.no-padding {
-    padding: 0;
-}
-
-.padding:last-child {
-    margin-right: 0%;
-}
-
+// IMAGE CONTAINER WITH IMAGE CENTERED
 .promo-image {
     position: relative;
-    margin: 20px 0 20px 0;
+    margin: 0;
     overflow: hidden;
     max-height: 435px; // set max height of image container
 }
@@ -81,75 +38,12 @@
     }
 }
 
-.flex-top,
-.flex-middle,
-.flex-bottom {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-}
-
-.flex-container-1,
-.flex-container-2,
-.flex-container-3 {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.flex-container-1 > .flex-top > .copy-container,
-.flex-container-1 > .flex-middle > .promo-image,
-.flex-container-1 > .flex-bottom > .copy-container {
-    width: 100%;
-}
-
-.flex-container-2 > .flex-top > .copy-container,
-.flex-container-2 > .flex-middle > .promo-image,
-.flex-container-2 > .flex-bottom > .copy-container {
-    width: 50%;
-}
-
-.flex-container-1 > .flex-top > .copy-container,
-.flex-container-2 > .flex-top > .copy-container,
-.flex-container-3 > .flex-top > .copy-container {
-    align-self: flex-end;
-}
-
-.flex-container-2 > .flex-middle > .promo-image,
-.flex-container-3 > .flex-middle > .promo-image {
-    margin-right: 1px;
-}
-
-.flex-container-2 > .flex-middle > .promo-image:last-child,
-.flex-container-3 > .flex-middle > .promo-image:last-child {
-    margin-right: 0px;
-}
-
-.flex-container-3 > .flex-top > .copy-container,
-.flex-container-3 > .flex-middle > .promo-image,
-.flex-container-3 > .flex-bottom > .copy-container {
-    width: 33%;
-}
-
-.flex-container-3 > .flex-top > .copy-container,
-.flex-container-3 > .flex-bottom > .copy-container {
-    padding: 0 1.36428% 0 1.36428%;
-}
-
-.flex-container-3 > .flex-top > .copy-container:first-child,
-.flex-container-3 > .flex-bottom > .copy-container:first-child {
-    padding: 0 1.36428% 0 0;
-}
-
-.flex-container-3 > .flex-top > .copy-container:last-child,
-.flex-container-3 > .flex-bottom > .copy-container:last-child {
-    padding: 0 0 0 1.36428%;
-}
-
 .flex-container-1,
 .flex-container-2,
 .flex-container-3 {
     display: flex;
     flex-wrap: wrap;
+    margin: 0 0 40px 0;
 }
 
 // FLEX CONTAINER 1
@@ -194,7 +88,6 @@
     }
     .flex-container-1 > .flex-4 {
         order: 4;
-        margin-bottom: 20px;
         width: 100%;
     }
 }
@@ -301,25 +194,22 @@
     }
     .flex-container-2 > .flex-1 {
         order: 1;
-        margin-top: 20px;
     }
     .flex-container-2 > .flex-2 {
         order: 2;
     }
     .flex-container-2 > .flex-3 {
         order: 3;
-        margin-bottom: 20px;
+        margin: 0 0 40px 0;
     }
     .flex-container-2 > .flex-4 {
         order: 4;
-        margin-top: 20px;
     }
     .flex-container-2 > .flex-5 {
         order: 5;
     }
     .flex-container-2 > .flex-6 {
         order: 6;
-        margin-bottom: 20px;
     }
 }
 
@@ -366,25 +256,23 @@
     }
     .flex-container-2.headline-bottom > .flex-1 {
         order: 2;
-        margin-top: 20px;
     }
     .flex-container-2.headline-bottom > .flex-2 {
         order: 1;
     }
     .flex-container-2.headline-bottom > .flex-3 {
         order: 3;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
     }
     .flex-container-2.headline-bottom > .flex-4 {
         order: 5;
-        margin-top: 20px;
     }
     .flex-container-2.headline-bottom > .flex-5 {
         order: 4;
     }
     .flex-container-2.headline-bottom > .flex-6 {
         order: 6;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
     }
 }
 
@@ -410,6 +298,9 @@
             width: 100%;
             margin: 0;
             padding: 0;
+        }
+        .flex-3 {
+            margin: 0 0 40px 0;
         }
     }
 }
@@ -492,36 +383,33 @@
     }
     .flex-container-3 > .flex-1 {
         order: 1;
-        margin-top: 20px;
     }
     .flex-container-3 > .flex-2 {
         order: 2;
     }
     .flex-container-3 > .flex-3 {
         order: 3;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
     }
     .flex-container-3 > .flex-4 {
         order: 4;
-        margin-top: 20px;
     }
     .flex-container-3 > .flex-5 {
         order: 5;
     }
     .flex-container-3 > .flex-6 {
         order: 6;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
     }
     .flex-container-3 > .flex-7 {
         order: 7;
-        margin-top: 20px;
     }
     .flex-container-3 > .flex-8 {
         order: 8;
     }
     .flex-container-3 > .flex-9 {
         order: 9;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
     }
 }
 
@@ -555,6 +443,10 @@
             margin: 0;
             padding: 0;
         }
+        .flex-3,
+        .flex-6 {
+            margin: 0 0 40px 0;
+        }
     }
 }
 
@@ -583,6 +475,12 @@
         order: 4;
         padding: 0 0 0 1.36428%;
     }
+    .promo-image {
+        margin: 0 0 20px 0;
+    }
+    .cta {
+        margin: 10px 0 0 0;
+    }
 }
 
 @media (max-width: 47.998em) {
@@ -603,6 +501,12 @@
         }
         .flex-4 {
             order: 4;
+        }
+        .flex-4 .promo-copy {
+            margin: 10px 0 0 0;
+        }
+        .flex-3 .promo-h1 {
+            margin: 0 0 10px 0;
         }
     }
 }
@@ -629,6 +533,14 @@
         order: 4;
         padding: 0 0 0 1.36428%;
     }
+    .flex-2 .promo-copy,
+    .flex-4 .promo-copy {
+        margin: 10px 0 0 0;
+    }
+    .flex-2 .promo-h2,
+    .flex-4 .promo-h2 {
+        margin: 0 0 10px 0;
+    }
 }
 
 @media (max-width: 47.998em) {
@@ -644,6 +556,7 @@
         }
         .flex-2 {
             order: 2;
+            margin: 0 0 40px 0;
         }
         .flex-3 {
             order: 3;
@@ -665,6 +578,7 @@
     .flex-4 {
         width: 48.63572%;
         padding: 0;
+        margin: 0;
     }
     .flex-1 {
         order: 1;
@@ -677,6 +591,14 @@
     }
     .flex-4 {
         order: 4;
+    }
+    .flex-2 .promo-copy,
+    .flex-4 .promo-copy {
+        margin: 10px 0 0 0;
+    }
+    .flex-2 .promo-h2,
+    .flex-4 .promo-h2 {
+        margin: 0 0 10px 0;
     }
 }
 
@@ -693,6 +615,7 @@
         }
         .flex-2 {
             order: 2;
+            margin: 0 0 40px 0;
         }
         .flex-3 {
             order: 3;
@@ -732,6 +655,16 @@
         order: 6;
         padding: 0 0 0 1.36428%;
     }
+    .flex-2 .promo-copy,
+    .flex-4 .promo-copy,
+    .flex-6 .promo-copy {
+        margin: 10px 0 0 0;
+    }
+    .flex-2 .promo-h2,
+    .flex-4 .promo-h2,
+    .flex-6 .promo-h2 {
+        margin: 0 0 10px 0;
+    }
 }
 
 @media (max-width: 47.998em) {
@@ -747,12 +680,14 @@
         }
         .flex-2 {
             order: 2;
+            margin: 0 0 40px 0;
         }
         .flex-3 {
             order: 3;
         }
         .flex-4 {
             order: 4;
+            margin: 0 0 40px 0;
         }
         .flex-5 {
             order: 5;
@@ -779,6 +714,7 @@
     .flex-5,
     .flex-6 {
         width: 31.51429%;
+        margin: 0;
         padding: 0;
     }
 }
@@ -796,12 +732,14 @@
         }
         .flex-2 {
             order: 2;
+            margin: 0 0 40px 0;
         }
         .flex-3 {
             order: 3;
         }
         .flex-4 {
             order: 4;
+            margin: 0 0 40px 0;
         }
         .flex-5 {
             order: 5;
@@ -815,4 +753,35 @@
 // REMOVES DASHES FROM HEADLINE BOTTOM
 .headline-bottom div[class^="flex-"] hr.dash {
     display: none;
+}
+
+// TYPOGRAPHY / Layout
+.copy-container .cta {
+    margin-top: 10px;
+}
+
+.flex-container-1 .promo-image {
+    margin: 20px 0 0 0;
+}
+
+@media (max-width: 47.998em) {
+    .flex-container-1 .promo-image {
+        margin: 20px 0 20px 0;
+    }
+}
+
+.flex-container-2 .promo-image {
+    margin: 20px 0 20px 0;
+}
+
+.flex-container-3 .promo-image {
+    margin: 20px 0 20px 0;
+}
+
+.flex-container-2.headline-bottom .promo-image {
+    margin: 0 0 20px 0;
+}
+
+.flex-container-3.headline-bottom .promo-image {
+    margin: 0 0 20px 0;
 }
