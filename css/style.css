@@ -179,13 +179,9 @@ a.cta {
   letter-spacing: 0.15em;
   text-align: left;
   text-transform: uppercase;
-  text-decoration: none; }
-
-.cta:hover {
-  color: #361a0e;
-  text-decoration: underline;
-  cursor: pointer;
-  cursor: hand; }
+  text-decoration: none;
+  display: inline-block;
+  position: relative; }
 
 .cta::after {
   margin-left: 5px;
@@ -193,6 +189,11 @@ a.cta {
   display: inline-block;
   font-size: 0.5em;
   vertical-align: middle; }
+
+.cta:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  cursor: hand; }
 
 .legal-copy {
   font-family: "Amplitude-Light";
@@ -1385,7 +1386,19 @@ body {
 }*/
 .breakpoint-bar {
   width: 100%;
-  padding: 10px 0 10px 0; }
+  padding: 10px 0 10px 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .page-title {
   margin-top: 10vh;
@@ -2505,3 +2518,63 @@ svg:hover #icon-twitter {
 
 button {
   margin-right: 20px; }
+
+input[type=checkbox] {
+ /*position: absolute;
+top: -9999px;
+left: -9999px;*/
+  /* For mobile, it's typically better to position checkbox on top of clickable
+    area and turn opacity to 0 instead. */ }
+
+/* Default State */
+/* Toggled State */
+.grid-behind-col {
+  background-color: rgba(255, 100, 100, 0.1);
+  width: 5.83215%;
+  margin-right: 2.72856%;
+  height: 100vh; }
+
+.grid-behind-margin {
+  background-color: rgba(208, 226, 246, 0.5);
+  width: 5%;
+  height: 100vh; }
+
+.grid-behind-col:nth-of-type(13n) {
+  width: 5.83215%;
+  margin-right: 0; }
+
+.grid-behind {
+  visibility: hidden;
+  max-width: 1600px;
+  width: 100%;
+  position: fixed;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  left: 50%;
+  top: 0%;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  position: fixed;
+  pointer-events: none; }
+
+.grid-behind::before {
+  background-color: rgba(208, 226, 246, 0.5);
+  width: 5%;
+  height: 100vh; }
+
+.grid-behind::after {
+  background-color: rgba(208, 226, 246, 0.5);
+  width: 5%;
+  height: 100vh; }
+
+input[type=checkbox]:checked ~ .grid-behind {
+  visibility: visible; }
+
+#grid-toggle {
+  margin-left: 5px; }
+
+.grid-toggle-container {
+  float: right; }

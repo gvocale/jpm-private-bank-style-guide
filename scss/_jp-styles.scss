@@ -199,13 +199,8 @@ a.cta {
     text-align: left;
     text-transform: uppercase;
     text-decoration: none;
-}
-
-.cta:hover {
-    color: $brown-dark;
-    text-decoration: underline;
-    cursor: pointer;
-    cursor: hand;
+    display: inline-block;
+    position: relative;
 }
 
 .cta::after {
@@ -214,6 +209,12 @@ a.cta {
     display: inline-block;
     font-size: 0.5em;
     vertical-align: middle;
+}
+
+.cta:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    cursor: hand;
 }
 
 .legal-copy {
