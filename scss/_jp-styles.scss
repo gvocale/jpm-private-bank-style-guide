@@ -184,8 +184,8 @@ button {
     transition: all $speed;
 }
 
-.promo-cta,
-a.promo-cta {
+.cta,
+a.cta {
     font-family: "Amplitude-Medium";
     font-weight: medium;
     color: $brown-dark;
@@ -197,14 +197,14 @@ a.promo-cta {
     text-decoration: none;
 }
 
-.promo-cta:hover {
+.cta:hover {
     color: $brown-dark;
     text-decoration: underline;
     cursor: pointer;
     cursor: hand;
 }
 
-.promo-cta::after {
+.cta::after {
     margin-left: 5px;
     content: "►";
     display: inline-block;
