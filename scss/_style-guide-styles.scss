@@ -23,6 +23,20 @@ body {
     margin-bottom: 10vh;
 }
 
+// TYPOGRAPHY
+.spec-style {
+    font-family: "Amplitude-Medium";
+}
+
+p.spec-size,
+p.spec-height,
+p.spec-tracking,
+p.spec-font
+p.spec-detail {
+    color: $brown-medium;
+
+}
+
 h1 {
     font-size: 55px;
     line-height: 82px;
@@ -67,9 +81,7 @@ div.section-title {
     padding-top: 10px;
 }
 
-.row {
-    margin-bottom: 5vh;
-}
+
 /*.col {
     margin-left: 2vw;
 }*/
@@ -161,4 +173,28 @@ nav > ul li:hover ul {
     display: block;
     opacity: 1;
     visibility: visible;
+}
+
+.show-grid [class^="col-"] {
+    padding: 20px 0 20px 0;
+    border-top: 1px solid $JPMBrown;
+}
+
+.show-grid > .col-md-6 {
+    border-top: none;
+    @media (min-width: 992px) {
+        border-top: 1px solid $JPMBrown;
+    }
+}
+
+.col-xs-6 > p {
+        margin-bottom: 5px;
+}
+
+.breakpoint {
+    color: red;
+}
+
+.row {
+    margin: 0 0 5vh 0;
 }

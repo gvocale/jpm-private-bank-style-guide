@@ -26,17 +26,31 @@ p {
     text-align: center;
 }
 
-.eyebrow {
+.intro-eyebrow {
     font-family: "Amplitude-Light";
     font-weight: light;
-    font-size: 21px;
-    line-height: 31px;
+    font-size: 16px;
+    line-height: 24px;
     letter-spacing: 0.15em;
     text-transform: uppercase;
     text-align: center;
 }
 
-.subtitle {
+@media (min-width: 768px) {
+    .intro-eyebrow {
+        font-size: 21px;
+        line-height: 31px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .intro-eyebrow {
+        font-size: 26px;
+        line-height: 39px;
+    }
+}
+
+.intro-body {
     font-family: "Amplitude-Light";
     font-weight: light;
     font-size: 21px;
@@ -45,7 +59,7 @@ p {
     text-align: center;
 }
 
-.explore-cta {
+.intro-cta {
     font-family: "Amplitude-Medium";
     font-weight: medium;
     font-size: 13px;
@@ -65,7 +79,7 @@ p {
     text-align: center;
 }
 
-.anchor-copy {
+.anchor-body {
     font-family: "Amplitude-Light";
     font-weight: light;
     font-size: 16px;
@@ -100,7 +114,6 @@ p {
     line-height: 20px;
     letter-spacing: 0.02em;
     text-align: left;
-    margin-right: 10px;
 }
 
 .promo-date {
@@ -111,9 +124,10 @@ p {
     letter-spacing: 0.05em;
     text-align: left;
     text-transform: uppercase;
+    margin-left: 10px;
 }
 
-.highlighted-promo-copy {
+.promo-body-large {
     font-family: "Amplitude-Light";
     font-weight: light;
     font-size: 21px;
@@ -132,7 +146,7 @@ p {
     text-align: left;
 }
 
-.promo-copy {
+.promo-body {
     font-family: "Amplitude-Light";
     font-weight: light;
     font-size: 16px;
@@ -217,7 +231,7 @@ a.cta {
     cursor: hand;
 }
 
-.legal-copy {
+.legal-body {
     font-family: "Amplitude-Light";
     font-weight: light;
     font-size: 10px;
@@ -281,19 +295,4 @@ hr.long {
     clear: both;
     width: 100%;
     height: 1px;
-}
-
-.size,
-.height,
-.tracking,
-.font {
-    color: $brown-medium;
-}
-
-.style {
-    font-family: "Amplitude-Medium";
-}
-
-.breakpoint {
-    color: red;
 }
