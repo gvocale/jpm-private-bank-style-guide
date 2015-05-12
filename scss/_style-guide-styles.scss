@@ -187,8 +187,9 @@ nav > ul li:hover ul {
     }
 }
 
-.col-xs-6 > p {
+.col-xs-6 > p, .col-xs-4 > p  {
         margin-bottom: 5px;
+        padding-right: 20px;
 }
 
 .breakpoint {

@@ -727,8 +727,9 @@ nav > ul li:hover ul {
     .show-grid > .col-md-6 {
       border-top: 1px solid #310008; } }
 
-.col-xs-6 > p {
-  margin-bottom: 5px; }
+.col-xs-6 > p, .col-xs-4 > p {
+  margin-bottom: 5px;
+  padding-right: 20px; }
 
 .breakpoint {
   color: red; }
