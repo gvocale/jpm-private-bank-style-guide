@@ -14,14 +14,6 @@ p {
   font-family: "Amplitude-Medium";
   font-weight: medium; }
 
-.intro-h1 {
-  font-family: "Amplitude-Light";
-  font-weight: light;
-  font-size: 55px;
-  line-height: 73px;
-  letter-spacing: 0.02em;
-  text-align: center; }
-
 .intro-eyebrow {
   font-family: "Amplitude-Light";
   font-weight: light;
@@ -39,14 +31,37 @@ p {
   .intro-eyebrow {
     font-size: 26px;
     line-height: 39px; } }
-.intro-body {
-  font-family: "Amplitude-Light";
+.intro-h1 {
+  font-family: "Amplitude-Regular";
   font-weight: light;
-  font-size: 21px;
-  line-height: 31px;
+  font-size: 26px;
+  line-height: 39px;
   letter-spacing: 0.02em;
   text-align: center; }
 
+@media (min-width: 768px) {
+  .intro-h1 {
+    font-size: 55px;
+    line-height: 66px; } }
+@media (min-width: 1200px) {
+  .intro-h1 {
+    font-size: 66px;
+    line-height: 79px; } }
+.intro-body {
+  font-family: "Amplitude-Regular";
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-align: center; }
+
+@media (min-width: 768px) {
+  .intro-body {
+    font-size: 21px;
+    line-height: 31px; } }
+@media (min-width: 1200px) {
+  .intro-body {
+    font-size: 26px;
+    line-height: 39px; } }
 .intro-cta {
   font-family: "Amplitude-Medium";
   font-weight: medium;
@@ -56,43 +71,115 @@ p {
   text-transform: uppercase;
   text-align: center; }
 
+.intro-cta:hover {
+  cursor: pointer;
+  cursor: hand;
+  -webkit-animation: intro-cta-hover 0.3s ease-in 0.1s reverse;
+          animation: intro-cta-hover 0.3s ease-in 0.1s reverse; }
+
+@-webkit-keyframes intro-cta-hover {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  100% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px); } }
+
+@keyframes intro-cta-hover {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  100% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px); } }
+.intro-cta::after {
+  margin-top: 5px;
+  content: "";
+  display: block;
+  background-image: url("../images/ui.arrow-down.svg");
+  background-repeat: no-repeat;
+  background-size: 70% 70%;
+  width: 16px;
+  height: 10px;
+  position: relative;
+  left: calc(50% - 8px); }
+
+@media (min-width: 1200px) {
+  .intro-cta {
+    font-size: 16px;
+    line-height: 24px; }
+
+  .intro-cta::after {
+    background-size: 20px 12px;
+    width: 20px;
+    height: 12px;
+    left: calc(50% - 10px); } }
 .anchor-h1 {
   font-family: "Amplitude-Medium";
   font-weight: medium;
-  font-size: 21px;
-  line-height: 31px;
+  font-size: 16px;
+  line-height: 24px;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   text-align: center; }
 
+@media (min-width: 992px) {
+  .anchor-h1 {
+    font-size: 21px;
+    line-height: 31px; } }
+@media (min-width: 1200px) {
+  .anchor-h1 {
+    font-size: 26px;
+    line-height: 34px; } }
 .anchor-body {
-  font-family: "Amplitude-Light";
-  font-weight: light;
-  font-size: 16px;
-  line-height: 24px;
+  font-family: "Amplitude-Regular";
+  font-size: 13px;
+  line-height: 20px;
   letter-spacing: 0.02em;
   text-align: center; }
 
+@media (min-width: 992px) {
+  .anchor-body {
+    font-size: 16px;
+    line-height: 24px; } }
+@media (min-width: 1200px) {
+  .anchor-body {
+    font-size: 21px;
+    line-height: 31px; } }
 .promo-eyebrow {
   font-family: "Amplitude-Medium";
-  font-weight: medium;
   font-size: 13px;
   line-height: 20px;
   letter-spacing: 0.15em;
   text-align: left;
   text-transform: uppercase; }
 
+@media (min-width: 1200px) {
+  .promo-eyebrow {
+    font-size: 16px;
+    line-height: 24px; } }
 .promo-h1 {
-  font-family: "Amplitude-Light";
+  font-family: "Amplitude-Medium";
   font-weight: light;
-  font-size: 34px;
-  line-height: 51px;
+  font-size: 21px;
+  line-height: 31px;
   letter-spacing: 0.02em;
   text-align: left; }
 
+@media (min-width: 768px) {
+  .promo-h1 {
+    font-size: 26px;
+    line-height: 39px; } }
+@media (min-width: 992px) {
+  .promo-h1 {
+    font-size: 34px;
+    line-height: 40px; } }
+@media (min-width: 1200px) {
+  .promo-h1 {
+    font-size: 44px;
+    line-height: 58px; } }
 .promo-author {
-  font-family: "Amplitude-Regular";
-  font-weight: regular;
+  font-family: "Amplitude-Medium";
   font-size: 13px;
   line-height: 20px;
   letter-spacing: 0.02em;
@@ -100,7 +187,6 @@ p {
 
 .promo-date {
   font-family: "Amplitude-Regular";
-  font-weight: regular;
   font-size: 10px;
   line-height: 15px;
   letter-spacing: 0.05em;
@@ -110,43 +196,69 @@ p {
 
 .promo-body-large {
   font-family: "Amplitude-Light";
-  font-weight: light;
-  font-size: 21px;
-  line-height: 31px;
-  letter-spacing: 0.02em;
-  text-align: left; }
-
-.promo-h2 {
-  font-family: "Amplitude-Medium";
-  color: #361a0e;
-  font-weight: medium;
-  font-size: 21px;
-  line-height: 31px;
-  letter-spacing: 0.02em;
-  text-align: left; }
-
-.promo-body {
-  font-family: "Amplitude-Light";
-  font-weight: light;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.02em;
   text-align: left; }
 
+@media (min-width: 992px) {
+  .promo-body-large {
+    font-size: 21px;
+    line-height: 31px; } }
+.promo-h2 {
+  font-family: "Amplitude-Medium";
+  color: #361a0e;
+  font-size: 21px;
+  line-height: 31px;
+  letter-spacing: 0.02em;
+  text-align: left; }
+
+@media (min-width: 1200px) {
+  .promo-h2 {
+    font-size: 26px;
+    line-height: 39px; } }
+.promo-body {
+  font-family: "Amplitude-Light";
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-align: left; }
+
+@media (min-width: 992px) {
+  .promo-body {
+    font-size: 21px;
+    line-height: 31px; } }
+.legal-body {
+  font-family: "Amplitude-Light";
+  font-size: 10px;
+  line-height: 15px;
+  letter-spacing: 0.02em;
+  text-align: center; }
+
+@media (min-width: 1200px) {
+  .legal-body {
+    font-size: 13px;
+    line-height: 20px; } }
 button {
   margin-right: 20px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none; }
+
+a:hover, a:focus {
+  text-decoration: none;
+  color: #310008; }
 
 .primary {
   font-family: "Amplitude-Medium";
   color: #FFFFFF;
-  font-weight: medium;
   font-size: 13px;
   line-height: 20px;
   letter-spacing: 0.15em;
   text-align: center;
   text-transform: uppercase;
-  display: inline-block;
   height: 50px;
   padding: 6px 30px;
   background-color: #361a0e;
@@ -157,25 +269,18 @@ button {
   -webkit-transition: all 0.05s;
           transition: all 0.05s; }
 
-.primary-inverted {
-  font-family: "Amplitude-Medium";
+.primary.inverted {
   color: #361a0e;
-  font-weight: medium;
-  font-size: 13px;
-  line-height: 20px;
-  letter-spacing: 0.15em;
-  text-align: center;
-  text-transform: uppercase;
-  display: inline-block;
-  height: 50px;
-  padding: 6px 30px;
   background-color: #FFFFFF;
   border: 1px solid #d7d2cb; }
 
-.primary-inverted:hover {
+.primary.inverted:hover {
   background-color: #efefef;
   -webkit-transition: all 0.05s;
           transition: all 0.05s; }
+
+:focus {
+  outline: 1px solid #310008; }
 
 .cta,
 a.cta {
@@ -203,14 +308,6 @@ a.cta {
   cursor: pointer;
   cursor: hand; }
 
-.legal-body {
-  font-family: "Amplitude-Light";
-  font-weight: light;
-  font-size: 10px;
-  line-height: 15px;
-  letter-spacing: 0.02em;
-  text-align: center; }
-
 .footer-h1 {
   font-family: "Amplitude-Medium";
   font-weight: medium;
@@ -231,13 +328,19 @@ a.cta {
   color: #8c8279;
   text-transform: uppercase; }
 
-.footer-links {
+p.footer-links {
   font-family: "Amplitude-Light";
   font-weight: light;
   font-size: 13px;
   line-height: 20px;
   letter-spacing: 0.02em;
-  text-align: left; }
+  text-align: left;
+  margin-bottom: 5px; }
+
+p.footer-links:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  cursor: hand; }
 
 hr.short {
   border: solid #361a0e;
@@ -737,40 +840,6 @@ nav > ul li:hover ul {
 .row {
   margin: 0 0 5vh 0; }
 
-@media (max-width: 991px) {
-  .anchor-h1 {
-    font-size: 16px;
-    line-height: 24px; }
-
-  .anchor-copy {
-    font-family: "Amplitude-Regular";
-    font-size: 13px;
-    line-height: 20px; }
-
-  .promo-h1 {
-    font-size: 26px;
-    line-height: 39px; }
-
-  .highlighted-promo-copy {
-    font-size: 16px;
-    line-height: 24px; }
-
-  .container-fluid {
-    margin-left: 5vw;
-    margin-right: 5vw; } }
-@media (max-width: 767px) {
-  .eyebrow {
-    font-family: "Amplitude-Regular";
-    font-size: 16px;
-    line-height: 24px; }
-
-  .intro-h1 {
-    font-size: 26px;
-    line-height: 39px; }
-
-  .subtitle {
-    font-size: 16px;
-    line-height: 24px; } }
 .container-fluid.griddy {
   border: solid 1px red; }
 
@@ -1721,9 +1790,6 @@ svg:hover #icon-twitter {
 
 .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
   padding: 0px; }
-
-button {
-  margin-right: 20px; }
 
 input[type=checkbox] {
  /*position: absolute;
