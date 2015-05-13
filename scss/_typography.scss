@@ -4,17 +4,17 @@ p {
 
 .light {
     font-family: "Amplitude-Light";
-    font-weight: light;
+
 }
 
 .regular {
     font-family: "Amplitude-Regular";
-    font-weight: regular;
+
 }
 
 .medium {
     font-family: "Amplitude-Medium";
-    font-weight: medium;
+
 }
 
 .intro-eyebrow {
@@ -315,7 +315,15 @@ button {
     margin-left: auto;
     margin-right: auto;
     text-decoration: none;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
 }
+
+button:focus {
+     outline: 0;
+}
+    
 
 a:hover, a:focus {
     text-decoration: none;
@@ -352,9 +360,7 @@ a:hover, a:focus {
     transition: all $speed;
 }
 
-:focus {
-    outline: 1px solid $JPMBrown;
-}
+
 
 .cta,
 a.cta {
@@ -389,7 +395,6 @@ a.cta {
 
 .footer-h1 {
     font-family: "Amplitude-Medium";
-    font-weight: medium;
     font-size: 13px;
     line-height: 20px;
     letter-spacing: 0.05em;
@@ -398,9 +403,15 @@ a.cta {
     text-transform: uppercase;
 }
 
+@media (min-width: 1200px) {
+    .footer-h1 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
 .footer-h2 {
     font-family: "Amplitude-Medium";
-    font-weight: medium;
     font-size: 13px;
     line-height: 20px;
     letter-spacing: 0.05em;
@@ -409,9 +420,15 @@ a.cta {
     text-transform: uppercase;
 }
 
+@media (min-width: 1200px) {
+    .footer-h2 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
 p.footer-links {
     font-family: "Amplitude-Light";
-    font-weight: light;
     font-size: 13px;
     line-height: 20px;
     letter-spacing: 0.02em;
@@ -419,10 +436,21 @@ p.footer-links {
     margin-bottom: 5px;
 }
 
+@media (min-width: 1200px) {
+    p.footer-links {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
 p.footer-links:hover {
     text-decoration: underline;
     cursor: pointer;
     cursor: hand;
+}
+
+hr {
+    margin: 0;
 }
 
 hr.short {

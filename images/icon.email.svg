@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="22px" height="15px" viewBox="0 0 22 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.1 (12002) - http://www.bohemiancoding.com/sketch -->
+    <title>icon.email</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="jpmorgan.icons" sketch:type="MSArtboardGroup" transform="translate(-409.000000, -247.000000)" fill="#0A0B09">
+            <path d="M420.201,260.502 L415.568,256.319 L409.467,261.807 L430.434,261.996 L424.172,256.338 L420.201,260.502 Z M431.001,260.263 L430.898,249 L425.613,255.067 L431.001,260.263 Z M430.264,247 L409.269,247 L420.097,258.414 L430.264,247 Z M409.066,249.012 L409,260.193 L414.297,254.972 L409.066,249.012 Z" id="icon.email" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,14 @@
+path.icon.twitter,
+path.icon.email,
+path.icon.facebook,
+path.icon.linkedin {
+    fill: $WarmGray1;
+}
+
+button .icon.twitter:hover,
+button .icon.email:hover,
+button .icon.facebook:hover,
+button .icon.linkedin:hover {
+    fill: $JPMBrown;
+    pointer-events: bounding-box;
+}

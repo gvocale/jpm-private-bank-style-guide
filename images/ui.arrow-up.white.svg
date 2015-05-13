@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="20px" height="13px" viewBox="0 0 20 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.1 (12002) - http://www.bohemiancoding.com/sketch -->
+    <title>ui.arrow-up.white</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="jpmorgan.icons" sketch:type="MSArtboardGroup" transform="translate(-442.000000, -457.000000)" fill="#FFFFFF">
+            <path d="M443.6895,457.228 L452.0455,465.839 L460.4005,457.228 L462.0005,458.969 L452.0455,469.228 L442.0005,458.969 L443.6895,457.228 Z" id="ui.arrow-up.white" sketch:type="MSShapeGroup" transform="translate(452.000500, 463.228000) scale(1, -1) translate(-452.000500, -463.228000) "></path>
+        </g>
+    </g>
+</svg>
