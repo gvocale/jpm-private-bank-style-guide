@@ -201,7 +201,6 @@ p {
 
 .promo-h1 {
     font-family: "Amplitude-Medium";
-    font-weight: light;
     font-size: 21px;
     line-height: 31px;
     letter-spacing: 0.02em;
@@ -224,6 +223,7 @@ p {
 
 @media (min-width: 1200px) {
     .promo-h1 {
+        font-family: "Amplitude-Regular";
         font-size: 44px;
         line-height: 58px;
     }
