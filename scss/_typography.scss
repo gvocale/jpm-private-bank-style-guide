@@ -199,7 +199,7 @@ p {
 }
 
 .promo-h1 {
-    font-family: "Amplitude-Medium";
+    font-family: "Amplitude-Regular";
     font-size: 21px;
     line-height: 26px;
     letter-spacing: 0.02em;
@@ -212,12 +212,6 @@ p {
         font-size: 26px;
         line-height: 32px;
         margin-bottom: 10px;
-    }
-}
-
-@media (min-width: 992px) {
-    .promo-h1 {
-        font-family: "Amplitude-Regular";
     }
 }
 
@@ -263,7 +257,7 @@ p {
 }
 
 .promo-h2 {
-    font-family: "Amplitude-Medium";
+    font-family: "Amplitude-Regular";
     color: $brown-dark;
     font-size: 21px;
     line-height: 26px;

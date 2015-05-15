@@ -975,7 +975,7 @@ p {
     line-height: 24px;
     margin-bottom: 10px; } }
 .promo-h1 {
-  font-family: "Amplitude-Medium";
+  font-family: "Amplitude-Regular";
   font-size: 21px;
   line-height: 26px;
   letter-spacing: 0.02em;
@@ -987,9 +987,6 @@ p {
     font-size: 26px;
     line-height: 32px;
     margin-bottom: 10px; } }
-@media (min-width: 992px) {
-  .promo-h1 {
-    font-family: "Amplitude-Regular"; } }
 @media (min-width: 1200px) {
   .promo-h1 {
     font-size: 34px;
@@ -1023,7 +1020,7 @@ p {
     font-size: 21px;
     line-height: 31px; } }
 .promo-h2 {
-  font-family: "Amplitude-Medium";
+  font-family: "Amplitude-Regular";
   color: #361a0e;
   font-size: 21px;
   line-height: 26px;
