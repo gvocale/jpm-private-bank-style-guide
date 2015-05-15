@@ -4,17 +4,14 @@ p {
 
 .light {
     font-family: "Amplitude-Light";
-
 }
 
 .regular {
     font-family: "Amplitude-Regular";
-
 }
 
 .medium {
     font-family: "Amplitude-Medium";
-
 }
 
 .intro-eyebrow {
@@ -190,42 +187,45 @@ p {
     letter-spacing: 0.15em;
     text-align: left;
     text-transform: uppercase;
+    margin-bottom: 5px;
 }
 
 @media (min-width: 1200px) {
     .promo-eyebrow {
         font-size: 16px;
         line-height: 24px;
+        margin-bottom: 10px;
     }
 }
 
 .promo-h1 {
     font-family: "Amplitude-Medium";
     font-size: 21px;
-    line-height: 31px;
+    line-height: 26px;
     letter-spacing: 0.02em;
     text-align: left;
+    margin-bottom: 5px;
 }
 
 @media (min-width: 768px) {
     .promo-h1 {
         font-size: 26px;
-        line-height: 39px;
+        line-height: 32px;
+        margin-bottom: 10px;
     }
 }
 
 @media (min-width: 992px) {
     .promo-h1 {
-        font-size: 34px;
-        line-height: 40px;
+        font-family: "Amplitude-Regular";
     }
 }
 
 @media (min-width: 1200px) {
     .promo-h1 {
-        font-family: "Amplitude-Regular";
-        font-size: 44px;
-        line-height: 58px;
+        font-size: 34px;
+        line-height: 42px;
+        margin-bottom: 15px;
     }
 }
 
@@ -255,7 +255,7 @@ p {
     text-align: left;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
     .promo-body-large {
         font-size: 21px;
         line-height: 31px;
@@ -266,15 +266,17 @@ p {
     font-family: "Amplitude-Medium";
     color: $brown-dark;
     font-size: 21px;
-    line-height: 31px;
+    line-height: 26px;
     letter-spacing: 0.02em;
     text-align: left;
+    margin-bottom: 5px;
 }
 
 @media (min-width: 1200px) {
     .promo-h2 {
         font-size: 26px;
-        line-height: 39px;
+        line-height: 32px;
+        margin-bottom: 10px;
     }
 }
 
@@ -286,7 +288,7 @@ p {
     text-align: left;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
     .promo-body {
         font-size: 21px;
         line-height: 31px;
@@ -321,11 +323,11 @@ button {
 }
 
 button:focus {
-     outline: 0;
+    outline: 0;
 }
-    
 
-a:hover, a:focus {
+a:hover,
+a:focus {
     text-decoration: none;
     color: $JPMBrown;
 }
@@ -360,8 +362,6 @@ a:hover, a:focus {
     transition: all $speed;
 }
 
-
-
 .cta,
 a.cta {
     font-family: "Amplitude-Medium";
@@ -390,8 +390,6 @@ a.cta {
     cursor: pointer;
     cursor: hand;
 }
-
-
 
 .footer-h1 {
     font-family: "Amplitude-Medium";
