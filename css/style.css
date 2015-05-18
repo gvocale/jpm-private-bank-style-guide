@@ -1174,15 +1174,17 @@ p.footer-links:hover {
 hr {
   margin: 0; }
 
-hr.short {
-  border: solid #361a0e;
+hr.dash-inverted {
+  border: solid #FFFFFF;
   border-width: 1px 0 0;
-  clear: both;
   width: 45px;
-  height: 1px; }
+  height: 1px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  margin-left: 0; }
 
 hr.dash {
-  border: solid #361a0e;
+  border: solid #310008;
   border-width: 1px 0 0;
   width: 45px;
   height: 1px;
@@ -2763,3 +2765,47 @@ button .icon.facebook:hover,
 button .icon.linkedin:hover {
   fill: #310008;
   pointer-events: bounding-box; }
+
+.header {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+  max-height: 80vh;
+  background-color: #d7d2cb;
+  width: 100%; }
+
+.header:before {
+  content: "";
+  display: block;
+  padding-top: 76%; }
+
+@media (min-width: 768px) {
+  .header:before {
+    padding-top: 56%; } }
+.header img {
+  height: 100%;
+  width: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  z-index: 1; }
+
+@media (min-width: 768px) {
+  .header img {
+    width: 100%;
+    height: auto; } }
+.header > .container-fluid {
+  margin: auto;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
+  z-index: 10; }
+
+.header p {
+  color: #FFFFFF; }

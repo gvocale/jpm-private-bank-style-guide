@@ -1,0 +1,52 @@
+.header {
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+    max-height: 80vh; // set max height of image container
+    background-color: $WarmGray1;
+    width: 100%;
+}
+
+.header:before {
+    content: "";
+    display: block;
+    padding-top: 76%; // set ratio of image to 4/3
+}
+
+@media (min-width: 768px) {
+    .header:before {
+        padding-top: 56%; // set ratio of image to 16/9
+    }
+}
+
+.header img {
+    height: 100%;
+    width: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto; // this center align the picture in the 16/9 container
+    z-index: 1;
+}
+
+@media (min-width: 768px) {
+    .header img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.header > .container-fluid {
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    z-index: 10;
+}
+
+.header p {
+    color: $White;
+}
