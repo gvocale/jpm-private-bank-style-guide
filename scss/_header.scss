@@ -2,7 +2,7 @@
     position: relative;
     margin: 0;
     overflow: hidden;
-    max-height: 80vh; // set max height of image container
+    max-height: calc(80vh - 83px); // set max height of image container
     background-color: $WarmGray1;
     width: 100%;
 }
@@ -38,7 +38,8 @@
     }
 }
 
-.header > .container-fluid {
+.header > .container-fluid,
+.tab > .container-fluid {
     margin: auto;
     position: absolute;
     left: 50%;
@@ -47,6 +48,60 @@
     z-index: 10;
 }
 
+.tab .row {
+    margin: 0;
+}
+
 .header p {
     color: $White;
 }
+
+.tab {
+    height: 20vh;
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid $WarmGray1-transparent;
+}
+
+.tab [class^="col-"] {
+    border-left: 1px solid $WarmGray1-transparent;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.tab [class^="col-"]:hover {
+    background-color: $WarmGray1;
+    cursor: pointer;
+    cursor: hand;
+    transition: all 0.1s ease-out;
+}
+
+.tab [class^="col-"]:last-child {
+    border-left: 1px solid $WarmGray1-transparent;
+    border-right: 1px solid $WarmGray1-transparent;
+}
+
+.header hr.dash-inverted,
+.tab hr.dash {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.tint {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $JPMBrown;
+    z-index: 2;
+    //filter: saturate(200%);
+    opacity: 0.5;
+    mix-blend-mode: darken;
+}
+
