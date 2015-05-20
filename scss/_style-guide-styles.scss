@@ -31,10 +31,8 @@ body {
 p.spec-size,
 p.spec-height,
 p.spec-tracking,
-p.spec-font
-p.spec-detail {
+p.spec-font p.spec-detail {
     color: $brown-medium;
-
 }
 
 h1 {
@@ -80,8 +78,6 @@ div.section-title {
     border-top: 1px solid #efefef;
     padding-top: 10px;
 }
-
-
 /*.col {
     margin-left: 2vw;
 }*/
@@ -163,17 +159,23 @@ nav > ul li ul {
 nav > ul li ul li {
     background: $WarmGray1;
     display: block;
+    width: 200%;
     color: $JPMBrown;
 }
 
 nav > ul li ul li:hover {
-    background: #666;
+    background: $WarmGray8;
+    color: $White;
 }
 
 nav > ul li:hover ul {
     display: block;
     opacity: 1;
     visibility: visible;
+}
+
+li.primary-inverted {
+    padding: 10px;
 }
 
 .show-grid [class^="col-"] {
@@ -188,9 +190,10 @@ nav > ul li:hover ul {
     }
 }
 
-.col-xs-6 > p, .col-xs-4 > p  {
-        margin-bottom: 5px;
-        padding-right: 20px;
+.col-xs-6 > p,
+.col-xs-4 > p {
+    margin-bottom: 5px;
+    padding-right: 20px;
 }
 
 .breakpoint {
