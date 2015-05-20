@@ -965,10 +965,6 @@ p {
   .anchor-h1 {
     font-size: 21px;
     line-height: 31px; } }
-@media (min-width: 1200px) {
-  .anchor-h1 {
-    font-size: 26px;
-    line-height: 34px; } }
 .anchor-body {
   font-family: "Amplitude-Regular";
   font-size: 13px;
@@ -980,10 +976,6 @@ p {
   .anchor-body {
     font-size: 16px;
     line-height: 24px; } }
-@media (min-width: 1200px) {
-  .anchor-body {
-    font-size: 21px;
-    line-height: 31px; } }
 .promo-eyebrow {
   font-family: "Amplitude-Medium";
   font-size: 13px;
@@ -2929,7 +2921,7 @@ button .icon.linkedin:hover {
   position: absolute;
   background-color: #000000;
   z-index: 2;
-  opacity: 0.5;
+  opacity: 0.4;
   mix-blend-mode: darken; }
 
 .gradient {
