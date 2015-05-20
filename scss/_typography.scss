@@ -2,6 +2,22 @@ p {
     margin: 0;
 }
 
+@font-face {
+    font-family: "Amplitude-Light";
+    src: url(../fonts/Amplitude-Light.ttf);
+}
+
+@font-face {
+    font-family: "Amplitude-Regular";
+    src: url(../fonts/Amplitude-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Amplitude-Medium";
+    src: url(../fonts/Amplitude-Medium.ttf);
+}
+
+
 .light {
     font-family: "Amplitude-Light";
 }
