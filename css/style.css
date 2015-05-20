@@ -2712,7 +2712,8 @@ left: -9999px;*/
       -ms-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
   position: fixed;
-  pointer-events: none; }
+  pointer-events: none;
+  z-index: 100; }
 
 .grid-behind::before {
   background-color: rgba(208, 226, 246, 0.5);
