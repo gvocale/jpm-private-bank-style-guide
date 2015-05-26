@@ -2,6 +2,8 @@ body {
     font-family: "Amplitude-Light", Helvetica, sans-serif;
     color: $JPMBrown;
     margin-bottom: 120px;
+    font-size: 16px;
+    line-height: 24px;
 }
 /*equal, .equal > div[class*='col-'] {  
     display: -webkit-box;
@@ -10,12 +12,8 @@ body {
     flex:1 0 auto;
 }*/
 
-.breakpoint-bar {
-    width: 100%;
+.container-fluid.breakpoint-bar {
     padding: 10px 0 10px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .page-title {
@@ -55,16 +53,22 @@ div.section-title {
     line-height: 20px;
 }
 
-.device {
+.breakpoint-name {
     font-family: "Amplitude-Medium";
-    font-size: 21px;
-    line-height: 31px;
-    margin-right: 10px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-right: 20px;
 }
 
-.pixel-size {
-    font-family: "Helvetica";
-    font-weight: bold;
+.breakpoint-detail, label {
+    font-family: $regular;
+    font-size: 13px;
+    margin-right: 10px
+}
+
+.symbol {
+    font-family: helvetica, sans-serif;
+    margin-right: 5px;
 }
 
 .number {
@@ -87,11 +91,8 @@ div.section-title {
 }
 
 .container-fluid {
-    margin-left: 5%;
-    margin-right: 5%;
     max-width: 1600px;
     width: 90%;
-    padding: 0px;
 }
 
 @media (max-width: 991px) {
@@ -179,7 +180,6 @@ li.primary-inverted {
 }
 
 .show-grid [class^="col-"] {
-    padding: 20px 0 20px 0;
     border-top: 1px solid $JPMBrown;
 }
 
@@ -203,3 +203,9 @@ li.primary-inverted {
 .row {
     margin: 0 0 5vh 0;
 }
+
+.breakpoint-bar .device {
+    line-height: 1;
+}
+
+

@@ -15,116 +15,55 @@
 
 <body>
     <div class="center">
-        <!-- BREAKPOINT BAR ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-        <div class="placeholder-box breakpoint-bar">
-            <div class="container-fluid">
-                <div class="col-xs-6">
-                    <p><span class="visible-xs"><span class="device">Phone</span><span class="pixel-size">XS < 768</span></span>
-                        <span class="visible-sm"><span class="device">Tablet Portrait</span><span class="pixel-size">SM ≥ 768</span></span>
-                        <span class="visible-md"><span class="device">Desktop</span><span class="pixel-size">MD ≥ 992</span></span>
-                        <span class="visible-lg"><span class="device">Large Desktop</span><span class="pixel-size">LG ≥ 1200</span></span>
-                    </p>
-                    <p>
-                        <span class="visible-xs"><span class="pixel-size">Margin 5%</span></span>
-                        <span class="visible-sm"><span class="pixel-size">Margin 5%</span></span>
-                        <span class="visible-md"><span class="pixel-size">Margin 5%</span></span>
-                        <span class="visible-lg"><span class="toggle-label">Margin 5% - Max width 1600px</span></span>
-                    </p>
-                </div>
-                <div class="col-xs-6">
-                    <div class="grid-toggle-container">
-                        <label for="grid-toggle"><span class="pixel-size">Show Grid</span></label>
-                        <input type="checkbox" id="grid-toggle">
-                        <div class="grid-behind">
-                            <div class="grid-behind-margin"></div>
-                            <div class="grid-behind-col"></div>
-                            <div class="grid-behind-col"></div>
-                            <div class="grid-behind-col"></div>
-                            <div class="grid-behind-col"></div>
-                            <div class="grid-behind-col"></div>
-                            <div class="grid-behind-col"></div>
-                            <div class="grid-behind-col"></div>
-                            <div class="grid-behind-col"></div>
-                            <div class="grid-behind-col"></div>
-                            <div class="grid-behind-col"></div>
-                            <div class="grid-behind-col"></div>
-                            <div class="grid-behind-col"></div>
-                            <div class="grid-behind-margin"></div>
-                        </div>
-                    </div>
-                </div>
+        <!-- NAVIGATION BAR ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <div class="container-fluid grid-overlay hidden">
+            <div class="row">
+                <div class="col-xs-1"></div>
+                <div class="col-xs-1"></div>
+                <div class="col-xs-1"></div>
+                <div class="col-xs-1"></div>
+                <div class="col-xs-1"></div>
+                <div class="col-xs-1"></div>
+                <div class="col-xs-1"></div>
+                <div class="col-xs-1"></div>
+                <div class="col-xs-1"></div>
+                <div class="col-xs-1"></div>
+                <div class="col-xs-1"></div>
+                <div class="col-xs-1"></div>
             </div>
         </div>
-        <!-- NAVIGATION ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-        <div class="container-fluid">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="index.html" target="_self">
-                            <button class="primary">Type Styles & Scale</button>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="grid.html" target="_self">
-                            <button class="primary">Grid System</button>
-                        </a>
-                    </li>
-                    <li>
-                        <button class="primary">Promo Component</button>
-                        <ul>
-                            <a href="promos-top.html" class="">
-                                <li class="primary-inverted">Headline Top</li>
-                            </a>
-                            <a href="promos-top-no-gutter.html" class="">
-                                <li class="primary-inverted">Headline Top - No Gutter</li>
-                            </a>
-                            <a href="promos-bottom.html" class="">
-                                <li class="primary-inverted">Headline Bottom</li>
-                            </a>
-                            <a href="promos-bottom-no-gutter.html" class="">
-                                <li class="primary-inverted">Headline Bottom - No Gutter</li>
-                            </a>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="spacing.html" target="_self">
-                            <button class="primary">Spacing</button>
-                        </a>
-                    </li>
-                    <li>
-                        <button class="primary">Header</button>
-                        <ul>
-                            <a href="header_landscape_natural.html" class="">
-                                <li class="primary-inverted">Landscape - Natural Color</li>
-                            </a>
-                            <a href="header_landscape_tint.html" class="">
-                                <li class="primary-inverted">Landscape - Tint</li>
-                            </a>
-                            <a href="header_landscape_gradient.html" class="">
-                                <li class="primary-inverted">Landscape - Bottom Gradient</li>
-                            </a>
-                            <a href="header_landscape_box.html" class="">
-                                <li class="primary-inverted">Landscape - Box</li>
-                            </a>
-                            <a href="header_city_natural.html" class="">
-                                <li class="primary-inverted">City - Natural Color</li>
-                            </a>
-                            <a href="header_city_tint.html" class="">
-                                <li class="primary-inverted">City - Tint</li>
-                            </a>
-                            <a href="header_city_gradient.html" class="">
-                                <li class="primary-inverted">City - Bottom Gradient</li>
-                            </a>
-                            <a href="header_city_box.html" class="">
-                                <li class="primary-inverted">City - Box</li>
-                            </a>
-                            <a href="header_no-tabs.html" class="">
-                                <li class="primary-inverted">No Tabs</li>
-                            </a>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
+        <div class="breakpoint-bar">
+            <div class="container-fluid">
+                <div class="col-xs-8 col-md-6">
+                    <p>
+                        <span class="visible-xs"><span class="breakpoint-name">Extra Small</span><span class="symbol"><</span><span class="breakpoint-detail">767px</span><span class="breakpoint-detail">Margin 5%</span></span>
+                        <span class="visible-sm"><span class="breakpoint-name">Small</span><span class="symbol">≥</span><span class="breakpoint-detail">768px</span><span class="breakpoint-detail">Margin 5%</span></span>
+                        <span class="visible-md"><span class="breakpoint-name">Medium</span><span class="symbol">≥</span><span class="breakpoint-detail">992px</span><span class="breakpoint-detail">Margin 5%</span></span>
+                        <span class="visible-lg"><span class="breakpoint-name">Large</span><span class="symbol">≥</span><span class="breakpoint-detail">1200px</span><span class="breakpoint-detail">Margin 5%</span><span class="breakpoint-detail">Max width 1600px</span></span>
+                    </p>
+                </div>
+                <div class="col-xs-4 col-md-6">
+                    <form id="toggle">
+                        <label for="grid-toggle">Show Grid</label>
+                        <input type="checkbox" id="grid-toggle">
+                    </form>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <form id="page-changer" action="" method="post">
+                        <select onchange="location = this.options[this.selectedIndex].value;">
+                            <option>Change page</option>
+                            <option value="grid.html">Grid</option>
+                            <option value="header.html">Header</option>
+                            <option value="typography.html">Typography</option>
+                            <option value="promos-top.html">Promo - Headline top</option>
+                            <option value="promos-top-no-gutter.html">Promo - Headline top - No gutter</option>
+                            <option value="promos-bottom.html">Promo - Headline bottom</option>
+                            <option value="promos-bottom-no-gutter.html">Promo - Headline bottom - No gutter</option>
+                            <option value="spacing.html">Spacing</option>
+                        </select>​
+                    </form>
+                </div>
+            </div>
         </div>
         <!-- PAGE TITLE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
         <div class="container-fluid">
@@ -244,6 +183,7 @@
     <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
     <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
+        <script src='js/grid.js'></script>
     <!-- Google Analytics -->
     <script>
     (function(i, s, o, g, r, a, m) {

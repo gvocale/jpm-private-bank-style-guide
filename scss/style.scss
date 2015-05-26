@@ -1,5 +1,5 @@
 @import "compass/css3";
-@import "_responsive-grid.scss";
+//@import "_responsive-grid.scss";
 @import "_variables.scss";
 @import "_typography.scss";
 @import "_grid-color.scss";
@@ -10,8 +10,8 @@
 @import "_animations.scss";
 @import "_grid.scss";
 @import "_layout.scss";
-@import "_grid-behind.scss";
 @import "_spacing.scss";
 @import "_svg.scss";
 @import "_header.scss";
+@import "_anchor.scss";
 @import 'bourbon';

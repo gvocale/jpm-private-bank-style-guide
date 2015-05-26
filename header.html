@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <title>Style Sheet</title>
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css'>
+    <link rel="stylesheet" href="css/style.css">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+</head>
+
+<body>
+    <div class="center">
+        <div class="container-fluid grid-overlay hidden">
+            <div class="row">
+                <div class="col-xs-1"></div>
+                <div class="col-xs-1"></div>
+                <div class="col-xs-1"></div>
+                <div class="col-xs-1"></div>
+                <div class="col-xs-1"></div>
+                <div class="col-xs-1"></div>
+                <div class="col-xs-1"></div>
+                <div class="col-xs-1"></div>
+                <div class="col-xs-1"></div>
+                <div class="col-xs-1"></div>
+                <div class="col-xs-1"></div>
+                <div class="col-xs-1"></div>
+            </div>
+        </div>
+        <div class="breakpoint-bar">
+            <div class="container-fluid">
+                <div class="col-xs-12 col-md-4">
+                    <p><span class="visible-xs"><span class="device">Extra Small</span><span class="pixel-size">< 767px</span></span>
+                        <span class="visible-sm"><span class="device">Small</span><span class="pixel-size">≥ 768px</span></span>
+                        <span class="visible-md"><span class="device">Medium</span><span class="pixel-size">≥ 992px</span></span>
+                        <span class="visible-lg"><span class="device">Large</span><span class="pixel-size">≥ 1200px</span></span>
+                        <span class="visible-xs visible-sm visible-md">Margin 5%</span></span>
+                        <span class="visible-lg">Margin 5%<span><span class="toggle-label"> - Max width 1600px</span>
+                    </p>
+                </div>
+                <div class="col-xs-12 col-md-2">
+                    <form>
+                        <div class="background-image">
+                            <select name="background-image" id="background-image" onchange="showValue(this.value)" class="">
+                                <option value="cityscape" data-bg="images/header_cityscape.jpg">Cityscape</option>
+                                <option value="landscape" data-bg="images/header_landscape.jpg">Landscape</option>
+                                <option value="abstract" data-bg="images/header_abstract.jpg">Abstract</option>
+                            </select>
+                            <label for="background-image">Photo</label>
+                        </div>
+                        <div class="inverted-color">
+                            <input checked type="checkbox" id="inverted-color">
+                            <label for="inverted-color">Reverse text color</label>
+                        </div>
+                        <div class="switch-anchor">
+                            <input checked type="checkbox" id="switch-anchor">
+                            <label for="inverted-color">Anchor</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <div class="tint">
+                        <input type="range" id="opacity-range" min="0" value="0" max="0.8" step="0.1" oninput="outputUpdate(value)">
+                        <output for="opacity" id="opacity-value">0</output>
+                        <label for="opacity">Tint</label>
+                    </div>
+                    <div class="gradient">
+                        <input type="range" id="gradient-range" min="0" value="0" max="0.5" step="0.1" oninput="outputUpdate(value)">
+                        <output for="gradient" id="gradient-value">0</output>
+                        <label for="gradient">Bottom Gradient</label>
+                    </div>
+                    <div class="box-opacity">
+                        <input type="range" id="box-opacity-range" min="0" value="0" max="1" step="0.1" oninput="outputUpdate(value)">
+                        <output for="box-opacity" id="box-opacity-value">0</output>
+                        <label for="box-opacity">Box</label>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-2">
+                    <form id="page-changer" action="" method="post">
+                        <select onchange="location = this.options[this.selectedIndex].value;">
+                            <option>Change page</option>
+                            <option value="grid.html">Grid</option>
+                            <option value="header.html">Header</option>
+                            <option value="typography.html">Typography</option>
+                            <option value="promos-top.html">Promo - Headline top</option>
+                            <option value="promos-top-no-gutter.html">Promo - Headline top - No gutter</option>
+                            <option value="promos-bottom.html">Promo - Headline bottom</option>
+                            <option value="promos-bottom-no-gutter.html">Promo - Headline bottom - No gutter</option>
+                            <option value="spacing.html">Spacing</option>
+                        </select>​
+                    </form>
+                    <div class="grid-toggle">
+                        <form>
+                            <label for="grid-toggle">Show Grid</label>
+                            <input type="checkbox" id="grid-toggle">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- HEADER ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <div class="header-container">
+            <div class="header-copy">
+                <p class="intro-h1">Start the Conversation</p>
+                <hr class="dash"></hr>
+                <p class="intro-body">The J.P. Morgan Private Bank brings indispensible intelligence and personalized insights to individuals and families across the globe.</p>
+            </div>
+            <div class="tab">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-4">
+                            <p class="anchor-h1">Expert Intelligence</p>
+                            <hr class="dash"></hr>
+                            <p class="anchor-body">Get financial insights, news, and cultural perspectives that matter</p>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <p class="anchor-h1">Your Objectives</p>
+                            <hr class="dash"></hr>
+                            <p class="anchor-body">View innovative strategies to grow, preserve and manage your wealth</p>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <p class="anchor-h1">Our Capabilities</p>
+                            <hr class="dash"></hr>
+                            <p class="anchor-body">Discover our integrated planning, investing, credit and banking solutions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-box"></div>
+            <div class="background-gradient"></div>
+            <div class="background-tint"></div>
+            <div class="header-image"> </div>
+        </div>
+        <div class="module">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-lg-10 center-block">
+                        <p class="h1">Investors’ Handbook: Technology</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 center-block">
+                        <p class="h1-body">From smartphones to big data, tech stocks are driving markets across the world. Here’s what you need to know to stay ahead of the game.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
+    <script src='js/header.js'></script>
+    <script src='js/grid.js'></script>
+    <script>
+    $(".col")
+        .each(function() {
+            $(this).html("<div class=\'placeholder-box\'>" + $(this).attr("class") + "</div>");
+        });
+    </script>
+    <!-- Google Analytics -->
+    <script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-62923541-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+</body>
+
+</html>
