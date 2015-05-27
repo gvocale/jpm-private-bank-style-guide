@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0">
-    <title>Style Sheet</title>
+    <title>Style Guide</title>
     <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
     <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css'>
     <link rel="stylesheet" href="css/style.css">
@@ -52,7 +52,8 @@
                     <form id="page-changer" action="" method="post">
                         <select onchange="location = this.options[this.selectedIndex].value;">
                             <option>Change page</option>
-                            <option value="color-palette.html">Color Palette</option> <option value="grid.html">Grid</option>
+                            <option value="color-palette.html">Color Palette</option>
+                            <option value="grid.html">Grid</option>
                             <option value="header.html">Header</option>
                             <option value="typography.html">Typography</option>
                             <option value="promos-top.html">Promo - Headline top</option>
@@ -65,62 +66,58 @@
                 </div>
             </div>
         </div>
-        <!-- PAGE TITLE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                <!-- PAGE TITLE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
         <div class="container-fluid">
-            <div class="page-title">
-                <h1>Spacing</h1>
+            <div class="row margin">
+                <div class="col-xs-12">
+                    <p class="style-guide-h1">Color Palette</p>
+                </div>
             </div>
         </div>
-        <!-- TYPE style-guide-h3S ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <!-- COLOR PALETTE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
         <div class="container-fluid">
-            <div class="row equal border-top">
+            <div class="row">
                 <div class="col-xs-12">
-                    <p class="style-guide-h3">Between Major Components</p>
+                    <div class="rule"></div>
                 </div>
-                <div class="col-xs-12 no-border">
-                    <div class="spacing">
-                        <p class="visible-xs breakpoint">60px</p>
-                        <p class="visible-sm visible-md">80px</p>
-                        <p class="visible-lg breakpoint">100px</p>
-                    </div>
-                    <div class="component-wrapper">
-                        <div class="component"></div>
-                    </div>
-                    <div class="spacing">
-                        <p class="visible-xs breakpoint">60px</p>
-                        <p class="visible-sm visible-md">80px</p>
-                        <p class="visible-lg breakpoint">100px</p>
-                    </div>
-                    <div class="component-wrapper">
-                        <div class="component"></div>
-                    </div>
-                    <div class="spacing">
-                        <p class="visible-xs breakpoint">60px</p>
-                        <p class="visible-sm visible-md">80px</p>
-                        <p class="visible-lg breakpoint">100px</p>
-                    </div>
-                    <hr class="long">
-                    <div class="spacing">
-                        <p class="visible-xs breakpoint">60px</p>
-                        <p class="visible-sm visible-md">80px</p>
-                        <p class="visible-lg breakpoint">100px</p>
-                    </div>
-                    <div class="component-wrapper">
-                        <div class="component"></div>
-                    </div>
-                    <div class="spacing">
-                        <p class="visible-xs breakpoint">60px</p>
-                        <p class="visible-sm visible-md">80px</p>
-                        <p class="visible-lg breakpoint">100px</p>
-                    </div>
+                <div class="col-xs-12 col-lg-4">
+                    <p class="style-guide-h3">Primary Color</p>
                 </div>
+                <div class="col-xs-3 col-sm-2 col-lg-1 color JPMBrown">$JPMBrown</div>
+            </div>
+            <div class="row margin-top">
+                <div class="col-xs-12">
+                    <div class="rule"></div>
+                </div>
+                <div class="col-xs-12 col-lg-4">
+                    <p class="style-guide-h3">Secondary Color</p>
+                </div>
+                <div class="col-xs-3 col-sm-2 col-lg-1 color WarmGray1-transparent">$WarmGray0</div>
+                <div class="col-xs-3 col-sm-2 col-lg-1 color WarmGray1">$WarmGray1</div>
+                <div class="col-xs-3 col-sm-2 col-lg-1 color WarmGray4">$WarmGray4</div>
+                <div class="col-xs-3 col-sm-2 col-lg-1 color WarmGray8">$WarmGray8</div>
+            </div>
+            <div class="row margin-top">
+                <div class="col-xs-12">
+                    <div class="rule"></div>
+                </div>
+                <div class="col-xs-12 col-lg-4">
+                    <p class="style-guide-h3">Infographic Color</p>
+                </div>
+                <div class="col-xs-3 col-sm-2 col-lg-1 color Purple">$Purple</div>
+                <div class="col-xs-3 col-sm-2 col-lg-1 color DarkBlue">$DarkBlue</div>
+                <div class="col-xs-3 col-sm-2 col-lg-1 color Blue">$Blue</div>
+                <div class="col-xs-3 col-sm-2 col-lg-1 color Teal">$Teal</div>
+                <div class="col-xs-3 col-sm-2 col-lg-1 color Green">$Green</div>
+                <div class="col-xs-3 col-sm-2 col-lg-1 color Yellow">$Yellow</div>
+                <div class="col-xs-3 col-sm-2 col-lg-1 color Orange">$Orange</div>
             </div>
         </div>
     </div>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
     <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
-        <script src='js/script.js'></script>
+    <script src='js/script.js'></script>
     <script>
     $(".col")
         .each(function() {

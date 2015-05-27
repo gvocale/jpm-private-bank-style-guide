@@ -35,4 +35,11 @@ $(document).ready(function() {
         $(".header-container").toggleClass("article", this.unchecked);
     });
 
+    // Toggle for grid
+
+    $("#grid-toggle").change(function() {
+        $(".grid-overlay").toggleClass("hidden", this.unchecked);
+    });
+
+
 });

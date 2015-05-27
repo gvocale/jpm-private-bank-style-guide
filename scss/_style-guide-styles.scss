@@ -3,7 +3,7 @@ body {
     color: $JPMBrown;
     margin-bottom: 120px;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
 }
 /*equal, .equal > div[class*='col-'] {  
     display: -webkit-box;
@@ -22,7 +22,7 @@ body {
 }
 
 // TYPOGRAPHY
-.spec-style {
+.style-guide-h3 {
     font-family: "Amplitude-Medium";
 }
 
@@ -33,14 +33,14 @@ p.spec-font p.spec-detail {
     color: $brown-medium;
 }
 
-h1 {
+.style-guide-h1 {
     font-size: 55px;
-    line-height: 82px;
+    line-height: 1.25;
 }
 
-h2 {
+.style-guide-h2 {
     font-size: 26px;
-    line-height: 39px;
+    line-height: 1.25;
 }
 
 div.section-title {
@@ -60,7 +60,8 @@ div.section-title {
     margin-right: 20px;
 }
 
-.breakpoint-detail, label {
+.breakpoint-detail,
+label {
     font-family: $regular;
     font-size: 13px;
     margin-right: 10px
@@ -75,16 +76,6 @@ div.section-title {
     font-family: Helvetica, sans-serif;
     font-size: 16px;
 }
-
-.show-grid [class^="col-"] {
-    /*margin-left: 2%;*/
-    
-    border-top: 1px solid #efefef;
-    padding-top: 10px;
-}
-/*.col {
-    margin-left: 2vw;
-}*/
 
 .col:first-child {
     margin-left: 0%;
@@ -179,17 +170,6 @@ li.primary-inverted {
     padding: 10px;
 }
 
-.show-grid [class^="col-"] {
-    border-top: 1px solid $JPMBrown;
-}
-
-.show-grid > .col-md-6 {
-    border-top: none;
-    @media (min-width: 992px) {
-        border-top: 1px solid $JPMBrown;
-    }
-}
-
 .col-xs-6 > p,
 .col-xs-4 > p {
     margin-bottom: 5px;
@@ -200,12 +180,90 @@ li.primary-inverted {
     color: red;
 }
 
-.row {
-    margin: 0 0 5vh 0;
-}
-
 .breakpoint-bar .device {
     line-height: 1;
 }
 
+// COLORS
+.color {
+    background-clip: content-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+}
 
+.color:before {
+    content: '';
+    padding: 50% 0;
+    /* vertical value as  100% equals width */
+    
+    display: inline-block;
+    vertical-align: middle;
+    /* or whatever */
+}
+
+.color.White {
+    background-color: $White;
+    border: 1px solid $WarmGray1-transparent;
+}
+
+.color.JPMBrown {
+    background-color: $JPMBrown;
+    color: $White;
+}
+
+.Purple {
+    color: $White;
+    background-color: $Purple;
+}
+
+.DarkBlue {
+    color: $White;
+    background-color: $DarkBlue;
+}
+
+.Blue {
+    color: $White;
+    background-color: $Blue;
+}
+
+.Teal {
+    color: $White;
+    background-color: $Teal;
+}
+
+.Green {
+    color: $White;
+    background-color: $Green;
+}
+
+.Yellow {
+    background-color: $Yellow;
+}
+
+.Orange {
+    color: $White;
+    background-color: $Orange;
+}
+
+.WarmGray1 {
+    background-color: $WarmGray1;
+}
+
+.WarmGray4 {
+    background-color: $WarmGray4;
+}
+
+.WarmGray8 {
+    background-color: $WarmGray8;
+}
+
+.WarmGray1-transparent {
+    background-color: $WarmGray1-transparent;
+}
+
+// RULE
+.rule {
+    border-top: 1px solid $JPMBrown;
+}

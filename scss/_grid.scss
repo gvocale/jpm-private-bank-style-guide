@@ -1,3 +1,19 @@
+.row {
+    margin: 0;
+}
+
+.margin-bottom {
+    margin-bottom: 5vh;
+}
+
+.margin-top {
+    margin-top: 5vh;
+}
+
+.margin {
+    margin: 5vh 0;
+}
+
 .col-xs-1,
 .col-sm-1,
 .col-md-1,
@@ -46,8 +62,7 @@
 .col-sm-12,
 .col-md-12,
 .col-lg-12 {
-    padding-right: 1.36428%;
-    padding-left: 1.36428%;
+    padding: 1.36428%;
 }
 
 .container-fluid {
@@ -77,15 +92,17 @@
     background-color: rgba(360, 100, 100, 0.1);
     height: 100%;
     background-clip: content-box;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
-
+.breakpoint-bar [class^="col-"] {
+    padding-top: 0;
+    padding-bottom: 0;
+}
 
 .placeholder-box {
-    padding-top: 1em;
-    padding-bottom: 1em;
-    padding-left: 1vw;
-    padding-right: 1vw;
+    padding: 3em 0.5em;
     background-color: #eee;
     border: 1px solid #ddd;
     background-color: #d4d0d9;
@@ -96,6 +113,9 @@
     text-overflow: ellipsis;
     overflow: hidden;
     background: #c9f7fb;
+    font-size: 13px;
+    text-align: center;
+    
 }
 
 .breakpoint-bar {
@@ -144,6 +164,6 @@ select {
 
 @media (min-width: 768px) {
     select {
-    width: auto;
+        width: auto;
     }
 }

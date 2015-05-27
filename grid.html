@@ -34,7 +34,7 @@
         </div>
         <div class="breakpoint-bar">
             <div class="container-fluid">
-                <div class="col-xs-8 col-md-6">
+                <div class="col-xs-8 col-xs-md-6">
                     <p>
                         <span class="visible-xs"><span class="breakpoint-name">Extra Small</span><span class="symbol"><</span><span class="breakpoint-detail">767px</span><span class="breakpoint-detail">Margin 5%</span></span>
                         <span class="visible-sm"><span class="breakpoint-name">Small</span><span class="symbol">≥</span><span class="breakpoint-detail">768px</span><span class="breakpoint-detail">Margin 5%</span></span>
@@ -42,16 +42,17 @@
                         <span class="visible-lg"><span class="breakpoint-name">Large</span><span class="symbol">≥</span><span class="breakpoint-detail">1200px</span><span class="breakpoint-detail">Margin 5%</span><span class="breakpoint-detail">Max width 1600px</span></span>
                     </p>
                 </div>
-                <div class="col-xs-4 col-md-6">
+                <div class="col-xs-4 col-xs-md-6">
                     <form id="toggle">
                         <label for="grid-toggle">Show Grid</label>
                         <input type="checkbox" id="grid-toggle">
                     </form>
                 </div>
-                <div class="col-xs-12 col-md-4">
+                <div class="col-xs-12 col-xs-md-4">
                     <form id="page-changer" action="" method="post">
                         <select onchange="location = this.options[this.selectedIndex].value;">
                             <option>Change page</option>
+                            <option value="color-palette.html">Color Palette</option>
                             <option value="grid.html">Grid</option>
                             <option value="header.html">Header</option>
                             <option value="typography.html">Typography</option>
@@ -67,152 +68,166 @@
         </div>
         <!-- PAGE TITLE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
         <div class="container-fluid">
-            <div class="page-title">
-                <h1>Grid</h1>
-                <h2>12 Columns Fluid</h2>
+            <div class="row margin">
+                <div class="col-xs-12">
+                    <p class="style-guide-h1">Grid</p>
+                </div>
             </div>
         </div>
         <!-- GRID ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
         <div class="container-fluid">
             <div class="row">
-                <div class="col col1"></div>
-                <div class="col col1"></div>
-                <div class="col col1"></div>
-                <div class="col col1"></div>
-                <div class="col col1"></div>
-                <div class="col col1"></div>
-                <div class="col col1"></div>
-                <div class="col col1"></div>
-                <div class="col col1"></div>
-                <div class="col col1"></div>
-                <div class="col col1"></div>
-                <div class="col col1"></div>
+                <div class="col-xs-12">
+                    <p class="style-guide-h2">12 Column Fluid</p>
+                </div>
             </div>
             <div class="row">
-                <div class="col col12"></div>
+                <div class="col-xs-1 col"></div>
+                <div class="col-xs-1 col"></div>
+                <div class="col-xs-1 col"></div>
+                <div class="col-xs-1 col"></div>
+                <div class="col-xs-1 col"></div>
+                <div class="col-xs-1 col"></div>
+                <div class="col-xs-1 col"></div>
+                <div class="col-xs-1 col"></div>
+                <div class="col-xs-1 col"></div>
+                <div class="col-xs-1 col"></div>
+                <div class="col-xs-1 col"></div>
+                <div class="col-xs-1 col"></div>
             </div>
             <div class="row">
-                <div class="col col1 hidden-xs"></div>
-                <div class="col col11 hidden-xs"></div>
+                <div class="col col-xs-12"></div>
             </div>
             <div class="row">
-                <div class="col col11 hidden-xs"></div>
-                <div class="col col1 hidden-xs"></div>
+                <div class="col col-xs-1 hidden-xs"></div>
+                <div class="col col-xs-11 hidden-xs"></div>
             </div>
             <div class="row">
-                <div class="col col2"></div>
-                <div class="col col10"></div>
+                <div class="col col-xs-11 hidden-xs"></div>
+                <div class="col col-xs-1 hidden-xs"></div>
             </div>
             <div class="row">
-                <div class="col col10"></div>
-                <div class="col col2"></div>
+                <div class="col col-xs-2"></div>
+                <div class="col col-xs-10"></div>
             </div>
             <div class="row">
-                <div class="col col3"></div>
-                <div class="col col9"></div>
+                <div class="col col-xs-10"></div>
+                <div class="col col-xs-2"></div>
             </div>
             <div class="row">
-                <div class="col col9"></div>
-                <div class="col col3"></div>
+                <div class="col col-xs-3"></div>
+                <div class="col col-xs-9"></div>
             </div>
             <div class="row">
-                <div class="col col4"></div>
-                <div class="col col8"></div>
+                <div class="col col-xs-9"></div>
+                <div class="col col-xs-3"></div>
             </div>
             <div class="row">
-                <div class="col col8"></div>
-                <div class="col col4"></div>
+                <div class="col col-xs-4"></div>
+                <div class="col col-xs-8"></div>
             </div>
             <div class="row">
-                <div class="col col5"></div>
-                <div class="col col7"></div>
+                <div class="col col-xs-8"></div>
+                <div class="col col-xs-4"></div>
             </div>
             <div class="row">
-                <div class="col col7"></div>
-                <div class="col col5"></div>
+                <div class="col col-xs-5"></div>
+                <div class="col col-xs-7"></div>
             </div>
             <div class="row">
-                <div class="col col6"></div>
-                <div class="col col6"></div>
+                <div class="col col-xs-7"></div>
+                <div class="col col-xs-5"></div>
             </div>
             <div class="row">
-                <div class="col col3 col-xs-3 col-sm-6 col-md-9 col-lg-12"></div>
-            </div>
-            <h2>Viewport-Dependent Columns</h2>
-            <div class="row">
-                <div class="col col-xs-3 col-sm-6 col-md-9"></div>
-                <div class="col col-xs-9 col-sm-6 col-md-3"></div>
+                <div class="col col-xs-6"></div>
+                <div class="col col-xs-6"></div>
             </div>
             <div class="row">
-                <div class="col col-xs-8 col-sm-6 col-md-4 col-lg-2"></div>
-                <div class="col col-xs-4 col-sm-6 col-md-8 col-lg-10"></div>
+                <div class="col col-xs-3 col-xs-3 col-xs-sm-6 col-xs-md-9 col-xs-lg-12"></div>
             </div>
-            <h2>Push, Pull, and Offset</h2>
-            <div class="row">
-                <div class="col col6 colpush6"></div>
-            </div>
-            <div class="row">
-                <div class="col col-xs-12 col-sm-9 col-sm-push-3 col-md-6 col-md-push-6 col-lg-3 col-lg-push-9"></div>
+            <div class="row margin-top">
+                <div class="col-xs-12">
+                    <p class="style-guide-h2">Viewport-Dependent col-xs-umns</p>
+                </div>
             </div>
             <div class="row">
-                <div class="col col4"></div>
-                <div class="col col4 colpush1"></div>
-                <div class="col col3"></div>
+                <div class="col col-xs-3 col-xs-sm-6 col-xs-md-9"></div>
+                <div class="col col-xs-9 col-xs-sm-6 col-xs-md-3"></div>
             </div>
             <div class="row">
-                <div class="col col4"></div>
-                <div class="col col4 coloffset1"></div>
-                <div class="col col3"></div>
+                <div class="col col-xs-8 col-xs-sm-6 col-xs-md-4 col-xs-lg-2"></div>
+                <div class="col col-xs-4 col-xs-sm-6 col-xs-md-8 col-xs-lg-10"></div>
+            </div>
+            <div class="row margin-top">
+                <div class="col-xs-12">
+                    <p class="style-guide-h2">Push, Pull, and Offset</p>
+                </div>
             </div>
             <div class="row">
-                <div class="col col-sm-8 col-xs-12"></div>
-                <div class="col col-sm-3 col-sm-push-1 col-xs-12 col-xs-push-0"></div>
+                <div class="col col-xs-6 col-xs-push6"></div>
             </div>
             <div class="row">
-                <div class="col col6"></div>
-                <div class="col col3 colpull3"></div>
+                <div class="col col-xs-12 col-xs-sm-9 col-xs-sm-push-3 col-xs-md-6 col-xs-md-push-6 col-xs-lg-3 col-xs-lg-push-9"></div>
             </div>
             <div class="row">
-                <div class="col col6"></div>
-                <div class="col col5 coloffset1"></div>
+                <div class="col col-xs-4"></div>
+                <div class="col col-xs-4 col-xs-push1"></div>
+                <div class="col col-xs-3"></div>
             </div>
             <div class="row">
-                <div class="col col1"></div>
-                <div class="col col9 coloffset2"></div>
+                <div class="col col-xs-4"></div>
+                <div class="col col-xs-4 col-xs-offset1"></div>
+                <div class="col col-xs-3"></div>
             </div>
             <div class="row">
-                <div class="col col2"></div>
-                <div class="col col7 coloffset3"></div>
+                <div class="col col-xs-sm-8 col-xs-12"></div>
+                <div class="col col-xs-sm-3 col-xs-sm-push-1 col-xs-12 col-xs-push-0"></div>
             </div>
             <div class="row">
-                <div class="col col4"></div>
-                <div class="col col4 coloffset4"></div>
+                <div class="col col-xs-6"></div>
+                <div class="col col-xs-3 col-xs-pull3"></div>
             </div>
             <div class="row">
-                <div class="col col5"></div>
-                <div class="col col2 coloffset5"></div>
+                <div class="col col-xs-6"></div>
+                <div class="col col-xs-5 col-xs-offset1"></div>
             </div>
             <div class="row">
-                <div class="col col1"></div>
-                <div class="col col1"></div>
-                <div class="col col1"></div>
-                <div class="col col1"></div>
-                <div class="col col1"></div>
-                <div class="col col1"></div>
-                <div class="col col1"></div>
-                <div class="col col1"></div>
-                <div class="col col1"></div>
-                <div class="col col1"></div>
-                <div class="col col1"></div>
-                <div class="col col1"></div>
+                <div class="col col-xs-1"></div>
+                <div class="col col-xs-9 col-xs-offset2"></div>
             </div>
             <div class="row">
-                <div class="col col4 col-xs-8"></div>
-                <div class="col col8 col-xs-4"></div>
+                <div class="col col-xs-2"></div>
+                <div class="col col-xs-7 col-xs-offset3"></div>
             </div>
             <div class="row">
-                <div class="col col4 col-xs-12"></div>
-                <div class="col col8 col-xs-12"></div>
+                <div class="col col-xs-4"></div>
+                <div class="col col-xs-4 col-xs-offset4"></div>
+            </div>
+            <div class="row">
+                <div class="col col-xs-5"></div>
+                <div class="col col-xs-2 col-xs-offset5"></div>
+            </div>
+            <div class="row">
+                <div class="col col-xs-1"></div>
+                <div class="col col-xs-1"></div>
+                <div class="col col-xs-1"></div>
+                <div class="col col-xs-1"></div>
+                <div class="col col-xs-1"></div>
+                <div class="col col-xs-1"></div>
+                <div class="col col-xs-1"></div>
+                <div class="col col-xs-1"></div>
+                <div class="col col-xs-1"></div>
+                <div class="col col-xs-1"></div>
+                <div class="col col-xs-1"></div>
+                <div class="col col-xs-1"></div>
+            </div>
+            <div class="row">
+                <div class="col col-xs-4 col-xs-8"></div>
+                <div class="col col-xs-8 col-xs-4"></div>
+            </div>
+            <div class="row">
+                <div class="col col-xs-4 col-xs-12"></div>
+                <div class="col col-xs-8 col-xs-12"></div>
             </div>
         </div>
     </div>
@@ -220,7 +235,7 @@
     <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
     <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
-        <script src='js/grid.js'></script>
+    <script src='js/script.js'></script>
     <script>
     $(".col")
         .each(function() {

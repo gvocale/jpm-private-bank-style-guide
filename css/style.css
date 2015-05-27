@@ -701,7 +701,7 @@ body {
   color: #310008;
   margin-bottom: 120px;
   font-size: 16px;
-  line-height: 24px; }
+  line-height: 1.5; }
 
 /*equal, .equal > div[class*='col-'] {  
     display: -webkit-box;
@@ -716,7 +716,7 @@ body {
   margin-top: 10vh;
   margin-bottom: 10vh; }
 
-.spec-style {
+.style-guide-h3 {
   font-family: "Amplitude-Medium"; }
 
 p.spec-size,
@@ -725,13 +725,13 @@ p.spec-tracking,
 p.spec-font p.spec-detail {
   color: #8c8279; }
 
-h1 {
+.style-guide-h1 {
   font-size: 55px;
-  line-height: 82px; }
+  line-height: 1.25; }
 
-h2 {
+.style-guide-h2 {
   font-size: 26px;
-  line-height: 39px; }
+  line-height: 1.25; }
 
 div.section-title {
   margin-bottom: 10vh; }
@@ -747,7 +747,8 @@ div.section-title {
   line-height: 24px;
   margin-right: 20px; }
 
-.breakpoint-detail, label {
+.breakpoint-detail,
+label {
   font-family: "Amplitude-Regular";
   font-size: 13px;
   margin-right: 10px; }
@@ -760,14 +761,6 @@ div.section-title {
   font-family: Helvetica, sans-serif;
   font-size: 16px; }
 
-.show-grid [class^="col-"] {
-  /*margin-left: 2%;*/
-  border-top: 1px solid #efefef;
-  padding-top: 10px; }
-
-/*.col {
-    margin-left: 2vw;
-}*/
 .col:first-child {
   margin-left: 0%; }
 
@@ -857,15 +850,6 @@ nav > ul li:hover ul {
 li.primary-inverted {
   padding: 10px; }
 
-.show-grid [class^="col-"] {
-  border-top: 1px solid #310008; }
-
-.show-grid > .col-md-6 {
-  border-top: none; }
-  @media (min-width: 992px) {
-    .show-grid > .col-md-6 {
-      border-top: 1px solid #310008; } }
-
 .col-xs-6 > p,
 .col-xs-4 > p {
   margin-bottom: 5px;
@@ -874,11 +858,82 @@ li.primary-inverted {
 .breakpoint {
   color: red; }
 
-.row {
-  margin: 0 0 5vh 0; }
-
 .breakpoint-bar .device {
   line-height: 1; }
+
+.color {
+  background-clip: content-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 13px; }
+
+.color:before {
+  content: '';
+  padding: 50% 0;
+  /* vertical value as  100% equals width */
+  display: inline-block;
+  vertical-align: middle;
+  /* or whatever */ }
+
+.color.White {
+  background-color: #FFFFFF;
+  border: 1px solid #ebe8e5; }
+
+.color.JPMBrown {
+  background-color: #310008;
+  color: #FFFFFF; }
+
+.Purple {
+  color: #FFFFFF;
+  background-color: #A73A64; }
+
+.DarkBlue {
+  color: #FFFFFF;
+  background-color: #00587c; }
+
+.Blue {
+  color: #FFFFFF;
+  background-color: #00a3e0; }
+
+.Teal {
+  color: #FFFFFF;
+  background-color: #2cd5c4; }
+
+.Green {
+  color: #FFFFFF;
+  background-color: #43b02a; }
+
+.Yellow {
+  background-color: #fedd00; }
+
+.Orange {
+  color: #FFFFFF;
+  background-color: #ff8200; }
+
+.WarmGray1 {
+  background-color: #d7d2cb; }
+
+.WarmGray4 {
+  background-color: #b6ada5; }
+
+.WarmGray8 {
+  background-color: #8c8279; }
+
+.WarmGray1-transparent {
+  background-color: #ebe8e5; }
+
+.rule {
+  border-top: 1px solid #310008; }
 
 .container-fluid.griddy {
   border: solid 1px red; }
@@ -1810,6 +1865,18 @@ li.primary-inverted {
   cursor: pointer;
   cursor: hand; }
 
+.row {
+  margin: 0; }
+
+.margin-bottom {
+  margin-bottom: 5vh; }
+
+.margin-top {
+  margin-top: 5vh; }
+
+.margin {
+  margin: 5vh 0; }
+
 .col-xs-1,
 .col-sm-1,
 .col-md-1,
@@ -1858,8 +1925,7 @@ li.primary-inverted {
 .col-sm-12,
 .col-md-12,
 .col-lg-12 {
-  padding-right: 1.36428%;
-  padding-left: 1.36428%; }
+  padding: 1.36428%; }
 
 .container-fluid {
   padding: 0;
@@ -1886,13 +1952,16 @@ li.primary-inverted {
 .grid-overlay [class^="col-"] {
   background-color: rgba(255, 100, 100, 0.1);
   height: 100%;
-  background-clip: content-box; }
+  background-clip: content-box;
+  padding-top: 0;
+  padding-bottom: 0; }
+
+.breakpoint-bar [class^="col-"] {
+  padding-top: 0;
+  padding-bottom: 0; }
 
 .placeholder-box {
-  padding-top: 1em;
-  padding-bottom: 1em;
-  padding-left: 1vw;
-  padding-right: 1vw;
+  padding: 3em 0.5em;
   background-color: #eee;
   border: 1px solid #ddd;
   background-color: #d4d0d9;
@@ -1902,7 +1971,9 @@ li.primary-inverted {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  background: #c9f7fb; }
+  background: #c9f7fb;
+  font-size: 13px;
+  text-align: center; }
 
 .breakpoint-bar {
   width: 100%;
@@ -1986,7 +2057,7 @@ select {
   background-color: #d7d2cb;
   opacity: 0.4; }
 
-.show-grid .no-border {
+.border-top .no-border {
   border-top: 0; }
 
 .spacing {
