@@ -5,12 +5,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
 }
-/*equal, .equal > div[class*='col-'] {  
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: flex;
-    flex:1 0 auto;
-}*/
+
 
 .container-fluid.breakpoint-bar {
     padding: 10px 0 10px 0;
@@ -20,6 +15,12 @@ body {
     margin-top: 10vh;
     margin-bottom: 10vh;
 }
+
+
+label {
+    margin: 0;
+}
+
 
 // TYPOGRAPHY
 .style-guide-h3 {

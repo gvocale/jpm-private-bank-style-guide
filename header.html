@@ -34,57 +34,26 @@
         </div>
         <div class="breakpoint-bar">
             <div class="container-fluid">
-                <div class="col-xs-12 col-md-4">
-                    <p><span class="visible-xs"><span class="device">Extra Small</span><span class="pixel-size">< 767px</span></span>
-                        <span class="visible-sm"><span class="device">Small</span><span class="pixel-size">≥ 768px</span></span>
-                        <span class="visible-md"><span class="device">Medium</span><span class="pixel-size">≥ 992px</span></span>
-                        <span class="visible-lg"><span class="device">Large</span><span class="pixel-size">≥ 1200px</span></span>
-                        <span class="visible-xs visible-sm visible-md">Margin 5%</span></span>
-                        <span class="visible-lg">Margin 5%<span><span class="toggle-label"> - Max width 1600px</span>
+                <div class="col-xs-8 col-md-6">
+                    <p>
+                        <span class="visible-xs"><span class="breakpoint-name">Extra Small</span><span class="symbol"><</span><span class="breakpoint-detail">767px</span><span class="breakpoint-detail">Margin 5%</span></span>
+                        <span class="visible-sm"><span class="breakpoint-name">Small</span><span class="symbol">≥</span><span class="breakpoint-detail">768px</span><span class="breakpoint-detail">Margin 5%</span></span>
+                        <span class="visible-md"><span class="breakpoint-name">Medium</span><span class="symbol">≥</span><span class="breakpoint-detail">992px</span><span class="breakpoint-detail">Margin 5%</span></span>
+                        <span class="visible-lg"><span class="breakpoint-name">Large</span><span class="symbol">≥</span><span class="breakpoint-detail">1200px</span><span class="breakpoint-detail">Margin 5%</span><span class="breakpoint-detail">Max width 1600px</span></span>
                     </p>
                 </div>
-                <div class="col-xs-12 col-md-2">
-                    <form>
-                        <div class="background-image">
-                            <select name="background-image" id="background-image" onchange="showValue(this.value)" class="">
-                                <option value="cityscape" data-bg="images/header_cityscape.jpg">Cityscape</option>
-                                <option value="landscape" data-bg="images/header_landscape.jpg">Landscape</option>
-                                <option value="abstract" data-bg="images/header_abstract.jpg">Abstract</option>
-                            </select>
-                            <label for="background-image">Photo</label>
-                        </div>
-                        <div class="inverted-color">
-                            <input checked type="checkbox" id="inverted-color">
-                            <label for="inverted-color">Reverse text color</label>
-                        </div>
-                        <div class="switch-anchor">
-                            <input checked type="checkbox" id="switch-anchor">
-                            <label for="inverted-color">Anchor</label>
-                        </div>
+                <div class="col-xs-4 col-md-6">
+                    <form id="toggle">
+                        <label for="grid-toggle">Show Grid</label>
+                        <input type="checkbox" id="grid-toggle">
                     </form>
                 </div>
                 <div class="col-xs-12 col-md-4">
-                    <div class="tint">
-                        <input type="range" id="opacity-range" min="0" value="0" max="0.8" step="0.1" oninput="outputUpdate(value)">
-                        <output for="opacity" id="opacity-value">0</output>
-                        <label for="opacity">Tint</label>
-                    </div>
-                    <div class="gradient">
-                        <input type="range" id="gradient-range" min="0" value="0" max="0.5" step="0.1" oninput="outputUpdate(value)">
-                        <output for="gradient" id="gradient-value">0</output>
-                        <label for="gradient">Bottom Gradient</label>
-                    </div>
-                    <div class="box-opacity">
-                        <input type="range" id="box-opacity-range" min="0" value="0" max="1" step="0.1" oninput="outputUpdate(value)">
-                        <output for="box-opacity" id="box-opacity-value">0</output>
-                        <label for="box-opacity">Box</label>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-md-2">
                     <form id="page-changer" action="" method="post">
                         <select onchange="location = this.options[this.selectedIndex].value;">
                             <option>Change page</option>
-                            <option value="color-palette.html">Color Palette</option> <option value="grid.html">Grid</option>
+                            <option value="color-palette.html">Color Palette</option>
+                            <option value="grid.html">Grid</option>
                             <option value="header.html">Header</option>
                             <option value="typography.html">Typography</option>
                             <option value="promos-top.html">Promo - Headline top</option>
@@ -94,12 +63,50 @@
                             <option value="spacing.html">Spacing</option>
                         </select>​
                     </form>
-                    <div class="grid-toggle">
-                        <form>
-                            <label for="grid-toggle">Show Grid</label>
-                            <input type="checkbox" id="grid-toggle">
-                        </form>
+                </div>
+            </div>
+        </div>
+        <!-- HEADER SETTINGS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <div class="header-controls breakpoint-bar">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-4 col-sm-2 background-image">
+                        <select name="background-image" id="background-image" onchange="showValue(this.value)" class="">
+                            <option value="cityscape" data-bg="images/header_cityscape.jpg">Cityscape</option>
+                            <option value="landscape" data-bg="images/header_landscape.jpg">Landscape</option>
+                            <option value="abstract" data-bg="images/header_abstract.jpg">Abstract</option>
+                        </select>
                     </div>
+                    <div class="col-xs-4 col-sm-2 inverted-color">
+                        <input checked type="checkbox" id="inverted-color">
+                        <label for="inverted-color">
+                            <span class="visible-xs visible-sm">Reverse text</span>
+                            <span class="visible-md visible-lg">Reverse text color</span>
+                        </label>
+                    </div>
+                    <div class="col-xs-4 col-sm-2 switch-anchor">
+                        <input checked type="checkbox" id="switch-anchor">
+                        <label for="inverted-color">Anchor</label>
+                    </div>
+                    <div class="col-xs-4 col-sm-2 tint">
+                        <input type="range" id="tint-range" min="0.0" value="0.0" max="0.8" step="0.1" oninput="outputUpdate(value)">
+                        <output for="tint" id="tint-value">0</output>
+                        <label for="tint">Tint</label>
+                    </div>
+                    <div class="col-xs-4 col-sm-2 gradient">
+                        <input type="range" id="gradient-range" min="0.0" value="0.0" max="0.5" step="0.1" oninput="outputUpdate(value)">
+                        <output for="gradient" id="gradient-value">0</output>
+                        <label for="gradient">
+                            <span class="visible-xs visible-sm">Gradient</span>
+                            <span class="visible-md visible-lg">Bottom Gradient</span>
+                        </label>
+                    </div>
+                    <div class="col-xs-4 col-sm-2 box-opacity">
+                        <input type="range" id="box-opacity-range" min="0.0" value="0.0" max="1.0" step="0.1" oninput="outputUpdate(value)">
+                        <output for="box-opacity" id="box-opacity-value">0</output>
+                        <label for="box-opacity">Box</label>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -110,7 +117,7 @@
                 <hr class="dash"></hr>
                 <p class="intro-body">The J.P. Morgan Private Bank brings indispensible intelligence and personalized insights to individuals and families across the globe.</p>
             </div>
-            <div class="tab">
+            <div class="anchor">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-xs-12 col-sm-4">
