@@ -729,7 +729,8 @@ p.spec-font p.spec-detail {
   margin-bottom: 20px; }
 
 .style-guide-body {
-  font-size: 16px; }
+  font-size: 16px;
+  margin-bottom: 20px; }
 
 @media (min-width: 1200px) {
   .style-guide-body {
@@ -2488,7 +2489,8 @@ output {
   text-transform: uppercase;
   padding: 0 14px;
   margin: 0 auto;
-  position: relative; }
+  position: -webkit-sticky;
+  position: sticky; }
 
 @media (min-width: 768px) {
   .navigation {
