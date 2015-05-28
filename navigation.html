@@ -53,7 +53,7 @@
                         <select onchange="location = this.options[this.selectedIndex].value;">
                             <option>Change page</option>
                             <option value="index.html">- Home</option>
-<option value="color-palette.html">Color Palette</option>
+                            <option value="color-palette.html">Color Palette</option>
                             <option value="grid.html">Grid</option>
                             <option value="header.html">Header</option>
                             <option value="navigation.html">Navigation</option>
@@ -70,10 +70,14 @@
         </div>
         <!-- NAVIGATION ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
         <div class="navigation">
-            <button class="navigation-menu"><div class="navigation-hamburger"></div>Menu</button>
-            <button class="navigation-breadcrumbs">Your Objectives</button>
+            <ul class="navigation-left">
+                <li class="navigation-menu"><span class="navigation-hamburger"></span><span class="navigation-hide">Menu</span></li>
+                <li class="navigation-breadcrumbs navigation-hide">Your Objectives</li>
+            </ul>
             <img class="logo-xyz" src="images/logo.svg">
-            <button class="navigation-contact">Contact Us</button>
+            <ul class="navigation-right">
+                <li class="navigation-contact">Contact Us</li>
+            </ul>
         </div>
         <!-- PAGE TITLE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
         <div class="container-fluid">
