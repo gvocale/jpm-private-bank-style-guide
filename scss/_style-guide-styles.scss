@@ -6,7 +6,6 @@ body {
     line-height: 1.5;
 }
 
-
 .container-fluid.breakpoint-bar {
     padding: 10px 0 10px 0;
 }
@@ -16,17 +15,11 @@ body {
     margin-bottom: 10vh;
 }
 
-
 label {
     margin: 0;
 }
 
-
 // TYPOGRAPHY
-.style-guide-h3 {
-    font-family: "Amplitude-Medium";
-}
-
 p.spec-size,
 p.spec-height,
 p.spec-tracking,
@@ -37,11 +30,28 @@ p.spec-font p.spec-detail {
 .style-guide-h1 {
     font-size: 55px;
     line-height: 1.25;
+    margin: 1.36428% 0;
 }
 
 .style-guide-h2 {
     font-size: 26px;
     line-height: 1.25;
+    margin-bottom: 20px;
+}
+
+.style-guide-h3 {
+    font-family: "Amplitude-Medium";
+    margin-bottom: 20px;
+}
+
+.style-guide-body {
+    font-size: 16px;
+}
+
+@media (min-width: 1200px) {
+    .style-guide-body {
+        font-size: 21px;
+    }
 }
 
 div.section-title {
@@ -267,4 +277,11 @@ li.primary-inverted {
 // RULE
 .rule {
     border-top: 1px solid $JPMBrown;
+    margin: calc(1.36428% * 2) 0;
+}
+
+@media (min-width: 768px) {
+    .rule {
+        margin: 0;
+    }
 }

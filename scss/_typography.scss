@@ -1,3 +1,9 @@
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
 p {
     margin: 0;
 }
@@ -16,7 +22,6 @@ p {
     font-family: "Amplitude-Medium";
     src: url(../fonts/Amplitude-Medium.ttf);
 }
-
 
 .light {
     font-family: "Amplitude-Light";
@@ -110,21 +115,13 @@ p {
     letter-spacing: 0.15em;
     text-transform: uppercase;
     text-align: center;
+    transition: transform 0.2s ease;
 }
 
 .intro-cta:hover {
     cursor: pointer;
     cursor: hand;
-    animation: intro-cta-hover 0.3s linear 0.1s reverse;
-}
-
-@keyframes intro-cta-hover {
-    0% {
-        transform: translateY(0)
-    }
-    100% {
-        transform: translateY(10px)
-    }
+    transform: translateY(10px);
 }
 
 .intro-cta::after {
@@ -183,7 +180,6 @@ p {
     }
 }
 
-
 .anchor-body {
     font-family: "Amplitude-Regular";
     font-size: 13px;
@@ -198,7 +194,6 @@ p {
         line-height: 24px;
     }
 }
-
 
 .promo-eyebrow {
     font-family: "Amplitude-Medium";
@@ -498,6 +493,7 @@ hr.long {
     line-height: calc(55px * 1.25);
     font-family: "Amplitude-Light";
     text-align: center;
+    padding-bottom: 20px;
 }
 
 .h1-body {

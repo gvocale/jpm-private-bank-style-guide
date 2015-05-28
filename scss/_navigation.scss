@@ -1,0 +1,112 @@
+.navigation {
+    height: 60px;
+    background-color: $JPMBrown;
+    width: 100%;
+    position: sticky;
+    font-family: $regular;
+    color: $White;
+
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.navigation button {
+    display: inline-block;
+    margin: 0;
+    text-transform: uppercase;
+    cursor: pointer;
+    cursor: hand;
+        font-size: 13px;
+    letter-spacing: 0.15em;
+}
+
+.navigation button:hover {
+    cursor: pointer;
+    cursor: hand;
+}
+
+.logo-xyz {
+    height: 26px;
+    width: auto;
+    margin-top: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navigation-menu {
+    display: inline-block;
+    float: left;
+    margin: 0;
+    text-transform: uppercase;
+    transition:all 1s ease-in-out;
+}
+
+.navigation-hamburger {
+    width: 30px;
+    height: 2px;
+    margin-right: 10px;
+    background-color: $White;
+    position: relative;
+    display: inline-block;
+    vertical-align:middle;
+    top: -1px;    
+}
+
+.navigation-hamburger:before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: 0px;
+    width: 30px;
+    height: 2px;
+    background-color: $White;
+    transition: transform 0.2s ease;
+
+}
+
+.navigation-menu:hover .navigation-hamburger:before {
+    transform: translateY(-4px);
+}
+
+.navigation-hamburger:after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 0px;
+    width: 30px;
+    height: 2px;
+    background-color: $White;
+    transition: transform 0.2s ease;
+}
+
+.navigation-menu:hover .navigation-hamburger:after {
+    transform: translateY(4px);
+}
+
+.navigation-breadcrumbs {
+    color: $WarmGray4;
+    padding-left: 32px
+}
+
+.navigation-breadcrumbs:before {
+    content: "|";
+    position: relative;
+    left: -15px;
+}
+
+.navigation-contact {
+    display: inline-block;
+    float: right;
+    border: solid 2px $White;
+    padding: 5px 10px;
+}
+
+.navigation-contact:hover {
+    cursor: pointer;
+    cursor: hand;
+    background-color: $White;
+    color: $JPMBrown;
+}
