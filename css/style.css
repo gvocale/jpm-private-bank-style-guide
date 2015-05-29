@@ -1725,13 +1725,6 @@ select {
 .center-block {
   float: none !important; }
 
-.dash:before {
-  content: "";
-  background-color: #310008;
-  width: 45px;
-  height: 1px;
-  position: absolute; }
-
 .component-wrapper {
   width: 100%;
   max-height: 435px;
