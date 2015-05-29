@@ -47,5 +47,17 @@ $(document).ready(function() {
         $(".grid-overlay").toggleClass("hidden", this.unchecked);
     });
 
+    // Toggle headline-top in Promos
+    $("#checkbox-headline-top").change(function() {
+        $(".promo-1-column").toggleClass("headline-top", this.unchecked);
+        $(".promo-2-column").toggleClass("headline-top", this.unchecked);
+        $(".promo-3-column").toggleClass("headline-top", this.unchecked);
+    });
 
+    // Toggle gutter in Promos
+    $("#checkbox-gutter").change(function() {
+        $(".promo-1-column").toggleClass("no-gutter", this.unchecked);
+        $(".promo-2-column").toggleClass("no-gutter", this.unchecked);
+        $(".promo-3-column").toggleClass("no-gutter", this.unchecked);
+    });
 });

@@ -56,10 +56,7 @@
 <option value="color-palette.html">Color Palette</option> <option value="grid.html">Grid</option>
                             <option value="header.html">Header</option>
                             <option value="typography.html">Typography</option>
-                            <option value="promos-top.html">Promo - Headline top</option>
-                            <option value="promos-top-no-gutter.html">Promo - Headline top - No gutter</option>
-                            <option value="promos-bottom.html">Promo - Headline bottom</option>
-                            <option value="promos-bottom-no-gutter.html">Promo - Headline bottom - No gutter</option>
+<option value="promos.html">Promo</option>
                             <option value="spacing.html">Spacing</option>
                         </select>​
                     </form>
@@ -70,7 +67,7 @@
         <div class="container-fluid">
             <div class="page-title">
                 <h1>Promo Component</h1>
-                <h2>Headline Top - No Gutters</h2>
+                <h2>Headline Top - With Gutters</h2>
             </div>
         </div>
         <div class="container-fluid">
@@ -101,7 +98,7 @@
                 </div>
             </div>
             <!-- 2 COLUMN FLEXBOX ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-            <div class="flex-container-2">
+            <div class="flex-container-2 gutter">
                 <div class="flex-1">
                     <div class="copy-container">
                         <hr class="dash" width="45px">
@@ -142,7 +139,7 @@
                 </div>
             </div>
             <!-- 3 COLUMN FLEXBOX ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-            <div class="flex-container-3">
+            <div class="flex-container-3 gutter">
                 <div class="flex-1">
                     <div class="copy-container">
                         <hr class="dash" width="45px">

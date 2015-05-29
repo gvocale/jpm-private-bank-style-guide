@@ -257,7 +257,7 @@ a.cta {
     text-align: left;
 }
 
-hr.short {
+.short {
     border: solid $brown-dark;
     border-width: 1px 0 0;
     clear: both;
@@ -265,17 +265,13 @@ hr.short {
     height: 1px;
 }
 
-hr.dash {
-    border: solid $brown-dark;
-    border-width: 1px 0 0;
-    width: 45px;
+.dash {
+    background-color: $JPMBrown;
+    width: 100%;
     height: 1px;
-    margin-top: 0;
-    margin-bottom: 10px;
-    margin-left: 0;
 }
 
-hr.long {
+.long {
     border: solid $brown-very-light;
     border-width: 1px 0 0;
     clear: both;

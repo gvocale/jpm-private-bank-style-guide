@@ -26,4 +26,14 @@
     float: none !important
 }
 
+.dash {
 
+}
+
+.dash:before {
+    content: "";
+    background-color: $JPMBrown;
+    width: 45px;
+    height: 1px;
+    position: absolute;
+}
