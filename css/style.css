@@ -742,8 +742,7 @@ div.section-title {
   line-height: 24px;
   margin-right: 20px; }
 
-.breakpoint-detail,
-label {
+.breakpoint-detail {
   font-family: "Amplitude-Regular";
   font-size: 13px;
   margin-right: 10px; }
@@ -2117,10 +2116,31 @@ output {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; } }
-.navigation {
+nav {
+  position: relative;
+  margin: 0;
+  left: 0;
+  width: 100%;
   height: 44px;
+  background: none;
+  z-index: 1000;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: opacity 0.5s cubic-bezier(0.7, 0.01, 0.3, 1);
+          transition: opacity 0.5s cubic-bezier(0.7, 0.01, 0.3, 1); }
+
+@media (min-width: 768px) {
+  nav {
+    height: 56px; } }
+nav.open {
+  height: 100%;
+  position: fixed; }
+
+nav .bar {
   background-color: #310008;
   width: 100%;
+  height: 44px;
   font-family: "Amplitude-Regular";
   color: #FFFFFF;
   font-size: 13px;
@@ -2128,13 +2148,10 @@ output {
   text-transform: uppercase;
   padding: 0 14px;
   margin: 0 auto;
-  position: relative;
-  position: -webkit-sticky;
-  position: sticky; }
+  z-index: 2000; }
 
 @media (min-width: 768px) {
-  .navigation {
-    padding: 0 20px;
+  nav .bar {
     height: 56px; } }
 ul.navigation-left,
 ul.navigation-right {
@@ -2168,20 +2185,20 @@ li.navigation-contact {
   display: inline-block; }
 
 .logo-xyz {
-  height: 24px;
+  height: 22px;
   width: auto;
-  padding-top: 5px;
   position: absolute;
   margin: 0;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%); }
+          transform: translate(-50%, -50%);
+  margin-top: 3px; }
 
 @media (min-width: 768px) {
   .logo-xyz {
-    height: 26px;
+    height: 24px;
     width: auto; } }
 .navigation-menu {
   margin: 0;
@@ -2262,3 +2279,121 @@ li.navigation-hide {
   .navigation-hide,
   li.navigation-hide {
     display: inline-block; } }
+#navigation-toggle input[type=checkbox] {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+  /* For mobile, it's typically better to position checkbox on top of clickable
+    area and turn opacity to 0 instead. */ }
+
+/* Default State */
+.overlay {
+  z-index: 1500;
+  position: absolute;
+  display: table;
+  background: none;
+  background-color: #310008;
+  width: 100%;
+  height: 100%;
+  top: 44px;
+  left: 0;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
+          transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+          transition: opacity 0.5s, visibility 0s 0.5s; }
+
+@media (min-width: 768px) {
+  .overlay {
+    top: 56px; } }
+.overlay.open {
+  opacity: 1;
+  visibility: visible; }
+
+.overlay nav {
+  -webkit-perspective: 1200px;
+          perspective: 1200px; }
+
+.overlay nav ul {
+  opacity: 0.4;
+  -webkit-transform: translateY(-25%) rotateX(35deg);
+          transform: translateY(-25%) rotateX(35deg);
+  -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+          transition: transform 0.5s, opacity 0.5s; }
+
+.overlay.open nav ul {
+  opacity: 1;
+  -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg); }
+
+.overlay.close nav ul {
+  -webkit-transform: translateY(25%) rotateX(-35deg);
+          transform: translateY(25%) rotateX(-35deg); }
+
+.overlay.close-button {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  overflow: hidden;
+  border: none;
+  background: url(../img/cross.png) no-repeat center center;
+  text-indent: 200%;
+  color: transparent;
+  outline: none;
+  z-index: 100; }
+
+.stick {
+  position: fixed;
+  width: 100%;
+  top: 0; }
+
+.navigation-toggle {
+  margin: 0; }
+
+.overlay > ul {
+  color: #FFFFFF;
+  z-index: 3000;
+  position: relative; }
+
+.overlay li {
+  list-style-type: none; }
+
+.nav-h1 {
+  font-family: "Amplitude-Medium";
+  text-transform: uppercase;
+  line-height: 1.25;
+  font-size: 42px;
+  color: #FFFFFF;
+  margin-top: 40px; }
+
+li:first-child .nav-h1 {
+  margin-top: 0px; }
+
+.nav-h1:before {
+  content: "";
+  width: 45px;
+  height: 1px;
+  background-color: #FFFFFF;
+  position: relative;
+  top: -10px;
+  display: block; }
+
+.nav-h2 {
+  font-family: "Amplitude-Medium";
+  text-transform: uppercase;
+  line-height: 1.5;
+  font-size: 16px;
+  color: #b6ada5; }
+
+.nav-body {
+  font-family: "Amplitude-Light";
+  line-height: 1.5;
+  font-size: 16px;
+  color: #FFFFFF; }

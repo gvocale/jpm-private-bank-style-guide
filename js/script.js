@@ -60,4 +60,21 @@ $(document).ready(function() {
         $(".promo-2-column").toggleClass("no-gutter", this.unchecked);
         $(".promo-3-column").toggleClass("no-gutter", this.unchecked);
     });
+
+    // Toggle full screen navigation
+    $("#navigation-toggle").change(function() {
+        $(".overlay").toggleClass("open", this.unchecked);
+        $("nav").toggleClass("open", this.unchecked);
+    });
+
+
+    // Making navigation stick
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > 90) {
+            $('nav').addClass('stick');
+        } else {
+            $('nav').removeClass('stick');
+        }
+
+    });
 });
