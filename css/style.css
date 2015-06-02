@@ -1739,8 +1739,8 @@ select {
   border-top: 0; }
 
 .spacing {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   background-color: #A63A3A;
   color: white;
   margin-left: auto;
@@ -1762,13 +1762,13 @@ select {
 
 @media (min-width: 768px) {
   .spacing {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     background-color: #310008; } }
 @media (min-width: 1200px) {
   .spacing {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     background-color: #A63A3A; } }
 .spacing p {
   font-family: "Amplitude-Light";
@@ -1779,38 +1779,37 @@ select {
   margin: auto 0; }
 
 .spacing p:before {
-  margin-bottom: 2px;
   content: "";
   display: block;
   background-image: url("../images/ui.arrow-up.white.svg");
   background-repeat: no-repeat;
-  background-size: 70%;
-  width: 16px;
+  background-size: 100%;
+  width: 12px;
   height: 10px;
   position: relative;
-  left: calc(50% - 5px); }
+  margin: 0 auto;
+  top: 2px; }
 
 .spacing p:after {
-  margin-top: 2px;
   content: "";
   display: block;
   background-image: url("../images/ui.arrow-down.white.svg");
   background-repeat: no-repeat;
-  background-size: 70%;
-  width: 16px;
+  background-size: 100%;
+  width: 12px;
   height: 10px;
   position: relative;
-  left: calc(50% - 5px); }
+  margin: 0 auto; }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .spacing p:before {
-    margin-bottom: 5px;
-    background-size: 100%; }
+    top: -2px;
+    width: 16px; }
 
   .spacing p:after {
-    margin-top: 5px;
-    background-size: 100%; } }
-@media (min-width: 1200px) {
+    top: 2px;
+    width: 16px; }
+
   .spacing p {
     font-size: 21px; } }
 path.icon.twitter,
