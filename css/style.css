@@ -1,4 +1,7 @@
 @charset "UTF-8";
+body {
+  letter-spacing: 0.02em; }
+
 h1,
 .h1,
 h2,
@@ -398,6 +401,50 @@ hr.long {
   font-family: "Amplitude-Light";
   text-align: center; }
 
+.nav-h1 {
+  font-family: "Amplitude-Medium";
+  text-transform: uppercase;
+  line-height: 1.5;
+  font-size: 21px;
+  letter-spacing: 0.02em; }
+
+@media (min-width: 768px) {
+  .nav-h1 {
+    line-height: 1.25;
+    font-size: 42px; } }
+nav .open li {
+  color: #b6ada5; }
+
+nav .open li:hover {
+  color: #FFFFFF;
+  cursor: pointer;
+  cursor: hand; }
+
+.nav-h2 {
+  font-family: "Amplitude-Regular";
+  text-transform: uppercase;
+  line-height: 1.5;
+  font-size: 16px;
+  letter-spacing: 0.02em; }
+
+.nav-body {
+  font-family: "Amplitude-Light";
+  line-height: 1.5;
+  font-size: 13px; }
+
+@media (min-width: 768px) {
+  .nav-body {
+    font-size: 16px; } }
+nav input[type=search] {
+  font-family: "Amplitude-Light";
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  padding: 10px 15px; }
+
+@media (min-width: 768px) {
+  nav input[type=search] {
+    font-size: 21px;
+    padding: 10px 20px; } }
 .placeholder-box {
   padding-top: 1em;
   padding-bottom: 1em;
@@ -2038,7 +2085,6 @@ output {
         -ms-transform: translateY(calc(85vh - 148px));
             transform: translateY(calc(85vh - 148px));
     height: calc(15vh + 1px);
-    padding: 0 5% 0 5%;
     top: 0%; } }
 @media (min-width: 992px) {
   .anchor {
@@ -2047,13 +2093,14 @@ output {
         -ms-transform: translateY(calc(80vh - 148px));
             transform: translateY(calc(80vh - 148px)); } }
 .anchor .container-fluid {
-  margin: 0 auto;
-  width: 100%; }
+  margin: 0 auto; }
 
+@media (max-width: 767px) {
+  .anchor .container-fluid {
+    width: 100%; } }
 @media (min-width: 768px) {
   .anchor .container-fluid {
-    margin: 0 auto;
-    width: 90%; } }
+    margin: 0 auto; } }
 .anchor [class^="col-"] {
   border-bottom: 1px solid #d7d2cb;
   height: 50px;
@@ -2330,6 +2377,9 @@ li.navigation-hide {
   -webkit-transform: rotateX(0deg);
           transform: rotateX(0deg); }
 
+.overlay.open .center {
+  height: 100%; }
+
 .overlay.close nav ul {
   -webkit-transform: translateY(25%) rotateX(-35deg);
           transform: translateY(25%) rotateX(-35deg); }
@@ -2365,13 +2415,11 @@ li.navigation-hide {
   list-style-type: none; }
 
 .nav-h1 {
-  font-family: "Amplitude-Medium";
-  text-transform: uppercase;
-  line-height: 1.25;
-  font-size: 42px;
-  color: #FFFFFF;
   margin-top: 40px; }
 
+@media (min-width: 768px) {
+  .nav-h1 {
+    margin-top: 60px; } }
 li:first-child .nav-h1 {
   margin-top: 0px; }
 
@@ -2379,20 +2427,60 @@ li:first-child .nav-h1 {
   content: "";
   width: 45px;
   height: 1px;
-  background-color: #FFFFFF;
+  background-color: #b6ada5;
   position: relative;
   top: -10px;
   display: block; }
 
 .nav-h2 {
-  font-family: "Amplitude-Medium";
-  text-transform: uppercase;
-  line-height: 1.5;
-  font-size: 16px;
-  color: #b6ada5; }
+  margin-top: 40px; }
 
-.nav-body {
-  font-family: "Amplitude-Light";
-  line-height: 1.5;
-  font-size: 16px;
-  color: #FFFFFF; }
+li:first-child .nav-h2 {
+  margin-top: 0px; }
+
+.nav-h2:before {
+  content: "";
+  width: 22px;
+  height: 1px;
+  background-color: #b6ada5;
+  position: relative;
+  top: -10px;
+  display: block; }
+
+nav ul {
+  padding: 0;
+  margin: 0; }
+
+@media (min-width: 768px) {
+  .overlay.open .row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end; } }
+nav input[type=search] {
+  border: 1px solid #b6ada5;
+  background-color: transparent;
+  margin-top: 30px;
+  width: 100%;
+  max-width: 500px; }
+
+input[type=search] :before {
+  content: "";
+  background-image: url(images/icon.search.svg);
+  background-position: 7px 7px;
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 18px; }
+
+@media (min-width: 768px) {
+  nav input[type=search] {
+    margin-top: 60px; } }
+nav input[type=search]:focus {
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  box-shadow: none;
+  outline: none; }

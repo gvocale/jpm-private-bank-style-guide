@@ -26,6 +26,7 @@ $anchor-xs: 150px;
         height: calc(100vh - 15vh - 148px);
     }
 }
+
 @media (min-width: 992px) {
     .no-anchor {
         height: calc(100vh - 20vh - 148px);
@@ -268,7 +269,6 @@ output {
         position: absolute;
         transform: translateY(calc(85vh - 148px));
         height: calc(15vh + 1px);
-        padding: 0 5% 0 5%;
         top: 0%;
     }
 }
@@ -282,13 +282,17 @@ output {
 
 .anchor .container-fluid {
     margin: 0 auto;
-    width: 100%;
+}
+
+@media (max-width: 767px) {
+    .anchor .container-fluid {
+        width: 100%;
+    }
 }
 
 @media (min-width: 768px) {
     .anchor .container-fluid {
         margin: 0 auto;
-        width: 90%;
     }
 }
 

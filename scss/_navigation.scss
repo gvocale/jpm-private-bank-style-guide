@@ -242,6 +242,10 @@ li.navigation-hide {
     transform: rotateX(0deg);
 }
 
+.overlay.open .center {
+    height: 100%;
+}
+
 .overlay.close nav ul {
     transform: translateY(25%) rotateX(-35deg);
 }
@@ -262,9 +266,9 @@ li.navigation-hide {
 }
 
 .stick {
-    position:fixed;
-    width:100%;
-    top:0;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
 .navigation-toggle {
@@ -282,12 +286,13 @@ li.navigation-hide {
 }
 
 .nav-h1 {
-    font-family: $medium;
-    text-transform: uppercase;
-    line-height: 1.25;
-    font-size: 42px;
-    color: $White;
     margin-top: 40px;
+}
+
+@media (min-width: 768px) {
+    .nav-h1 {
+        margin-top: 60px;
+    }
 }
 
 li:first-child .nav-h1 {
@@ -298,23 +303,68 @@ li:first-child .nav-h1 {
     content: "";
     width: 45px;
     height: 1px;
-    background-color: $White;
+    background-color: $WarmGray4;
     position: relative;
     top: -10px;
     display: block;
 }
 
 .nav-h2 {
-    font-family: $medium;
-    text-transform: uppercase;
-    line-height: 1.5;
-    font-size: 16px;
-    color: $WarmGray4;
+    margin-top: 40px;
 }
 
-.nav-body {
-    font-family: $light;
-    line-height: 1.5;
-    font-size: 16px;
+li:first-child .nav-h2 {
+    margin-top: 0px;
+}
+
+.nav-h2:before {
+    content: "";
+    width: 22px;
+    height: 1px;
+    background-color: $WarmGray4;
+    position: relative;
+    top: -10px;
+    display: block;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .overlay.open .row {
+        display: flex;
+        align-items: flex-end;
+    }
+}
+
+nav input[type=search] {
+    border: 1px solid $WarmGray4;
+    background-color: transparent;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 500px;
+}
+
+input[type=search] :before {
+    content: "";
+    background-image: url(images/icon.search.svg);
+    background-position: 7px 7px;
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 18px;
+}
+
+@media (min-width: 768px) {
+    nav input[type=search] {
+        margin-top: 60px;
+    }
+}
+
+nav input[type=search]:focus {
+    border: 1px solid $White;
     color: $White;
+    box-shadow: none;
+    outline: none;
 }

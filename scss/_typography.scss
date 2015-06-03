@@ -1,3 +1,7 @@
+body {
+    letter-spacing: 0.02em;
+}
+
 h1,
 .h1,
 h2,
@@ -494,4 +498,63 @@ hr.long {
     line-height: calc(21px * 1.5);
     font-family: "Amplitude-Light";
     text-align: center;
+}
+
+.nav-h1 {
+    font-family: $medium;
+    text-transform: uppercase;
+    line-height: 1.5;
+    font-size: 21px;
+    letter-spacing: 0.02em;
+}
+
+@media (min-width: 768px) {
+    .nav-h1 {
+        line-height: 1.25;
+        font-size: 42px;
+    }
+}
+
+nav .open li {
+    color: $WarmGray4;
+}
+
+nav .open li:hover {
+    color: $White;
+    cursor: pointer;
+    cursor: hand;
+}
+
+.nav-h2 {
+    font-family: $regular;
+    text-transform: uppercase;
+    line-height: 1.5;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+}
+
+.nav-body {
+    font-family: $light;
+    line-height: 1.5;
+    font-size: 13px;
+}
+
+@media (min-width: 768px) {
+    .nav-body {
+        font-size: 16px;
+    }
+}
+
+nav input[type=search] {
+    font-family: $light;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    padding: 10px 15px;
+}
+
+@media (min-width: 768px) {
+    nav input[type=search] {
+        font-size: 21px;
+        padding: 10px 20px;
+    }
 }
