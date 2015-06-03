@@ -24,7 +24,7 @@ p.spec-size,
 p.spec-height,
 p.spec-tracking,
 p.spec-font p.spec-detail {
-    color: $brown-medium;
+    color: $WarmGray4;
 }
 
 .style-guide-h1 {
@@ -40,7 +40,8 @@ p.spec-font p.spec-detail {
 }
 
 .style-guide-h3 {
-    font-family: "Amplitude-Medium";
+    color: $Purple;
+    font-family: $Medium;
     margin-bottom: 20px;
 }
 
@@ -60,20 +61,20 @@ div.section-title {
 }
 
 .bootstrap-size {
-    font-family: "Amplitude-Medium";
+    font-family: $Medium;
     font-size: 13px;
     line-height: 20px;
 }
 
 .breakpoint-name {
-    font-family: "Amplitude-Medium";
+    font-family: $Medium;
     font-size: 16px;
     line-height: 24px;
     margin-right: 20px;
 }
 
 .breakpoint-detail {
-    font-family: $regular;
+    font-family: $Regular;
     font-size: 13px;
     margin-right: 10px
 }
@@ -114,21 +115,21 @@ div.section-title {
 }
 
 @font-face {
-    font-family: "Amplitude-Medium";
+    font-family: $Medium;
     src: local("Amplitude-Medium");
     src: url("http://www.liquorvitae.it/temp/Amplitude-Medium.ttf");
     font-weight: medium;
 }
 
 @font-face {
-    font-family: "Amplitude-Regular";
+    font-family: $Regular;
     src: local("Amplitude-Regular");
     src: url("http://www.liquorvitae.it/temp/Amplitude-Regular.ttf");
     font-weight: regular;
 }
 
 @font-face {
-    font-family: "Amplitude-Light";
+    font-family: $Light;
     src: local("Amplitude-Light");
     src: url("http://www.liquorvitae.it/temp/Amplitude-Light.ttf");
     font-weight: light;
@@ -216,7 +217,7 @@ li.primary-inverted {
 
 .color.White {
     background-color: $White;
-    border: 1px solid $WarmGray1-transparent;
+    border: 1px solid $WarmGray0;
 }
 
 .color.JPMBrown {
@@ -270,8 +271,8 @@ li.primary-inverted {
     background-color: $WarmGray8;
 }
 
-.WarmGray1-transparent {
-    background-color: $WarmGray1-transparent;
+.WarmGray0 {
+    background-color: $WarmGray0;
 }
 
 // RULE

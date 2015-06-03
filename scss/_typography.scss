@@ -13,34 +13,34 @@ p {
 }
 
 @font-face {
-    font-family: "Amplitude-Light";
+    font-family: $Light;
     src: url(../fonts/Amplitude-Light.ttf);
 }
 
 @font-face {
-    font-family: "Amplitude-Regular";
+    font-family: $Regular;
     src: url(../fonts/Amplitude-Regular.ttf);
 }
 
 @font-face {
-    font-family: "Amplitude-Medium";
+    font-family: $Medium;
     src: url(../fonts/Amplitude-Medium.ttf);
 }
 
 .light {
-    font-family: "Amplitude-Light";
+    font-family: $Light;
 }
 
 .regular {
-    font-family: "Amplitude-Regular";
+    font-family: $Regular;
 }
 
 .medium {
-    font-family: "Amplitude-Medium";
+    font-family: $Medium;
 }
 
 .intro-eyebrow {
-    font-family: "Amplitude-Light";
+    font-family: $Light;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.15em;
@@ -63,7 +63,7 @@ p {
 }
 
 .intro-h1 {
-    font-family: "Amplitude-Regular";
+    font-family: $Regular;
     font-weight: light;
     font-size: 26px;
     line-height: 39px;
@@ -73,7 +73,7 @@ p {
 
 @media (min-width: 768px) {
     .intro-h1 {
-        font-family: "Amplitude-Light";
+        font-family: $Light;
         font-size: 55px;
         line-height: 66px;
     }
@@ -87,7 +87,7 @@ p {
 }
 
 .intro-body {
-    font-family: "Amplitude-Regular";
+    font-family: $Regular;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.02em;
@@ -98,7 +98,7 @@ p {
 
 @media (min-width: 768px) {
     .intro-body {
-        font-family: "Amplitude-Light";
+        font-family: $Light;
         font-size: 21px;
         line-height: 31px;
     }
@@ -112,7 +112,7 @@ p {
 }
 
 .intro-cta {
-    font-family: "Amplitude-Medium";
+    font-family: $Medium;
     font-weight: medium;
     font-size: 13px;
     line-height: 20px;
@@ -168,7 +168,7 @@ p {
 }
 
 .anchor-h1 {
-    font-family: "Amplitude-Medium";
+    font-family: $Medium;
     font-weight: medium;
     font-size: 16px;
     line-height: 24px;
@@ -185,7 +185,7 @@ p {
 }
 
 .anchor-body {
-    font-family: "Amplitude-Regular";
+    font-family: $Regular;
     font-size: 13px;
     line-height: 20px;
     letter-spacing: 0.02em;
@@ -200,7 +200,7 @@ p {
 }
 
 .promo-eyebrow {
-    font-family: "Amplitude-Medium";
+    font-family: $Medium;
     font-size: 13px;
     line-height: 20px;
     letter-spacing: 0.15em;
@@ -216,7 +216,7 @@ p {
 }
 
 .promo-h1 {
-    font-family: "Amplitude-Regular";
+    font-family: $Regular;
     font-size: 21px;
     line-height: 26px;
     letter-spacing: 0.02em;
@@ -238,7 +238,7 @@ p {
 }
 
 .promo-author {
-    font-family: "Amplitude-Medium";
+    font-family: $Medium;
     font-size: 13px;
     line-height: 20px;
     letter-spacing: 0.02em;
@@ -246,7 +246,7 @@ p {
 }
 
 .promo-date {
-    font-family: "Amplitude-Regular";
+    font-family: $Regular;
     font-size: 10px;
     line-height: 15px;
     letter-spacing: 0.05em;
@@ -256,7 +256,7 @@ p {
 }
 
 .promo-body-large {
-    font-family: "Amplitude-Light";
+    font-family: $Light;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.02em;
@@ -271,8 +271,8 @@ p {
 }
 
 .promo-h2 {
-    font-family: "Amplitude-Regular";
-    color: $brown-dark;
+    font-family: $Regular;
+    color: $JPMBrown;
     font-size: 21px;
     line-height: 26px;
     letter-spacing: 0.02em;
@@ -286,8 +286,13 @@ p {
     }
 }
 
+.promo-h2:hover {
+    cursor: pointer;
+    cursor: hand;
+}
+
 .promo-body {
-    font-family: "Amplitude-Light";
+    font-family: $Light;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.02em;
@@ -302,7 +307,7 @@ p {
 }
 
 .legal-body {
-    font-family: "Amplitude-Light";
+    font-family: $Light;
     font-size: 10px;
     line-height: 15px;
     letter-spacing: 0.02em;
@@ -339,28 +344,30 @@ a:focus {
 }
 
 .primary {
-    font-family: "Amplitude-Medium";
+    font-family: $Medium;
     color: $White;
     font-size: 13px;
     line-height: 20px;
     letter-spacing: 0.15em;
     text-align: center;
     text-transform: uppercase;
-    height: 50px;
-    padding: 6px 30px;
-    background-color: $brown-dark;
+    padding: 15px 30px;
+    background-color: $JPMBrown;
     border: 0;
+    display: inline-block;
 }
 
 .primary:hover {
     background-color: #1f0d08;
     transition: all $speed;
+    cursor: pointer;
+    cursor: hand;
 }
 
 .primary.inverted {
-    color: $brown-dark;
+    color: $JPMBrown;
     background-color: $White;
-    border: 1px solid $brown-very-light;
+    border: 1px solid $WarmGray0;
 }
 
 .primary.inverted:hover {
@@ -370,9 +377,9 @@ a:focus {
 
 .cta,
 a.cta {
-    font-family: "Amplitude-Medium";
+    font-family: $Medium;
     font-weight: medium;
-    color: $brown-dark;
+    color: $JPMBrown;
     font-size: 13px;
     line-height: 20px;
     letter-spacing: 0.15em;
@@ -398,12 +405,12 @@ a.cta {
 }
 
 .footer-h1 {
-    font-family: "Amplitude-Medium";
+    font-family: $Medium;
     font-size: 13px;
     line-height: 20px;
     letter-spacing: 0.05em;
     text-align: left;
-    color: $brown-dark;
+    color: $JPMBrown;
     text-transform: uppercase;
 }
 
@@ -415,12 +422,12 @@ a.cta {
 }
 
 .footer-h2 {
-    font-family: "Amplitude-Medium";
+    font-family: $Medium;
     font-size: 13px;
     line-height: 20px;
     letter-spacing: 0.05em;
     text-align: left;
-    color: $brown-medium;
+    color: $WarmGray4;
     text-transform: uppercase;
 }
 
@@ -432,7 +439,7 @@ a.cta {
 }
 
 p.footer-links {
-    font-family: "Amplitude-Light";
+    font-family: $Light;
     font-size: 13px;
     line-height: 20px;
     letter-spacing: 0.02em;
@@ -478,7 +485,7 @@ hr.dash {
 }
 
 hr.long {
-    border: solid $brown-very-light;
+    border: solid $WarmGray0;
     border-width: 1px 0 0;
     clear: both;
     width: 100%;
@@ -488,7 +495,7 @@ hr.long {
 .h1 {
     font-size: 55px;
     line-height: calc(55px * 1.25);
-    font-family: "Amplitude-Light";
+    font-family: $Light;
     text-align: center;
     padding-bottom: 20px;
 }
@@ -496,12 +503,12 @@ hr.long {
 .h1-body {
     font-size: 21px;
     line-height: calc(21px * 1.5);
-    font-family: "Amplitude-Light";
+    font-family: $Light;
     text-align: center;
 }
 
 .nav-h1 {
-    font-family: $medium;
+    font-family: $Medium;
     text-transform: uppercase;
     line-height: 1.5;
     font-size: 21px;
@@ -526,7 +533,7 @@ nav .open li:hover {
 }
 
 .nav-h2 {
-    font-family: $regular;
+    font-family: $Regular;
     text-transform: uppercase;
     line-height: 1.5;
     font-size: 16px;
@@ -534,7 +541,7 @@ nav .open li:hover {
 }
 
 .nav-body {
-    font-family: $light;
+    font-family: $Light;
     line-height: 1.5;
     font-size: 13px;
 }
@@ -546,7 +553,7 @@ nav .open li:hover {
 }
 
 nav input[type=search] {
-    font-family: $light;
+    font-family: $Light;
     font-size: 16px;
     letter-spacing: 0.02em;
     padding: 10px 15px;

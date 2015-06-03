@@ -4,6 +4,7 @@
     margin: 0;
     overflow: hidden;
     max-height: 435px; // set max height of image container
+    margin: calc(1.36428%) 0; // margin on top and bottom
 }
 
 .promo-image:before {
@@ -25,306 +26,7 @@
     margin: auto; // this center align the picture in the 16/9 container
 }
 
-//
-.promo-3-column,
-.promo-2-column,
-.promo-1-column {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
-// Headline Bottom - XS - 1 Column 
-.promo-1-column {
-    .promo-1.promo-eyebrow {
-        order: 2;
-    }
-    .promo-1.promo-h1-author-date {
-        order: 3;
-    }
-    .promo-1.promo-image {
-        order: 1;
-    }
-    .promo-1.promo-body-cta {
-        order: 4;
-    }
-}
-
-// Headline Bottom - XS - 2 Columns
-.promo-2-column {
-    // Promo 1
-    .promo-1.eyebrow-h1-author-date {
-        order: 2;
-    }
-    .promo-1.promo-image {
-        order: 1;
-    }
-    .promo-1.promo-body-cta {
-        order: 3;
-    }
-    // Promo 2
-    .promo-2.eyebrow-h1-author-date {
-        order: 5;
-    }
-    .promo-2.promo-image {
-        order: 4;
-    }
-    .promo-2.promo-body-cta {
-        order: 6;
-    }
-}
-
-// Headline Bottom - XS - 3 Columns
-.promo-3-column {
-    // Promo 1
-    .promo-1.eyebrow-h1-author-date {
-        order: 2;
-    }
-    .promo-1.promo-image {
-        order: 1;
-    }
-    .promo-1.promo-body-cta {
-        order: 3;
-    }
-    // Promo 2
-    .promo-2.eyebrow-h1-author-date {
-        order: 5;
-    }
-    .promo-2.promo-image {
-        order: 4;
-    }
-    .promo-2.promo-body-cta {
-        order: 6;
-    }
-    // Promo 3
-    .promo-3.eyebrow-h1-author-date {
-        order: 8;
-    }
-    .promo-3.promo-image {
-        order: 7;
-    }
-    .promo-3.promo-body-cta {
-        order: 9;
-    }
-}
-
-// Headline Top - XS - 1 Column
-.promo-1-column.headline-top {
-    .promo-1.promo-eyebrow {
-        order: 1;
-    }
-    .promo-1.promo-h1-author-date {
-        order: 2;
-    }
-    .promo-1.promo-image {
-        order: 3;
-    }
-    .promo-1.promo-body-cta {
-        order: 4;
-    }
-}
-
-// Headline Top - XS - 2 Column
-.promo-2-column.headline-top {
-    // Promo 1
-    .promo-1.eyebrow-h1-author-date {
-        order: 1;
-    }
-    .promo-1.promo-image {
-        order: 2;
-    }
-    .promo-1.promo-body-cta {
-        order: 3;
-    }
-    // Promo 2
-    .promo-2.eyebrow-h1-author-date {
-        order: 4;
-    }
-    .promo-2.promo-image {
-        order: 5;
-    }
-    .promo-2.promo-body-cta {
-        order: 6;
-    }
-}
-
-// Headline Top - XS - 3 Columns
-.headline-top.promo-3-column {
-    // Promo 1
-    .promo-1.eyebrow-h1-author-date {
-        order: 1;
-    }
-    .promo-1.promo-image {
-        order: 2;
-    }
-    .promo-1.promo-body-cta {
-        order: 3;
-    }
-    // Promo 2
-    .promo-2.eyebrow-h1-author-date {
-        order: 4;
-    }
-    .promo-2.promo-image {
-        order: 5;
-    }
-    .promo-2.promo-body-cta {
-        order: 6;
-    }
-    // Promo 3
-    .promo-3.eyebrow-h1-author-date {
-        order: 7;
-    }
-    .promo-3.promo-image {
-        order: 8;
-    }
-    .promo-3.promo-body-cta {
-        order: 9;
-    }
-}
-
 @media (min-width: 768px) {
-    // Headline Bottom - SM MD LG - 1 Column
-    .promo-1-column {
-        .promo-1.promo-eyebrow {
-            order: 2;
-        }
-        .promo-1.promo-h1-author-date {
-            order: 3;
-        }
-        .promo-1.promo-image {
-            order: 1;
-        }
-        .promo-1.promo-body-cta {
-            order: 4;
-        }
-    }
-    // Headline Bottom - SM MD LG - 2 Column
-    .promo-2-column {
-        // Promo 1
-        .promo-1.eyebrow-h1-author-date {
-            order: 3;
-        }
-        .promo-1.promo-image {
-            order: 1;
-        }
-        .promo-1.promo-body-cta {
-            order: 5;
-        }
-        // Promo 2
-        .promo-2.eyebrow-h1-author-date {
-            order: 4;
-        }
-        .promo-2.promo-image {
-            order: 2;
-        }
-        .promo-2.promo-body-cta {
-            order: 6;
-        }
-    }
-    // Headline Bottom - SM MD LG - 3 Column
-    .promo-3-column {
-        // Promo 1
-        .promo-1.eyebrow-h1-author-date {
-            order: 4;
-        }
-        .promo-1.promo-image {
-            order: 1;
-        }
-        .promo-1.promo-body-cta {
-            order: 7;
-        }
-        // Promo 2
-        .promo-2.eyebrow-h1-author-date {
-            order: 5;
-        }
-        .promo-2.promo-image {
-            order: 2;
-        }
-        .promo-2.promo-body-cta {
-            order: 8;
-        }
-        // Promo 3
-        .promo-3.eyebrow-h1-author-date {
-            order: 6;
-        }
-        .promo-3.promo-image {
-            order: 3;
-        }
-        .promo-3.promo-body-cta {
-            order: 9;
-        }
-    }
-    // Headline Top - SM MD LG - 1 Column
-    .promo-1-column.headline-top {
-        .promo-1.promo-eyebrow {
-            order: 1;
-        }
-        .promo-1.promo-h1-author-date {
-            order: 2;
-        }
-        .promo-1.promo-image {
-            order: 4;
-        }
-        .promo-1.promo-body-cta {
-            order: 3;
-        }
-    }
-    // Headline Top - SM MD LG - 2 Column
-    .promo-2-column.headline-top {
-        // Promo 1
-        .promo-1.eyebrow-h1-author-date {
-            order: 1;
-        }
-        .promo-1.promo-image {
-            order: 3;
-        }
-        .promo-1.promo-body-cta {
-            order: 5;
-        }
-        // Promo 2
-        .promo-2.eyebrow-h1-author-date {
-            order: 2;
-        }
-        .promo-2.promo-image {
-            order: 4;
-        }
-        .promo-2.promo-body-cta {
-            order: 6;
-        }
-    }
-    // Headline Top - SM MD LG - 3 Column
-    .promo-3-column.headline-top {
-        // Promo 1
-        .promo-1.eyebrow-h1-author-date {
-            order: 1;
-        }
-        .promo-1.promo-image {
-            order: 4;
-        }
-        .promo-1.promo-body-cta {
-            order: 7;
-        }
-        // Promo 2
-        .promo-2.eyebrow-h1-author-date {
-            order: 2;
-        }
-        .promo-2.promo-image {
-            order: 5;
-        }
-        .promo-2.promo-body-cta {
-            order: 8;
-        }
-        // Promo 3
-        .promo-3.eyebrow-h1-author-date {
-            order: 3;
-        }
-        .promo-3.promo-image {
-            order: 6;
-        }
-        .promo-3.promo-body-cta {
-            order: 9;
-        }
-    }
     // 1 Column image - no gutter
     .no-gutter.promo-1-column .promo-1.promo-image {
         margin-left: 1.36428%;
@@ -391,51 +93,7 @@
     }
 }
 
-// remove some 1px before and after that bootstrap puts
-.row.promo-1-column:before,
-.row.promo-2-column:before,
-.row.promo-3-column:before,
-.row.promo-1-column:after,
-.row.promo-2-column:after,
-.row.promo-3-column:after {
-    display: none;
-}
-
-.promo-image {
-    margin: 10px 1.36428%;
-    padding: 0;
-}
-
-.promo-1.promo-body-cta,
-.promo-2.promo-body-cta,
-.promo-3.promo-body-cta,
-.promo-1.eyebrow-h1-author-date,
-.promo-2.eyebrow-h1-author-date,
-.promo-3.eyebrow-h1-author-date,
-.promo-1.promo-h1-author-date {
-    padding-top: calc(1.36428% / 4);
-    padding-bottom: calc(1.36428% / 4);
-}
-
-.promo-eyebrow {
-    padding-bottom: calc(1.36428%);
-}
-
-.promo-1-column .promo-eyebrow {
-    padding-bottom: 0;
-    padding-top: calc(1.36428% / 2);
-}
-
-.promo-h1,
-.promo-h2 {
-    padding-bottom: calc(1.36428%);
-}
-
-.promo-body {
-    padding-bottom: calc(1.36428%);
-}
-
-.headline-top .promo-eyebrow:before {
+.promo-eyebrow:before {
     content: "";
     width: 45px;
     height: 1px;
@@ -445,37 +103,98 @@
     display: block;
 }
 
-.promo-eyebrow:before {
-    display: none;
+.promo-1-column .row {
+    position: absolute;
+    z-index: 500;
+    top: 50%;
+    transform: translateY(-50%);
+    width: calc(100% - 1.36428% - 1.36428%);
 }
 
 // SPACING
-.promo-1-column .promo-1.promo-body-cta,
-.promo-2-column .promo-1.promo-body-cta,
-.promo-2-column .promo-2.promo-body-cta,
-.promo-3-column .promo-1.promo-body-cta,
-.promo-3-column .promo-2.promo-body-cta,
-.promo-3-column .promo-3.promo-body-cta {
-    margin-bottom: calc(1.36428% * 8);
+.promo-eyebrow,
+.promo-image,
+.promo-h1,
+.promo-h2,
+.promo-body,
+.promo-author {
+    padding: calc(1.36428%) 0;
 }
 
-@media (min-width: 768px) {
-    .promo-1-column .promo-1.promo-image,
-    .headline-top.promo-1-column .promo-1.promo-body-cta {
-        margin-bottom: calc(1.36428% * 0.5);
-    }
-    
-    .headline-top.promo-1-column .promo-1.promo-image,
-    .promo-1-column .promo-1.promo-body-cta,
-    .promo-2-column .promo-1.promo-body-cta,
-    .promo-2-column .promo-2.promo-body-cta,
-    .promo-3-column .promo-1.promo-body-cta,
-    .promo-3-column .promo-2.promo-body-cta,
-    .promo-3-column .promo-3.promo-body-cta {
-        margin-bottom: calc(1.36428% * 4);
-    }
+.primary {
+    margin-top: calc(1.36428%);
 }
 
-.eyebrow-h1-author-date {
-align-self: flex-end;
+.promo-1-full-width {
+    width: 100%;
+    max-height: 50vh;
+    overflow: hidden;
+}
+
+.promo-1-full-width:after {
+    content: "";
+    padding-bottom: 36%;
+}
+
+.promo-1-full-width .container-fluid {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.promo-1-full-width .promo-image {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 100%;
+    z-index: -50;
+}
+
+.row.promo-1-column,
+.row.promo-2-column,
+.row.promo-3-column {
+    margin: calc(1.36428% * 3) 0;
+}
+
+.promo-full-width-container {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    min-height: 400px;
+}
+
+.promo-full-width-copy {
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -60%);
+    z-index: 10;
+    width: 90%;
+    padding: 5%;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.promo-full-width-image {
+    background-image: url(../images/offset_comp_204688.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+.row.full-width {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    position: absolute;
+    width: 90%;
+    max-width: 1600px;
 }

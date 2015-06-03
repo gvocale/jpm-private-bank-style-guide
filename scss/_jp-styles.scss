@@ -3,22 +3,22 @@ p {
 }
 
 .light {
-    font-family: "Amplitude-Light";
+    font-family: $Light;
     font-weight: light;
 }
 
 .regular {
-    font-family: "Amplitude-Regular";
+    font-family: $Regular;
     font-weight: regular;
 }
 
 .medium {
-    font-family: "Amplitude-Medium";
+    font-family: $Medium;
     font-weight: medium;
 }
 
 .intro-h1 {
-    font-family: "Amplitude-Light";
+    font-family: $Light;
     font-weight: light;
     font-size: 55px;
     line-height: 73px;
@@ -27,7 +27,7 @@ p {
 }
 
 .eyebrow {
-    font-family: "Amplitude-Light";
+    font-family: $Light;
     font-weight: light;
     font-size: 21px;
     line-height: 31px;
@@ -37,7 +37,7 @@ p {
 }
 
 .subtitle {
-    font-family: "Amplitude-Light";
+    font-family: $Light;
     font-weight: light;
     font-size: 21px;
     line-height: 31px;
@@ -46,7 +46,7 @@ p {
 }
 
 .explore-cta {
-    font-family: "Amplitude-Medium";
+    font-family: $Medium;
     font-weight: medium;
     font-size: 13px;
     line-height: 20px;
@@ -56,7 +56,7 @@ p {
 }
 
 .anchor-h1 {
-    font-family: "Amplitude-Medium";
+    font-family: $Medium;
     font-weight: medium;
     font-size: 21px;
     line-height: 31px;
@@ -66,7 +66,7 @@ p {
 }
 
 .anchor-copy {
-    font-family: "Amplitude-Light";
+    font-family: $Light;
     font-weight: light;
     font-size: 16px;
     line-height: 24px;
@@ -75,7 +75,7 @@ p {
 }
 
 .promo-eyebrow {
-    font-family: "Amplitude-Medium";
+    font-family: $Medium;
     font-weight: medium;
     font-size: 13px;
     line-height: 20px;
@@ -85,7 +85,7 @@ p {
 }
 
 .promo-h1 {
-    font-family: "Amplitude-Light";
+    font-family: $Light;
     font-weight: light;
     font-size: 34px;
     line-height: 51px;
@@ -94,7 +94,7 @@ p {
 }
 
 .promo-author {
-    font-family: "Amplitude-Regular";
+    font-family: $Regular;
     font-weight: regular;
     font-size: 13px;
     line-height: 20px;
@@ -104,7 +104,7 @@ p {
 }
 
 .promo-date {
-    font-family: "Amplitude-Regular";
+    font-family: $Regular;
     font-weight: regular;
     font-size: 10px;
     line-height: 15px;
@@ -114,7 +114,7 @@ p {
 }
 
 .highlighted-promo-copy {
-    font-family: "Amplitude-Light";
+    font-family: $Light;
     font-weight: light;
     font-size: 21px;
     line-height: 31px;
@@ -123,8 +123,8 @@ p {
 }
 
 .promo-h2 {
-    font-family: "Amplitude-Medium";
-    color: $brown-dark;
+    font-family: $Medium;
+    color: $JPMBrown;
     font-weight: medium;
     font-size: 21px;
     line-height: 31px;
@@ -133,7 +133,7 @@ p {
 }
 
 .promo-copy {
-    font-family: "Amplitude-Light";
+    font-family: $Light;
     font-weight: light;
     font-size: 16px;
     line-height: 24px;
@@ -147,7 +147,7 @@ button {
 }
 
 .primary {
-    font-family: "Amplitude-Medium";
+    font-family: $Medium;
     color: $White;
     font-weight: medium;
     font-size: 13px;
@@ -158,7 +158,7 @@ button {
     display: inline-block;
     height: 50px;
     padding: 6px 30px;
-    background-color: $brown-dark;
+    background-color: $JPMBrown;
     border: 0;
 }
 
@@ -168,8 +168,8 @@ button {
 }
 
 .primary-inverted {
-    font-family: "Amplitude-Medium";
-    color: $brown-dark;
+    font-family: $Medium;
+    color: $JPMBrown;
     font-weight: medium;
     font-size: 13px;
     line-height: 20px;
@@ -180,7 +180,7 @@ button {
     height: 50px;
     padding: 6px 30px;
     background-color: $White;
-    border: 1px solid $brown-very-light;
+    border: 1px solid $WarmGray0;
 }
 
 .primary-inverted:hover {
@@ -190,9 +190,9 @@ button {
 
 .cta,
 a.cta {
-    font-family: "Amplitude-Medium";
+    font-family: $Medium;
     font-weight: medium;
-    color: $brown-dark;
+    color: $JPMBrown;
     font-size: 13px;
     line-height: 20px;
     letter-spacing: 0.15em;
@@ -218,7 +218,7 @@ a.cta {
 }
 
 .legal-copy {
-    font-family: "Amplitude-Light";
+    font-family: $Light;
     font-weight: light;
     font-size: 10px;
     line-height: 15px;
@@ -227,29 +227,29 @@ a.cta {
 }
 
 .footer-h1 {
-    font-family: "Amplitude-Medium";
+    font-family: $Medium;
     font-weight: medium;
     font-size: 13px;
     line-height: 20px;
     letter-spacing: 0.05em;
     text-align: left;
-    color: $brown-dark;
+    color: $JPMBrown;
     text-transform: uppercase;
 }
 
 .footer-h2 {
-    font-family: "Amplitude-Medium";
+    font-family: $Medium;
     font-weight: medium;
     font-size: 13px;
     line-height: 20px;
     letter-spacing: 0.05em;
     text-align: left;
-    color: $brown-medium;
+    color: $WarmGray4;
     text-transform: uppercase;
 }
 
 .footer-links {
-    font-family: "Amplitude-Light";
+    font-family: $Light;
     font-weight: light;
     font-size: 13px;
     line-height: 20px;
@@ -258,7 +258,7 @@ a.cta {
 }
 
 .short {
-    border: solid $brown-dark;
+    border: solid $JPMBrown;
     border-width: 1px 0 0;
     clear: both;
     width: 45px;
@@ -272,7 +272,7 @@ a.cta {
 }
 
 .long {
-    border: solid $brown-very-light;
+    border: solid $WarmGray0;
     border-width: 1px 0 0;
     clear: both;
     width: 100%;
@@ -283,11 +283,11 @@ a.cta {
 .height,
 .tracking,
 .font {
-    color: $brown-medium;
+    color: $WarmGray4;
 }
 
 .style {
-    font-family: "Amplitude-Medium";
+    font-family: $Medium;
 }
 
 .breakpoint {
