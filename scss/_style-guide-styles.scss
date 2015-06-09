@@ -93,19 +93,6 @@ div.section-title {
     margin-left: 0%;
 }
 
-.container-fluid {
-    max-width: 1600px;
-    width: 90%;
-}
-
-@media (max-width: 991px) {
-    .container-fluid {
-        width: 90%;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-}
-
 .center {
     display: flex;
     align-items: center;
@@ -181,7 +168,6 @@ nav > ul li:hover ul {
 li.primary-inverted {
     padding: 10px;
 }
-
 
 .breakpoint {
     color: red;

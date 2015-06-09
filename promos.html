@@ -14,196 +14,215 @@
 </head>
 
 <body>
-    <div class="center">
-        <!-- NAVIGATION BAR ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-        <div class="container-fluid grid-overlay hidden">
+    <!-- NAVIGATION BAR ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <div class="container-fluid grid-overlay hidden">
+        <div class="row">
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1"></div>
+        </div>
+    </div>
+    <div class="breakpoint-bar">
+        <div class="container-fluid">
+            <div class="col-xs-8 col-md-6">
+                <p>
+                    <span class="visible-xs"><span class="breakpoint-name">Extra Small</span><span class="symbol"><</span><span class="breakpoint-detail">767px</span><span class="breakpoint-detail">Margin 5%</span></span>
+                    <span class="visible-sm"><span class="breakpoint-name">Small</span><span class="symbol">≥</span><span class="breakpoint-detail">768px</span><span class="breakpoint-detail">Margin 5%</span></span>
+                    <span class="visible-md"><span class="breakpoint-name">Medium</span><span class="symbol">≥</span><span class="breakpoint-detail">992px</span><span class="breakpoint-detail">Margin 5%</span></span>
+                    <span class="visible-lg"><span class="breakpoint-name">Large</span><span class="symbol">≥</span><span class="breakpoint-detail">1200px</span><span class="breakpoint-detail">Margin 5%</span><span class="breakpoint-detail">Max width 1600px</span></span>
+                </p>
+            </div>
+            <div class="col-xs-4 col-md-6">
+                <form id="toggle">
+                    <label for="grid-toggle">Show Grid</label>
+                    <input type="checkbox" id="grid-toggle">
+                </form>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <form id="page-changer" action="" method="post">
+                    <select onchange="location = this.options[this.selectedIndex].value;">
+                        <option>Change page</option>
+                        <option value="index.html">- Home</option>
+                        <option value="color-palette.html">Color Palette</option>
+                        <option value="grid.html">Grid</option>
+                        <option value="header.html">Header</option>
+                        <option value="typography.html">Typography</option>
+                        <option value="navigation.html">Navigation</option>
+                        <option value="promos.html">Promo</option>
+                        <option value="spacing.html">Spacing</option>
+                    </select>​
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- SETTINGS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <div class="header-controls breakpoint-bar">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-xs-1"></div>
-                <div class="col-xs-1"></div>
-                <div class="col-xs-1"></div>
-                <div class="col-xs-1"></div>
-                <div class="col-xs-1"></div>
-                <div class="col-xs-1"></div>
-                <div class="col-xs-1"></div>
-                <div class="col-xs-1"></div>
-                <div class="col-xs-1"></div>
-                <div class="col-xs-1"></div>
-                <div class="col-xs-1"></div>
-                <div class="col-xs-1"></div>
-            </div>
-        </div>
-        <div class="breakpoint-bar">
-            <div class="container-fluid">
-                <div class="col-xs-8 col-md-6">
-                    <p>
-                        <span class="visible-xs"><span class="breakpoint-name">Extra Small</span><span class="symbol"><</span><span class="breakpoint-detail">767px</span><span class="breakpoint-detail">Margin 5%</span></span>
-                        <span class="visible-sm"><span class="breakpoint-name">Small</span><span class="symbol">≥</span><span class="breakpoint-detail">768px</span><span class="breakpoint-detail">Margin 5%</span></span>
-                        <span class="visible-md"><span class="breakpoint-name">Medium</span><span class="symbol">≥</span><span class="breakpoint-detail">992px</span><span class="breakpoint-detail">Margin 5%</span></span>
-                        <span class="visible-lg"><span class="breakpoint-name">Large</span><span class="symbol">≥</span><span class="breakpoint-detail">1200px</span><span class="breakpoint-detail">Margin 5%</span><span class="breakpoint-detail">Max width 1600px</span></span>
-                    </p>
-                </div>
-                <div class="col-xs-4 col-md-6">
-                    <form id="toggle">
-                        <label for="grid-toggle">Show Grid</label>
-                        <input type="checkbox" id="grid-toggle">
-                    </form>
-                </div>
-                <div class="col-xs-12 col-md-4">
-                    <form id="page-changer" action="" method="post">
-                        <select onchange="location = this.options[this.selectedIndex].value;">
-                            <option>Change page</option>
-                            <option value="index.html">- Home</option>
-                            <option value="color-palette.html">Color Palette</option>
-                            <option value="grid.html">Grid</option>
-                            <option value="header.html">Header</option>
-                            <option value="typography.html">Typography</option>
-                            <option value="navigation.html">Navigation</option>
-                            <option value="promos.html">Promo</option>
-                            <option value="spacing.html">Spacing</option>
-                        </select>​
-                    </form>
+                <div class="col-xs-4 col-sm-2 checkbox-gutter">
+                    <input checked type="checkbox" id="checkbox-gutter">
+                    <label for="checkbox-gutter">
+                        Gutter
+                    </label>
                 </div>
             </div>
         </div>
-        <!-- SETTINGS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-        <div class="header-controls breakpoint-bar">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-xs-4 col-sm-2 checkbox-gutter">
-                        <input checked type="checkbox" id="checkbox-gutter">
-                        <label for="checkbox-gutter">
-                            Gutter
-                        </label>
-                    </div>
-                </div>
+    </div>
+    <!-- PAGE TITLE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <div class="container-fluid top-2">
+        <div class="row">
+            <div class="col-xs-12">
+                <p class="style-guide-h1">Promo Component</p>
             </div>
         </div>
-        <!-- PAGE TITLE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-        <div class="container-fluid top-2">
+    </div>
+    <!-- 1 FULL WIDTH ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <div class="container-full-width">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-xs-12">
-                    <p class="style-guide-h1">Promo Component</p>
+                <!-- visible xs -->
+                <div class="col-xs-12 visible-xs">
+                    <p class="intro-eyebrow">Sollicitudin Nibh</p>
+                    <p class="intro-h1">Tellus Etiam Sem</p>
+                </div>
+                <!-- visible sm-md-lg -->
+                <div class="col-sm-5 col-sm-offset-1 col-lg-offset-0 visible-sm visible-md visible-lg">
+                    <p class="promo-eyebrow">Sollicitudin Nibh</p>
+                    <p class="promo-h1">Tellus Etiam Sem</p>
+                    <p class="promo-author">By Vulputate Mollis<span class="promo-date">FEB 12, 2015</span></p>
+                    <p class="promo-body">Curabitur blandit tempus porttitor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                    <p class="primary">Read more</p>
                 </div>
             </div>
         </div>
-        <!-- 1 FULL WIDTH ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-        <div class="promo-full-width-container top-2">
-                <div class="row full-width">
-                    <div class="promo-copy col-xs-5">
-                        <p class="promo-eyebrow">Sollicitudin Nibh</p>
-                        <p class="promo-h1">Tellus Etiam Sem</p>
-                        <p class="promo-author">By Vulputate Mollis<span class="promo-date">FEB 12, 2015</span></p>
-                        <p class="promo-body">Curabitur blandit tempus porttitor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                        <p class="primary">Read more</p>
-                    </div>
-                </div>
-            <div class="background-tint"></div>
-            <div class="promo-full-width-image"> </div>
+        <div class="promo-image-full-width">
         </div>
-        <div class="container-fluid top-2">
-            <!-- 1 COLUMN ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-            <div class="row promo-1-column">
-                <div class="col-xs-12">
-                    <div class="row">
-                        <div class="promo-copy col-xs-6 col-xs-offset-6">
-                            <p class="promo-eyebrow">Sollicitudin Nibh</p>
-                            <p class="promo-h1">Tellus Etiam Sem</p>
-                            <p class="promo-author">By Vulputate Mollis<span class="promo-date">FEB 12, 2015</span></p>
-                            <p class="promo-body">Curabitur blandit tempus porttitor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                            <p class="primary">Read more</p>
-                        </div>
-                    </div>
-                    <div class="promo-image">
-                        <img src="images/offset_comp_204688.jpg">
-                    </div>
+    </div>
+    <!-- visible only xs -->
+    <div class="container-fluid visible-xs">
+        <div class="row promo-1-column">
+            <div class="promo-1 col-xs-12 ">
+                <p class="promo-author">By Vulputate Mollis<span class="promo-date">FEB 12, 2015</span></p>
+                <p class="promo-body">Curabitur blandit tempus porttitor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                <p class="cta">Read more</p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <!-- 1 COLUMN ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <div class="row promo-1-column promo-1">
+            <div class="col-xs-12 visible-xs">
+                <p class="promo-eyebrow">Sollicitudin Nibh</p>
+            </div>
+            <div class="col-xs-12">
+                <div class="promo-image">
+                    <img src="images/offset_comp_204688.jpg">
                 </div>
             </div>
-            <!-- 2 COLUMN ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-            <div class="row promo-2-column">
-                <div class="promo-1 col-xs-12 col-sm-6">
-                    <p class="promo-eyebrow">Sollicitudin Nibh</p>
-                    <div class="promo-image">
-                        <img src="images/offset_comp_204688.jpg">
-                    </div>
-                    <p class="promo-h2">Tellus Etiam Sem</p>
-                    <p class="promo-author">By Vulputate Mollis<span class="promo-date">FEB 12, 2015</span></p>
-                    <p class="promo-body">Curabitur blandit tempus porttitor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                    <p class="cta">Read more</p>
-                </div>
-                <div class="promo-2 col-xs-12 col-sm-6">
-                    <p class="promo-eyebrow">Sollicitudin Nibh</p>
-                    <div class="promo-image">
-                        <img src="images/offset_comp_214792.jpg">
-                    </div>
-                    <p class="promo-h2">Donec id elit non mi porta gravida at eget metus.</p>
-                    <p class="promo-author">By Vulputate Mollis<span class="promo-date">FEB 12, 2015</span></p>
-                    <p class="promo-body">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <p class="cta">Read more</p>
-                </div>
+            <div class="col-xs-12 col-sm-6">
+                <p class="promo-eyebrow visible-sm visible-md visible-lg">Sollicitudin Nibh</p>
+                <p class="promo-h1">Tellus Etiam Sem</p>
+                <p class="promo-author">By Vulputate Mollis<span class="promo-date">FEB 12, 2015</span></p>
             </div>
-            <!-- 3 COLUMN ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-            <div class="row promo-3-column">
-                <div class="promo-1 col-xs-12 col-sm-4">
-                    <p class="promo-eyebrow">Sollicitudin Nibh</p>
-                    <div class="promo-image">
-                        <img src="images/offset_comp_204688.jpg">
-                    </div>
-                    <p class="promo-h2">Tellus Etiam Sem</p>
-                    <p class="promo-author">By Vulputate Mollis<span class="promo-date">FEB 12, 2015</span></p>
-                    <p class="promo-body">Curabitur blandit tempus porttitor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                    <p class="cta">Read more</p>
-                </div>
-                <div class="promo-2 col-xs-12 col-sm-4">
-                    <p class="promo-eyebrow">Sollicitudin Nibh</p>
-                    <div class="promo-image">
-                        <img src="images/offset_comp_214792.jpg">
-                    </div>
-                    <p class="promo-h2">Donec id elit non mi porta gravida at eget metus.</p>
-                    <p class="promo-author">By Vulputate Mollis<span class="promo-date">FEB 12, 2015</span></p>
-                    <p class="promo-body">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <p class="cta">Read more</p>
-                </div>
-                <div class="promo-3 col-xs-12 col-sm-4">
-                    <p class="promo-eyebrow">Sollicitudin Nibh</p>
-                    <div class="promo-image">
-                        <img src="images/offset_comp_205093.jpg">
-                    </div>
-                    <p class="promo-h2">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-                    <p class="promo-author">By Vulputate Mollis<span class="promo-date">FEB 12, 2015</span></p>
-                    <p class="promo-body">Maecenas sed diam eget risus varius blandit sit amet non magna. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
-                    <p class="cta">Read more</p>
-                </div>
+            <div class="col-xs-12 col-sm-6">
+                <p class="promo-body">Curabitur blandit tempus porttitor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                <p class="cta">Read more</p>
             </div>
-            <!-- 4 COLUMN ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-            <div class="row promo-4-column">
-                <div class="promo-1 col-xs-12 col-sm-3">
-                    <p class="promo-eyebrow">Sollicitudin Nibh</p>
-                    <p class="promo-h2">Tellus Etiam Sem</p>
-                    <p class="promo-author">By Vulputate Mollis<span class="promo-date">FEB 12, 2015</span></p>
-                    <p class="promo-body">Curabitur blandit tempus porttitor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                    <p class="cta">Read more</p>
+        </div>
+        <!-- 2 COLUMN ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <div class="row promo-2-column">
+            <div class="promo-1 col-xs-12 col-sm-6">
+                <p class="promo-eyebrow">Sollicitudin Nibh</p>
+                <div class="promo-image">
+                    <img src="images/offset_comp_204688.jpg">
                 </div>
-                <div class="promo-2 col-xs-12 col-sm-3">
-                    <p class="promo-eyebrow">Sollicitudin Nibh</p>
-                    <p class="promo-h2">Donec id elit non mi porta gravida at eget metus.</p>
-                    <p class="promo-author">By Vulputate Mollis<span class="promo-date">FEB 12, 2015</span></p>
-                    <p class="promo-body">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <p class="cta">Read more</p>
+                <p class="promo-h2">Tellus Etiam Sem</p>
+                <p class="promo-author">By Vulputate Mollis<span class="promo-date">FEB 12, 2015</span></p>
+                <p class="promo-body">Curabitur blandit tempus porttitor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                <p class="cta">Read more</p>
+            </div>
+            <div class="promo-2 col-xs-12 col-sm-6">
+                <p class="promo-eyebrow">Sollicitudin Nibh</p>
+                <div class="promo-image">
+                    <img src="images/offset_comp_214792.jpg">
                 </div>
-                <div class="promo-3 col-xs-12 col-sm-3">
-                    <p class="promo-eyebrow">Sollicitudin Nibh</p>
-                    <p class="promo-h2">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-                    <p class="promo-author">By Vulputate Mollis<span class="promo-date">FEB 12, 2015</span></p>
-                    <p class="promo-body">Maecenas sed diam eget risus varius blandit sit amet non magna. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
-                    <p class="cta">Read more</p>
+                <p class="promo-h2">Donec id elit non mi porta gravida at eget metus.</p>
+                <p class="promo-author">By Vulputate Mollis<span class="promo-date">FEB 12, 2015</span></p>
+                <p class="promo-body">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p class="cta">Read more</p>
+            </div>
+        </div>
+        <!-- 3 COLUMN ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <div class="row promo-3-column">
+            <div class="promo-1 col-xs-12 col-sm-4">
+                <p class="promo-eyebrow">Sollicitudin Nibh</p>
+                <div class="promo-image">
+                    <img src="images/offset_comp_204688.jpg">
                 </div>
-                <div class="promo-4 col-xs-12 col-sm-3">
-                    <p class="promo-eyebrow">Sollicitudin Nibh</p>
-                    <p class="promo-h2">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-                    <p class="promo-author">By Vulputate Mollis<span class="promo-date">FEB 12, 2015</span></p>
-                    <p class="promo-body">Maecenas sed diam eget risus varius blandit sit amet non magna. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
-                    <p class="cta">Read more</p>
+                <p class="promo-h2">Tellus Etiam Sem</p>
+                <p class="promo-author">By Vulputate Mollis<span class="promo-date">FEB 12, 2015</span></p>
+                <p class="promo-body">Curabitur blandit tempus porttitor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                <p class="cta">Read more</p>
+            </div>
+            <div class="promo-2 col-xs-12 col-sm-4">
+                <p class="promo-eyebrow">Sollicitudin Nibh</p>
+                <div class="promo-image">
+                    <img src="images/offset_comp_214792.jpg">
                 </div>
+                <p class="promo-h2">Donec id elit non mi porta gravida at eget metus.</p>
+                <p class="promo-author">By Vulputate Mollis<span class="promo-date">FEB 12, 2015</span></p>
+                <p class="promo-body">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p class="cta">Read more</p>
+            </div>
+            <div class="promo-3 col-xs-12 col-sm-4">
+                <p class="promo-eyebrow">Sollicitudin Nibh</p>
+                <div class="promo-image">
+                    <img src="images/offset_comp_205093.jpg">
+                </div>
+                <p class="promo-h2">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                <p class="promo-author">By Vulputate Mollis<span class="promo-date">FEB 12, 2015</span></p>
+                <p class="promo-body">Maecenas sed diam eget risus varius blandit sit amet non magna. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+                <p class="cta">Read more</p>
+            </div>
+        </div>
+        <!-- 4 COLUMN ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <div class="row promo-4-column">
+            <div class="promo-1 col-xs-12 col-sm-3">
+                <p class="promo-eyebrow">Sollicitudin Nibh</p>
+                <p class="promo-h2">Tellus Etiam Sem</p>
+                <p class="promo-author">By Vulputate Mollis<span class="promo-date">FEB 12, 2015</span></p>
+                <p class="promo-body">Curabitur blandit tempus porttitor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                <p class="cta">Read more</p>
+            </div>
+            <div class="promo-2 col-xs-12 col-sm-3">
+                <p class="promo-eyebrow">Sollicitudin Nibh</p>
+                <p class="promo-h2">Donec id elit non mi porta gravida at eget metus.</p>
+                <p class="promo-author">By Vulputate Mollis<span class="promo-date">FEB 12, 2015</span></p>
+                <p class="promo-body">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p class="cta">Read more</p>
+            </div>
+            <div class="promo-3 col-xs-12 col-sm-3">
+                <p class="promo-eyebrow">Sollicitudin Nibh</p>
+                <p class="promo-h2">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                <p class="promo-author">By Vulputate Mollis<span class="promo-date">FEB 12, 2015</span></p>
+                <p class="promo-body">Maecenas sed diam eget risus varius blandit sit amet non magna. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+                <p class="cta">Read more</p>
+            </div>
+            <div class="promo-4 col-xs-12 col-sm-3">
+                <p class="promo-eyebrow">Sollicitudin Nibh</p>
+                <p class="promo-h2">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                <p class="promo-author">By Vulputate Mollis<span class="promo-date">FEB 12, 2015</span></p>
+                <p class="promo-body">Maecenas sed diam eget risus varius blandit sit amet non magna. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+                <p class="cta">Read more</p>
             </div>
             <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
             <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
