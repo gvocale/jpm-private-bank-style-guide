@@ -1,0 +1,70 @@
+Searching 47 files for "contact" (regex)
+
+/Users/gvocale/Desktop/repositories/style-sheet/navigation.html:
+   79                  <img class="logo-xyz" src="images/logo.svg">
+   80                  <ul class="navigation-right">
+   81:                     <li class="navigation-contact">Contact Us</li>
+   82                  </ul>
+   83              </div>
+
+/Users/gvocale/Desktop/repositories/style-sheet/css/style.css:
+ 1454  .navigation-menu:hover,
+ 1455  .navigation-breadcrums:hover,
+ 1456: .navigation-contact:hover {
+ 1457    cursor: pointer;
+ 1458    cursor: hand; }
+ ....
+ 1460  li.navigation-menu,
+ 1461  li.navigation-breadcrumbs,
+ 1462: li.navigation-contact {
+ 1463    list-style: none;
+ 1464    display: inline-block; }
+ ....
+ 1537    left: -15px; }
+ 1538  
+ 1539: .navigation-contact {
+ 1540    border: solid 1px #FFFFFF;
+ 1541    padding: 3px 5px;
+ ....
+ 1543  
+ 1544  @media (min-width: 768px) {
+ 1545:   .navigation-contact {
+ 1546      border: solid 2px #FFFFFF;
+ 1547      padding: 4px 10px;
+ 1548      font-size: 13px; } }
+ 1549: .navigation-contact:hover {
+ 1550    background-color: #FFFFFF;
+ 1551    color: #310008; }
+
+/Users/gvocale/Desktop/repositories/style-sheet/scss/_navigation.scss:
+   68  .navigation-menu:hover,
+   69  .navigation-breadcrums:hover,
+   70: .navigation-contact:hover {
+   71      cursor: pointer;
+   72      cursor: hand;
+   ..
+   75  li.navigation-menu,
+   76  li.navigation-breadcrumbs,
+   77: li.navigation-contact {
+   78      list-style: none;
+   79      display: inline-block;
+   ..
+  158  }
+  159  
+  160: .navigation-contact {
+  161      border: solid 1px $White;
+  162      padding: 3px 5px;
+  ...
+  165  
+  166  @media (min-width: 768px) {
+  167:     .navigation-contact {
+  168          border: solid 2px $White;
+  169          padding: 4px 10px;
+  ...
+  172  }
+  173  
+  174: .navigation-contact:hover {
+  175      background-color: $White;
+  176      color: $JPMBrown;
+
+12 matches across 3 files

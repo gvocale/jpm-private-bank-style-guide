@@ -60,21 +60,21 @@ ul.navigation-right {
 }
 
 @media (max-width: 767px) {
-    .navigation-breadcrumbs {
+    .nav-primary-breadkcrumb {
         display: none;
     }
 }
 
 .navigation-menu:hover,
 .navigation-breadcrums:hover,
-.navigation-contact:hover {
+.nav-primary-contact:hover {
     cursor: pointer;
     cursor: hand;
 }
 
 li.navigation-menu,
-li.navigation-breadcrumbs,
-li.navigation-contact {
+li.nav-primary-breadkcrumb,
+li.nav-primary-contact {
     list-style: none;
     display: inline-block;
 }
@@ -146,32 +146,32 @@ li.navigation-contact {
     transform: translateY(4px);
 }
 
-.navigation-breadcrumbs {
+.nav-primary-breadcrumb {
     color: $WarmGray4;
     padding-left: 32px;
 }
 
-.navigation-breadcrumbs:before {
+.nav-primary-breadcrumb:before {
     content: "|";
     position: relative;
     left: -15px;
 }
 
-.navigation-contact {
+.nav-primary-contact {
     border: solid 1px $White;
     padding: 3px 5px;
     font-size: 10px;
 }
 
 @media (min-width: 768px) {
-    .navigation-contact {
+    .nav-primary-contact {
         border: solid 2px $White;
         padding: 4px 10px;
         font-size: 13px;
     }
 }
 
-.navigation-contact:hover {
+.nav-primary-contact:hover {
     background-color: $White;
     color: $JPMBrown;
 }
@@ -188,7 +188,7 @@ li.navigation-hide {
     }
 }
 
-#navigation-toggle input[type=checkbox] {
+#nav-primary-hamburger input[type=checkbox] {
     position: absolute;
     top: 0px;
     left: 0px;
@@ -271,7 +271,7 @@ li.navigation-hide {
     top: 0;
 }
 
-.navigation-toggle {
+.nav-primary-hamburger {
     margin: 0;
 }
 
@@ -285,21 +285,21 @@ li.navigation-hide {
     list-style-type: none;
 }
 
-.nav-h1 {
+.nav-secondary-h1 {
     margin-top: 40px;
 }
 
 @media (min-width: 768px) {
-    .nav-h1 {
+    .nav-secondary-h1 {
         margin-top: 60px;
     }
 }
 
-li:first-child .nav-h1 {
+li:first-child .nav-secondary-h1 {
     margin-top: 0px;
 }
 
-.nav-h1:before {
+.nav-secondary-h1:before {
     content: "";
     width: 45px;
     height: 1px;
@@ -309,15 +309,15 @@ li:first-child .nav-h1 {
     display: block;
 }
 
-.nav-h2 {
+.nav-footer {
     margin-top: 40px;
 }
 
-li:first-child .nav-h2 {
+li:first-child .nav-footer {
     margin-top: 0px;
 }
 
-.nav-h2:before {
+.nav-footer:before {
     content: "";
     width: 22px;
     height: 1px;

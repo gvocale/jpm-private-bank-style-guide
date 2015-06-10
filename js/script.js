@@ -62,7 +62,7 @@ $(document).ready(function() {
     });
 
     // Toggle full screen navigation
-    $("#navigation-toggle").change(function() {
+    $("#nav-primary-hamburger").change(function() {
         $(".overlay").toggleClass("open", this.unchecked);
         $("nav").toggleClass("open", this.unchecked);
     });

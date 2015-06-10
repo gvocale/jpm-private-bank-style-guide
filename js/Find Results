@@ -1,0 +1,369 @@
+Searching 45 files for ".container-fluid" (regex)
+
+/Users/gvocale/Desktop/repositories/style-sheet/color-palette.html:
+   17      <div class="center">
+   18          <!-- NAVIGATION BAR ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   19:         <div class="container-fluid grid-overlay hidden">
+   20              <div class="row">
+   21                  <div class="col-xs-1"></div>
+   ..
+   34          </div>
+   35          <div class="breakpoint-bar">
+   36:             <div class="container-fluid">
+   37                  <div class="col-xs-8 col-md-6">
+   38                      <p>
+   ..
+   68          </div>
+   69          <!-- PAGE TITLE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   70:         <div class="container-fluid">
+   71              <div class="row margin">
+   72                  <div class="col-xs-12">
+   ..
+   76          </div>
+   77          <!-- COLOR PALETTE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   78:         <div class="container-fluid">
+   79              <div class="row">
+   80                  <div class="col-xs-12">
+
+/Users/gvocale/Desktop/repositories/style-sheet/grid.html:
+   17      <div class="center">
+   18          <!-- NAVIGATION BAR ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   19:         <div class="container-fluid grid-overlay hidden">
+   20              <div class="row">
+   21                  <div class="col-xs-1"></div>
+   ..
+   34          </div>
+   35          <div class="breakpoint-bar">
+   36:             <div class="container-fluid">
+   37                  <div class="col-xs-8 col-xs-md-6">
+   38                      <p>
+   ..
+   68          </div>
+   69          <!-- PAGE TITLE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   70:         <div class="container-fluid">
+   71              <div class="row margin">
+   72                  <div class="col-xs-12">
+   ..
+   76          </div>
+   77          <!-- GRID ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   78:         <div class="container-fluid">
+   79              <div class="row">
+   80                  <div class="col-xs-12">
+
+/Users/gvocale/Desktop/repositories/style-sheet/header.html:
+   17      <div class="center">
+   18          <!-- NAVIGATION BAR ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   19:         <div class="container-fluid grid-overlay hidden">
+   20              <div class="row">
+   21                  <div class="col-xs-1"></div>
+   ..
+   34          </div>
+   35          <div class="breakpoint-bar">
+   36:             <div class="container-fluid">
+   37                  <div class="col-xs-8 col-md-6">
+   38                      <p>
+   ..
+   69          <!-- SETTINGS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   70          <div class="header-controls breakpoint-bar">
+   71:             <div class="container-fluid">
+   72                  <div class="row">
+   73                      <div class="col-xs-4 col-sm-2 background-image">
+   ..
+  118              </div>
+  119              <div class="anchor">
+  120:                 <div class="container-fluid">
+  121                      <div class="row">
+  122                          <div class="col-xs-12 col-sm-4">
+  ...
+  144          </div>
+  145          <div class="module">
+  146:             <div class="container-fluid">
+  147                  <div class="row">
+  148                      <div class="col-xs-12 col-lg-10 center-block">
+
+/Users/gvocale/Desktop/repositories/style-sheet/index.html:
+   17      <div class="center">
+   18          <!-- NAVIGATION BAR ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   19:         <div class="container-fluid grid-overlay hidden">
+   20              <div class="row">
+   21                  <div class="col-xs-1"></div>
+   ..
+   34          </div>
+   35          <div class="breakpoint-bar">
+   36:             <div class="container-fluid">
+   37                  <div class="col-xs-8 col-md-6">
+   38                      <p>
+   ..
+   68          </div>
+   69          <!-- PAGE TITLE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   70:         <div class="container-fluid">
+   71              <div class="row margin">
+   72                  <div class="col-xs-12">
+
+/Users/gvocale/Desktop/repositories/style-sheet/navigation.html:
+   17      <div class="center">
+   18          <!-- NAVIGATION BAR ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   19:         <div class="container-fluid grid-overlay hidden">
+   20              <div class="row">
+   21                  <div class="col-xs-1"></div>
+   ..
+   34          </div>
+   35          <div class="breakpoint-bar">
+   36:             <div class="container-fluid">
+   37                  <div class="col-xs-8 col-md-6">
+   38                      <p>
+   ..
+   84              <div class="overlay">
+   85                  <div class="center">
+   86:                     <div class="container-fluid">
+   87                          <div class="row">
+   88                              <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-lg-6 col-lg-offset-2">
+   ..
+  124          <!-- FULL SCREEN NAVIGATION ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  125          <!-- PAGE TITLE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  126:         <div class="container-fluid">
+  127              <div class="row top-2">
+  128                  <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+
+/Users/gvocale/Desktop/repositories/style-sheet/promos.html:
+   16  <body>
+   17      <!-- NAVIGATION BAR ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   18:     <div class="container-fluid grid-overlay hidden">
+   19          <div class="row">
+   20              <div class="col-xs-1"></div>
+   ..
+   33      </div>
+   34      <div class="breakpoint-bar">
+   35:         <div class="container-fluid">
+   36              <div class="col-xs-8 col-md-6">
+   37                  <p>
+   ..
+   67      <!-- SETTINGS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   68      <div class="header-controls breakpoint-bar">
+   69:         <div class="container-fluid">
+   70              <div class="row">
+   71                  <div class="col-xs-4 col-sm-2 checkbox-gutter">
+   ..
+   79      </div>
+   80      <!-- PAGE TITLE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   81:     <div class="container-fluid top-2">
+   82          <div class="row">
+   83              <div class="col-xs-12">
+   ..
+   90      <div class="container-full-width">
+   91          <div class="promo-image-full-width">
+   92:             <div class="container-fluid">
+   93                  <div class="row">
+   94                      <p class="promo-eyebrow col-xs-12 col-sm-5">Sollicitudin Nibh</p>
+   ..
+  102      </div>
+  103      <!-- visible only xs -->
+  104:     <div class="container-fluid">
+  105          <div class="row promo-1-column">
+  106              <div class="promo-1 col-xs-12 visible-xs">
+  ...
+  111          </div>
+  112      </div>
+  113:     <div class="container-fluid">
+  114          <!-- 1 COLUMN ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  115          <div class="row promo-1-column">
+
+/Users/gvocale/Desktop/repositories/style-sheet/spacing.html:
+   17      <div class="center">
+   18          <!-- NAVIGATION BAR ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   19:         <div class="container-fluid grid-overlay hidden">
+   20              <div class="row">
+   21                  <div class="col-xs-1"></div>
+   ..
+   34          </div>
+   35          <div class="breakpoint-bar">
+   36:             <div class="container-fluid">
+   37                  <div class="col-xs-8 col-md-6">
+   38                      <p>
+   ..
+   68          </div>
+   69          <!-- PAGE TITLE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   70:         <div class="container-fluid">
+   71              <div class="row margin">
+   72                  <div class="col-xs-12">
+   ..
+   76          </div>
+   77          <!-- BETWEEN MAJOR COMPONENTS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   78:         <div class="container-fluid">
+   79              <div class="row">
+   80                  <div class="col-xs-12">
+
+/Users/gvocale/Desktop/repositories/style-sheet/typography.html:
+   17      <div class="center">
+   18          <!-- NAVIGATION BAR ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   19:         <div class="container-fluid grid-overlay hidden">
+   20              <div class="row">
+   21                  <div class="col-xs-1"></div>
+   ..
+   34          </div>
+   35          <div class="breakpoint-bar">
+   36:             <div class="container-fluid">
+   37                  <div class="col-xs-8 col-md-6">
+   38                      <p>
+   ..
+   67          </div>
+   68          <!-- PAGE TITLE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   69:         <div class="container-fluid">
+   70              <div class="row margin">
+   71                  <div class="col-xs-12">
+   ..
+   75          </div>
+   76          <!-- TYPE STYLES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   77:         <div class="container-fluid">
+   78              <div class="row">
+   79                  <div class="col-xs-12 col-lg-4">
+   ..
+  559          </div>
+  560          <!-- TYPE SCALE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  561:         <div class="container-fluid">
+  562              <div class="row margin-top">
+  563                  <div class="col-xs-12 col-lg-4">
+
+/Users/gvocale/Desktop/repositories/style-sheet/css/homepage.css:
+   83    padding: 0px; }
+   84  
+   85: .container-fluid {
+   86    max-width: 1440px;
+   87    margin: 0px; }
+
+/Users/gvocale/Desktop/repositories/style-sheet/css/style.css:
+  745    line-height: 1.5; }
+  746  
+  747: .container-fluid.breakpoint-bar {
+  748    padding: 10px 0 10px 0; }
+  749  
+  ...
+  813    margin-left: 0%; }
+  814  
+  815: .container-fluid {
+  816    max-width: 1600px;
+  817    width: 90%; }
+  818  
+  819  @media (max-width: 991px) {
+  820:   .container-fluid {
+  821      width: 90%;
+  822      margin-left: 5%;
+  ...
+  983    .rule {
+  984      margin: 0; } }
+  985: .container-fluid.griddy {
+  986    border: solid 1px red; }
+  987  
+  ...
+ 1105    padding-bottom: 36%; }
+ 1106  
+ 1107: .promo-1-full-width .container-fluid {
+ 1108    top: 50%;
+ 1109    left: 50%;
+ ....
+ 1159    position: relative; }
+ 1160  
+ 1161: .container-full-width .container-fluid {
+ 1162    position: absolute;
+ 1163    top: 50%;
+ ....
+ 1346    padding: 1.36428%; }
+ 1347  
+ 1348: .container-fluid {
+ 1349    padding: 0;
+ 1350    max-width: 1600px;
+ ....
+ 1785          -ms-transform: translateY(calc(80vh - 148px));
+ 1786              transform: translateY(calc(80vh - 148px)); } }
+ 1787: .anchor .container-fluid {
+ 1788    margin: 0 auto; }
+ 1789  
+ 1790  @media (max-width: 767px) {
+ 1791:   .anchor .container-fluid {
+ 1792      width: 100%; } }
+ 1793  @media (min-width: 768px) {
+ 1794:   .anchor .container-fluid {
+ 1795      margin: 0 auto; } }
+ 1796  .anchor [class^="col-"] {
+
+/Users/gvocale/Desktop/repositories/style-sheet/scss/_grid.scss:
+  111  }
+  112  
+  113: .container-fluid {
+  114      padding: 0;
+  115      max-width: 1600px;
+
+/Users/gvocale/Desktop/repositories/style-sheet/scss/_header.scss:
+  281  }
+  282  
+  283: .anchor .container-fluid {
+  284      margin: 0 auto;
+  285  }
+  286  
+  287  @media (max-width: 767px) {
+  288:     .anchor .container-fluid {
+  289          width: 100%;
+  290      }
+  ...
+  292  
+  293  @media (min-width: 768px) {
+  294:     .anchor .container-fluid {
+  295          margin: 0 auto;
+  296      }
+
+/Users/gvocale/Desktop/repositories/style-sheet/scss/_promos.scss:
+  139  }
+  140  
+  141: .promo-1-full-width .container-fluid {
+  142      top: 50%;
+  143      left: 50%;
+  ...
+  196  }
+  197  
+  198: .container-full-width .container-fluid {
+  199      position: absolute;
+  200      top: 50%;
+
+/Users/gvocale/Desktop/repositories/style-sheet/scss/_responsive-grid.scss:
+    1  /*responsive-grid.css*/
+    2  
+    3: .clearfix:before, .clearfix:after, .dl-horizontal dd:before, .dl-horizontal dd:after, .container:before, .container:after, .container-fluid:before, .container-fluid:after, .row:before, .row:after, .form-horizontal .form-group:before, .form-horizontal .form-group:after, .btn-toolbar:before, .btn-toolbar:after, .btn-group-vertical > .btn-group:before, .btn-group-vertical > .btn-group:after, .nav:before, .nav:after, .navbar:before, .navbar:after, .navbar-header:before, .navbar-header:after, .navbar-collapse:before, .navbar-collapse:after, .pager:before, .pager:after, .panel-body:before, .panel-body:after, .modal-footer:before, .modal-footer:after {
+    4      content: " ";
+    5      display: table;
+    6  }
+    7: .clearfix:after, .dl-horizontal dd:after, .container:after, .container-fluid:after, .row:after, .form-horizontal .form-group:after, .btn-toolbar:after, .btn-group-vertical > .btn-group:after, .nav:after, .navbar:after, .navbar-header:after, .navbar-collapse:after, .pager:after, .panel-body:after, .modal-footer:after {
+    8      clear: both;
+    9  }
+
+/Users/gvocale/Desktop/repositories/style-sheet/scss/_responsive.scss:
+    1: .container-fluid.griddy {
+    2      border: solid 1px red;
+    3  }
+
+/Users/gvocale/Desktop/repositories/style-sheet/scss/_style-guide-styles.scss:
+    7  }
+    8  
+    9: .container-fluid.breakpoint-bar {
+   10      padding: 10px 0 10px 0;
+   11  }
+   ..
+   94  }
+   95  
+   96: .container-fluid {
+   97      max-width: 1600px;
+   98      width: 90%;
+   ..
+  100  
+  101  @media (max-width: 991px) {
+  102:     .container-fluid {
+  103          width: 90%;
+  104          margin-left: 5%;
+
+/Users/gvocale/Desktop/repositories/style-sheet/scss/homepage.scss:
+  103  }
+  104  
+  105: .container-fluid {
+  106      max-width: 1440px;
+  107      margin: 0px;
+
+61 matches across 17 files

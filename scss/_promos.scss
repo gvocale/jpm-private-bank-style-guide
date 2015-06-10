@@ -103,6 +103,16 @@
     display: block;
 }
 
+.inverted .promo-eyebrow:before {
+    content: "";
+    width: 45px;
+    height: 1px;
+    background-color: $White;
+    position: relative;
+    top: -10px;
+    display: block;
+}
+
 @media (min-width: 768px) {
     .promo-1-column.promo-1 .promo-eyebrow:before {
         display: none;
@@ -122,8 +132,8 @@
 // SPACING
 .promo-eyebrow,
 .promo-image,
-.promo-h1,
-.promo-h2,
+.h3,
+.h4,
 .promo-body,
 .promo-author {
     padding: 5px 0;
@@ -206,7 +216,7 @@
 }
 
 .promo-image-full-width {
-    background-image: url(../images/offset_comp_204688.jpg);
+    background-image: url(../images/header_person.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -241,13 +251,13 @@
     .row.promo-2-column.no-gutter {
         .promo-1 {
             padding-right: 1px;
-            .promo-eyebrow, .promo-h2, .promo-author, .promo-body, .cta {
+            .promo-eyebrow, .h4, .promo-author, .promo-body, .cta {
                 padding-right: calc(1.36428% * 2);
             }
         }
         .promo-2 {
             padding-left: 0px;
-            .promo-eyebrow, .promo-h2, .promo-author, .promo-body, .cta {
+            .promo-eyebrow, .h4, .promo-author, .promo-body, .cta {
                 padding-left: calc(1.36428% * 2);
             }
         }
@@ -256,7 +266,7 @@
         .promo-1 {
             width: calc(33.33333333% + 0.34107% + 0.0852675%);
             padding-right: 1px;
-            .promo-eyebrow, .promo-h2, .promo-author, .promo-body, .cta {
+            .promo-eyebrow, .h4, .promo-author, .promo-body, .cta {
                 padding-right: calc(1.36428% * 2);
             }
         }
@@ -264,7 +274,7 @@
             width: calc(33.33333333% - 0.68214% - 0.170535%);
             padding-left: 0px;
             padding-right: 1px;
-            .promo-eyebrow, .promo-h2, .promo-author, .promo-body, .cta {
+            .promo-eyebrow, .h4, .promo-author, .promo-body, .cta {
                 padding-left: calc(1.36428% * 2);
                 padding-right: calc(1.36428% * 2);
             }
@@ -272,7 +282,7 @@
         .promo-3 {
             width: calc(33.33333333% + 0.34107% + 0.0852675%);
             padding-left: 0px;
-            .promo-eyebrow, .promo-h2, .promo-author, .promo-body, .cta {
+            .promo-eyebrow, .h4, .promo-author, .promo-body, .cta {
                 padding-left: calc(1.36428% * 2);
             }
         }

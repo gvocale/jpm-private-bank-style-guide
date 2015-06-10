@@ -29,13 +29,13 @@ p.spec-font p.spec-detail {
 
 .style-guide-h1 {
     font-size: 55px;
-    line-height: 1.25;
+    line-height: 1;
     margin: 1.36428% 0;
 }
 
 .style-guide-h2 {
     font-size: 26px;
-    line-height: 1.25;
+    line-height: 1.333;
     margin-bottom: 20px;
 }
 
@@ -43,6 +43,10 @@ p.spec-font p.spec-detail {
     color: $Purple;
     font-family: $Medium;
     margin-bottom: 20px;
+}
+
+.style-guide-link {
+    color: $Purple;
 }
 
 .style-guide-body {
