@@ -26,3 +26,15 @@
     float: none !important
 }
 
+img {
+    width: 100%;
+}
+
+.img-container {
+    width: 100%;
+    height: 56.25vw; // 16/9 proportion
+    max-height: 80vh;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}

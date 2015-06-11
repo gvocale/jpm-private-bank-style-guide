@@ -3,6 +3,12 @@ body {
     color: $JPMBrown;
 }
 
+@media (min-width: 1200px) {
+    body {
+        font-size: 21px;
+    }
+}
+
 body,
 .h1,
 .h2,
@@ -130,7 +136,7 @@ p {
     }
 }
 
-.hero-body {
+.sub-headline {
     font-family: $Regular;
     font-size: 16px;
     text-align: center;
@@ -139,14 +145,14 @@ p {
 }
 
 @media (min-width: 768px) {
-    .hero-body {
+    .sub-headline {
         font-family: $Light;
         font-size: 21px;
     }
 }
 
 @media (min-width: 1200px) {
-    .hero-body {
+    .sub-headline {
         font-size: 26px;
         line-height: 1.333;
     }
@@ -206,7 +212,7 @@ p {
     }
 }
 
-.anchor-h1 {
+.tab-h1 {
     font-family: $Medium;
     font-weight: medium;
     font-size: 16px;
@@ -216,19 +222,19 @@ p {
 }
 
 @media (min-width: 992px) {
-    .anchor-h1 {
+    .tab-h1 {
         font-size: 21px;
     }
 }
 
-.anchor-body {
+.tab-body {
     font-family: $Regular;
     font-size: 13px;
     text-align: center;
 }
 
 @media (min-width: 992px) {
-    .anchor-body {
+    .tab-body {
         font-size: 16px;
     }
 }
@@ -280,14 +286,16 @@ p {
     margin-left: 10px;
 }
 
-.promo-body-large {
+.promo-1-column .body,
+.promo-1-column.body {
     font-family: $Light;
     font-size: 16px;
     text-align: left;
 }
 
 @media (min-width: 1200px) {
-    .promo-body-large {
+    .promo-1-column .body,
+    .promo-1-column.body {
         font-size: 21px;
     }
 }
@@ -310,14 +318,14 @@ p {
     cursor: hand;
 }
 
-.promo-body {
+.body {
     font-family: $Light;
     font-size: 16px;
     text-align: left;
 }
 
 @media (min-width: 1200px) {
-    .promo-body {
+    .body {
         font-size: 21px;
     }
 }
@@ -671,3 +679,49 @@ nav input[type=search],
 .global-footer-secondary-link {}
 
 .global-footer-secondary-copyright {}
+
+.share {}
+
+.eyebrow {
+    text-transform: uppercase;
+    font-family: $Regular;
+    font-size: 13px;
+    text-align: center;
+    letter-spacing: 0.15em;
+}
+
+@media (min-width: 768px) {
+    .eyebrow {
+        font-size: 16px;
+    }
+}
+
+.sub-headline {
+    font-family: $Light;
+    font-size: 16px;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .sub-headline {
+        font-size: 21px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .sub-headline {
+        font-size: 26px;
+    }
+}
+
+.body {}
+
+.strong {
+    font-family: $Medium;
+}
+
+@media (min-width: 1200px) {
+    .bold {
+        font-family: $Regular;
+    }
+}

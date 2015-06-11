@@ -134,7 +134,7 @@
 .promo-image,
 .h3,
 .h4,
-.promo-body,
+.body,
 .promo-author {
     padding: 5px 0;
 }
@@ -251,13 +251,13 @@
     .row.promo-2-column.no-gutter {
         .promo-1 {
             padding-right: 1px;
-            .promo-eyebrow, .h4, .promo-author, .promo-body, .cta {
+            .promo-eyebrow, .h4, .promo-author, .body, .cta {
                 padding-right: calc(1.36428% * 2);
             }
         }
         .promo-2 {
             padding-left: 0px;
-            .promo-eyebrow, .h4, .promo-author, .promo-body, .cta {
+            .promo-eyebrow, .h4, .promo-author, .body, .cta {
                 padding-left: calc(1.36428% * 2);
             }
         }
@@ -266,7 +266,7 @@
         .promo-1 {
             width: calc(33.33333333% + 0.34107% + 0.0852675%);
             padding-right: 1px;
-            .promo-eyebrow, .h4, .promo-author, .promo-body, .cta {
+            .promo-eyebrow, .h4, .promo-author, .body, .cta {
                 padding-right: calc(1.36428% * 2);
             }
         }
@@ -274,7 +274,7 @@
             width: calc(33.33333333% - 0.68214% - 0.170535%);
             padding-left: 0px;
             padding-right: 1px;
-            .promo-eyebrow, .h4, .promo-author, .promo-body, .cta {
+            .promo-eyebrow, .h4, .promo-author, .body, .cta {
                 padding-left: calc(1.36428% * 2);
                 padding-right: calc(1.36428% * 2);
             }
@@ -282,7 +282,7 @@
         .promo-3 {
             width: calc(33.33333333% + 0.34107% + 0.0852675%);
             padding-left: 0px;
-            .promo-eyebrow, .h4, .promo-author, .promo-body, .cta {
+            .promo-eyebrow, .h4, .promo-author, .body, .cta {
                 padding-left: calc(1.36428% * 2);
             }
         }

@@ -36,10 +36,10 @@ $(document).ready(function() {
         $(".header-copy").toggleClass("inverted", this.unchecked);
     });
 
-    // toggle anchor
-    $("#switch-anchor").change(function() {
-        $(".anchor").toggleClass("hide", this.unchecked);
-        $(".header-container").toggleClass("no-anchor", this.unchecked);
+    // toggle tab
+    $("#switch-tab").change(function() {
+        $(".tab").toggleClass("hide", this.unchecked);
+        $(".header-container").toggleClass("no-tab", this.unchecked);
     });
 
     // Toggle for grid
