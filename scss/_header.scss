@@ -310,9 +310,9 @@ output {
     .anchor [class^="col-"] {
         height: 15vh;
         border-bottom: 0;
-        border-left: 1px solid $WarmGray1;
         align-items: center;
         width: 33.33333333%;
+        border-right: 1px solid $WarmGray1;
     }
 }
 
@@ -336,8 +336,13 @@ output {
 
 @media (min-width: 768px) {
     .anchor [class^="col-"]:last-child {
-        border-left: 1px solid $WarmGray1;
-        border-right: 1px solid $WarmGray1;
+        border-right: 0px;
+    }
+}
+
+@media (min-width: 768px) {
+    .anchor [class^="col-"]:first-child {
+        border-left: 0px;
     }
 }
 
