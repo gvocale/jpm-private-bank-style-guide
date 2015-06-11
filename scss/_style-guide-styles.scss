@@ -272,12 +272,15 @@ li.primary-inverted {
     }
 }
 
+.breakpoint-bar,
 .style-guide {
     font-size: 13px;
     line-height: 1.5;
+
 }
 
 @media (min-width: 768px) {
+    .breakpoint-bar,
     .style-guide {
         font-size: 16px;
     }

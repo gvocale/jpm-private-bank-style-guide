@@ -61,25 +61,23 @@ p {
     font-family: $Medium;
 }
 
-.intro-eyebrow {
-    font-family: $Light;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.15em;
+.eyebrow {
     text-transform: uppercase;
+    font-family: $Regular;
+    font-size: 13px;
     text-align: center;
+    letter-spacing: 0.15em;
 }
 
 @media (min-width: 768px) {
-    .intro-eyebrow {
-        font-size: 21px;
+    .eyebrow {
+        font-size: 16px;
     }
 }
 
 @media (min-width: 1200px) {
-    .intro-eyebrow {
-        font-size: 26px;
-        line-height: 1.333;
+    .eyebrow {
+        font-size: 21px;
     }
 }
 
@@ -106,7 +104,7 @@ p {
 
 .h2 {
     font-family: $Light;
-    font-size: 26px;
+    font-size: 21px;
     text-align: center;
     margin-bottom: $x05;
 }
@@ -156,6 +154,44 @@ p {
         font-size: 26px;
         line-height: 1.333;
     }
+}
+
+.h3 {
+    font-family: $Regular;
+    font-size: 21px;
+}
+
+@media (min-width: 768px) {
+    .h3 {
+        font-size: 26px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .h3 {
+        font-size: 34px;
+    }
+}
+
+.h3:hover {
+    cursor: pointer;
+    cursor: hand;
+}
+
+.h4 {
+    font-family: $Regular;
+    font-size: 21px;
+}
+
+@media (min-width: 1200px) {
+    .h4 {
+        font-size: 26px;
+    }
+}
+
+.h4:hover {
+    cursor: pointer;
+    cursor: hand;
 }
 
 .intro-cta {
@@ -253,24 +289,6 @@ p {
     }
 }
 
-.h3 {
-    font-family: $Regular;
-    font-size: 21px;
-    text-align: left;
-}
-
-@media (min-width: 768px) {
-    .h3 {
-        font-size: 26px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .h3 {
-        font-size: 34px;
-    }
-}
-
 .promo-author {
     font-family: $Medium;
     font-size: 13px;
@@ -300,24 +318,6 @@ p {
     }
 }
 
-.h4 {
-    font-family: $Regular;
-    color: $JPMBrown;
-    font-size: 21px;
-    text-align: left;
-}
-
-@media (min-width: 1200px) {
-    .h4 {
-        font-size: 26px;
-    }
-}
-
-.h4:hover {
-    cursor: pointer;
-    cursor: hand;
-}
-
 .body {
     font-family: $Light;
     font-size: 16px;
@@ -331,13 +331,14 @@ p {
 }
 
 .global-footer-legal {
-    font-family: $Light;
+    font-family: $Regular;
     font-size: 10px;
     text-align: center;
 }
 
 @media (min-width: 1200px) {
     .global-footer-legal {
+        font-family: $Light;
         font-size: 13px;
     }
 }
@@ -681,20 +682,6 @@ nav input[type=search],
 .global-footer-secondary-copyright {}
 
 .share {}
-
-.eyebrow {
-    text-transform: uppercase;
-    font-family: $Regular;
-    font-size: 13px;
-    text-align: center;
-    letter-spacing: 0.15em;
-}
-
-@media (min-width: 768px) {
-    .eyebrow {
-        font-size: 16px;
-    }
-}
 
 .sub-headline {
     font-family: $Light;

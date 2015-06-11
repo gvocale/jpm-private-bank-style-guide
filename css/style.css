@@ -524,11 +524,13 @@ li.primary-inverted {
 @media (min-width: 768px) {
   .rule {
     margin: 0; } }
+.breakpoint-bar,
 .style-guide {
   font-size: 13px;
   line-height: 1.5; }
 
 @media (min-width: 768px) {
+  .breakpoint-bar,
   .style-guide {
     font-size: 16px; } }
 .container-fluid.griddy {
@@ -1785,21 +1787,19 @@ p {
 .medium {
   font-family: "Amplitude-Medium"; }
 
-.intro-eyebrow {
-  font-family: "Amplitude-Light";
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.15em;
+.eyebrow {
   text-transform: uppercase;
-  text-align: center; }
+  font-family: "Amplitude-Regular";
+  font-size: 13px;
+  text-align: center;
+  letter-spacing: 0.15em; }
 
 @media (min-width: 768px) {
-  .intro-eyebrow {
-    font-size: 21px; } }
+  .eyebrow {
+    font-size: 16px; } }
 @media (min-width: 1200px) {
-  .intro-eyebrow {
-    font-size: 26px;
-    line-height: 1.333; } }
+  .eyebrow {
+    font-size: 21px; } }
 .h1 {
   font-family: "Amplitude-Regular";
   font-size: 26px;
@@ -1816,7 +1816,7 @@ p {
     line-height: 1; } }
 .h2 {
   font-family: "Amplitude-Light";
-  font-size: 26px;
+  font-size: 21px;
   text-align: center;
   margin-bottom: 10px; }
 
@@ -1853,6 +1853,31 @@ p {
   .sub-headline {
     font-size: 26px;
     line-height: 1.333; } }
+.h3 {
+  font-family: "Amplitude-Regular";
+  font-size: 21px; }
+
+@media (min-width: 768px) {
+  .h3 {
+    font-size: 26px; } }
+@media (min-width: 1200px) {
+  .h3 {
+    font-size: 34px; } }
+.h3:hover {
+  cursor: pointer;
+  cursor: hand; }
+
+.h4 {
+  font-family: "Amplitude-Regular";
+  font-size: 21px; }
+
+@media (min-width: 1200px) {
+  .h4 {
+    font-size: 26px; } }
+.h4:hover {
+  cursor: pointer;
+  cursor: hand; }
+
 .intro-cta {
   font-family: "Amplitude-Medium";
   font-weight: medium;
@@ -1932,17 +1957,6 @@ p {
 @media (min-width: 1200px) {
   .promo-eyebrow {
     font-size: 16px; } }
-.h3 {
-  font-family: "Amplitude-Regular";
-  font-size: 21px;
-  text-align: left; }
-
-@media (min-width: 768px) {
-  .h3 {
-    font-size: 26px; } }
-@media (min-width: 1200px) {
-  .h3 {
-    font-size: 34px; } }
 .promo-author {
   font-family: "Amplitude-Medium";
   font-size: 13px;
@@ -1966,19 +1980,6 @@ p {
   .promo-1-column .body,
   .promo-1-column.body {
     font-size: 21px; } }
-.h4 {
-  font-family: "Amplitude-Regular";
-  color: #310008;
-  font-size: 21px;
-  text-align: left; }
-
-@media (min-width: 1200px) {
-  .h4 {
-    font-size: 26px; } }
-.h4:hover {
-  cursor: pointer;
-  cursor: hand; }
-
 .body {
   font-family: "Amplitude-Light";
   font-size: 16px;
@@ -1988,12 +1989,13 @@ p {
   .body {
     font-size: 21px; } }
 .global-footer-legal {
-  font-family: "Amplitude-Light";
+  font-family: "Amplitude-Regular";
   font-size: 10px;
   text-align: center; }
 
 @media (min-width: 1200px) {
   .global-footer-legal {
+    font-family: "Amplitude-Light";
     font-size: 13px; } }
 button {
   margin-right: 20px;
@@ -2267,16 +2269,6 @@ nav input[type=search],
   nav input[type=search] {
     font-size: 21px;
     padding: 10px 20px; } }
-.eyebrow {
-  text-transform: uppercase;
-  font-family: "Amplitude-Regular";
-  font-size: 13px;
-  text-align: center;
-  letter-spacing: 0.15em; }
-
-@media (min-width: 768px) {
-  .eyebrow {
-    font-size: 16px; } }
 .sub-headline {
   font-family: "Amplitude-Light";
   font-size: 16px;
