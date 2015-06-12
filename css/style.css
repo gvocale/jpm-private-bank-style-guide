@@ -999,6 +999,12 @@ img {
 .top-0 {
   margin-top: 0px !important; }
 
+.top-025 {
+  margin-top: 5px !important; }
+
+.top-05 {
+  margin-top: 10px !important; }
+
 .top-1 {
   margin-top: 20px !important; }
 
@@ -2303,3 +2309,26 @@ ul.bullet {
 
 .dash.center {
   margin: 0 auto; }
+
+.form-help {
+  font-size: 13px;
+  font-family: "Amplitude-Light";
+  color: #b6ada5; }
+
+.cta.text {
+  font-size: 16.013px;
+  font-family: "Amplitude-Light";
+  color: #8c8279;
+  text-decoration: underline;
+  line-height: 2; }
+
+.error {
+  color: #a71010; }
+
+input {
+  height: 50px;
+  width: 100%;
+  padding: 10px; }
+
+input.error {
+  border: 1px solid #a71010; }
