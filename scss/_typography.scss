@@ -82,30 +82,27 @@ p {
 }
 
 .h1 {
-    font-family: $Regular;
-    font-size: 26px;
-    line-height: 1.333;
+    font-family: $Light;
+    font-size: 42px;
+    line-height: 1;
     text-align: center;
 }
 
 @media (min-width: 768px) {
     .h1 {
-        font-family: $Light;
         font-size: 55px;
-        line-height: 1;
     }
 }
 
 @media (min-width: 1200px) {
     .h1 {
         font-size: 68px;
-        line-height: 1;
     }
 }
 
 .h2 {
     font-family: $Light;
-    font-size: 26px;
+    font-size: 34px;
     line-height: 1.333;
     text-align: center;
     margin-bottom: $x05;
@@ -683,6 +680,8 @@ nav input[type=search],
 .body {
     font-family: $Light;
     font-size: 16px;
+    max-width: 36em;
+    margin: 0 auto;
 }
 
 @media (min-width: 1200px) {
@@ -700,4 +699,25 @@ nav input[type=search],
     .bold {
         font-family: $Regular;
     }
+}
+
+
+
+@media (min-width: 768px) {
+    .left {
+        text-align: left;
+    }
+}
+
+ul.bullet {
+    list-style-type: square;
+    -webkit-margin-before: 0em;
+      -webkit-padding-start: 20px;
+}
+
+.text-left {
+    text-align: left;
+}
+.dash.center {
+    margin: 0 auto;
 }
