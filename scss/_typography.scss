@@ -26,12 +26,11 @@ h2,
 .h2,
 h3,
 .h3,
+h4,
+.h4,
 p {
     margin: 0;
-}
-
-p {
-    padding-bottom: 10px;
+    padding: 0;
 }
 
 @font-face {
@@ -380,22 +379,6 @@ a:focus {
     background-color: $JPMBrown;
     border: 0;
     display: inline-block;
-    margin-right: 20px;
-    margin-bottom: 20px;
-}
-
-.primary:only-of-type,
-.secondary:only-of-type,
-.play:only-of-type {
-    margin-right: 0px;
-    margin-bottom: 0px;
-}
-
-.primary:last-of-type,
-.secondary:last-of-type,
-.play:last-of-type {
-    margin-right: 0px;
-    margin-bottom: 0px;
 }
 
 .primary:hover {
@@ -606,9 +589,6 @@ p.global-footer-link:hover {
     border-width: 1px 0 0;
     width: 45px;
     height: 1px;
-    margin-top: 0;
-    margin-bottom: 10px;
-    margin-left: 0;
 }
 
 .divider {
@@ -752,7 +732,7 @@ ul.bullet {
 
 .cta.text {
     font-size: 16.013px;
-    font-family: "Amplitude-Light";
+    font-family: $Light;
     color: rgb(140, 130, 121);
     text-decoration: underline;
     line-height: 2;
@@ -774,4 +754,25 @@ input[type='text'] {
 
 input.error {
     border: 1px solid $Red;
+}
+
+.office-name {
+    text-transform: uppercase;
+    font-family: $Regular;
+}
+
+.office-location .office-name {
+    margin-bottom: 10px;
+}
+
+.office-location .cta {
+    margin-top: 10px;
+}
+
+.office-location .office-phone {
+    margin-top: 5px;
+}
+
+.office-address {
+    margin-bottom: 20px;
 }

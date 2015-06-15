@@ -65,6 +65,7 @@ img {
 
 .top-0 {
     margin-top: 0px !important;
+    padding-top: 0px !important;
 }
 
 .top-025 {
@@ -133,11 +134,13 @@ img {
 
 .bottom-0 {
     margin-bottom: 0px !important;
+    padding-bottom: 0px !important;
 }
 
 @media (min-width: 768px) {
     .bottom-0 {
         margin-bottom: 0px !important;
+        padding-bottom: 0px !important;
     }
 }
 
@@ -224,4 +227,28 @@ img {
     height: auto;
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.00) 93%, rgba(0, 0, 0, 0.30) 100%);
     z-index: -1;
+}
+
+// OFFICE LOCATION
+.office-location {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0;
+    max-width: 1600px;
+    width: calc(90% + 1.36428% + 1.36428%);
+}
+
+.office-address {
+    padding: calc(1.36428% * 2);
+    padding-bottom: 20px;
+    flex-basis: 200px;
+}
+
+@media (min-width: 768px) {
+    .office-address {
+        flex-basis: auto;
+    }
 }
