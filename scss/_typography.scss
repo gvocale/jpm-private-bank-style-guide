@@ -323,7 +323,8 @@ p {
 
 .promo-1-column .body,
 .promo-2-column .body,
-.promo-3-column .body {
+.promo-3-column .body,
+.content-tray .body {
     max-width: none;
 }
 
@@ -515,11 +516,31 @@ a.cta {
     vertical-align: middle;
 }
 
+.up.cta::after {
+    margin-left: 5px;
+    content: "►";
+    display: inline-block;
+    font-size: 0.5em;
+    vertical-align: middle;
+    transform: rotate(90deg);
+}
+
+.down.cta::after {
+    margin-left: 5px;
+    content: "►";
+    display: inline-block;
+    font-size: 0.5em;
+    vertical-align: middle;
+    transform: rotate(-90deg) translateX(3px);
+}
+
 .cta:hover {
     text-decoration: underline;
     cursor: pointer;
     cursor: hand;
 }
+
+
 
 .global-footer-h1 {
     font-family: $Medium;
@@ -741,7 +762,11 @@ ul.bullet {
     color: $Red;
 }
 
-input {
+input[type='checkbox'] {
+
+}
+
+input[type='text'] {
     height: 50px;
     width: 100%;
     padding: 10px;

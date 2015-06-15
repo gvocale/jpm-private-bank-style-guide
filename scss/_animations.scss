@@ -1,8 +1,8 @@
-.promo-image > img {
+.promo-image-container > img {
     transition: all 0.5s ease-in-out;
 }
 
-.promo-image > img:hover {
+.promo-image-container > img:hover {
     /*transform: scale(1.04);*/
     cursor: pointer;
     cursor: hand;

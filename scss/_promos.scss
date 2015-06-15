@@ -1,5 +1,5 @@
 // IMAGE CONTAINER WITH IMAGE CENTERED
-.promo-image {
+.promo-image-container {
     position: relative;
     margin: 0;
     overflow: hidden;
@@ -7,7 +7,7 @@
     margin: calc(1.36428%) 0; // margin on top and bottom
 }
 
-.promo-image:before {
+.promo-image-container:before {
     content: "";
     display: block;
     padding-top: 56%;
@@ -16,7 +16,7 @@
     background-clip: content-box;
 }
 
-.promo-image img {
+.promo-image-container img {
     width: 100%;
     position: absolute;
     top: 0;
@@ -28,65 +28,65 @@
 
 @media (min-width: 768px) {
     // 1 Column image - no gutter
-    .no-gutter.promo-1-column .promo-1.promo-image {
+    .no-gutter.promo-1-column .promo-1.promo-image-container {
         margin-left: 1.36428%;
         margin-right: 1.36428%;
     }
     // 2 Column image - no gutter
-    .no-gutter.promo-2-column .promo-1.promo-image {
+    .no-gutter.promo-2-column .promo-1.promo-image-container {
         margin-left: 1.36428%;
         margin-right: 1px;
         width: calc(50% - 1.36428% - 1px);
     }
-    .no-gutter.promo-2-column .promo-2.promo-image {
+    .no-gutter.promo-2-column .promo-2.promo-image-container {
         margin-right: 1.36428%;
         margin-left: 0px;
         width: calc(50% - 1.36428%);
     }
     // 3 Column image - no gutter
-    .no-gutter.promo-3-column .promo-1.promo-image {
+    .no-gutter.promo-3-column .promo-1.promo-image-container {
         margin-left: 1.36428%;
         margin-right: 1px;
         width: calc(33.33333333% - 1.36428% - 1px);
     }
-    .no-gutter.promo-3-column .promo-2.promo-image {
+    .no-gutter.promo-3-column .promo-2.promo-image-container {
         margin-right: 1px;
         margin-left: 0px;
         width: calc(33.33333333% - 1px);
     }
-    .no-gutter.promo-3-column .promo-3.promo-image {
+    .no-gutter.promo-3-column .promo-3.promo-image-container {
         margin-right: 1.36428%;
         margin-left: 0px;
         width: calc(33.33333333% - 1.36428%);
     }
     // 1 Column image - with gutter
-    .promo-1-column .promo-1.promo-image {
+    .promo-1-column .promo-1.promo-image-container {
         margin-left: 1.36428%;
         margin-right: 1.36428%;
     }
     // 2 Column image - with gutter
-    .promo-2-column .promo-1.promo-image {
+    .promo-2-column .promo-1.promo-image-container {
         margin-left: 1.36428%;
         margin-right: 1.36428%;
         width: calc(50% - 1.36428% - 1.36428%);
     }
-    .promo-2-column .promo-2.promo-image {
+    .promo-2-column .promo-2.promo-image-container {
         margin-left: 1.36428%;
         margin-right: 1.36428%;
         width: calc(50% - 1.36428% - 1.36428%);
     }
     // 3 Column image - with gutter
-    .promo-3-column .promo-1.promo-image {
+    .promo-3-column .promo-1.promo-image-container {
         margin-left: 1.36428%;
         margin-right: 1.36428%;
         width: calc(33.33333333% - 1.36428% - 1.36428%);
     }
-    .promo-3-column .promo-2.promo-image {
+    .promo-3-column .promo-2.promo-image-container {
         margin-left: 1.36428%;
         margin-right: 1.36428%;
         width: calc(33.33333333% - 1.36428% - 1.36428%);
     }
-    .promo-3-column .promo-3.promo-image {
+    .promo-3-column .promo-3.promo-image-container {
         margin-left: 1.36428%;
         margin-right: 1.36428%;
         width: calc(33.33333333% - 1.36428% - 1.36428%);
@@ -125,7 +125,7 @@
 
 // SPACING
 .promo-eyebrow,
-.promo-image,
+.promo-image-container,
 .h3,
 .h4,
 .body,
@@ -155,7 +155,7 @@
     position: absolute;
 }
 
-.promo-1-full-width .promo-image {
+.promo-1-full-width .promo-image-container {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -209,7 +209,7 @@
     z-index: 0;
 }
 
-.promo-image-full-width {
+.promo-image-container-full-width {
     background-image: url(../images/header_person.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -223,7 +223,7 @@
 }
 
 @media (min-width: 768px) {
-    .promo-image-full-width {
+    .promo-image-container-full-width {
         height: 56.25vw; // 16/9 proportion
     }
 }
