@@ -1112,7 +1112,7 @@ img {
   background: linear-gradient(90deg, rgba(0, 0, 0, 0) 93%, rgba(0, 0, 0, 0.3) 100%);
   z-index: -1; }
 
-.office-location {
+.office-location-container {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1137,9 +1137,9 @@ img {
   max-width: 1600px;
   width: calc(90% + 1.36428% + 1.36428%); }
 
-.office-address {
-  padding: calc(1.36428% * 2);
-  padding-bottom: 20px;
+.office-location {
+  padding: 1.36428%;
+  padding-bottom: 40px;
   -webkit-flex-basis: 200px;
       -ms-flex-preferred-size: 200px;
           flex-basis: 200px; }
@@ -1237,6 +1237,24 @@ img {
 
   .spacing p {
     font-size: 21px; } }
+.office-location {
+  margin-bottom: 20px; }
+
+.office-location .office-name {
+  margin-bottom: 10px; }
+
+.office-location .cta {
+  margin-top: 10px; }
+
+.office-location .office-phone {
+  margin-top: 5px; }
+
+.regulatory-links {
+  margin-bottom: 10px; }
+
+.regulatory-links:last-child {
+  margin-bottom: 0px; }
+
 path.icon.twitter,
 path.icon.email,
 path.icon.facebook,
@@ -2348,15 +2366,8 @@ p.global-footer-link:hover {
   border-width: 1px 0 0;
   clear: both;
   width: 100%;
-  height: 1px;
-  margin-bottom: 20px; }
+  height: 1px; }
 
-@media (min-width: 768px) {
-  .divider {
-    margin-bottom: 40px; } }
-@media (min-width: 1200px) {
-  .divider {
-    margin-bottom: 60px; } }
 .h1-body {
   font-size: 21px;
   font-family: "Amplitude-Light";
@@ -2450,17 +2461,39 @@ input.error {
   border: 1px solid #a71010; }
 
 .office-name {
+  font-size: 21px;
   text-transform: uppercase;
   font-family: "Amplitude-Regular"; }
 
-.office-location .office-name {
-  margin-bottom: 10px; }
+.office-address,
+.office-phone {
+  font-size: 16px; }
 
-.office-location .cta {
-  margin-top: 10px; }
+.regulatory-h1 {
+  font-family: "Amplitude-Medium";
+  font-size: 13px;
+  text-align: left;
+  text-transform: uppercase; }
 
-.office-location .office-phone {
-  margin-top: 5px; }
+.regulatory-h1:before {
+  content: "";
+  width: 45px;
+  height: 1px;
+  background-color: #310008;
+  position: relative;
+  top: -10px;
+  display: block; }
 
-.office-address {
-  margin-bottom: 20px; }
+.regulatory-h2 {
+  font-family: "Amplitude-Medium";
+  font-size: 16px;
+  text-align: left; }
+
+.regulatory-links {
+  font-family: "Amplitude-Light";
+  font-size: 16px;
+  color: #8c8279;
+  text-align: left;
+  text-decoration: underline;
+  cursor: pointer;
+  cursor: hand; }

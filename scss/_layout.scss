@@ -230,7 +230,7 @@ img {
 }
 
 // OFFICE LOCATION
-.office-location {
+.office-location-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -241,9 +241,9 @@ img {
     width: calc(90% + 1.36428% + 1.36428%);
 }
 
-.office-address {
-    padding: calc(1.36428% * 2);
-    padding-bottom: 20px;
+.office-location {
+    padding: 1.36428%;
+    padding-bottom: 40px;
     flex-basis: 200px;
 }
 
@@ -252,3 +252,4 @@ img {
         flex-basis: auto;
     }
 }
+
