@@ -114,12 +114,6 @@
 }
 
 @media (min-width: 768px) {
-    .promo-1-column.promo-1 .promo-eyebrow:before {
-        display: none;
-    }
-}
-
-@media (min-width: 768px) {
     .promo-1-column .row {
         position: absolute;
         z-index: 500;
@@ -301,4 +295,10 @@
 .promo-1-column.promo-1 .col-xs-12 {
     padding-top: 0px;
     padding-bottom: 0px;
+}
+
+.promo-1-column .primary {
+    margin-left: 20px;
+    margin-right: 0px;
+    float: right;
 }

@@ -40,6 +40,13 @@ img {
     background-size: cover;
 }
 
+
+.promo-1-column .img-container,
+.promo-2-column .img-container,
+.promo-3-column .img-container {
+    max-height: 435px;
+}
+
 .breather {
     max-height: 550px;
 }

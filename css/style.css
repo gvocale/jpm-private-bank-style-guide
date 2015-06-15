@@ -636,9 +636,6 @@ li.primary-inverted {
   display: block; }
 
 @media (min-width: 768px) {
-  .promo-1-column.promo-1 .promo-eyebrow:before {
-    display: none; } }
-@media (min-width: 768px) {
   .promo-1-column .row {
     position: absolute;
     z-index: 500;
@@ -790,6 +787,11 @@ li.primary-inverted {
 .promo-1-column.promo-1 .col-xs-12 {
   padding-top: 0px;
   padding-bottom: 0px; }
+
+.promo-1-column .primary {
+  margin-left: 20px;
+  margin-right: 0px;
+  float: right; }
 
 .promo-image > img {
   -webkit-transition: all 0.5s ease-in-out;
@@ -982,6 +984,11 @@ img {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover; }
+
+.promo-1-column .img-container,
+.promo-2-column .img-container,
+.promo-3-column .img-container {
+  max-height: 435px; }
 
 .breather {
   max-height: 550px; }
@@ -1994,7 +2001,14 @@ p {
 .body {
   font-family: "Amplitude-Light";
   font-size: 16px;
+  max-width: 36em;
+  margin: 0 auto;
   text-align: left; }
+
+.promo-1-column .body,
+.promo-2-column .body,
+.promo-3-column .body {
+  max-width: none; }
 
 @media (min-width: 1200px) {
   .body {
@@ -2280,12 +2294,6 @@ nav input[type=search],
   nav input[type=search] {
     font-size: 21px;
     padding: 10px 20px; } }
-.body {
-  font-family: "Amplitude-Light";
-  font-size: 16px;
-  max-width: 36em;
-  margin: 0 auto; }
-
 @media (min-width: 1200px) {
   .body {
     font-family: "Amplitude-Light";
