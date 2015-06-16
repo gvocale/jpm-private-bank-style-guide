@@ -106,7 +106,6 @@ p {
     text-align: center;
 }
 
-
 @media (min-width: 768px) {
     .h2 {
         font-size: 42px;
@@ -778,4 +777,25 @@ input.error {
     text-decoration: underline;
     cursor: pointer;
     cursor: hand;
+}
+
+.your-team-h1 {
+    font-family: $Regular;
+    font-size: 21px;
+    text-align: center;
+}
+
+.your-team-body {
+    font-family: $Light;
+    font-size: 16px;
+    text-align: center;
+}
+
+.your-team-you {
+    text-transform: uppercase;
+    font-family: $Light;
+    font-size: 34px;
+    line-height: 1.333;
+    color: $WarmGray8;
+    text-align: center;
 }
