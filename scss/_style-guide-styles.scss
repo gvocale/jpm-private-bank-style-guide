@@ -30,7 +30,7 @@ p.spec-font p.spec-detail {
 .style-guide-h1 {
     font-size: 55px;
     line-height: 1;
-    margin: 1.36428% 0;
+    margin: 80px 0;
 }
 
 .style-guide-h2 {
@@ -284,4 +284,12 @@ li.primary-inverted {
     .style-guide {
         font-size: 16px;
     }
+}
+
+.style-guide .rule {
+    margin-bottom: 20px;
+}
+
+.style-guide .row {
+    margin-bottom: 40px;
 }

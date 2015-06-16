@@ -311,7 +311,7 @@ p.spec-font p.spec-detail {
 .style-guide-h1 {
   font-size: 55px;
   line-height: 1;
-  margin: 1.36428% 0; }
+  margin: 80px 0; }
 
 .style-guide-h2 {
   font-size: 26px;
@@ -533,6 +533,12 @@ li.primary-inverted {
   .breakpoint-bar,
   .style-guide {
     font-size: 16px; } }
+.style-guide .rule {
+  margin-bottom: 20px; }
+
+.style-guide .row {
+  margin-bottom: 40px; }
+
 .container-fluid.griddy {
   border: solid 1px red; }
 
@@ -850,7 +856,7 @@ li.primary-inverted {
 .col-sm-12,
 .col-md-12,
 .col-lg-12 {
-  padding: 1.36428%; }
+  padding: 0 1.36428%; }
 
 .container-fluid {
   padding: 0;
@@ -1249,12 +1255,10 @@ img {
 .office-location .office-phone {
   margin-top: 5px; }
 
-.regulatory-links {
-  margin-bottom: 10px; }
-
-.regulatory-links:last-child {
-  margin-bottom: 0px; }
-
+@media (max-width: 767px) {
+  .regulatory-links li,
+  .regulatory-h2 {
+    margin-bottom: 10px; } }
 path.icon.twitter,
 path.icon.email,
 path.icon.facebook,
@@ -1959,27 +1963,16 @@ p {
   font-family: "Amplitude-Light";
   font-size: 34px;
   line-height: 1.333;
-  text-align: center;
-  margin-bottom: 10px; }
-
-.h2:only-child {
-  margin-bottom: 20px; }
+  text-align: center; }
 
 @media (min-width: 768px) {
   .h2 {
     font-size: 42px;
-    line-height: 1.333; }
-
-  .h2:only-child {
-    margin-bottom: 40px; } }
+    line-height: 1.333; } }
 @media (min-width: 1200px) {
   .h2 {
     font-size: 55px;
-    line-height: 1;
-    margin-bottom: 20px; }
-
-  .h2:only-child {
-    margin-bottom: 60px; } }
+    line-height: 1; } }
 .sub-headline {
   font-family: "Amplitude-Light";
   font-size: 21px;
@@ -2473,7 +2466,8 @@ input.error {
   font-family: "Amplitude-Medium";
   font-size: 13px;
   text-align: left;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  letter-spacing: 0.05em; }
 
 .regulatory-h1:before {
   content: "";
@@ -2489,11 +2483,18 @@ input.error {
   font-size: 16px;
   text-align: left; }
 
-.regulatory-links {
+.regulatory-links a {
   font-family: "Amplitude-Light";
   font-size: 16px;
   color: #8c8279;
   text-align: left;
+  text-decoration: underline;
+  cursor: pointer;
+  cursor: hand;
+  display: inline-block; }
+
+.regulatory-links a:hover {
+  color: #310008;
   text-decoration: underline;
   cursor: pointer;
   cursor: hand; }

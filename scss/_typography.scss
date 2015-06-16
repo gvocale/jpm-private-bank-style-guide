@@ -104,20 +104,13 @@ p {
     font-size: 34px;
     line-height: 1.333;
     text-align: center;
-    margin-bottom: $x05;
 }
 
-.h2:only-child {
-    margin-bottom: $x1;
-}
 
 @media (min-width: 768px) {
     .h2 {
         font-size: 42px;
         line-height: 1.333;
-    }
-    .h2:only-child {
-        margin-bottom: $x2;
     }
 }
 
@@ -125,10 +118,6 @@ p {
     .h2 {
         font-size: 55px;
         line-height: 1;
-        margin-bottom: $x1;
-    }
-    .h2:only-child {
-        margin-bottom: $x3;
     }
 }
 
@@ -754,6 +743,7 @@ input.error {
     font-size: 13px;
     text-align: left;
     text-transform: uppercase;
+    letter-spacing: 0.05em;
 }
 
 .regulatory-h1:before {
@@ -772,11 +762,19 @@ input.error {
     text-align: left;
 }
 
-.regulatory-links {
+.regulatory-links a {
     font-family: $Light;
     font-size: 16px;
     color: $WarmGray8;
     text-align: left;
+    text-decoration: underline;
+    cursor: pointer;
+    cursor: hand;
+    display: inline-block;
+}
+
+.regulatory-links a:hover {
+    color: $JPMBrown;
     text-decoration: underline;
     cursor: pointer;
     cursor: hand;

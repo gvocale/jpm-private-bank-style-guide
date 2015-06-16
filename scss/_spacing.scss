@@ -79,11 +79,8 @@
 }
 
 @media (min-width: 768px) {
-    .spacing p:before {
-    }
-    .spacing p:after {
-
-    }
+    .spacing p:before {}
+    .spacing p:after {}
 }
 
 @media (min-width: 1200px) {
@@ -100,9 +97,7 @@
     }
 }
 
-
 // OFFICE LOCATION
-
 .office-location {
     margin-bottom: 20px;
 }
@@ -119,14 +114,11 @@
     margin-top: 5px;
 }
 
-
 // REGULATORY LINKS
+@media (max-width: 767px) {
+    .regulatory-links li,
+    .regulatory-h2 {
+        margin-bottom: 10px;
+    }
 
-.regulatory-links {
-    margin-bottom: 10px;
 }
-
-.regulatory-links:last-child {
-    margin-bottom: 0px;
-}
-
