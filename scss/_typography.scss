@@ -83,13 +83,14 @@ p {
 .h1 {
     font-family: $Light;
     font-size: 42px;
-    line-height: 1;
+    line-height: 1.333;
     text-align: center;
 }
 
 @media (min-width: 768px) {
     .h1 {
         font-size: 55px;
+        line-height: 1;
     }
 }
 
@@ -102,7 +103,6 @@ p {
 .h2 {
     font-family: $Light;
     font-size: 34px;
-    line-height: 1.333;
     text-align: center;
 }
 
