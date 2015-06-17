@@ -1,3 +1,8 @@
+.hero-promo, 
+.homepage-hero {
+    position: relative;
+}
+
 .homepage-hero .img-container {
     height: calc(100vh - 90px);
     background-image: url(../images/header_cityscape.jpg);
@@ -18,8 +23,9 @@
     max-height: 800px;
 }
 
-.homepage-hero .copy-container,
-.hero-promo .copy-container {
+
+.copy-container {
+    width: 100%;
     margin: auto;
     position: absolute;
     left: 50%;
