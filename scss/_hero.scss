@@ -1,8 +1,3 @@
-$navigation-sm-md-lg: 148px;
-$navigation-xs: 192px;
-$tab-md-lg: 20vh;
-$tab-sm: 15vh;
-$tab-xs: 150px;
 .homepage-hero .img-container {
     height: calc(100vh - 90px);
     background-image: url(../images/header_cityscape.jpg);
@@ -23,18 +18,18 @@ $tab-xs: 150px;
     max-height: 800px;
 }
 
-.homepage-hero .copy-container {
+.homepage-hero .copy-container,
+.hero-promo .copy-container {
     margin: auto;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
-    width: 90%;
-    padding: 5%;
 }
 
-.homepage-hero .copy-container .dash {
+.homepage-hero .copy-container .dash,
+.hero .dash {
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -143,5 +138,25 @@ $tab-xs: 150px;
 @media (min-width: 768px) {
     .homepage-tabs [class^="col-"]:last-child {
         border-right: 0px;
+    }
+}
+
+
+.hero-promo-img-container {
+    background-image: url(../images/header_person.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 75vw; // 4/3 proportion
+    min-height: 240px;
+    max-height: 800px;
+    position: relative;
+    z-index: -10;
+}
+
+@media (min-width: 768px) {
+    .hero-promo-img-container {
+        height: 56.25vw; // 16/9 proportion
     }
 }

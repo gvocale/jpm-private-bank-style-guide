@@ -270,13 +270,13 @@ p {
     }
 }
 
-.promo-author {
+.author {
     font-family: $Medium;
     font-size: 13px;
     text-align: left;
 }
 
-.promo-date {
+.date {
     font-family: $Regular;
     font-size: 10px;
     letter-spacing: 0.05em;
@@ -716,8 +716,8 @@ nav input[type=search],
     font-family: $Medium;
 }
 
-@media (min-width: 1200px) {
-    .bold {
+@media (min-width: 726px) {
+    .strong {
         font-family: $Regular;
     }
 }

@@ -1,0 +1,182 @@
+// IMAGE CONTAINER WITH IMAGE CENTERED
+.promo-img-container {
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+    max-height: 435px; // set max height of image container
+}
+
+.promo-img-container:before {
+    content: "";
+    display: block;
+    padding-top: 56%; // set ratio of image to 16/9 
+    background-clip: content-box;
+}
+
+.promo-img-container img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto; // this center align the picture in the 16/9 container
+}
+
+.promo-eyebrow:before {
+    content: "";
+    width: 45px;
+    height: 1px;
+    background-color: $JPMBrown;
+    position: relative;
+    top: -10px;
+    display: block;
+}
+
+.inverted .promo-eyebrow:before {
+    content: "";
+    width: 45px;
+    height: 1px;
+    background-color: $White;
+    position: relative;
+    top: -10px;
+    display: block;
+}
+
+// SPACING
+.promo-1-column .author {
+    margin-top: 5px;
+}
+
+@media (min-width: 768px) {
+    .promo-1-column .promo-eyebrow {
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 992px) {
+    .promo-1-column .primary {
+        margin-left: 20px;
+        float: right;
+    }
+}
+
+@media (min-width: 768px) {
+    .promo-1-column .cta {
+        margin-top: 10px;
+    }
+}
+
+// SPACING HERO-PROMO
+.hero-promo .promo-eyebrow,
+.hero-promo .h3 {
+    margin-bottom: 10px;
+}
+
+.hero-promo .author {
+    margin-bottom: 20px;
+}
+
+.hero-promo .body {
+    margin-bottom: 30px;
+}
+
+.hero-promo .primary:first-child {
+    margin-right: 10px;
+}
+
+// SPACING PROMO-1-COLUMN
+.promo-1-column .promo-eyebrow,
+.promo-1-column .h3 {
+    margin-bottom: 10px;
+}
+
+.promo-1-column .author,
+.promo-1-column .body {
+    margin-bottom: 20px;
+}
+
+.promo-1-column .promo-img-container {
+    margin-top: 20px;
+}
+
+@media (max-width: 767px) {
+    .promo-1-column .body {
+        margin-bottom: 5px;
+    }
+    .promo-1-column .author {
+        margin-bottom: 10px;
+    }
+    .promo-1-column .promo-img-container,
+    .promo-1-column .promo-eyebrow {
+        margin-bottom: 15px;
+    }
+    .promo-1-column .promo-img-container {
+        margin-top: 0px;
+    }
+}
+
+// SPACING PROMO-2-COLUMN
+.promo-2-column .body {
+    margin-bottom: 5px;
+}
+
+.promo-2-column .h4,
+.promo-2-column .author {
+    margin-bottom: 10px;
+}
+
+.promo-2-column .promo-eyebrow,
+.promo-2-column .promo-img-container {
+    margin-bottom: 15px;
+}
+
+@media (max-width: 767px) {
+    .promo-2-column .promo-1 {
+        margin-bottom: 60px;
+    }
+}
+
+// SPACING PROMO-3-COLUMN
+.promo-3-column .body {
+    margin-bottom: 5px;
+}
+
+.promo-3-column .h4,
+.promo-3-column .author {
+    margin-bottom: 10px;
+}
+
+.promo-3-column .promo-eyebrow,
+.promo-3-column .promo-img-container {
+    margin-bottom: 15px;
+}
+
+@media (max-width: 767px) {
+    .promo-3-column .promo-1,
+    .promo-3-column .promo-2 {
+        margin-bottom: 60px;
+    }
+}
+
+// SPACING PROMO-4-COLUMN
+.promo-4-column .body {
+    margin-bottom: 5px;
+}
+
+.promo-4-column .h4,
+.promo-4-column .author {
+    margin-bottom: 10px;
+}
+
+.promo-4-column .promo-eyebrow {
+    margin-bottom: 15px;
+}
+
+@media (max-width: 767px) {
+    .promo-4-column .promo-1,
+    .promo-4-column .promo-2,
+    .promo-4-column .promo-3 {
+        margin-bottom: 60px;
+    }
+}
