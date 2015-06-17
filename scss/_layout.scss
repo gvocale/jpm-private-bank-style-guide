@@ -47,7 +47,13 @@ img {
 }
 
 .breather {
-    max-height: 550px;
+    max-height: 450px;
+}
+
+@media (min-width: 1200px) {
+    .breather {
+        max-height: 550px;
+    }
 }
 
 .gray-background {
@@ -62,7 +68,6 @@ img {
 .no-margin {
     margin: 0;
 }
-
 
 .img-book-container {
     width: calc(100% - 15px);
@@ -122,4 +127,3 @@ img {
         flex-basis: auto;
     }
 }
-
