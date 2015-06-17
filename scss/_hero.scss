@@ -12,7 +12,7 @@ $tab-xs: 150px;
     content: "";
     display: block;
     position: absolute;
-    top: 0;
+    top: 90px;
     bottom: 0;
     left: 0;
     right: 0;
@@ -37,6 +37,17 @@ $tab-xs: 150px;
 .homepage-hero .copy-container .dash {
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.homepage-hero .intro-tooltip {
+    position: absolute;
+    bottom: 25%;
+    z-index: 10;
+    display: inline;
+    margin: auto;
+    left: 50%;
+    transform: translate(-50%, 75%);
+    z-index: 10;
 }
 
 .background-tint {

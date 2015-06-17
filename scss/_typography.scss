@@ -761,7 +761,7 @@ ul.bullet {
 }
 
 .error {
-    color: $Red;
+    color: $RedError;
 }
 
 input[type='checkbox'] {}
@@ -773,7 +773,7 @@ input[type='text'] {
 }
 
 input.error {
-    border: 1px solid $Red;
+    border: 1px solid $RedError;
 }
 
 .office-name {

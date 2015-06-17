@@ -516,6 +516,10 @@ li.primary-inverted {
 .WarmGray0 {
   background-color: #ebe8e5; }
 
+.RedError {
+  background-color: #a71010;
+  color: #FFFFFF; }
+
 .rule {
   border-top: 1px solid #310008;
   margin: calc(1.36428% * 2) 0; }
@@ -1351,7 +1355,7 @@ button .icon.linkedin:hover {
   content: "";
   display: block;
   position: absolute;
-  top: 0;
+  top: 90px;
   bottom: 0;
   left: 0;
   right: 0;
@@ -1376,6 +1380,18 @@ button .icon.linkedin:hover {
 .homepage-hero .copy-container .dash {
   margin-top: 20px;
   margin-bottom: 20px; }
+
+.homepage-hero .intro-tooltip {
+  position: absolute;
+  bottom: 25%;
+  z-index: 10;
+  display: inline;
+  margin: auto;
+  left: 50%;
+  -webkit-transform: translate(-50%, 75%);
+      -ms-transform: translate(-50%, 75%);
+          transform: translate(-50%, 75%);
+  z-index: 10; }
 
 .background-tint {
   float: left;

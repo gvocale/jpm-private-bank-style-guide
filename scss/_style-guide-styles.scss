@@ -259,6 +259,11 @@ li.primary-inverted {
     background-color: $WarmGray0;
 }
 
+.RedError {
+    background-color: $RedError;
+    color: $White;
+}
+
 // RULE
 .rule {
     border-top: 1px solid $JPMBrown;
@@ -275,7 +280,6 @@ li.primary-inverted {
 .style-guide {
     font-size: 13px;
     line-height: 1.5;
-
 }
 
 @media (min-width: 768px) {
