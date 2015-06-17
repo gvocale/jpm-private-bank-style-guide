@@ -136,7 +136,7 @@ p {
 }
 
 .h3 {
-    font-family: $Regular;
+    font-family: $Light;
     font-size: 21px;
 }
 
@@ -159,7 +159,7 @@ p {
 }
 
 .h4 {
-    font-family: $Regular;
+    font-family: $Light;
     font-size: 21px;
 }
 
@@ -511,12 +511,18 @@ a.cta {
 }
 
 .global-footer-h1 {
-    font-family: $Medium;
+    font-family: $Regular;
     font-size: 13px;
     letter-spacing: 0.05em;
     text-align: left;
     color: $JPMBrown;
     text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+    .global-footer-h1 {
+        font-family: $Medium;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -526,12 +532,18 @@ a.cta {
 }
 
 .global-footer-h2 {
-    font-family: $Medium;
+    font-family: $Regular;
     font-size: 13px;
     letter-spacing: 0.05em;
     text-align: left;
     color: $WarmGray4;
     text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+    .global-footer-h2 {
+        font-family: $Medium;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -554,6 +566,23 @@ p.global-footer-link {
 }
 
 p.global-footer-link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    cursor: hand;
+}
+
+.global-footer-copyright {
+    font-size: 13px;
+    font-family: $Light;
+    font-color: $WarmGray8;
+    padding: 10px 0;
+}
+
+.global-footer-copyright a {
+    font-color: $WarmGray8;
+}
+
+.global-footer-copyright a:hover {
     text-decoration: underline;
     cursor: pointer;
     cursor: hand;
@@ -651,11 +680,10 @@ nav input[type=search],
 
 .nav-client-login-body {}
 
-.global-footer-note {}
-
-.global-footer-secondary-link {}
-
-.global-footer-secondary-copyright {}
+.note {
+    padding: 10px;
+    border: 1px solid $WarmGray1;
+}
 
 .share {}
 
@@ -679,6 +707,9 @@ nav input[type=search],
 @media (min-width: 768px) {
     .left {
         text-align: left;
+    }
+    .right {
+        text-align: right;
     }
 }
 

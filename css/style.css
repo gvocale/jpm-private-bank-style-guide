@@ -1176,6 +1176,12 @@ img {
   .regulatory-links li,
   .regulatory-h2 {
     margin-bottom: 10px; } }
+.global-footer-h1 {
+  margin-bottom: 10px; }
+
+.global-footer-h2 {
+  margin-bottom: 10px; }
+
 .top-0 {
   margin-top: 0px !important;
   padding-top: 0px !important; }
@@ -2050,7 +2056,7 @@ p {
     font-size: 26px;
     line-height: 1.333; } }
 .h3 {
-  font-family: "Amplitude-Regular";
+  font-family: "Amplitude-Light";
   font-size: 21px; }
 
 @media (min-width: 768px) {
@@ -2065,7 +2071,7 @@ p {
   cursor: hand; }
 
 .h4 {
-  font-family: "Amplitude-Regular";
+  font-family: "Amplitude-Light";
   font-size: 21px; }
 
 @media (min-width: 1200px) {
@@ -2369,24 +2375,30 @@ a.cta {
   cursor: hand; }
 
 .global-footer-h1 {
-  font-family: "Amplitude-Medium";
+  font-family: "Amplitude-Regular";
   font-size: 13px;
   letter-spacing: 0.05em;
   text-align: left;
   color: #310008;
   text-transform: uppercase; }
 
+@media (min-width: 768px) {
+  .global-footer-h1 {
+    font-family: "Amplitude-Medium"; } }
 @media (min-width: 1200px) {
   .global-footer-h1 {
     font-size: 16px; } }
 .global-footer-h2 {
-  font-family: "Amplitude-Medium";
+  font-family: "Amplitude-Regular";
   font-size: 13px;
   letter-spacing: 0.05em;
   text-align: left;
   color: #b6ada5;
   text-transform: uppercase; }
 
+@media (min-width: 768px) {
+  .global-footer-h2 {
+    font-family: "Amplitude-Medium"; } }
 @media (min-width: 1200px) {
   .global-footer-h2 {
     font-size: 16px; } }
@@ -2400,6 +2412,20 @@ p.global-footer-link {
   p.global-footer-link {
     font-size: 16px; } }
 p.global-footer-link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  cursor: hand; }
+
+.global-footer-copyright {
+  font-size: 13px;
+  font-family: "Amplitude-Light";
+  font-color: #8c8279;
+  padding: 10px 0; }
+
+.global-footer-copyright a {
+  font-color: #8c8279; }
+
+.global-footer-copyright a:hover {
   text-decoration: underline;
   cursor: pointer;
   cursor: hand; }
@@ -2471,6 +2497,10 @@ nav input[type=search],
   nav input[type=search] {
     font-size: 21px;
     padding: 10px 20px; } }
+.note {
+  padding: 10px;
+  border: 1px solid #d7d2cb; }
+
 @media (min-width: 1200px) {
   .body {
     font-family: "Amplitude-Light";
@@ -2483,7 +2513,10 @@ nav input[type=search],
     font-family: "Amplitude-Regular"; } }
 @media (min-width: 768px) {
   .left {
-    text-align: left; } }
+    text-align: left; }
+
+  .right {
+    text-align: right; } }
 ul.bullet {
   list-style-type: square;
   -webkit-margin-before: 0em;
