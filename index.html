@@ -14,80 +14,98 @@
 </head>
 
 <body>
-
-        <!-- NAVIGATION BAR ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-        <div class="container-fluid grid-overlay hidden">
-            <div class="row">
-                <div class="col-xs-1"></div>
-                <div class="col-xs-1"></div>
-                <div class="col-xs-1"></div>
-                <div class="col-xs-1"></div>
-                <div class="col-xs-1"></div>
-                <div class="col-xs-1"></div>
-                <div class="col-xs-1"></div>
-                <div class="col-xs-1"></div>
-                <div class="col-xs-1"></div>
-                <div class="col-xs-1"></div>
-                <div class="col-xs-1"></div>
-                <div class="col-xs-1"></div>
+    <!-- NAVIGATION BAR ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <div class="container-fluid grid-overlay hidden">
+        <div class="row">
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1"></div>
+        </div>
+    </div>
+    <div class="breakpoint-bar">
+        <div class="container-fluid">
+            <div class="col-xs-8 col-md-6">
+                <p>
+                    <span class="visible-xs"><span class="breakpoint-name">Extra Small</span><span class="symbol"><</span><span class="breakpoint-detail">767px</span><span class="breakpoint-detail">Margin 5%</span></span>
+                    <span class="visible-sm"><span class="breakpoint-name">Small</span><span class="symbol">≥</span><span class="breakpoint-detail">768px</span><span class="breakpoint-detail">Margin 5%</span></span>
+                    <span class="visible-md"><span class="breakpoint-name">Medium</span><span class="symbol">≥</span><span class="breakpoint-detail">992px</span><span class="breakpoint-detail">Margin 5%</span></span>
+                    <span class="visible-lg"><span class="breakpoint-name">Large</span><span class="symbol">≥</span><span class="breakpoint-detail">1200px</span><span class="breakpoint-detail">Margin 5%</span><span class="breakpoint-detail">Max width 1600px</span></span>
+                </p>
+            </div>
+            <div class="col-xs-4 col-md-6">
+                <form id="toggle">
+                    <label for="grid-toggle">Show Grid</label>
+                    <input type="checkbox" id="grid-toggle">
+                </form>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <form id="page-changer" action="" method="post">
+                    <select onchange="location = this.options[this.selectedIndex].value;">
+                        <option>Change page</option>
+                        <option value="index.html">- Home</option>
+                        <option value="article.html">Article</option>
+                        <option value="color-palette.html">Color Palette</option>
+                        <option value="content-page.html">Content Page</option>
+                        <option value="content-tray.html">Content Tray</option>
+                        <option value="form.html">Form</option>
+                        <option value="global-footer.html">Global Footer</option>
+                        <option value="grid.html">Grid</option>
+                        <option value="hero.html">Hero</option>
+                        <option value="homepage-hero.html">Homepage Hero</option>
+                        <option value="navigation.html">Navigation</option>
+                        <option value="office-location.html">Office Location</option>
+                        <option value="promo.html">Promo</option>
+                        <option value="regulatory-link.html">Regulatory Links</option>
+                        <option value="spacing.html">Spacing</option>
+                        <option value="typography.html">Typography</option>
+                    </select>​
+                </form>
             </div>
         </div>
-        <div class="breakpoint-bar">
-            <div class="container-fluid">
-                <div class="col-xs-8 col-md-6">
-                    <p>
-                        <span class="visible-xs"><span class="breakpoint-name">Extra Small</span><span class="symbol"><</span><span class="breakpoint-detail">767px</span><span class="breakpoint-detail">Margin 5%</span></span>
-                        <span class="visible-sm"><span class="breakpoint-name">Small</span><span class="symbol">≥</span><span class="breakpoint-detail">768px</span><span class="breakpoint-detail">Margin 5%</span></span>
-                        <span class="visible-md"><span class="breakpoint-name">Medium</span><span class="symbol">≥</span><span class="breakpoint-detail">992px</span><span class="breakpoint-detail">Margin 5%</span></span>
-                        <span class="visible-lg"><span class="breakpoint-name">Large</span><span class="symbol">≥</span><span class="breakpoint-detail">1200px</span><span class="breakpoint-detail">Margin 5%</span><span class="breakpoint-detail">Max width 1600px</span></span>
-                    </p>
-                </div>
-                <div class="col-xs-4 col-md-6">
-                    <form id="toggle">
-                        <label for="grid-toggle">Show Grid</label>
-                        <input type="checkbox" id="grid-toggle">
-                    </form>
-                </div>
-                <div class="col-xs-12 col-md-4">
-                    <form id="page-changer" action="" method="post">
-                        <select onchange="location = this.options[this.selectedIndex].value;">
-                            <option>Change page</option>
-                            <option value="index.html">- Home</option>
-                            <option value="article.html">Article</option>
-                            <option value="color-palette.html">Color Palette</option><option value="content-page.html">Content Page</option>
-                            <option value="content-tray.html">Content Tray</option><option value="form.html">Form</option><option value="global-footer.html">Global Footer</option>
-                            <option value="grid.html">Grid</option>
-                            <option value="hero.html">Hero</option><option value="homepage-hero.html">Homepage Hero</option>
-                            <option value="navigation.html">Navigation</option>
-                            <option value="office-location.html">Office Location</option>
-                            <option value="promo.html">Promo</option>
-                            <option value="regulatory-link.html">Regulatory Links</option>
-                            <option value="spacing.html">Spacing</option>
-                            <option value="typography.html">Typography</option>
-                        </select>​
-                    </form>
-                </div>
+    </div>
+    <!-- PAGE TITLE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <div class="container-fluid style-guide ">
+        <div class="row top-5 bottom-5">
+            <div class="col-xs-12">
+                <p class="style-guide-h1">Style Guide</p>
             </div>
         </div>
-        <!-- PAGE TITLE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-        <div class="container-fluid style-guide">
-            <div class="row margin">
-                <div class="col-xs-12">
-                    <p class="style-guide-h1">Style Guide</p>
-                </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="rule"></div>
             </div>
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="rule"></div>
-                </div>
-                <div class="col-xs-12 col-sm-4 col-lg-4">
-                    <p class="style-guide-h3">Introduction</p>
-                </div>
-                <div class="col-xs-12 col-sm-8 col-lg-6">
-                    <p class="style-guide-body">Maecenas faucibus mollis interdum. Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec ullamcorper nulla non metus auctor fringilla. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                </div>
+            <div class="col-xs-12 col-sm-4 col-lg-4">
+                <p class="style-guide-h3">Introduction</p>
+            </div>
+            <div class="col-xs-12 col-sm-8 col-lg-6">
+                <p class="style-guide-body">The new J.P. Morgan Private Banking public site was designed on top of a 12 column bootstrap grid. It is a module or component based site, and every page from the home page to article pages are built out of components. These components can be added, re-arranged or removed depending on editorial needs.
+            </div>
+            <div class="col-xs-12 col-sm-4 col-lg-4">
+                <p class="style-guide-h3">About this Interactive Guide</p>
+            </div>
+            <div class="col-xs-12 col-sm-8 col-lg-6">
+                <p class="style-guide-body">This interactive style guide contains a set amount built-out components that illustrate the design and desired behavior across each responsive design breakpoint. All the required information, such as type styles and sizes, colors, image behavior and layout, is supplied within this guide. </p>
+                <p class="style-guide-body">The style guide is broken up into sections. Some sections contain specific components and the others global information. Global information sections are: Typography Color Palette Component spacing Grid </p>
+                <p class="style-guide-body">Not every component required to build the PB public site is fully defined here in the interactive guide, and any remaining components have been defined in a corresponding PDF, entitled the J.P Morgan technical Component guide. The defined components in the PDF guide will reference back to the interactive style guide as much as possible. For example, any type style that is defined here in the interactive guide will simply be referenced in the PDF, whereas any type style that is unique or not in this interactive guide be fully defined within the PDF. Between the two guides formats, a complete front-end technical spec for building the PB public site is provided.</p>
             </div>
         </div>
+        <div class="col-xs-12 col-sm-4 col-lg-4">
+            <p class="style-guide-h3">Note</p>
+        </div>
+        <div class="col-xs-12 col-sm-8 col-lg-6">
+            <p class="style-guide-body"> All components have been named in an effort to align with the Functional Specifications document.</p>
+        </div>
+    </div>
+    </div>
     </div>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
