@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <title>Style Guide</title>
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css'>
+    <link rel="stylesheet" href="css/style.css">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+</head>
+
+<body>
+    <!-- NAVIGATION BAR ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <div class="container-fluid grid-overlay hidden">
+        <div class="row">
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1"></div>
+        </div>
+    </div>
+    <div class="breakpoint-bar">
+        <div class="container-fluid">
+            <div class="col-xs-8 col-md-6">
+                <p>
+                    <span class="visible-xs"><span class="breakpoint-name">Extra Small</span><span class="symbol"><</span><span class="breakpoint-detail">767px</span><span class="breakpoint-detail">Margin 5%</span></span>
+                    <span class="visible-sm"><span class="breakpoint-name">Small</span><span class="symbol">≥</span><span class="breakpoint-detail">768px</span><span class="breakpoint-detail">Margin 5%</span></span>
+                    <span class="visible-md"><span class="breakpoint-name">Medium</span><span class="symbol">≥</span><span class="breakpoint-detail">992px</span><span class="breakpoint-detail">Margin 5%</span></span>
+                    <span class="visible-lg"><span class="breakpoint-name">Large</span><span class="symbol">≥</span><span class="breakpoint-detail">1200px</span><span class="breakpoint-detail">Margin 5%</span><span class="breakpoint-detail">Max width 1600px</span></span>
+                </p>
+            </div>
+            <div class="col-xs-4 col-md-6">
+                <form id="toggle">
+                    <label for="grid-toggle">Show Grid</label>
+                    <input type="checkbox" id="grid-toggle">
+                </form>
+            </div>
+            <div class="col-xs-12">
+                <form id="page-changer" action="" method="post">
+                    <select onchange="location = this.options[this.selectedIndex].value;">
+                        <option>Change page</option>
+                        <option value="index.html">- Home</option>
+                        <option value="article.html">Article</option>
+                        <option value="color-palette.html">Color Palette</option>
+                        <option value="content-page.html">Content Page</option>
+                        <option value="content-tray.html">Content Tray</option>
+                        <option value="form.html">Form</option><option value="global-footer.html">Global Footer</option>
+                        <option value="grid.html">Grid</option>
+                        <option value="hero.html">Hero</option>
+                        <option value="homepage-hero.html">Homepage Hero</option>
+                        <option value="navigation.html">Navigation</option>
+                        <option value="office-location.html">Office Location</option>
+                        <option value="promo.html">Promo</option>
+                        <option value="regulatory-link.html">Regulatory Links</option>
+                        <option value="spacing.html">Spacing</option>
+                        <option value="typography.html">Typography</option>
+                    </select>​
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- HERO PROMO ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <div class="hero">
+        <div class="hero-copy absolute inverted visible-xs">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <p class="h2">Connect With Us</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-copy absolute inverted visible-sm visible-md visible-lg">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <p class="h2">Connect With Us</p>
+                        <div class="dash center"></div>
+                        <p class="sub-headline">We’re ready to speak with you about your financial goals.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image half"></div>
+    </div>
+    <div class="hero hero-copy visible-xs">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    <p class="sub-headline">We’re ready to speak with you about your financial goals.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FORM ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <div class="form container-fluid top-5 bottom-5">
+        <div class="row ">
+            <div class="col-xs-12 col-sm-6">
+                <p class="h3 strong center">Your Information</p>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <p class="h3 strong center">Your Needs</p>
+                <p class="body center">Product or Service of Interest</p>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <p class="body strong">First Name*</p>
+                <input type="text" name="telephone" class="">
+                <p class="body strong">Last Name*</p>
+                <input type="text" name="telephone" class="">
+                <p class="body strong">City*</p>
+                <input type="text" name="telephone" class="">
+                <p class="body strong">Country*</p>
+                <input type="text" name="telephone" class="">
+                <p class="body strong">Telephone Number* (including the area code*</p>
+                <input type="text" name="telephone" class="">
+                <p class="body strong">Email Address*</p>
+                <input type="text" name="telephone" class="">
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <p class="body strong">First Name*</p>
+                <input type="text" name="telephone" class="">
+                <p class="body strong">Last Name*</p>
+                <input type="text" name="telephone" class="">
+                <p class="body strong">City*</p>
+                <input type="text" name="telephone" class="">
+                <p class="body strong">Country*</p>
+                <input type="text" name="telephone" class="">
+                <p class="body strong">Telephone Number* (including the area code*</p>
+                <input type="text" name="telephone" class="">
+                <p class="body strong">Email Address*</p>
+                <input type="text" name="telephone" class="">
+                <p class="form-help right">Maximum 300 characters</p>
+            </div>
+            <div class="col-xs-12 top-2">
+                <p class="primary center">Send</p>
+                <p class="form-help center">*Required form fields</p>
+            </div>
+            <div class="col-xs-12 top-2">
+                <p class="h6 center">YOUR PRIVACY IS IMPORTANT TO US.</p>
+                <p class="legal"><a href="">View Privacy Policy</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
+    <script src='js/script.js'></script>
+</body>
+
+</html>

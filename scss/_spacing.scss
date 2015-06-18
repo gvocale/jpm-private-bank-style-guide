@@ -516,7 +516,7 @@ p.author + p.date {
 }
 
 .hero {
-    .h2 + .eyebrow, .eyebrow + .sub-headline, .sub-headline + .primary, .eyebrow + .h3 {
+    .h2 + .eyebrow, .h2 + .dash, .eyebrow + .sub-headline, .sub-headline + .primary, .eyebrow + .h3 {
         margin-top: 20px;
     }
     .sub-headline + .secondary,
