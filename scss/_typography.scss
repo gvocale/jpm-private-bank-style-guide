@@ -150,6 +150,37 @@ p {
     }
 }
 
+.h5 {
+    font-family: $Medium;
+    font-size: 16px;
+    text-align: left;
+}
+
+@media (min-width: 1200px) {
+    .h5 {
+                    font-family: $Regular;
+        font-size: 21px;
+    }
+}
+
+.h6 {
+    font-family: $Medium;
+    font-size: 13px;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.h6 .warmgray8 {
+    color: $WarmGray8;
+}
+
+@media (min-width: 1200px) {
+    .h6 {
+        font-size: 16px;
+    }
+}
+
 .intro-cta {
     font-family: $Medium;
     font-weight: medium;
@@ -251,6 +282,10 @@ p {
 
 .orange {
     color: $Orange !important;
+}
+
+.warmgray8 {
+    color: $WarmGray8 !important;
 }
 
 .inverted {
@@ -523,85 +558,14 @@ a.cta {
     cursor: hand;
 }
 
-.global-footer-h1 {
-    font-family: $Regular;
-    font-size: 13px;
-    letter-spacing: 0.05em;
-    text-align: left;
-    color: $JPMBrown;
-    text-transform: uppercase;
-    margin-top: 10px
-}
-
-.global-footer-h1:before {
-    content: "";
-    width: 22px;
-    height: 2px;
-    background-color: $JPMBrown;
-    position: relative;
-    top: -10px;
-    display: block;
-}
-
-@media (min-width: 768px) {
-    .global-footer-h1 {
-        font-family: $Medium;
-    }
-}
-
-@media (min-width: 1200px) {
-    .global-footer-h1 {
-        font-size: 16px;
-    }
-}
-
-.global-footer-h2 {
-    font-family: $Regular;
-    font-size: 13px;
-    letter-spacing: 0.05em;
-    text-align: left;
-    color: $WarmGray4;
-    text-transform: uppercase;
-}
-
-@media (min-width: 768px) {
-    .global-footer-h2 {
-        font-family: $Medium;
-    }
-}
-
-@media (min-width: 1200px) {
-    .global-footer-h2 {
-        font-size: 16px;
-    }
-}
-
-p.global-footer-link {
-    font-family: $Light;
-    font-size: 13px;
-    text-align: left;
-}
-
-@media (min-width: 1200px) {
-    p.global-footer-link {
-        font-size: 16px;
-    }
-}
-
-p.global-footer-link:hover {
-    text-decoration: underline;
-    cursor: pointer;
-    cursor: hand;
-}
-
-.global-footer-legal {
+.legal {
     font-family: $Regular;
     font-size: 10px;
     text-align: center;
 }
 
 @media (min-width: 1200px) {
-    .global-footer-legal {
+    .legal {
         font-family: $Light;
         font-size: 13px;
     }
@@ -679,10 +643,6 @@ a {
 a:hover {
     color: $JPMBrown;
     text-decoration: underline;
-}
-
-.global-footer a {
-    text-decoration: none;
 }
 
 .divider {
@@ -844,24 +804,19 @@ input.error {
     font-size: 16px;
 }
 
-.h6 {
-    font-family: $Medium;
+.global-footer {
     font-size: 13px;
     text-align: left;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
+    font-family: $Light;
 }
 
-.h5 {
-    font-family: $Medium;
-    font-size: 16px;
-    text-align: left;
+@media (min-width: 768px) {
+    .global-footer {
+        font-size: 16px;
+    }
 }
 
 .link a {
-    font-family: $Light;
-    font-size: 16px;
-    text-align: left;
     text-decoration: none;
     cursor: pointer;
     cursor: hand;

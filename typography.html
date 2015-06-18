@@ -14,934 +14,914 @@
 </head>
 
 <body>
-
-        <!-- NAVIGATION BAR ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-        <div class="container-fluid grid-overlay hidden">
-            <div class="row">
-                <div class="col-xs-1"></div>
-                <div class="col-xs-1"></div>
-                <div class="col-xs-1"></div>
-                <div class="col-xs-1"></div>
-                <div class="col-xs-1"></div>
-                <div class="col-xs-1"></div>
-                <div class="col-xs-1"></div>
-                <div class="col-xs-1"></div>
-                <div class="col-xs-1"></div>
-                <div class="col-xs-1"></div>
-                <div class="col-xs-1"></div>
-                <div class="col-xs-1"></div>
-            </div>
+    <!-- NAVIGATION BAR ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <div class="container-fluid grid-overlay hidden">
+        <div class="row">
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1"></div>
         </div>
-        <div class="breakpoint-bar">
-            <div class="container-fluid">
-                <div class="col-xs-8 col-md-6">
-                    <p>
-                        <span class="visible-xs"><span class="breakpoint-name">Extra Small</span><span class="symbol"><</span><span class="breakpoint-detail">767px</span><span class="breakpoint-detail">Margin 5%</span></span>
-                        <span class="visible-sm"><span class="breakpoint-name">Small</span><span class="symbol">≥</span><span class="breakpoint-detail">768px</span><span class="breakpoint-detail">Margin 5%</span></span>
-                        <span class="visible-md"><span class="breakpoint-name">Medium</span><span class="symbol">≥</span><span class="breakpoint-detail">992px</span><span class="breakpoint-detail">Margin 5%</span></span>
-                        <span class="visible-lg"><span class="breakpoint-name">Large</span><span class="symbol">≥</span><span class="breakpoint-detail">1200px</span><span class="breakpoint-detail">Margin 5%</span><span class="breakpoint-detail">Max width 1600px</span></span>
-                    </p>
-                </div>
-                <div class="col-xs-4 col-md-6">
-                    <form id="toggle">
-                        <label for="grid-toggle">Show Grid</label>
-                        <input type="checkbox" id="grid-toggle">
-                    </form>
-                </div>
-                <div class="col-xs-12">
-                    <form id="page-changer" action="" method="post">
-                        <select onchange="location = this.options[this.selectedIndex].value;">
-                            <option>Change page</option>
-                            <option value="index.html">- Home</option>
-                            <option value="article.html">Article</option>
-                            <option value="color-palette.html">Color Palette</option><option value="content-page.html">Content Page</option>
-                            <option value="content-tray.html">Content Tray</option>
-                            <option value="global-footer.html">Global Footer</option>
-                            <option value="grid.html">Grid</option>
-                            <option value="hero.html">Hero</option>
-                            <option value="homepage-hero.html">Homepage Hero</option>
-                            <option value="navigation.html">Navigation</option>
-                            <option value="office-location.html">Office Location</option>
-                            <option value="promo.html">Promo</option>
-                            <option value="regulatory-link.html">Regulatory Links</option>
-                            <option value="spacing.html">Spacing</option>
-                            <option value="typography.html">Typography</option>
-                        </select>​
-                    </form>
-                </div>
-            </div>
-        </div>
-        <!-- PAGE TITLE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    </div>
+    <div class="breakpoint-bar">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-xs-12">
-                    <p class="style-guide-h1">Typographic Styles</p>
-                </div>
+            <div class="col-xs-8 col-md-6">
+                <p>
+                    <span class="visible-xs"><span class="breakpoint-name">Extra Small</span><span class="symbol"><</span><span class="breakpoint-detail">767px</span><span class="breakpoint-detail">Margin 5%</span></span>
+                    <span class="visible-sm"><span class="breakpoint-name">Small</span><span class="symbol">≥</span><span class="breakpoint-detail">768px</span><span class="breakpoint-detail">Margin 5%</span></span>
+                    <span class="visible-md"><span class="breakpoint-name">Medium</span><span class="symbol">≥</span><span class="breakpoint-detail">992px</span><span class="breakpoint-detail">Margin 5%</span></span>
+                    <span class="visible-lg"><span class="breakpoint-name">Large</span><span class="symbol">≥</span><span class="breakpoint-detail">1200px</span><span class="breakpoint-detail">Margin 5%</span><span class="breakpoint-detail">Max width 1600px</span></span>
+                </p>
+            </div>
+            <div class="col-xs-4 col-md-6">
+                <form id="toggle">
+                    <label for="grid-toggle">Show Grid</label>
+                    <input type="checkbox" id="grid-toggle">
+                </form>
+            </div>
+            <div class="col-xs-12">
+                <form id="page-changer" action="" method="post">
+                    <select onchange="location = this.options[this.selectedIndex].value;">
+                        <option>Change page</option>
+                        <option value="index.html">- Home</option>
+                        <option value="article.html">Article</option>
+                        <option value="color-palette.html">Color Palette</option>
+                        <option value="content-page.html">Content Page</option>
+                        <option value="content-tray.html">Content Tray</option>
+                        <option value="global-footer.html">Global Footer</option>
+                        <option value="grid.html">Grid</option>
+                        <option value="hero.html">Hero</option>
+                        <option value="homepage-hero.html">Homepage Hero</option>
+                        <option value="navigation.html">Navigation</option>
+                        <option value="office-location.html">Office Location</option>
+                        <option value="promo.html">Promo</option>
+                        <option value="regulatory-link.html">Regulatory Links</option>
+                        <option value="spacing.html">Spacing</option>
+                        <option value="typography.html">Typography</option>
+                    </select>​
+                </form>
             </div>
         </div>
-        <!-- TYPE STYLES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-        <div class="container-fluid style-guide">
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="rule"></div>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p class="style-guide-h3">.dash</p>
-                    <p class="style-guide-h3">.eyebrow</p>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p class="visible-xs visible-sm visible-md visible-lg">Amplitude Medium</p>
-                    <p class="visible-xs visible-sm visible-md">Size: 13px</p>
-                    <p class="visible-lg breakpoint">Size: 16px</p>
-                    <p class="visible-xs visible-sm visible-md">Line height: 20px (1.5x)</p>
-                    <p class="visible-lg breakpoint">Line height: 24px (1.5x)</p>
-                    <p class="visible-xs visible-sm visible-md">Margin-bottom: 5px</p>
-                    <p class="visible-lg breakpoint">Margin-bottom: 5px</p>
-                    <p>Tracking: 150</p>
-                </div>
-                <div class="col-xs-12 col-md-6">
-                    <div class="dash"></div>
-                    <p class="eyebrow">Market Thoughts</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="rule"></div>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p class="style-guide-h3">.eyebrow-hero</p>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p class="visible-xs visible-sm visible-md visible-lg">Amplitude Regular</p>
-                    <p class="visible-xs breakpoint">Size: 13px</p>
-                    <p class="visible-sm visible-md">Size: 16px</p>
-                    <p class="visible-lg breakpoint">Size: 21px</p>
-                    <p>Line height: 1.5</p>
-                    <p>Tracking: 150</p>
-                </div>
-                <div class="col-xs-12 col-md-6">
-                    <p class="eyebrow-hero">X.Y.Z. Private Bank</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="rule"></div>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p class="style-guide-h3">.h1</p>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p class="">Amplitude Light</p>
-                    <p class="visible-xs breakpoint">Size: 42px</p>
-                    <p class="visible-sm visible-md">Size: 55px</p>
-                    <p class="visible-lg breakpoint">Size: 68px</p>
-                    <p class="visible-xs breakpoint">Line height: 1.333</p>
-                    <p class="visible-sm visible-md visible-lg">Line height: 1</p>
-                    <p>Tracking: 20</p>
-                </div>
-                <div class="col-xs-12 col-md-6">
-                    <p class="h1">Your Vision Realized</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="rule"></div>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p class="style-guide-h3">.h2</p>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p class="">Amplitude Light</p>
-                    <p class="visible-xs breakpoint">Size: 34px</p>
-                    <p class="visible-sm visible-md">Size: 42px</p>
-                    <p class="visible-lg breakpoint">Size: 55px</p>
-                    <p class="visible-xs visible-sm visible-md">Line height: 1.333</p>
-                    <p class="visible-lg breakpoint">Line height: 1</p>
-                    <p>Tracking: 20</p>
-                </div>
-                <div class="col-xs-12 col-md-6">
-                    <p class="h2">Your Vision Realized</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="rule"></div>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p class="style-guide-h3">.sub-headline</p>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p class="">Amplitude Light</p>
-                    <p class="visible-xs visible-sm visible-md">Size: 21px</p>
-                    <p class="visible-lg breakpoint">Size: 26px</p>
-                    <p class="visible-xs visible-sm visible-md ">Line height: 1.5</p>
-                    <p class="breakpoint visible-lg">Line height: 1.333</p>
-                    <p>Tracking: 20</p>
-                </div>
-                <div class="col-xs-12 col-md-6">
-                    <p class="sub-headline">Our clients are realizing their vision of the future by building businesses, raising families and giving back to their communities. And X.Y. Morgan wealth advisors are with them every step of the way, creating long-term strategies for growing, preserving and passing along the assets that powers their passions — for today and the days to come.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="rule"></div>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p class="style-guide-h3">.h3</p>
-                    <p class="style-guide-h3">.h3.strong</p>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p>Amplitude Regular</p>
-                    <p class="visible-xs breakpoint">Size: 21px</p>
-                    <p class="visible-sm visible-md">Size: 26px</p>
-                    <p class="visible-lg breakpoint">Size: 34px</p>
-                    <p class="visible-xs breakpoint">Line height: 1.5</p>
-                    <p class="visible-sm visible-md visible-lg">Line height: 1.333</p>
-                    <p>Tracking: 20</p>
-                    <p class="visible-xs breakpoint">Margin bottom: 5px</p>
-                    <p class="visible-sm visible-md">Margin bottom: 10px</p>
-                    <p class="visible-lg breakpoint">Margin bottom: 15px</p>
-                </div>
-                <div class="col-xs-12 col-md-6">
-                    <p class="h3 center">Bringing it all back home</p>
-                    <p class="h3 strong center top-1">Bringing it all back home</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="rule"></div>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p class="style-guide-h3">.h4</p>
-                    <p class="style-guide-h3">.h4.strong</p>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p>Amplitude Regular</p>
-                    <p class="visible-xs visible-sm visible-md">Size: 21px</p>
-                    <p class="visible-lg breakpoint">Size: 26px</p>
-                    <p class="visible-xs visible-sm visible-md">Line height: 1.5</p>
-                    <p class="visible-lg breakpoint">Line height: 1.333</p>
-                    <p>Tracking: 20</p>
-                    <p class="visible-xs breakpoint">Margin bottom: 5px</p>
-                    <p class="visible-sm visible-md">Margin bottom: 10px</p>
-                    <p class="visible-lg breakpoint">Margin bottom: 15px</p>
-                </div>
-                <div class="col-xs-12 col-md-6">
-                    <p class="h4 center">Should You Use Credit to Pay Your Tax Bill?</p>
-                    <p class="h4 strong center top-1">Should You Use Credit to Pay Your Tax Bill?</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="rule"></div>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p class="style-guide-h3">.h5</p>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p class="">Amplitude Medium</p>
-                    <p class="">Size: 16px</p>
-                    <p class="visible-xs visible-sm visible-md">Line height: 1.5</p>
-                    <p>Tracking: 20</p>
-                </div>
-                <div class="col-xs-12 col-md-6">
-                    <p class="h5">REGULATORY DOCUMENTS</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="rule"></div>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p class="style-guide-h3">.h6</p>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p class="">Amplitude Medium</p>
-                    <p class="">Size: 13px</p>
-                    <p class="visible-xs visible-sm visible-md">Line height: 1.5</p>
-                    <p>Tracking: 50</p>
-                </div>
-                <div class="col-xs-12 col-md-6">
-                    <p class="h6">additional information</p>
-                </div>
-            </div>
-            
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="rule"></div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-3">
-                    <p class="style-guide-h3">.body.strong</p>
-                    <p class="style-guide-h3">.body</p>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-1">
-                    <p class="visible-xs breakpoint">Amplitude Regular</p>
-                    <p class="visible-sm visible-md visible-lg">Amplitude Light</p>
-                    <p class="visible-xs breakpoint">Size: 16px</p>
-                    <p class="visible-sm visible-md">Size: 16px</p>
-                    <p class="visible-lg breakpoint">Size: 21px</p>
-                    <p class="">Line height: 1.5</p>
-                    <p class="">Padding bottom: 10px</p>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-2">
-                    <p class="visible-xs breakpoint">Amplitude Medium</p>
-                    <p class="visible-sm visible-md visible-lg">Amplitude Regular</p>
-                </div>
-                <div class="col-xs-12 col-md-6">
-                    <p class="body strong">Endowments & Foundations Group</p>
-                    <p class="body">Nullam id dolor id nibh ultricies vehicula ut id elit. Donec sed odio dui. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
-                    <p class="body">Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit sit amet non magna. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-                    <p class="body">Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Sed posuere consectetur est at lobortis. Etiam porta sem malesuada magna mollis euismod. Maecenas faucibus mollis interdum.</p>
-                </div>
-            </div>
-            <div class="row equal border-top">
-                <div class="col-xs-12">
-                    <div class="rule"></div>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p class="style-guide-h3">.dash</p>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p>Width: 45px</p>
-                    <p>Height: 1px</p>
-                </div>
-                <div class="col-xs-12 col-md-6">
-                    <div class="dash center"></div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="rule"></div>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p class="style-guide-h3">.divider</p>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p>Width: 100%</p>
-                    <p>Height: 1px</p>
-                    <p class="style-guide-link">Color: $WarmGray1</p>
-                </div>
-                <div class="col-xs-12 col-md-6">
-                    <hr class=".divider">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="rule"></div>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p class="style-guide-h3">.intro-cta</p>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p class="visible-xs visible-sm visible-md visible-lg">Amplitude Medium</p>
-                    <p class="visible-xs visible-sm visible-md">Size: 13px</p>
-                    <p class="visible-lg breakpoint">Size: 16px</p>
-                    <p class="visible-xs visible-sm visible-md">Line height: 20px (1.5x)</p>
-                    <p class="visible-lg breakpoint">Line height: 24px (1.5x)</p>
-                    <p>Tracking: 150</p>
-                </div>
-                <div class="col-xs-12 col-md-6">
-                    <p class="intro-cta">EXPLORE</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="rule"></div>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p class="style-guide-h3">.tab-h1</p>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p class="visible-xs visible-sm visible-md visible-lg">Amplitude Medium</p>
-                    <p class="visible-xs visible-sm breakpoint">Size: 16px</p>
-                    <p class="visible-md visible-lg">Size: 21px</p>
-                    <p class="visible-xs visible-sm breakpoint">Line height: 24px (1.5x)</p>
-                    <p class="visible-md visible-lg">Line height: 31px (1.5x)</p>
-                    <p>Tracking: 150</p>
-                </div>
-                <div class="col-xs-12 col-md-6">
-                    <p class="tab-h1">EXPERT INTELLIGENCE</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="rule"></div>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p class="style-guide-h3">.tab-body</p>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p class="visible-xs visible-sm visible-md visible-lg">Amplitude Regular</p>
-                    <p class="visible-xs visible-sm breakpoint">Size: 13px</p>
-                    <p class="visible-md visible-lg">Size: 16px</p>
-                    <p class="visible-xs visible-sm breakpoint">Line height: 20px (1.5x)</p>
-                    <p class="visible-md visible-lg">Line height: 24px (1.5x)</p>
-                    <p class=" breakpoint">Line height: 31px (1.5x)</p>
-                    <p>Tracking: 20</p>
-                </div>
-                <div class="col-xs-12 col-md-6">
-                    <p class="tab-body">Get financial insights, news, and cultural perspectives that matter</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="rule"></div>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p class="style-guide-h3">button .primary</p>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p class="visible-xs visible-sm visible-md visible-lg">Amplitude Medium</p>
-                    <p class="visible-xs visible-sm visible-md visible-lg">Size: 13px</p>
-                    <p class="visible-xs visible-sm visible-md visible-lg">Line height: 20px (1.5x)</p>
-                    <p>Tracking: 150</p>
-                </div>
-                <div class="col-xs-12 col-md-6">
-                    <button class="primary">Read more</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="rule"></div>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p class="style-guide-h3">button .primary.inverted</p>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p class="visible-xs visible-sm visible-md visible-lg">Amplitude Medium</p>
-                    <p class="visible-xs visible-sm visible-md visible-lg">Size: 13px</p>
-                    <p class="visible-xs visible-sm visible-md visible-lg">Line height: 20px (1.5x)</p>
-                    <p>Tracking: 150</p>
-                </div>
-                <div class="col-xs-12 col-md-6">
-                    <button class="primary inverted">Read more</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="rule"></div>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p class="style-guide-h3">button .secondary</p>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p class="visible-xs visible-sm visible-md visible-lg">Amplitude Medium</p>
-                    <p class="visible-xs visible-sm visible-md visible-lg">Size: 13px</p>
-                    <p class="visible-xs visible-sm visible-md visible-lg">Line height: 20px (1.5x)</p>
-                    <p>Tracking: 150</p>
-                </div>
-                <div class="col-xs-12 col-md-6">
-                    <button class="secondary">Read more</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="rule"></div>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p class="style-guide-h3">button .secondary.inverted</p>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p class="visible-xs visible-sm visible-md visible-lg">Amplitude Medium</p>
-                    <p class="visible-xs visible-sm visible-md visible-lg">Size: 13px</p>
-                    <p class="visible-xs visible-sm visible-md visible-lg">Line height: 20px (1.5x)</p>
-                    <p>Tracking: 150</p>
-                </div>
-                <div class="col-xs-12 col-md-6">
-                    <button class="secondary inverted">Read more</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="rule"></div>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p class="style-guide-h3">Share Icons</p>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                </div>
-                <div class="col-xs-12 col-md-6">
-                    <button>
-                        <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-                            <!-- Generator: Sketch 3.3.1 (12002) - http://www.bohemiancoding.com/sketch -->
-                            <title>icon.email</title>
-                            <desc>Created with Sketch.</desc>
-                            <defs></defs>
-                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-                                <g id="" sketch:type="MSArtboardGroup" fill="#0A0B09">
-                                    <path class="icon.email" d="M12.2005,18.004 L7.5675,13.821 L1.4665,19.309 L22.4335,19.498 L16.1715,13.84 L12.2005,18.004 Z M23.0005,17.765 L22.8975,6.502 L17.6125,12.569 L23.0005,17.765 Z M22.2635,4.502 L1.2685,4.502 L12.0965,15.916 L22.2635,4.502 Z M1.0655,6.514 L0.9995,17.695 L6.2965,12.474 L1.0655,6.514 Z" sketch:type="MSShapeGroup"></path>
-                                </g>
-                            </g>
-                        </svg>
-                    </button>
-                    <button>
-                        <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-                            <!-- Generator: Sketch 3.3.1 (12002) - http://www.bohemiancoding.com/sketch -->
-                            <title>icon.facebook</title>
-                            <desc>Created with Sketch.</desc>
-                            <defs></defs>
-                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-                                <g id="" sketch:type="MSArtboardGroup" fill="#0A0B09">
-                                    <path class="icon.facebook" d="M3,19.9706862 C3,20.5353098 3.46274292,21 4.02842865,21 L19.9715713,21 C20.5372571,21 21,20.5353098 21,19.9706862 L21,4.02931379 C21,3.46269154 20.5372571,3 19.9715713,3 L4.02842865,3 C3.46274292,3 3,3.46269154 3,4.02931379 L3,19.9706862 Z M11.5352582,10.7138574 L13.285286,10.7138574 L13.285286,8.67821452 C13.285286,7.07928048 14.3187118,5.61.333916 16.7003887,5.61.333916 C17.6648529,5.61.333916 18.377457,5.70319787 18.377457,5.70319787 L18.3214881,7.92771486 C18.3214881,7.92771486 17.5948917,7.92171885 16.8013326,7.92171885 C15.9428096,7.92171885 15.8038867,8.31745503 15.8038867,8.97501666 L15.8038867,10.7138574 L18.3904498,10.7138574 L18.2785119,13.0972685 L15.8038867,13.0972685 L15.8038867,19.7128581 L13.285286,19.7128581 L13.285286,13.0972685 L11.5352582,13.0972685 L11.5352582,10.7138574 Z" sketch:type="MSShapeGroup"></path>
-                                </g>
-                            </g>
-                        </svg>
-                    </button>
-                    <button>
-                        <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-                            <!-- Generator: Sketch 3.3.1 (12002) - http://www.bohemiancoding.com/sketch -->
-                            <title>icon.linkedin</title>
-                            <desc>Created with Sketch.</desc>
-                            <defs></defs>
-                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-                                <g id="" sketch:type="MSArtboardGroup" fill="#0A0B09">
-                                    <path class="icon.linkedin" d="M7.11520071,6.02150358 C8.04492383,6.02150358 8.61736906,6.6276046 8.63538308,7.42573762 C8.63538308,8.20586764 8.04492383,8.82997166 7.0971867,8.82997166 L7.07917269,8.82997166 C6.1664628,8.82997166 5.57700434,8.20586764 5.57700434,7.42573762 C5.57700434,6.6276046 6.18447682,6.02150358 7.11520071,6.02150358 L7.11520071,6.02150358 Z M9.96041366,9.94015669 L12.6795285,9.94015669 L12.6795285,11.0923487 C13.0398087,10.5382564 13.6853108,9.74912485 15.129434,9.74912485 C16.917825,9.74912485 18.2598688,10.9103184 18.2598688,13.4067345 L18.2598688,18.0675113 L15.5407539,18.0675113 L15.5407539,13.7187865 C15.5407539,12.6266044 15.147448,11.8824804 14.1636829,11.8824804 C13.4130991,11.8824804 12.9657511,12.3835639 12.7685978,12.8696449 C12.6965418,13.0426738 12.6795285,13.2857143 12.6795285,13.5287548 L12.6795285,18.0675113 L9.96041366,18.0675113 C9.96041366,18.0675113 9.99644168,10.7022837 9.96041366,9.94015669 L9.96041366,9.94015669 Z M5.73812966,9.94015669 L8.45624375,9.94015669 L8.45624375,18.0675113 L5.73812966,18.0675113 L5.73812966,9.94015669 Z M4.33003447,21 L19.6699655,21 C20.4045369,21 21,20.4229038 21,19.7107851 L21,4.28921487 C21,3.57609602 20.4045369,3 19.6699655,3 L4.33003447,3 C3.59546314,3 3,3.57609602 3,4.28921487 L3,19.7107851 C3,20.4229038 3.59546314,21 4.33003447,21 L4.33003447,21 Z" sketch:type="MSShapeGroup"></path>
-                                </g>
-                            </g>
-                        </svg>
-                    </button>
-                    <button>
-                        <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-                            <!-- Generator: Sketch 3.3.1 (12002) - http://www.bohemiancoding.com/sketch -->
-                            <title>icon.twitter</title>
-                            <desc>Created with Sketch.</desc>
-                            <defs></defs>
-                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-                                <g id="" sketch:type="MSArtboardGroup" fill="#0B0B0A">
-                                    <path class="icon.twitter" d="M21.4469038,4.2960185 C20.6540662,4.75904744 19.7766725,5.09406838 18.8415817,5.27707982 C18.0935091,4.49003063 17.0271077,4 15.8463069,4 C13.5802039,4 11.7438448,5.81011313 11.7438448,8.03925245 C11.7438448,8.35627227 11.7796568,8.66529158 11.8492912,8.96031002 C8.43919423,8.79129946 5.41606566,7.18419901 3.39268839,4.74004625 C3.0395424,5.33708357 2.83660781,6.03012688 2.83660781,6.77017314 C2.83660781,8.17226077 3.56080577,9.40833802 4.66202437,10.1323833 C3.98955484,10.111382 3.3568764,9.93037065 2.80378015,9.62735171 L2.80378015,9.6783549 C2.80378015,11.6354772 4.21735887,13.2665792 6.09450385,13.6386024 C5.75031087,13.7306082 5.38821189,13.7806113 5.01417558,13.7806113 C4.74956478,13.7806113 4.49191743,13.7546097 4.2422283,13.7076067 C4.76349167,15.311707 6.27953245,16.48078 8.0751057,16.512782 C6.67047998,17.5958497 4.90176573,18.2408901 2.97886098,18.2408901 C2.6476001,18.2408901 2.32131311,18.2228889 2,18.1848866 C3.81546879,19.3309582 5.97314101,20 8.28997762,20 C15.8373539,20 19.9646854,13.8456154 19.9646854,8.50828177 C19.9646854,8.33327083 19.9607063,8.15925995 19.9527481,7.98624914 C20.7535439,7.41621351 21.4498881,6.70416901 22,5.89511844 C21.2638647,6.21513845 20.4730167,6.43315207 19.6433723,6.5311582 C20.4899279,6.03012688 21.1415071,5.23907744 21.4469038,4.2960185 L21.4469038,4.2960185 Z" sketch:type="MSShapeGroup"></path>
-                                </g>
-                            </g>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="rule"></div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-3">
-                    <p class="style-guide-h3">.author</p>
-                    <p class="style-guide-h3">.date</p>
-                </div>
-                <div class="col-xs-4 col-sm-4 col-md-1">
-                    <p class="visible-xs visible-sm visible-md visible-lg">Amplitude Medium</p>
-                    <p class="visible-xs visible-sm visible-md visible-lg">Size: 13px</p>
-                    <p class="visible-xs visible-sm visible-md visible-lg">Line height: 20px (1.5x)</p>
-                    <p>Tracking: 20</p>
-                </div>
-                <div class="col-xs-4 col-sm-4 col-md-2">
-                    <p class="visible-xs visible-sm visible-md visible-lg">Amplitude Regular</p>
-                    <p class="visible-xs visible-sm visible-md visible-lg">Size: 10px</p>
-                    <p class="visible-xs visible-sm visible-md visible-lg">Line height: 15px (1.5x)</p>
-                    <p>Tracking: 50</p>
-                </div>
-                <div class="col-xs-12 col-md-6">
-                    <p class="author">by Richard Madigan<span class="date">Jan 15, 2015</span></p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="rule"></div>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p class="style-guide-h3">.promo-1-column .body</p>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p class="visible-xs visible-sm visible-md visible-lg">Amplitude Light</p>
-                    <p class="visible-xs visible-sm visible-md">Size: 16px</p>
-                    <p class="breakpoint visible-lg">Size: 21px</p>
-                    <p class="visible-xs visible-sm visible-md">Line height: 24px (1.5x)</p>
-                    <p class="breakpoint visible-lg">Line height: 31px (1.5x)</p>
-                    <p>Tracking: 20</p>
-                </div>
-                <div class="col-xs-12 col-md-6">
-                    <p class="promo-1-column body">Investors will face challenging market conditions in 2015, but is there opportunity in the unexpected? Our team believes that discipline means more than simply staying the course.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="rule"></div>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p class="style-guide-h3">.cta</p>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p class="visible-xs visible-sm visible-md visible-lg">Amplitude Medium</p>
-                    <p class="visible-xs visible-sm visible-md visible-lg">Size: 13px</p>
-                    <p class="visible-xs visible-sm visible-md visible-lg">Line height: 20px (1.5x)</p>
-                    <p>Tracking: 150</p>
-                </div>
-                <div class="col-xs-12 col-md-6">
-                    <p class="cta">Read More</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="rule"></div>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p class="style-guide-h3">.global-footer-legal</p>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p class="visible-xs visible-sm visible-md visible-lg">Amplitude Regular</p>
-                    <p class="visible-xs visible-sm visible-md ">Size: 10px</p>
-                    <p class="visible-lg breakpoint">Size: 13px</p>
-                    <p class="visible-xs visible-sm visible-md">Line height: 15px (1.5x)</p>
-                    <p class="visible-lg breakpoint">Line height: 20px (1.5x)</p>
-                    <p>Tracking: 20</p>
-                </div>
-                <div class="col-xs-12 col-md-6">
-                    <p class="global-footer-legal">Bank products and services are offered through JPMorgan Chase Bank, N.A. and its affiliates. Securities are offered by J.P. Morgan Securities LLC, member <span class="strong">FINRA</span>, <span class="strong">NYSE</span> and <span class="strong">SIPC</span>. J.P. Morgan Securities LLC is an affiliate of JPMorgan Chase Bank, N.A. Please read the <span class="strong">Legal Disclaimer</span> in conjunction with these pages.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="rule"></div>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p class="style-guide-h3">.global-footer-legal.note</p>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p class="visible-xs visible-sm visible-md visible-lg">Amplitude Regular</p>
-                    <p class="visible-xs visible-sm visible-md ">Size: 10px</p>
-                    <p class="visible-lg breakpoint">Size: 13px</p>
-                    <p class="visible-xs visible-sm visible-md">Line height: 15px (1.5x)</p>
-                    <p class="visible-lg breakpoint">Line height: 20px (1.5x)</p>
-                    <p>Tracking: 20</p>
-                </div>
-                <div class="col-xs-12 col-md-6">
-                    <p class="global-footer-legal note">Investment products: Not FDIC insured · No bank guarantee · May lose value</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="rule"></div>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p class="style-guide-h3">.global-footer-copyright</p>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p class="">Amplitude Light</p>
-                    <p class="">Size: 13px</p>
-                    <p class="">Line height: 1.5</p>
-                    <p>Tracking: 20</p>
-                </div>
-                <div class="col-xs-12 col-md-6">
-                    <p class="global-footer-copyright"><a href="">Privacy & Security</a> | <a href="">Terms of Use</a> | <a href="">Disclosures</a> | <a href="">Cookies Policy</a></p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="rule"></div>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p class="style-guide-h3">.cta</p>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p class="visible-xs visible-sm visible-md visible-lg">Amplitude Medium</p>
-                    <p class="visible-xs visible-sm visible-md visible-lg">Size: 13px</p>
-                    <p class="visible-xs visible-sm visible-md visible-lg">Line height: 20px (1.5x)</p>
-                    <p>Tracking: 150</p>
-                </div>
-                <div class="col-xs-12 col-md-6">
-                    <p class="cta">Read More</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="rule"></div>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p class="style-guide-h3">.global-footer-h1</p>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p class="visible-xs visible-sm visible-md visible-lg">Amplitude Medium</p>
-                    <p class="visible-xs visible-sm visible-md">Size: 13px</p>
-                    <p class="visible-lg breakpoint">Size: 16px</p>
-                    <p class="visible-xs visible-sm visible-md">Line height: 20px (1.5x)</p>
-                    <p class="visible-lg breakpoint">Line height: 24px (1.5x)</p>
-                    <p>Tracking: 50</p>
-                </div>
-                <div class="col-xs-12 col-md-6">
-                    <p class="global-footer-h1">X.Y.Z. Private Bank</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="rule"></div>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p class="style-guide-h3">.global-footer-h2</p>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p class="visible-xs visible-sm visible-md visible-lg">Amplitude Medium</p>
-                    <p class="visible-xs visible-sm visible-md">Size: 13px</p>
-                    <p class="visible-lg breakpoint">Size: 16px</p>
-                    <p class="visible-xs visible-sm visible-md">Line height: 20px (1.5x)</p>
-                    <p class="visible-lg breakpoint">Line height: 24px (1.5x)</p>
-                    <p>Tracking: 50</p>
-                </div>
-                <div class="col-xs-12 col-md-6">
-                    <p class="global-footer-h2">Helpful Links</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="rule"></div>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p class="style-guide-h3">.global-footer-link</p>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p class="visible-xs visible-sm visible-md visible-lg">Amplitude Light</p>
-                    <p class="visible-xs visible-sm visible-md">Size: 13px</p>
-                    <p class="visible-lg breakpoint">Size: 16px</p>
-                    <p class="visible-xs visible-sm visible-md">Line height: 20px (1.5x)</p>
-                    <p class="visible-lg breakpoint">Line height: 24px (1.5x)</p>
-                    <p>Tracking: 20</p>
-                    <p class="visible-xs visible-sm visible-md visible-lg">Margin bottom: 5px</p>
-                </div>
-                <div class="col-xs-12 col-md-6">
-                    <p class="global-footer-link">Your Objectives</p>
-                    <p class="global-footer-link">Our Capabilities</p>
-                    <p class="global-footer-link">Expert Intelligence</p>
-                    <p class="global-footer-link">Global Offices</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="rule"></div>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p class="style-guide-h3">.link</p>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p class="">Amplitude Light</p>
-                    <p class="">Size: 16px</p>
-                    <p class="">Line height: 1.5</p>
-                    <p>Tracking: 20</p>
-                    <p class="">Margin bottom: 10px</p>
-                </div>
-                <div class="col-xs-12 col-md-6">
-                    <p class="link"><a href="">Proxy Voting (PDF)</a></p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="rule"></div>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p class="style-guide-h3">.your-team-h1</p>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p class="">Amplitude Medium</p>
-                    <p class="">Size: 21px</p>
-                    <p class="">Line height: 1.5</p>
-                    <p>Tracking: 20</p>
-                </div>
-                <div class="col-xs-12 col-md-6">
-                    <p class="your-team-h1">Your Private Banker</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="rule"></div>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p class="style-guide-h3">.your-team-body</p>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p class="">Amplitude Light</p>
-                    <p class="">Size: 16px</p>
-                    <p class="">Line height: 1.5</p>
-                    <p>Tracking: 20</p>
-                </div>
-                <div class="col-xs-12 col-md-6">
-                    <p class="your-team-body">Your primary point of contact, coordinates a team of specialists for your evolving needs.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="rule"></div>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p class="style-guide-h3">.your-team-you</p>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p class="">Amplitude Light</p>
-                    <p class="">Size: 34px</p>
-                    <p class="">Line height: 1.333</p>
-                    <p>Tracking: 20</p>
-                </div>
-                <div class="col-xs-12 col-md-6">
-                    <p class="your-team-you">YOU</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="rule"></div>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p class="style-guide-h3">.form-help</p>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p class="">Amplitude Light</p>
-                    <p class="">Size: 13px</p>
-                    <p class="">Line height: 1.5</p>
-                    <p>Tracking: 20</p>
-                </div>
-                <div class="col-xs-12 col-md-6">
-                    <p class="form-help">Maximum 300 characters</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="rule"></div>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p class="style-guide-h3">.error</p>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <p class="">Color: $Red</p>
-                </div>
-                <div class="col-xs-12 col-md-6">
-                    <p class="error strong">Telephone Number* (including the area code)</p>
-                    <input type="text" name="telephone" class="error">
-                    <p class="form-help error top-025">Please enter a valid telephone number</p>
-                </div>
+    </div>
+    <!-- PAGE TITLE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12">
+                <p class="style-guide-h1">Typographic Styles</p>
             </div>
         </div>
-        <!-- TYPE SCALE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-        <div class="container-fluid top-4">
-            <div class="row">
-                <div class="col-xs-12">
-                    <p class="style-guide-h1">Type Scale</p>
-                </div>
+    </div>
+    <!-- TYPE STYLES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <div class="container-fluid style-guide">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="rule"></div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <p class="style-guide-h3">.dash</p>
+                <p class="style-guide-h3">.eyebrow</p>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <p class="visible-xs visible-sm visible-md visible-lg">Amplitude Medium</p>
+                <p class="visible-xs visible-sm visible-md">Size: 13px</p>
+                <p class="visible-lg breakpoint">Size: 16px</p>
+                <p class="visible-xs visible-sm visible-md">Line height: 20px (1.5x)</p>
+                <p class="visible-lg breakpoint">Line height: 24px (1.5x)</p>
+                <p class="visible-xs visible-sm visible-md">Margin-bottom: 5px</p>
+                <p class="visible-lg breakpoint">Margin-bottom: 5px</p>
+                <p>Tracking: 150</p>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <div class="dash"></div>
+                <p class="eyebrow">Market Thoughts</p>
             </div>
         </div>
-        <div class="container-fluid style-guide">
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="rule"></div>
-                </div>
-                <div class="col-xs-4 col-xs-offset-4">
-                    <p class="amplitude-regular-10">Amplitude Regular 10
-                        <br>Line height 15 (1.5)
-                        <br>Tracking 20</p>
-                </div>
-                <div class="col-xs-4">
-                    <p class="amplitude-medium-10">Amplitude Medium 10
-                        <br>Line height 15 (1.5)
-                        <br>Tracking 20</p>
-                </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="rule"></div>
             </div>
-            <div class="row equal border-top">
-                <div class="col-xs-4">
-                    <p class="amplitude-light-13">Amplitude Light 13
-                        <br>Line height 20 (1.5)
-                        <br>Tracking 20</p>
-                </div>
-                <div class="col-xs-4">
-                    <p class="amplitude-regular-13">Amplitude Regular 13
-                        <br>Line height 20 (1.5)
-                        <br>Tracking 20</p>
-                </div>
-                <div class="col-xs-4">
-                    <p class="amplitude-medium-13">Amplitude Medium 13
-                        <br>Line height 20 (1.5)
-                        <br>Tracking 20</p>
-                </div>
+            <div class="col-xs-6 col-md-3">
+                <p class="style-guide-h3">.eyebrow-hero</p>
             </div>
-            <div class="row equal border-top">
-                <div class="col-xs-4">
-                    <p class="amplitude-light-16">Amplitude Light 16
-                        <br>Line height 24 (1.5)
-                        <br>Tracking 20</p>
-                </div>
-                <div class="col-xs-4">
-                    <p class="amplitude-regular-16">Amplitude Regular 16
-                        <br>Line height 24 (1.5)
-                        <br>Tracking 20</p>
-                </div>
-                <div class="col-xs-4">
-                    <p class="amplitude-medium-16">Amplitude Medium 16
-                        <br>Line height 24 (1.5)
-                        <br>Tracking 20</p>
-                </div>
+            <div class="col-xs-6 col-md-3">
+                <p class="visible-xs visible-sm visible-md visible-lg">Amplitude Regular</p>
+                <p class="visible-xs breakpoint">Size: 13px</p>
+                <p class="visible-sm visible-md">Size: 16px</p>
+                <p class="visible-lg breakpoint">Size: 21px</p>
+                <p>Line height: 1.5</p>
+                <p>Tracking: 150</p>
             </div>
-            <div class="row equal border-top">
-                <div class="col-xs-4">
-                    <p class="amplitude-light-21">Amplitude Light 21
-                        <br>Line height 31 (1.5)
-                        <br>Tracking 20</p>
-                </div>
-                <div class="col-xs-4">
-                    <p class="amplitude-regular-21">Amplitude Regular 21
-                        <br>Line height 31 (1.5)
-                        <br>Tracking 20</p>
-                </div>
-                <div class="col-xs-4">
-                    <p class="amplitude-medium-21">Amplitude Medium 21
-                        <br>Line height 31 (1.5)
-                        <br>Tracking 20</p>
-                </div>
-            </div>
-            <div class="row equal border-top">
-                <div class="col-xs-4">
-                    <p class="amplitude-light-26">Amplitude Light 26
-                        <br>Line height 39 (1.5)
-                        <br>Tracking 20</p>
-                </div>
-                <div class="col-xs-4">
-                    <p class="amplitude-regular-26">Amplitude Regular 26
-                        <br>Line height 39 (1.5)
-                        <br>Tracking 20</p>
-                </div>
-                <div class="col-xs-4">
-                    <p class="amplitude-medium-26">Amplitude Medium 26
-                        <br>Line height 39 (1.5)
-                        <br>Tracking 20</p>
-                </div>
-            </div>
-            <div class="row equal border-top">
-                <div class="col-xs-12 col-md-4">
-                    <p class="amplitude-light-34">Amplitude Light 34
-                        <br>Line height 45 (1.333)
-                        <br>Tracking 20</p>
-                </div>
-                <div class="col-xs-12 col-md-4">
-                    <p class="amplitude-regular-34">Amplitude Regular 34
-                        <br>Line height 45 (1.333)
-                        <br>Tracking 20</p>
-                </div>
-            </div>
-            <div class="row equal border-top hidden-xs">
-                <div class="col-xs-12 col-md-4">
-                    <p class="amplitude-light-42">Amplitude Light 42
-                        <br>Line height 56 (1.333)
-                        <br>Tracking 20</p>
-                </div>
-                <div class="col-xs-12 col-md-4">
-                    <p class="amplitude-regular-42">Amplitude Regular 42
-                        <br>Line height 56 (1.333)
-                        <br>Tracking 20</p>
-                </div>
-            </div>
-            <div class="row equal border-top hidden-xs">
-                <div class="col-xs-12 col-md-4">
-                    <p class="amplitude-light-55">Amplitude Light 55
-                        <br>Line height 1
-                        <br>Tracking 20</p>
-                </div>
-            </div>
-            <div class="row equal border-top hidden-xs hidden-sm">
-                <div class="col-xs-12 col-md-4">
-                    <p class="amplitude-light-68">Amplitude Light 68
-                        <br>Line height 1
-                        <br>Tracking 20</p>
-                </div>
+            <div class="col-xs-12 col-md-6">
+                <p class="eyebrow-hero">X.Y.Z. Private Bank</p>
             </div>
         </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="rule"></div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <p class="style-guide-h3">.h1</p>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <p class="">Amplitude Light</p>
+                <p class="visible-xs breakpoint">Size: 42px</p>
+                <p class="visible-sm visible-md">Size: 55px</p>
+                <p class="visible-lg breakpoint">Size: 68px</p>
+                <p class="visible-xs breakpoint">Line height: 1.333</p>
+                <p class="visible-sm visible-md visible-lg">Line height: 1</p>
+                <p>Tracking: 20</p>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <p class="h1">Your Vision Realized</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="rule"></div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <p class="style-guide-h3">.h2</p>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <p class="">Amplitude Light</p>
+                <p class="visible-xs breakpoint">Size: 34px</p>
+                <p class="visible-sm visible-md">Size: 42px</p>
+                <p class="visible-lg breakpoint">Size: 55px</p>
+                <p class="visible-xs visible-sm visible-md">Line height: 1.333</p>
+                <p class="visible-lg breakpoint">Line height: 1</p>
+                <p>Tracking: 20</p>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <p class="h2">Your Vision Realized</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="rule"></div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <p class="style-guide-h3">.sub-headline</p>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <p class="">Amplitude Light</p>
+                <p class="visible-xs visible-sm visible-md">Size: 21px</p>
+                <p class="visible-lg breakpoint">Size: 26px</p>
+                <p class="visible-xs visible-sm visible-md ">Line height: 1.5</p>
+                <p class="breakpoint visible-lg">Line height: 1.333</p>
+                <p>Tracking: 20</p>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <p class="sub-headline">Our clients are realizing their vision of the future by building businesses, raising families and giving back to their communities. And X.Y. Morgan wealth advisors are with them every step of the way, creating long-term strategies for growing, preserving and passing along the assets that powers their passions — for today and the days to come.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="rule"></div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <p class="style-guide-h3">.h3</p>
+                <p class="style-guide-h3">.h3.strong</p>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <p>Amplitude Regular</p>
+                <p class="visible-xs breakpoint">Size: 21px</p>
+                <p class="visible-sm visible-md">Size: 26px</p>
+                <p class="visible-lg breakpoint">Size: 34px</p>
+                <p class="visible-xs breakpoint">Line height: 1.5</p>
+                <p class="visible-sm visible-md visible-lg">Line height: 1.333</p>
+                <p>Tracking: 20</p>
+                <p class="visible-xs breakpoint">Margin bottom: 5px</p>
+                <p class="visible-sm visible-md">Margin bottom: 10px</p>
+                <p class="visible-lg breakpoint">Margin bottom: 15px</p>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <p class="h3 center">Bringing it all back home</p>
+                <p class="h3 strong center top-1">Bringing it all back home</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="rule"></div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <p class="style-guide-h3">.h4</p>
+                <p class="style-guide-h3">.h4.strong</p>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <p>Amplitude Regular</p>
+                <p class="visible-xs visible-sm visible-md">Size: 21px</p>
+                <p class="visible-lg breakpoint">Size: 26px</p>
+                <p class="visible-xs visible-sm visible-md">Line height: 1.5</p>
+                <p class="visible-lg breakpoint">Line height: 1.333</p>
+                <p>Tracking: 20</p>
+                <p class="visible-xs breakpoint">Margin bottom: 5px</p>
+                <p class="visible-sm visible-md">Margin bottom: 10px</p>
+                <p class="visible-lg breakpoint">Margin bottom: 15px</p>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <p class="h4 center">Should You Use Credit to Pay Your Tax Bill?</p>
+                <p class="h4 strong center top-1">Should You Use Credit to Pay Your Tax Bill?</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="rule"></div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <p class="style-guide-h3">.h5</p>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <p class="">Amplitude Medium</p>
+                <p class="">Size: 16px</p>
+                <p class="visible-xs visible-sm visible-md">Line height: 1.5</p>
+                <p>Tracking: 20</p>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <p class="h5">REGULATORY DOCUMENTS</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="rule"></div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <p class="style-guide-h3">.h6</p>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <p class="">Amplitude Medium</p>
+                <p class="">Size: 13px</p>
+                <p class="visible-xs visible-sm visible-md">Line height: 1.5</p>
+                <p>Tracking: 50</p>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <p class="h6">additional information</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="rule"></div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <p class="style-guide-h3">.h6 warmgray8</p>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <p class="visible-xs visible-sm visible-md visible-lg">Amplitude Medium</p>
+                <p class="visible-xs visible-sm visible-md">Size: 13px</p>
+                <p class="visible-lg breakpoint">Size: 16px</p>
+                <p class="visible-xs visible-sm visible-md">Line height: 20px (1.5x)</p>
+                <p class="visible-lg breakpoint">Line height: 24px (1.5x)</p>
+                <p>Tracking: 50</p>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <p class="h6 warmgray8">Helpful Links</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="rule"></div>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <p class="style-guide-h3">.body.strong</p>
+                <p class="style-guide-h3">.body</p>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-1">
+                <p class="visible-xs breakpoint">Amplitude Regular</p>
+                <p class="visible-sm visible-md visible-lg">Amplitude Light</p>
+                <p class="visible-xs breakpoint">Size: 16px</p>
+                <p class="visible-sm visible-md">Size: 16px</p>
+                <p class="visible-lg breakpoint">Size: 21px</p>
+                <p class="">Line height: 1.5</p>
+                <p class="">Padding bottom: 10px</p>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-2">
+                <p class="visible-xs breakpoint">Amplitude Medium</p>
+                <p class="visible-sm visible-md visible-lg">Amplitude Regular</p>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <p class="body strong">Endowments & Foundations Group</p>
+                <p class="body">Nullam id dolor id nibh ultricies vehicula ut id elit. Donec sed odio dui. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+                <p class="body">Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit sit amet non magna. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+                <p class="body">Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Sed posuere consectetur est at lobortis. Etiam porta sem malesuada magna mollis euismod. Maecenas faucibus mollis interdum.</p>
+            </div>
+        </div>
+        <div class="row equal border-top">
+            <div class="col-xs-12">
+                <div class="rule"></div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <p class="style-guide-h3">.dash</p>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <p>Width: 45px</p>
+                <p>Height: 1px</p>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <div class="dash center"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="rule"></div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <p class="style-guide-h3">.divider</p>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <p>Width: 100%</p>
+                <p>Height: 1px</p>
+                <p class="style-guide-link">Color: $WarmGray1</p>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <hr class=".divider">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="rule"></div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <p class="style-guide-h3">.intro-cta</p>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <p class="visible-xs visible-sm visible-md visible-lg">Amplitude Medium</p>
+                <p class="visible-xs visible-sm visible-md">Size: 13px</p>
+                <p class="visible-lg breakpoint">Size: 16px</p>
+                <p class="visible-xs visible-sm visible-md">Line height: 20px (1.5x)</p>
+                <p class="visible-lg breakpoint">Line height: 24px (1.5x)</p>
+                <p>Tracking: 150</p>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <p class="intro-cta">EXPLORE</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="rule"></div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <p class="style-guide-h3">.tab-h1</p>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <p class="visible-xs visible-sm visible-md visible-lg">Amplitude Medium</p>
+                <p class="visible-xs visible-sm breakpoint">Size: 16px</p>
+                <p class="visible-md visible-lg">Size: 21px</p>
+                <p class="visible-xs visible-sm breakpoint">Line height: 24px (1.5x)</p>
+                <p class="visible-md visible-lg">Line height: 31px (1.5x)</p>
+                <p>Tracking: 150</p>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <p class="tab-h1">EXPERT INTELLIGENCE</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="rule"></div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <p class="style-guide-h3">.tab-body</p>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <p class="visible-xs visible-sm visible-md visible-lg">Amplitude Regular</p>
+                <p class="visible-xs visible-sm breakpoint">Size: 13px</p>
+                <p class="visible-md visible-lg">Size: 16px</p>
+                <p class="visible-xs visible-sm breakpoint">Line height: 20px (1.5x)</p>
+                <p class="visible-md visible-lg">Line height: 24px (1.5x)</p>
+                <p class=" breakpoint">Line height: 31px (1.5x)</p>
+                <p>Tracking: 20</p>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <p class="tab-body">Get financial insights, news, and cultural perspectives that matter</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="rule"></div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <p class="style-guide-h3">button .primary</p>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <p class="visible-xs visible-sm visible-md visible-lg">Amplitude Medium</p>
+                <p class="visible-xs visible-sm visible-md visible-lg">Size: 13px</p>
+                <p class="visible-xs visible-sm visible-md visible-lg">Line height: 20px (1.5x)</p>
+                <p>Tracking: 150</p>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <button class="primary">Read more</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="rule"></div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <p class="style-guide-h3">button .primary.inverted</p>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <p class="visible-xs visible-sm visible-md visible-lg">Amplitude Medium</p>
+                <p class="visible-xs visible-sm visible-md visible-lg">Size: 13px</p>
+                <p class="visible-xs visible-sm visible-md visible-lg">Line height: 20px (1.5x)</p>
+                <p>Tracking: 150</p>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <button class="primary inverted">Read more</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="rule"></div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <p class="style-guide-h3">button .secondary</p>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <p class="visible-xs visible-sm visible-md visible-lg">Amplitude Medium</p>
+                <p class="visible-xs visible-sm visible-md visible-lg">Size: 13px</p>
+                <p class="visible-xs visible-sm visible-md visible-lg">Line height: 20px (1.5x)</p>
+                <p>Tracking: 150</p>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <button class="secondary">Read more</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="rule"></div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <p class="style-guide-h3">button .secondary.inverted</p>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <p class="visible-xs visible-sm visible-md visible-lg">Amplitude Medium</p>
+                <p class="visible-xs visible-sm visible-md visible-lg">Size: 13px</p>
+                <p class="visible-xs visible-sm visible-md visible-lg">Line height: 20px (1.5x)</p>
+                <p>Tracking: 150</p>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <button class="secondary inverted">Read more</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="rule"></div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <p class="style-guide-h3">Share Icons</p>
+            </div>
+            <div class="col-xs-6 col-md-3">
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <button>
+                    <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+                        <!-- Generator: Sketch 3.3.1 (12002) - http://www.bohemiancoding.com/sketch -->
+                        <title>icon.email</title>
+                        <desc>Created with Sketch.</desc>
+                        <defs></defs>
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+                            <g id="" sketch:type="MSArtboardGroup" fill="#0A0B09">
+                                <path class="icon.email" d="M12.2005,18.004 L7.5675,13.821 L1.4665,19.309 L22.4335,19.498 L16.1715,13.84 L12.2005,18.004 Z M23.0005,17.765 L22.8975,6.502 L17.6125,12.569 L23.0005,17.765 Z M22.2635,4.502 L1.2685,4.502 L12.0965,15.916 L22.2635,4.502 Z M1.0655,6.514 L0.9995,17.695 L6.2965,12.474 L1.0655,6.514 Z" sketch:type="MSShapeGroup"></path>
+                            </g>
+                        </g>
+                    </svg>
+                </button>
+                <button>
+                    <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+                        <!-- Generator: Sketch 3.3.1 (12002) - http://www.bohemiancoding.com/sketch -->
+                        <title>icon.facebook</title>
+                        <desc>Created with Sketch.</desc>
+                        <defs></defs>
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+                            <g id="" sketch:type="MSArtboardGroup" fill="#0A0B09">
+                                <path class="icon.facebook" d="M3,19.9706862 C3,20.5353098 3.46274292,21 4.02842865,21 L19.9715713,21 C20.5372571,21 21,20.5353098 21,19.9706862 L21,4.02931379 C21,3.46269154 20.5372571,3 19.9715713,3 L4.02842865,3 C3.46274292,3 3,3.46269154 3,4.02931379 L3,19.9706862 Z M11.5352582,10.7138574 L13.285286,10.7138574 L13.285286,8.67821452 C13.285286,7.07928048 14.3187118,5.61.333916 16.7003887,5.61.333916 C17.6648529,5.61.333916 18.377457,5.70319787 18.377457,5.70319787 L18.3214881,7.92771486 C18.3214881,7.92771486 17.5948917,7.92171885 16.8013326,7.92171885 C15.9428096,7.92171885 15.8038867,8.31745503 15.8038867,8.97501666 L15.8038867,10.7138574 L18.3904498,10.7138574 L18.2785119,13.0972685 L15.8038867,13.0972685 L15.8038867,19.7128581 L13.285286,19.7128581 L13.285286,13.0972685 L11.5352582,13.0972685 L11.5352582,10.7138574 Z" sketch:type="MSShapeGroup"></path>
+                            </g>
+                        </g>
+                    </svg>
+                </button>
+                <button>
+                    <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+                        <!-- Generator: Sketch 3.3.1 (12002) - http://www.bohemiancoding.com/sketch -->
+                        <title>icon.linkedin</title>
+                        <desc>Created with Sketch.</desc>
+                        <defs></defs>
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+                            <g id="" sketch:type="MSArtboardGroup" fill="#0A0B09">
+                                <path class="icon.linkedin" d="M7.11520071,6.02150358 C8.04492383,6.02150358 8.61736906,6.6276046 8.63538308,7.42573762 C8.63538308,8.20586764 8.04492383,8.82997166 7.0971867,8.82997166 L7.07917269,8.82997166 C6.1664628,8.82997166 5.57700434,8.20586764 5.57700434,7.42573762 C5.57700434,6.6276046 6.18447682,6.02150358 7.11520071,6.02150358 L7.11520071,6.02150358 Z M9.96041366,9.94015669 L12.6795285,9.94015669 L12.6795285,11.0923487 C13.0398087,10.5382564 13.6853108,9.74912485 15.129434,9.74912485 C16.917825,9.74912485 18.2598688,10.9103184 18.2598688,13.4067345 L18.2598688,18.0675113 L15.5407539,18.0675113 L15.5407539,13.7187865 C15.5407539,12.6266044 15.147448,11.8824804 14.1636829,11.8824804 C13.4130991,11.8824804 12.9657511,12.3835639 12.7685978,12.8696449 C12.6965418,13.0426738 12.6795285,13.2857143 12.6795285,13.5287548 L12.6795285,18.0675113 L9.96041366,18.0675113 C9.96041366,18.0675113 9.99644168,10.7022837 9.96041366,9.94015669 L9.96041366,9.94015669 Z M5.73812966,9.94015669 L8.45624375,9.94015669 L8.45624375,18.0675113 L5.73812966,18.0675113 L5.73812966,9.94015669 Z M4.33003447,21 L19.6699655,21 C20.4045369,21 21,20.4229038 21,19.7107851 L21,4.28921487 C21,3.57609602 20.4045369,3 19.6699655,3 L4.33003447,3 C3.59546314,3 3,3.57609602 3,4.28921487 L3,19.7107851 C3,20.4229038 3.59546314,21 4.33003447,21 L4.33003447,21 Z" sketch:type="MSShapeGroup"></path>
+                            </g>
+                        </g>
+                    </svg>
+                </button>
+                <button>
+                    <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+                        <!-- Generator: Sketch 3.3.1 (12002) - http://www.bohemiancoding.com/sketch -->
+                        <title>icon.twitter</title>
+                        <desc>Created with Sketch.</desc>
+                        <defs></defs>
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+                            <g id="" sketch:type="MSArtboardGroup" fill="#0B0B0A">
+                                <path class="icon.twitter" d="M21.4469038,4.2960185 C20.6540662,4.75904744 19.7766725,5.09406838 18.8415817,5.27707982 C18.0935091,4.49003063 17.0271077,4 15.8463069,4 C13.5802039,4 11.7438448,5.81011313 11.7438448,8.03925245 C11.7438448,8.35627227 11.7796568,8.66529158 11.8492912,8.96031002 C8.43919423,8.79129946 5.41606566,7.18419901 3.39268839,4.74004625 C3.0395424,5.33708357 2.83660781,6.03012688 2.83660781,6.77017314 C2.83660781,8.17226077 3.56080577,9.40833802 4.66202437,10.1323833 C3.98955484,10.111382 3.3568764,9.93037065 2.80378015,9.62735171 L2.80378015,9.6783549 C2.80378015,11.6354772 4.21735887,13.2665792 6.09450385,13.6386024 C5.75031087,13.7306082 5.38821189,13.7806113 5.01417558,13.7806113 C4.74956478,13.7806113 4.49191743,13.7546097 4.2422283,13.7076067 C4.76349167,15.311707 6.27953245,16.48078 8.0751057,16.512782 C6.67047998,17.5958497 4.90176573,18.2408901 2.97886098,18.2408901 C2.6476001,18.2408901 2.32131311,18.2228889 2,18.1848866 C3.81546879,19.3309582 5.97314101,20 8.28997762,20 C15.8373539,20 19.9646854,13.8456154 19.9646854,8.50828177 C19.9646854,8.33327083 19.9607063,8.15925995 19.9527481,7.98624914 C20.7535439,7.41621351 21.4498881,6.70416901 22,5.89511844 C21.2638647,6.21513845 20.4730167,6.43315207 19.6433723,6.5311582 C20.4899279,6.03012688 21.1415071,5.23907744 21.4469038,4.2960185 L21.4469038,4.2960185 Z" sketch:type="MSShapeGroup"></path>
+                            </g>
+                        </g>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="rule"></div>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <p class="style-guide-h3">.author</p>
+                <p class="style-guide-h3">.date</p>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-1">
+                <p class="visible-xs visible-sm visible-md visible-lg">Amplitude Medium</p>
+                <p class="visible-xs visible-sm visible-md visible-lg">Size: 13px</p>
+                <p class="visible-xs visible-sm visible-md visible-lg">Line height: 20px (1.5x)</p>
+                <p>Tracking: 20</p>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-2">
+                <p class="visible-xs visible-sm visible-md visible-lg">Amplitude Regular</p>
+                <p class="visible-xs visible-sm visible-md visible-lg">Size: 10px</p>
+                <p class="visible-xs visible-sm visible-md visible-lg">Line height: 15px (1.5x)</p>
+                <p>Tracking: 50</p>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <p class="author">by Richard Madigan<span class="date">Jan 15, 2015</span></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="rule"></div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <p class="style-guide-h3">.promo-1-column .body</p>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <p class="visible-xs visible-sm visible-md visible-lg">Amplitude Light</p>
+                <p class="visible-xs visible-sm visible-md">Size: 16px</p>
+                <p class="breakpoint visible-lg">Size: 21px</p>
+                <p class="visible-xs visible-sm visible-md">Line height: 24px (1.5x)</p>
+                <p class="breakpoint visible-lg">Line height: 31px (1.5x)</p>
+                <p>Tracking: 20</p>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <p class="promo-1-column body">Investors will face challenging market conditions in 2015, but is there opportunity in the unexpected? Our team believes that discipline means more than simply staying the course.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="rule"></div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <p class="style-guide-h3">.cta</p>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <p class="visible-xs visible-sm visible-md visible-lg">Amplitude Medium</p>
+                <p class="visible-xs visible-sm visible-md visible-lg">Size: 13px</p>
+                <p class="visible-xs visible-sm visible-md visible-lg">Line height: 20px (1.5x)</p>
+                <p>Tracking: 150</p>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <p class="cta">Read More</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="rule"></div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <p class="style-guide-h3">.legal</p>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <p class="visible-xs visible-sm visible-md visible-lg">Amplitude Regular</p>
+                <p class="visible-xs visible-sm visible-md ">Size: 10px</p>
+                <p class="visible-lg breakpoint">Size: 13px</p>
+                <p class="visible-xs visible-sm visible-md">Line height: 15px (1.5x)</p>
+                <p class="visible-lg breakpoint">Line height: 20px (1.5x)</p>
+                <p>Tracking: 20</p>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <p class="legal">Bank products and services are offered through JPMorgan Chase Bank, N.A. and its affiliates. Securities are offered by J.P. Morgan Securities LLC, member <span class="strong">FINRA</span>, <span class="strong">NYSE</span> and <span class="strong">SIPC</span>. J.P. Morgan Securities LLC is an affiliate of JPMorgan Chase Bank, N.A. Please read the <span class="strong">Legal Disclaimer</span> in conjunction with these pages.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="rule"></div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <p class="style-guide-h3">.legal.note</p>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <p class="visible-xs visible-sm visible-md visible-lg">Amplitude Regular</p>
+                <p class="visible-xs visible-sm visible-md ">Size: 10px</p>
+                <p class="visible-lg breakpoint">Size: 13px</p>
+                <p class="visible-xs visible-sm visible-md">Line height: 15px (1.5x)</p>
+                <p class="visible-lg breakpoint">Line height: 20px (1.5x)</p>
+                <p>Tracking: 20</p>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <p class="legal note">Investment products: Not FDIC insured · No bank guarantee · May lose value</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="rule"></div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <p class="style-guide-h3">.global-footer-copyright</p>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <p class="">Amplitude Light</p>
+                <p class="">Size: 13px</p>
+                <p class="">Line height: 1.5</p>
+                <p>Tracking: 20</p>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <p class="global-footer-copyright"><a href="">Privacy & Security</a> | <a href="">Terms of Use</a> | <a href="">Disclosures</a> | <a href="">Cookies Policy</a></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="rule"></div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <p class="style-guide-h3">.cta</p>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <p class="visible-xs visible-sm visible-md visible-lg">Amplitude Medium</p>
+                <p class="visible-xs visible-sm visible-md visible-lg">Size: 13px</p>
+                <p class="visible-xs visible-sm visible-md visible-lg">Line height: 20px (1.5x)</p>
+                <p>Tracking: 150</p>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <p class="cta">Read More</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="rule"></div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <p class="style-guide-h3">.global-footer.link</p>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <p class="visible-xs visible-sm visible-md visible-lg">Amplitude Light</p>
+                <p class="visible-xs visible-sm visible-md">Size: 13px</p>
+                <p class="visible-lg breakpoint">Size: 16px</p>
+                <p class="visible-xs visible-sm visible-md">Line height: 20px (1.5x)</p>
+                <p class="visible-lg breakpoint">Line height: 24px (1.5x)</p>
+                <p>Tracking: 20</p>
+                <p class="visible-xs visible-sm visible-md visible-lg">Margin bottom: 5px</p>
+            </div>
+            <div class="col-xs-12 col-md-6 global-footer">
+                <p class="link"><a href="" class="">Your Objectives</a></p>
+                <p class="link"><a href="" class="">Our Capabilities</a></p>
+                <p class="link"><a href="" class="">Expert Intelligence</a></p>
+                <p class="link"><a href="" class="">Global Offices</a></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="rule"></div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <p class="style-guide-h3">.link</p>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <p class="">Amplitude Light</p>
+                <p class="">Size: 16px</p>
+                <p class="">Line height: 1.5</p>
+                <p>Tracking: 20</p>
+                <p class="">Margin bottom: 10px</p>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <p class="link"><a href="">Proxy Voting (PDF)</a></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="rule"></div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <p class="style-guide-h3">.your-team-h1</p>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <p class="">Amplitude Medium</p>
+                <p class="">Size: 21px</p>
+                <p class="">Line height: 1.5</p>
+                <p>Tracking: 20</p>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <p class="your-team-h1">Your Private Banker</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="rule"></div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <p class="style-guide-h3">.your-team-body</p>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <p class="">Amplitude Light</p>
+                <p class="">Size: 16px</p>
+                <p class="">Line height: 1.5</p>
+                <p>Tracking: 20</p>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <p class="your-team-body">Your primary point of contact, coordinates a team of specialists for your evolving needs.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="rule"></div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <p class="style-guide-h3">.your-team-you</p>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <p class="">Amplitude Light</p>
+                <p class="">Size: 34px</p>
+                <p class="">Line height: 1.333</p>
+                <p>Tracking: 20</p>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <p class="your-team-you">YOU</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="rule"></div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <p class="style-guide-h3">.form-help</p>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <p class="">Amplitude Light</p>
+                <p class="">Size: 13px</p>
+                <p class="">Line height: 1.5</p>
+                <p>Tracking: 20</p>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <p class="form-help">Maximum 300 characters</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="rule"></div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <p class="style-guide-h3">.error</p>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <p class="">Color: $Red</p>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <p class="error strong">Telephone Number* (including the area code)</p>
+                <input type="text" name="telephone" class="error">
+                <p class="form-help error top-025">Please enter a valid telephone number</p>
+            </div>
+        </div>
+    </div>
+    <!-- TYPE SCALE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <div class="container-fluid top-4">
+        <div class="row">
+            <div class="col-xs-12">
+                <p class="style-guide-h1">Type Scale</p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid style-guide">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="rule"></div>
+            </div>
+            <div class="col-xs-4 col-xs-offset-4">
+                <p class="amplitude-regular-10">Amplitude Regular 10
+                    <br>Line height 15 (1.5)
+                    <br>Tracking 20</p>
+            </div>
+            <div class="col-xs-4">
+                <p class="amplitude-medium-10">Amplitude Medium 10
+                    <br>Line height 15 (1.5)
+                    <br>Tracking 20</p>
+            </div>
+        </div>
+        <div class="row equal border-top">
+            <div class="col-xs-4">
+                <p class="amplitude-light-13">Amplitude Light 13
+                    <br>Line height 20 (1.5)
+                    <br>Tracking 20</p>
+            </div>
+            <div class="col-xs-4">
+                <p class="amplitude-regular-13">Amplitude Regular 13
+                    <br>Line height 20 (1.5)
+                    <br>Tracking 20</p>
+            </div>
+            <div class="col-xs-4">
+                <p class="amplitude-medium-13">Amplitude Medium 13
+                    <br>Line height 20 (1.5)
+                    <br>Tracking 20</p>
+            </div>
+        </div>
+        <div class="row equal border-top">
+            <div class="col-xs-4">
+                <p class="amplitude-light-16">Amplitude Light 16
+                    <br>Line height 24 (1.5)
+                    <br>Tracking 20</p>
+            </div>
+            <div class="col-xs-4">
+                <p class="amplitude-regular-16">Amplitude Regular 16
+                    <br>Line height 24 (1.5)
+                    <br>Tracking 20</p>
+            </div>
+            <div class="col-xs-4">
+                <p class="amplitude-medium-16">Amplitude Medium 16
+                    <br>Line height 24 (1.5)
+                    <br>Tracking 20</p>
+            </div>
+        </div>
+        <div class="row equal border-top">
+            <div class="col-xs-4">
+                <p class="amplitude-light-21">Amplitude Light 21
+                    <br>Line height 31 (1.5)
+                    <br>Tracking 20</p>
+            </div>
+            <div class="col-xs-4">
+                <p class="amplitude-regular-21">Amplitude Regular 21
+                    <br>Line height 31 (1.5)
+                    <br>Tracking 20</p>
+            </div>
+            <div class="col-xs-4">
+                <p class="amplitude-medium-21">Amplitude Medium 21
+                    <br>Line height 31 (1.5)
+                    <br>Tracking 20</p>
+            </div>
+        </div>
+        <div class="row equal border-top">
+            <div class="col-xs-4">
+                <p class="amplitude-light-26">Amplitude Light 26
+                    <br>Line height 39 (1.5)
+                    <br>Tracking 20</p>
+            </div>
+            <div class="col-xs-4">
+                <p class="amplitude-regular-26">Amplitude Regular 26
+                    <br>Line height 39 (1.5)
+                    <br>Tracking 20</p>
+            </div>
+            <div class="col-xs-4">
+                <p class="amplitude-medium-26">Amplitude Medium 26
+                    <br>Line height 39 (1.5)
+                    <br>Tracking 20</p>
+            </div>
+        </div>
+        <div class="row equal border-top">
+            <div class="col-xs-12 col-md-4">
+                <p class="amplitude-light-34">Amplitude Light 34
+                    <br>Line height 45 (1.333)
+                    <br>Tracking 20</p>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <p class="amplitude-regular-34">Amplitude Regular 34
+                    <br>Line height 45 (1.333)
+                    <br>Tracking 20</p>
+            </div>
+        </div>
+        <div class="row equal border-top hidden-xs">
+            <div class="col-xs-12 col-md-4">
+                <p class="amplitude-light-42">Amplitude Light 42
+                    <br>Line height 56 (1.333)
+                    <br>Tracking 20</p>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <p class="amplitude-regular-42">Amplitude Regular 42
+                    <br>Line height 56 (1.333)
+                    <br>Tracking 20</p>
+            </div>
+        </div>
+        <div class="row equal border-top hidden-xs">
+            <div class="col-xs-12 col-md-4">
+                <p class="amplitude-light-55">Amplitude Light 55
+                    <br>Line height 1
+                    <br>Tracking 20</p>
+            </div>
+        </div>
+        <div class="row equal border-top hidden-xs hidden-sm">
+            <div class="col-xs-12 col-md-4">
+                <p class="amplitude-light-68">Amplitude Light 68
+                    <br>Line height 1
+                    <br>Tracking 20</p>
+            </div>
+        </div>
+    </div>
     </div>
     <div class="bottom-5"></div>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>

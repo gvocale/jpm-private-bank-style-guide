@@ -1005,10 +1005,10 @@ img {
   .link li,
   .h5 {
     margin-bottom: 10px; } }
-.global-footer-h1 {
+.h6 {
   margin-bottom: 10px; }
 
-.global-footer-h2 {
+.h6 warmgray8 {
   margin-bottom: 10px; }
 
 @media (max-width: 767px) {
@@ -1231,30 +1231,34 @@ p.author + p.date {
 .content-tray .author + .body {
   margin-top: 20px; }
 
-.hero .h2 + .eyebrow, .hero .dash + .eyebrow, .hero .eyebrow + .sub-headline, .hero .sub-headline + .primary {
+.hero .h2 + .eyebrow, .hero .eyebrow + .sub-headline, .hero .sub-headline + .primary, .hero .eyebrow + .h3 {
   margin-top: 20px; }
 .hero .sub-headline + .secondary,
-.hero .sub-headline + .toggle {
+.hero .sub-headline + .toggle, .hero .author + .body {
   margin-top: 20px; }
 .hero .primary + .primary,
 .hero .primary + .secondary,
 .hero .secondary + .secondary,
 .hero .secondary + .primary {
   margin-right: 10px; }
+.hero .dash + .eyebrow, .hero .h3 + .author {
+  margin-top: 10px; }
 @media (min-width: 768px) {
-  .hero .sub-headline + .secondary, .hero .sub-headline + .toggle {
+  .hero .body + .primary, .hero .body + .secondary, .hero .sub-headline + .secondary, .hero .sub-headline + .toggle {
     margin-top: 30px; } }
 
-.link .dash + .h6 {
+.regulatory-link .dash + .h6 {
   margin-top: 10px; }
-.link .h5 {
+.regulatory-link .h5 {
   margin-bottom: 10px; }
 
 .style-guide .dash + .eyebrow {
   margin-top: 10px; }
 
 .global-footer .link {
-  margin-top: 5px; }
+  margin-top: 10px; }
+.global-footer .dash + .h6, .global-footer .h6.warmgray8 {
+  margin-top: 10px; }
 
 path.icon.twitter,
 path.icon.email,
@@ -1841,6 +1845,28 @@ p {
   .h4 {
     font-size: 26px;
     line-height: 1.333; } }
+.h5 {
+  font-family: "Amplitude-Medium";
+  font-size: 16px;
+  text-align: left; }
+
+@media (min-width: 1200px) {
+  .h5 {
+    font-family: "Amplitude-Regular";
+    font-size: 21px; } }
+.h6 {
+  font-family: "Amplitude-Medium";
+  font-size: 13px;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 0.05em; }
+
+.h6 .warmgray8 {
+  color: #8c8279; }
+
+@media (min-width: 1200px) {
+  .h6 {
+    font-size: 16px; } }
 .intro-cta {
   font-family: "Amplitude-Medium";
   font-weight: medium;
@@ -1925,6 +1951,9 @@ p {
 
 .orange {
   color: #ff8200 !important; }
+
+.warmgray8 {
+  color: #8c8279 !important; }
 
 .inverted {
   color: #FFFFFF !important; }
@@ -2161,64 +2190,13 @@ a.cta {
   cursor: pointer;
   cursor: hand; }
 
-.global-footer-h1 {
-  font-family: "Amplitude-Regular";
-  font-size: 13px;
-  letter-spacing: 0.05em;
-  text-align: left;
-  color: #310008;
-  text-transform: uppercase;
-  margin-top: 10px; }
-
-.global-footer-h1:before {
-  content: "";
-  width: 22px;
-  height: 2px;
-  background-color: #310008;
-  position: relative;
-  top: -10px;
-  display: block; }
-
-@media (min-width: 768px) {
-  .global-footer-h1 {
-    font-family: "Amplitude-Medium"; } }
-@media (min-width: 1200px) {
-  .global-footer-h1 {
-    font-size: 16px; } }
-.global-footer-h2 {
-  font-family: "Amplitude-Regular";
-  font-size: 13px;
-  letter-spacing: 0.05em;
-  text-align: left;
-  color: #b6ada5;
-  text-transform: uppercase; }
-
-@media (min-width: 768px) {
-  .global-footer-h2 {
-    font-family: "Amplitude-Medium"; } }
-@media (min-width: 1200px) {
-  .global-footer-h2 {
-    font-size: 16px; } }
-p.global-footer-link {
-  font-family: "Amplitude-Light";
-  font-size: 13px;
-  text-align: left; }
-
-@media (min-width: 1200px) {
-  p.global-footer-link {
-    font-size: 16px; } }
-p.global-footer-link:hover {
-  text-decoration: underline;
-  cursor: pointer;
-  cursor: hand; }
-
-.global-footer-legal {
+.legal {
   font-family: "Amplitude-Regular";
   font-size: 10px;
   text-align: center; }
 
 @media (min-width: 1200px) {
-  .global-footer-legal {
+  .legal {
     font-family: "Amplitude-Light";
     font-size: 13px; } }
 @media (max-width: 767px) {
@@ -2275,9 +2253,6 @@ a {
 a:hover {
   color: #310008;
   text-decoration: underline; }
-
-.global-footer a {
-  text-decoration: none; }
 
 .divider {
   border: solid #d7d2cb;
@@ -2391,22 +2366,15 @@ input.error {
 .office-phone {
   font-size: 16px; }
 
-.h6 {
-  font-family: "Amplitude-Medium";
+.global-footer {
   font-size: 13px;
   text-align: left;
-  text-transform: uppercase;
-  letter-spacing: 0.05em; }
+  font-family: "Amplitude-Light"; }
 
-.h5 {
-  font-family: "Amplitude-Medium";
-  font-size: 16px;
-  text-align: left; }
-
+@media (min-width: 768px) {
+  .global-footer {
+    font-size: 16px; } }
 .link a {
-  font-family: "Amplitude-Light";
-  font-size: 16px;
-  text-align: left;
   text-decoration: none;
   cursor: pointer;
   cursor: hand;

@@ -123,11 +123,11 @@
 }
 
 // GLOBAL FOOTER
-.global-footer-h1 {
+.h6 {
     margin-bottom: 10px;
 }
 
-.global-footer-h2 {
+.h6 warmgray8 {
     margin-bottom: 10px;
 }
 
@@ -516,11 +516,11 @@ p.author + p.date {
 }
 
 .hero {
-    .h2 + .eyebrow, .dash + .eyebrow, .eyebrow + .sub-headline, .sub-headline + .primary {
+    .h2 + .eyebrow, .eyebrow + .sub-headline, .sub-headline + .primary, .eyebrow + .h3 {
         margin-top: 20px;
     }
     .sub-headline + .secondary,
-    .sub-headline + .toggle {
+    .sub-headline + .toggle, .author + .body {
         margin-top: 20px;
     }
     .primary + .primary,
@@ -529,14 +529,17 @@ p.author + p.date {
     .secondary + .primary {
         margin-right: 10px;
     }
+    .dash + .eyebrow, .h3 + .author {
+        margin-top: 10px;
+    }
     @media (min-width: 768px) {
-        .sub-headline + .secondary, .sub-headline + .toggle {
+        .body + .primary, .body + .secondary, .sub-headline + .secondary, .sub-headline + .toggle {
             margin-top: 30px;
         }
     }
 }
 
-.link {
+.regulatory-link {
     .dash + .h6 {
         margin-top: 10px;
     }
@@ -553,6 +556,9 @@ p.author + p.date {
 
 .global-footer {
     .link {
-        margin-top: 5px;
+        margin-top: 10px;
+    }
+    .dash + .h6, .h6.warmgray8 {
+        margin-top: 10px;
     }
 }
