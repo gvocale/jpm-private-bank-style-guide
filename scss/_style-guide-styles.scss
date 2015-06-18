@@ -96,14 +96,6 @@ div.section-title {
     margin-left: 0%;
 }
 
-.center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: nowrap;
-}
-
 @font-face {
     font-family: $Medium;
     src: local("Amplitude-Medium");

@@ -116,8 +116,8 @@
 
 // REGULATORY LINKS
 @media (max-width: 767px) {
-    .regulatory-links li,
-    .regulatory-h2 {
+    .link li,
+    .h5 {
         margin-bottom: 10px;
     }
 }
@@ -409,5 +409,150 @@ $LG: 1.618;
 @media (min-width: 1200px) {
     .bottom-6 {
         margin-bottom: $Modulor6 * $Spacing * $LG !important;
+    }
+}
+
+// ARTICLE
+.h2 + .author {
+    margin-top: 20px;
+}
+
+span.date {
+    margin-left: 10px;
+}
+
+p.author + p.date {
+    margin-top: 10px;
+}
+
+.sub-headline + .body {
+    margin-top: 20px;
+}
+
+.h3 + .body {
+    margin-top: 20px;
+}
+
+.body + .h3 {
+    margin-top: 60px;
+}
+
+.article {
+    .dash + .eyebrow, .body + .body, .eyebrow + .side-note, .side-note + .side-note {
+        margin-top: 10px;
+    }
+    .body,
+    .side-note + .primary {
+        margin-top: 20px;
+    }
+    .body + .primary {
+        margin-top: 40px;
+    }
+}
+
+.body + .secondary,
+.body + .quote,
+.body + .divider,
+.divider + .quote,
+.quote-author + .divider,
+.divider + .body {
+    margin-top: 40px;
+}
+
+.quote + .quote-author {
+    margin-top: 20px;
+}
+
+.h1 + .dash,
+.dash + .sub-headline {
+    margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+    .tab-h1 + .dash,
+    .dash + .tab-body {
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .tab-h1 + .dash,
+    .dash + .tab-body {
+        margin-top: 15px;
+    }
+}
+
+.content-page {
+    .h4 + .body {
+        margin-top: 20px;
+    }
+    .bullet .h4 + .body {
+        margin-top: 0;
+    }
+    .bullet li + li {
+        margin-top: 20px;
+    }
+    .h2 + .sub-headline {
+        margin-top: 20px;
+    }
+}
+
+.promo-1-column,
+.promo-2-column,
+.promo-3-column,
+.promo-4-column {
+    .dash + .eyebrow {
+        margin-top: 15px;
+    }
+}
+
+.content-tray {
+    .h3 + .author, .body + .cta {
+        margin-top: 10px;
+    }
+    .author + .body {
+        margin-top: 20px;
+    }
+}
+
+.hero {
+    .h2 + .eyebrow, .dash + .eyebrow, .eyebrow + .sub-headline, .sub-headline + .primary {
+        margin-top: 20px;
+    }
+    .sub-headline + .secondary,
+    .sub-headline + .toggle {
+        margin-top: 20px;
+    }
+    .primary + .primary,
+    .primary + .secondary,
+    .secondary + .secondary,
+    .secondary + .primary {
+        margin-right: 10px;
+    }
+    @media (min-width: 768px) {
+        .sub-headline + .secondary, .sub-headline + .toggle {
+            margin-top: 30px;
+        }
+    }
+}
+
+.link {
+    .dash + .h6 {
+        margin-top: 10px;
+    }
+    .h5 {
+        margin-bottom: 10px;
+    }
+}
+
+.style-guide {
+    .dash + .eyebrow {
+        margin-top: 10px;
+    }
+}
+
+.global-footer {
+    .link {
+        margin-top: 5px;
     }
 }

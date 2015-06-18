@@ -14,62 +14,63 @@
 </head>
 
 <body>
-    <div class="center">
-        <!-- NAVIGATION BAR ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-        <div class="container-fluid grid-overlay hidden">
-            <div class="row">
-                <div class="col-xs-1"></div>
-                <div class="col-xs-1"></div>
-                <div class="col-xs-1"></div>
-                <div class="col-xs-1"></div>
-                <div class="col-xs-1"></div>
-                <div class="col-xs-1"></div>
-                <div class="col-xs-1"></div>
-                <div class="col-xs-1"></div>
-                <div class="col-xs-1"></div>
-                <div class="col-xs-1"></div>
-                <div class="col-xs-1"></div>
-                <div class="col-xs-1"></div>
+    <!-- NAVIGATION BAR ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <div class="container-fluid grid-overlay hidden">
+        <div class="row">
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1"></div>
+        </div>
+    </div>
+    <div class="breakpoint-bar">
+        <div class="container-fluid">
+            <div class="col-xs-8 col-md-6">
+                <p>
+                    <span class="visible-xs"><span class="breakpoint-name">Extra Small</span><span class="symbol"><</span><span class="breakpoint-detail">767px</span><span class="breakpoint-detail">Margin 5%</span></span>
+                    <span class="visible-sm"><span class="breakpoint-name">Small</span><span class="symbol">≥</span><span class="breakpoint-detail">768px</span><span class="breakpoint-detail">Margin 5%</span></span>
+                    <span class="visible-md"><span class="breakpoint-name">Medium</span><span class="symbol">≥</span><span class="breakpoint-detail">992px</span><span class="breakpoint-detail">Margin 5%</span></span>
+                    <span class="visible-lg"><span class="breakpoint-name">Large</span><span class="symbol">≥</span><span class="breakpoint-detail">1200px</span><span class="breakpoint-detail">Margin 5%</span><span class="breakpoint-detail">Max width 1600px</span></span>
+                </p>
+            </div>
+            <div class="col-xs-4 col-md-6">
+                <form id="toggle">
+                    <label for="grid-toggle">Show Grid</label>
+                    <input type="checkbox" id="grid-toggle">
+                </form>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <form id="page-changer" action="" method="post">
+                    <select onchange="location = this.options[this.selectedIndex].value;">
+                        <option>Change page</option>
+                        <option value="index.html">- Home</option>
+                        <option value="article.html">Article</option>
+                        <option value="color-palette.html">Color Palette</option>
+                        <option value="content-page.html">Content Page</option>
+                        <option value="content-tray.html">Content Tray</option>
+                        <option value="global-footer.html">Global Footer</option>
+                        <option value="grid.html">Grid</option>
+                        <option value="hero.html">Hero</option>
+                        <option value="homepage-hero.html">Homepage Hero</option>
+                        <option value="navigation.html">Navigation</option>
+                        <option value="office-location.html">Office Location</option>
+                        <option value="promo.html">Promo</option>
+                        <option value="regulatory-link.html">Regulatory Links</option>
+                        <option value="spacing.html">Spacing</option>
+                        <option value="typography.html">Typography</option>
+                    </select>​
+                </form>
             </div>
         </div>
-        <div class="breakpoint-bar">
-            <div class="container-fluid">
-                <div class="col-xs-8 col-md-6">
-                    <p>
-                        <span class="visible-xs"><span class="breakpoint-name">Extra Small</span><span class="symbol"><</span><span class="breakpoint-detail">767px</span><span class="breakpoint-detail">Margin 5%</span></span>
-                        <span class="visible-sm"><span class="breakpoint-name">Small</span><span class="symbol">≥</span><span class="breakpoint-detail">768px</span><span class="breakpoint-detail">Margin 5%</span></span>
-                        <span class="visible-md"><span class="breakpoint-name">Medium</span><span class="symbol">≥</span><span class="breakpoint-detail">992px</span><span class="breakpoint-detail">Margin 5%</span></span>
-                        <span class="visible-lg"><span class="breakpoint-name">Large</span><span class="symbol">≥</span><span class="breakpoint-detail">1200px</span><span class="breakpoint-detail">Margin 5%</span><span class="breakpoint-detail">Max width 1600px</span></span>
-                    </p>
-                </div>
-                <div class="col-xs-4 col-md-6">
-                    <form id="toggle">
-                        <label for="grid-toggle">Show Grid</label>
-                        <input type="checkbox" id="grid-toggle">
-                    </form>
-                </div>
-                <div class="col-xs-12 col-md-4">
-                    <form id="page-changer" action="" method="post">
-                        <select onchange="location = this.options[this.selectedIndex].value;">
-                            <option>Change page</option>
-                            <option value="index.html">- Home</option>
-                            <option value="article.html">Article</option>
-                            <option value="color-palette.html">Color Palette</option>
-                            <option value="content-tray.html">Content Tray</option>
-                            <option value="global-footer.html">Global Footer</option>
-                            <option value="grid.html">Grid</option>
-                            <option value="homepage-hero.html">Homepage Hero</option>
-                            <option value="navigation.html">Navigation</option>
-                            <option value="office-location.html">Office Location</option>
-                            <option value="promo.html">Promo</option>
-                            <option value="regulatory-links.html">Regulatory Links</option>
-                            <option value="spacing.html">Spacing</option>
-                            <option value="typography.html">Typography</option>
-                        </select>​
-                    </form>
-                </div>
-            </div>
-        </div>
+    </div>
     </div>
     <!-- HOMEPAGE HERO ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <div class="homepage-hero">
@@ -104,18 +105,15 @@
                 </div>
             </div>
         </div>
-        <div class="homepage-hero-image" style="background-image: url(../images/header_cityscape.jpg)"></div>
+        <div class="homepage-hero-image" style="background-image: url(../images/homepage-hero.jpg)"></div>
     </div>
-    <div class="center top-5">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xs-12 col-lg-10 center-block">
-                    <p class="h2">Investors’ Handbook: Technology</p>
-                    <p class="sub-headline top-1">From smartphones to big data, tech stocks are driving markets across the world. Here’s what you need to know to stay ahead of the game.</p>
-                </div>
+    <div class="content-page container-fluid top-5">
+        <div class="row">
+            <div class="col-xs-12">
+                <p class="h2 center">Investors’ Handbook: Technology</p>
+                <p class="sub-headline center">From smartphones to big data, tech stocks are driving markets across the world. Here’s what you need to know to stay ahead of the game.</p>
             </div>
         </div>
-    </div>
     </div>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>

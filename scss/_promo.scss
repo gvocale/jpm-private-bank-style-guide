@@ -23,25 +23,6 @@
     margin: auto; // this center align the picture in the 16/9 container
 }
 
-.promo-eyebrow:before {
-    content: "";
-    width: 45px;
-    height: 1px;
-    background-color: $JPMBrown;
-    position: relative;
-    top: -10px;
-    display: block;
-}
-
-.inverted .promo-eyebrow:before {
-    content: "";
-    width: 45px;
-    height: 1px;
-    background-color: $White;
-    position: relative;
-    top: -10px;
-    display: block;
-}
 
 // SPACING
 .promo-1-column .author {
@@ -49,7 +30,7 @@
 }
 
 @media (min-width: 768px) {
-    .promo-1-column .promo-eyebrow {
+    .promo-1-column .eyebrow {
         margin-bottom: 10px;
     }
 }
@@ -67,42 +48,10 @@
     }
 }
 
-// SPACING HERO-PROMO
-.hero-copy .promo-eyebrow,
-.hero-copy .h3 {
-    margin-bottom: 10px;
-}
 
-.hero-copy .author {
-    margin-bottom: 20px;
-}
-
-.hero-copy .body {
-    margin-bottom: 30px;
-}
-
-.hero-copy .primary {
-    margin-right: 10px;
-}
-
-.hero-copy .primary:last-child {
-    margin-right: 0px;
-}
-
-@media (max-width: 767px) {
-    .hero-copy .h3 {
-        margin-top: 15px;
-    }
-    .hero-copy .author {
-        margin-bottom: 10px;
-    }
-    .hero-copy .body {
-        margin-bottom: 15px;
-    }
-}
 
 // SPACING PROMO-1-COLUMN
-.promo-1-column .promo-eyebrow,
+.promo-1-column .eyebrow,
 .promo-1-column .h3 {
     margin-bottom: 10px;
 }
@@ -124,7 +73,7 @@
         margin-bottom: 10px;
     }
     .promo-1-column .promo-img-container,
-    .promo-1-column .promo-eyebrow {
+    .promo-1-column .eyebrow {
         margin-bottom: 15px;
     }
     .promo-1-column .promo-img-container {
@@ -142,7 +91,7 @@
     margin-bottom: 10px;
 }
 
-.promo-2-column .promo-eyebrow,
+.promo-2-column .eyebrow,
 .promo-2-column .promo-img-container {
     margin-bottom: 15px;
 }
@@ -163,7 +112,7 @@
     margin-bottom: 10px;
 }
 
-.promo-3-column .promo-eyebrow,
+.promo-3-column .eyebrow,
 .promo-3-column .promo-img-container {
     margin-bottom: 15px;
 }
@@ -185,7 +134,7 @@
     margin-bottom: 10px;
 }
 
-.promo-4-column .promo-eyebrow {
+.promo-4-column .eyebrow {
     margin-bottom: 15px;
 }
 

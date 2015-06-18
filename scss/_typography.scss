@@ -15,6 +15,7 @@ body,
 .h3,
 .h4,
 .h5,
+.h6,
 p {
     letter-spacing: 0.02em;
     line-height: 1.5;
@@ -28,6 +29,10 @@ h3,
 .h3,
 h4,
 .h4,
+.h5,
+.h6,
+ul,
+ol,
 p {
     margin: 0;
     padding: 0;
@@ -58,26 +63,6 @@ p {
 
 .medium {
     font-family: $Medium;
-}
-
-.eyebrow {
-    text-transform: uppercase;
-    font-family: $Regular;
-    font-size: 13px;
-    text-align: center;
-    letter-spacing: 0.15em;
-}
-
-@media (min-width: 768px) {
-    .eyebrow {
-        font-size: 16px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .eyebrow {
-        font-size: 21px;
-    }
 }
 
 .h1 {
@@ -153,11 +138,6 @@ p {
     }
 }
 
-.h3:hover {
-    cursor: pointer;
-    cursor: hand;
-}
-
 .h4 {
     font-family: $Light;
     font-size: 21px;
@@ -168,11 +148,6 @@ p {
         font-size: 26px;
         line-height: 1.333;
     }
-}
-
-.h4:hover {
-    cursor: pointer;
-    cursor: hand;
 }
 
 .intro-cta {
@@ -256,18 +231,62 @@ p {
     }
 }
 
-.promo-eyebrow {
+.eyebrow {
     font-family: $Medium;
     font-size: 13px;
     letter-spacing: 0.15em;
     text-align: left;
     text-transform: uppercase;
-    margin-top: 10px;
 }
 
 @media (min-width: 1200px) {
-    .promo-eyebrow {
+    .eyebrow {
         font-size: 16px;
+    }
+}
+
+.blue {
+    color: $Blue !important;
+}
+
+.orange {
+    color: $Orange !important;
+}
+
+.inverted {
+    color: $White !important;
+}
+
+.dash.orange {
+    background-color: $Orange;
+}
+
+.dash.blue {
+    background-color: $Blue;
+}
+
+.dash.inverted,
+.inverted .dash {
+    background-color: $White;
+}
+
+.eyebrow-hero {
+    text-transform: uppercase;
+    font-family: $Regular;
+    font-size: 13px;
+    text-align: center;
+    letter-spacing: 0.15em;
+}
+
+@media (min-width: 768px) {
+    .eyebrow-hero {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .eyebrow-hero {
+        font-size: 21px;
     }
 }
 
@@ -283,6 +302,9 @@ p {
     letter-spacing: 0.05em;
     text-align: left;
     text-transform: uppercase;
+}
+
+.author + span.date {
     margin-left: 10px;
 }
 
@@ -300,19 +322,23 @@ p {
     }
 }
 
+.promo-1-column h3:hover,
+.promo-1-column h4:hover,
+.promo-2-column h3:hover,
+.promo-2-column h4:hover,
+.promo-3-column h3:hover,
+.promo-3-column h4:hover,
+.promo-4-column h3:hover,
+.promo-4-column h4:hover {
+    cursor: pointer;
+    cursor: hand;
+}
+
 .body {
     font-family: $Light;
     font-size: 16px;
-    max-width: 36em;
     margin: 0 auto;
     text-align: left;
-}
-
-.promo-1-column .body,
-.promo-2-column .body,
-.promo-3-column .body,
-.content-tray .body {
-    max-width: none;
 }
 
 @media (min-width: 1200px) {
@@ -376,8 +402,7 @@ a:focus {
     transition: all $speed;
 }
 
-.secondary,
-.play {
+.secondary {
     font-family: $Medium;
     color: $JPMBrown;
     font-size: 13px;
@@ -400,7 +425,7 @@ a:focus {
 
 .inverted.secondary,
 .inverted .secondary {
-    color: $JPMBrown;
+    color: $White;
     box-shadow: 0px 0px 0px 2px $White inset;
 }
 
@@ -505,6 +530,17 @@ a.cta {
     text-align: left;
     color: $JPMBrown;
     text-transform: uppercase;
+    margin-top: 10px
+}
+
+.global-footer-h1:before {
+    content: "";
+    width: 22px;
+    height: 2px;
+    background-color: $JPMBrown;
+    position: relative;
+    top: -10px;
+    display: block;
 }
 
 @media (min-width: 768px) {
@@ -544,7 +580,6 @@ p.global-footer-link {
     font-family: $Light;
     font-size: 13px;
     text-align: left;
-    margin-bottom: 5px;
 }
 
 @media (min-width: 1200px) {
@@ -587,6 +622,7 @@ p.global-footer-link:hover {
 
 .global-footer-copyright a {
     color: $JPMBrown;
+    text-decoration: none;
 }
 
 .global-footer-copyright a:hover {
@@ -595,7 +631,7 @@ p.global-footer-link:hover {
     cursor: hand;
 }
 
-.global-footer-signature {
+.global-footer.signature {
     height: 300px;
     background-color: $JPMBrown;
     background-image: url("../images/jpmorgan-signature.jpg");
@@ -609,19 +645,44 @@ p.global-footer-link:hover {
     }
 }
 
-
-
 .dash {
-    border: solid $JPMBrown;
-    border-width: 1px 0 0;
+    background-color: $JPMBrown;
     width: 45px;
     height: 1px;
 }
 
-.dash.inverted,
-.inverted .dash {
-    border: solid $White;
-    border-width: 1px 0 0;
+.half.dash {
+    width: 22px;
+    height: 2px;
+}
+
+.center {
+    display: table;
+    margin: 0 auto;
+}
+
+.side-note {
+    font-size: 13px;
+}
+
+@media (min-width: 1200px) {
+    .side-note {
+        font-size: 16px;
+    }
+}
+
+a {
+    color: $WarmGray8;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: $JPMBrown;
+    text-decoration: underline;
+}
+
+.global-footer a {
+    text-decoration: none;
 }
 
 .divider {
@@ -742,11 +803,6 @@ ul.bullet {
     text-align: left;
 }
 
-.dash.center {
-    display: table;
-    margin: 0 auto;
-}
-
 .form-help {
     font-size: 13px;
     font-family: $Light;
@@ -788,7 +844,7 @@ input.error {
     font-size: 16px;
 }
 
-.regulatory-h1 {
+.h6 {
     font-family: $Medium;
     font-size: 13px;
     text-align: left;
@@ -796,35 +852,23 @@ input.error {
     letter-spacing: 0.05em;
 }
 
-.regulatory-h1:before {
-    content: "";
-    width: 45px;
-    height: 1px;
-    background-color: $JPMBrown;
-    position: relative;
-    top: -10px;
-    display: block;
-}
-
-.regulatory-h2 {
+.h5 {
     font-family: $Medium;
     font-size: 16px;
     text-align: left;
 }
 
-.regulatory-links a {
+.link a {
     font-family: $Light;
     font-size: 16px;
-    color: $WarmGray8;
     text-align: left;
-    text-decoration: underline;
+    text-decoration: none;
     cursor: pointer;
     cursor: hand;
     display: inline-block;
 }
 
-.regulatory-links a:hover {
-    color: $JPMBrown;
+.link a:hover {
     text-decoration: underline;
     cursor: pointer;
     cursor: hand;
@@ -853,4 +897,18 @@ input.error {
 
 .inverted p {
     color: $White;
+}
+
+.quote {
+    font-family: $Light;
+    color: $WarmGray8;
+    font-size: 34px;
+    text-align: center;
+}
+
+.quote-author {
+    font-family: $Regular;
+    color: $JPMBrown;
+    font-size: 16px;
+    text-align: center;
 }

@@ -26,6 +26,14 @@
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%); // 40% black tint over image
 }
 
+
+@media (max-width: 767px) {
+    .hero-image {
+        margin-bottom: 20px;
+    }
+}
+
+
 // HOMEPAGE HERO
 .homepage-hero-image {
     width: 100%;
@@ -62,12 +70,14 @@
 }
 
 .homepage-hero .hero-copy.absolute {
-      top: calc(50% - 75px);
+    top: calc(50% - 75px);
 }
+
 @media (min-width: 768px) {
-.homepage-hero .hero-copy.absolute {
-      top: calc(50% - 10vh);
-}}
+    .homepage-hero .hero-copy.absolute {
+        top: calc(50% - 10vh);
+    }
+}
 
 // INTRO TOOLTIP
 .homepage-hero .intro-tooltip {
@@ -97,18 +107,6 @@
     }
 }
 
-
-@media (min-width: 768px) {
-    .homepage-tabs .dash {
-        margin: 10px 0;
-    }
-}
-
-@media (min-width: 1200px) {
-    .homepage-tabs .dash {
-        margin: 15px 0;
-    }
-}
 
 @media (max-width: 767px) {
     .homepage-tabs .container-fluid {
@@ -156,11 +154,4 @@
     .homepage-tabs [class^="col-"]:last-child {
         border-right: 0px;
     }
-}
-
-// SPACING
-.hero-copy .dash,
-.hero-copy .dash.center {
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
