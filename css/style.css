@@ -597,19 +597,31 @@ li.primary-inverted {
 @media (min-width: 768px) {
   .promo-1-column .cta {
     margin-top: 10px; } }
-.hero-promo .promo-eyebrow,
-.hero-promo .h3 {
+.hero-copy .promo-eyebrow,
+.hero-copy .h3 {
   margin-bottom: 10px; }
 
-.hero-promo .author {
+.hero-copy .author {
   margin-bottom: 20px; }
 
-.hero-promo .body {
+.hero-copy .body {
   margin-bottom: 30px; }
 
-.hero-promo .primary:first-child {
+.hero-copy .primary {
   margin-right: 10px; }
 
+.hero-copy .primary:last-child {
+  margin-right: 0px; }
+
+@media (max-width: 767px) {
+  .hero-copy .h3 {
+    margin-top: 15px; }
+
+  .hero-copy .author {
+    margin-bottom: 10px; }
+
+  .hero-copy .body {
+    margin-bottom: 15px; } }
 .promo-1-column .promo-eyebrow,
 .promo-1-column .h3 {
   margin-bottom: 10px; }
@@ -1222,87 +1234,92 @@ button .icon.linkedin:hover {
   fill: #310008;
   pointer-events: bounding-box; }
 
-.hero-promo,
+.hero,
 .homepage-hero {
   position: relative; }
 
-.homepage-hero .img-container {
-  height: calc(100vh - 90px);
-  background-image: url(../images/header_cityscape.jpg); }
+.hero-image {
+  width: 100%;
+  height: 56.25vw;
+  min-height: 240px;
+  max-height: 800px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  z-index: -10; }
 
-.homepage-hero .img-container:before {
+.hero-image:before {
   content: "";
   display: block;
   position: absolute;
-  top: 90px;
+  top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%);
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%); }
 
-.img-container.hero {
-  max-height: 800px; }
-
-.copy-container {
+.homepage-hero-image {
   width: 100%;
-  margin: auto;
+  height: calc(100vh - 90px);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  z-index: -10; }
+
+.homepage-hero-image:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%); }
+
+.hero-copy {
+  z-index: 10;
+  width: 100%; }
+
+.hero-copy.absolute {
   position: absolute;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  z-index: 10; }
+  margin: 0 auto; }
 
-.homepage-hero .copy-container .dash,
-.hero .dash {
-  margin-top: 20px;
-  margin-bottom: 20px; }
+.homepage-hero .hero-copy.absolute {
+  top: calc(50% - 75px); }
 
+@media (min-width: 768px) {
+  .homepage-hero .hero-copy.absolute {
+    top: calc(50% - 10vh); } }
 .homepage-hero .intro-tooltip {
   position: absolute;
-  bottom: 25%;
   z-index: 10;
   display: inline;
   margin: auto;
   left: 50%;
-  -webkit-transform: translate(-50%, 75%);
-      -ms-transform: translate(-50%, 75%);
-          transform: translate(-50%, 75%);
+  bottom: 25%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   z-index: 10; }
-
-.background-tint {
-  float: left;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background-color: #000000;
-  z-index: 2;
-  opacity: 0;
-  mix-blend-mode: darken; }
 
 .homepage-tabs {
   position: absolute;
-  bottom: 0%;
   width: 100%;
+  bottom: 0%;
   z-index: 10;
   background-color: rgba(255, 255, 255, 0.9);
   display: inline; }
 
 @media (min-width: 768px) {
   .homepage-tabs {
-    position: absolute;
-    -webkit-transform: translateY(80vh);
-        -ms-transform: translateY(80vh);
-            transform: translateY(80vh);
-    top: 0%; } }
-@media (min-width: 992px) {
-  .homepage-tabs {
-    height: 20vh;
-    -webkit-transform: translateY(80vh);
-        -ms-transform: translateY(80vh);
-            transform: translateY(80vh); } }
+    height: 20vh; } }
 @media (min-width: 768px) {
   .homepage-tabs .dash {
     margin: 10px 0; } }
@@ -1361,21 +1378,11 @@ button .icon.linkedin:hover {
 @media (min-width: 768px) {
   .homepage-tabs [class^="col-"]:last-child {
     border-right: 0px; } }
-.hero-promo-img-container {
-  background-image: url(../images/header_person.jpg);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: cover;
-  width: 100%;
-  height: 75vw;
-  min-height: 240px;
-  max-height: 800px;
-  position: relative;
-  z-index: -10; }
+.hero-copy .dash,
+.hero-copy .dash.center {
+  margin-top: 20px;
+  margin-bottom: 20px; }
 
-@media (min-width: 768px) {
-  .hero-promo-img-container {
-    height: 56.25vw; } }
 nav {
   position: relative;
   margin: 0;
@@ -1897,7 +1904,8 @@ p {
   font-size: 13px;
   letter-spacing: 0.15em;
   text-align: left;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-top: 10px; }
 
 @media (min-width: 1200px) {
   .promo-eyebrow {

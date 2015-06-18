@@ -68,21 +68,37 @@
 }
 
 // SPACING HERO-PROMO
-.hero-promo .promo-eyebrow,
-.hero-promo .h3 {
+.hero-copy .promo-eyebrow,
+.hero-copy .h3 {
     margin-bottom: 10px;
 }
 
-.hero-promo .author {
+.hero-copy .author {
     margin-bottom: 20px;
 }
 
-.hero-promo .body {
+.hero-copy .body {
     margin-bottom: 30px;
 }
 
-.hero-promo .primary:first-child {
+.hero-copy .primary {
     margin-right: 10px;
+}
+
+.hero-copy .primary:last-child {
+    margin-right: 0px;
+}
+
+@media (max-width: 767px) {
+    .hero-copy .h3 {
+        margin-top: 15px;
+    }
+    .hero-copy .author {
+        margin-bottom: 10px;
+    }
+    .hero-copy .body {
+        margin-bottom: 15px;
+    }
 }
 
 // SPACING PROMO-1-COLUMN
