@@ -4,6 +4,8 @@
     margin: 0;
     overflow: hidden;
     max-height: 435px; // set max height of image container
+    cursor: pointer;
+    cursor: hand;
 }
 
 .promo-img-container:before {
@@ -22,7 +24,6 @@
     right: 0;
     margin: auto; // this center align the picture in the 16/9 container
 }
-
 
 // SPACING
 .promo-1-column .author {
@@ -47,8 +48,6 @@
         margin-top: 10px;
     }
 }
-
-
 
 // SPACING PROMO-1-COLUMN
 .promo-1-column .eyebrow,

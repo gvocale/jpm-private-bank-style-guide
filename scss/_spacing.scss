@@ -425,18 +425,6 @@ p.author + p.date {
     margin-top: 10px;
 }
 
-.sub-headline + .body {
-    margin-top: 20px;
-}
-
-.h3 + .body {
-    margin-top: 20px;
-}
-
-.body + .h3 {
-    margin-top: 60px;
-}
-
 .article {
     .dash + .eyebrow, .body + .body, .eyebrow + .side-note, .side-note + .side-note {
         margin-top: 10px;
@@ -447,6 +435,15 @@ p.author + p.date {
     }
     .body + .primary {
         margin-top: 40px;
+    }
+    .h4 + .body {
+        margin-top: 20px;
+    }
+    .h3 + .body {
+        margin-top: 20px;
+    }
+    .body + .h3 {
+        margin-top: 60px;
     }
 }
 
@@ -464,7 +461,7 @@ p.author + p.date {
 }
 
 .h1 + .dash,
-.dash + .sub-headline {
+.dash + .h4 {
     margin-top: 20px;
 }
 
@@ -492,7 +489,7 @@ p.author + p.date {
     .bullet li + li {
         margin-top: 20px;
     }
-    .h2 + .sub-headline {
+    .h2 + .h4 {
         margin-top: 20px;
     }
 }
@@ -516,11 +513,11 @@ p.author + p.date {
 }
 
 .hero {
-    .h2 + .eyebrow, .h2 + .dash, .eyebrow + .sub-headline, .sub-headline + .primary, .eyebrow + .h3 {
+    .eyebrow + .h2, .h2 + .eyebrow, .h2 + .dash, .eyebrow + .h4, .h4 + .primary, .eyebrow + .h3 {
         margin-top: 20px;
     }
-    .sub-headline + .secondary,
-    .sub-headline + .toggle,
+    .h4 + .secondary,
+    .h4 + .toggle,
     .author + .body {
         margin-top: 20px;
     }
@@ -535,7 +532,7 @@ p.author + p.date {
         margin-top: 10px;
     }
     @media (min-width: 768px) {
-        .body + .primary, .body + .secondary, .sub-headline + .secondary, .sub-headline + .toggle {
+        .body + .primary, .body + .secondary, .h4 + .secondary, .h4 + .toggle {
             margin-top: 30px;
         }
     }
@@ -645,9 +642,9 @@ p.author + p.date {
 .share.linkedin,
 .share.twitter,
 .share.email {
-padding-top: 20px;
+    padding-top: 20px;
 }
 
 .share:first-child {
-padding-top: 0;
+    padding-top: 0;
 }

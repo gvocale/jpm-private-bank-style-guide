@@ -474,6 +474,9 @@ li.primary-inverted {
   background-color: #8c8279; }
 .color-palette .WarmGray0 {
   background-color: #ebe8e5; }
+.color-palette .JPMBrown {
+  background-color: #310008;
+  color: #FFFFFF; }
 .color-palette .has-error {
   background-color: #a71010;
   color: #FFFFFF; }
@@ -497,6 +500,9 @@ li.primary-inverted {
 .style-guide ul {
   margin-left: 20px; }
 
+.spacing .breakpoint {
+  color: #FFFFFF; }
+
 .container-fluid.griddy {
   border: solid 1px red; }
 
@@ -504,7 +510,9 @@ li.primary-inverted {
   position: relative;
   margin: 0;
   overflow: hidden;
-  max-height: 435px; }
+  max-height: 435px;
+  cursor: pointer;
+  cursor: hand; }
 
 .promo-img-container:before {
   content: "";
@@ -881,6 +889,10 @@ img {
 .form label {
   display: block; }
 
+.flash.lets-connect {
+  width: 100%;
+  height: auto; }
+
 .component-wrapper {
   width: 100%;
   max-height: 435px;
@@ -1151,15 +1163,6 @@ span.date {
 p.author + p.date {
   margin-top: 10px; }
 
-.sub-headline + .body {
-  margin-top: 20px; }
-
-.h3 + .body {
-  margin-top: 20px; }
-
-.body + .h3 {
-  margin-top: 60px; }
-
 .article .dash + .eyebrow, .article .body + .body, .article .eyebrow + .side-note, .article .side-note + .side-note {
   margin-top: 10px; }
 .article .body,
@@ -1167,6 +1170,12 @@ p.author + p.date {
   margin-top: 20px; }
 .article .body + .primary {
   margin-top: 40px; }
+.article .h4 + .body {
+  margin-top: 20px; }
+.article .h3 + .body {
+  margin-top: 20px; }
+.article .body + .h3 {
+  margin-top: 60px; }
 
 .body + .secondary,
 .body + .quote,
@@ -1180,7 +1189,7 @@ p.author + p.date {
   margin-top: 20px; }
 
 .h1 + .dash,
-.dash + .sub-headline {
+.dash + .h4 {
   margin-top: 20px; }
 
 @media (min-width: 768px) {
@@ -1197,7 +1206,7 @@ p.author + p.date {
   margin-top: 0; }
 .content-page .bullet li + li {
   margin-top: 20px; }
-.content-page .h2 + .sub-headline {
+.content-page .h2 + .h4 {
   margin-top: 20px; }
 
 .promo-1-column .dash + .eyebrow,
@@ -1211,10 +1220,10 @@ p.author + p.date {
 .content-tray .author + .body {
   margin-top: 20px; }
 
-.hero .h2 + .eyebrow, .hero .h2 + .dash, .hero .eyebrow + .sub-headline, .hero .sub-headline + .primary, .hero .eyebrow + .h3 {
+.hero .eyebrow + .h2, .hero .h2 + .eyebrow, .hero .h2 + .dash, .hero .eyebrow + .h4, .hero .h4 + .primary, .hero .eyebrow + .h3 {
   margin-top: 20px; }
-.hero .sub-headline + .secondary,
-.hero .sub-headline + .toggle,
+.hero .h4 + .secondary,
+.hero .h4 + .toggle,
 .hero .author + .body {
   margin-top: 20px; }
 .hero .primary + .primary,
@@ -1226,7 +1235,7 @@ p.author + p.date {
 .hero .h3 + .author {
   margin-top: 10px; }
 @media (min-width: 768px) {
-  .hero .body + .primary, .hero .body + .secondary, .hero .sub-headline + .secondary, .hero .sub-headline + .toggle {
+  .hero .body + .primary, .hero .body + .secondary, .hero .h4 + .secondary, .hero .h4 + .toggle {
     margin-top: 30px; } }
 
 .regulatory-link .dash + .h6 {
@@ -1811,6 +1820,16 @@ p {
   letter-spacing: 0.02em;
   line-height: 1.5; }
 
+.h1.center,
+.h2.center,
+.h3.center,
+.h4.center,
+.h5.center,
+.h6.center,
+p.center {
+  text-align: center;
+  max-width: 800px; }
+
 h1,
 .h1,
 h2,
@@ -1872,17 +1891,6 @@ p {
   .h2 {
     font-size: 55px;
     line-height: 1; } }
-.sub-headline {
-  font-family: "Amplitude-Light";
-  font-size: 21px;
-  text-align: center;
-  max-width: 30em;
-  margin: 0 auto; }
-
-@media (min-width: 1200px) {
-  .sub-headline {
-    font-size: 26px;
-    line-height: 1.333; } }
 .h3 {
   font-family: "Amplitude-Light";
   font-size: 21px; }
@@ -1902,6 +1910,9 @@ p {
   .h4 {
     font-size: 26px;
     line-height: 1.333; } }
+.homepage-hero .h4 {
+  max-width: 800px; }
+
 .h5 {
   font-family: "Amplitude-Medium";
   font-size: 16px;
@@ -1988,6 +1999,7 @@ p {
 
 @media (min-width: 1200px) {
   .eyebrow {
+    font-family: "Amplitude-Regular";
     font-size: 16px; } }
 .blue {
   color: #00a3e0 !important; }
@@ -2049,14 +2061,14 @@ p {
   .promo-1-column .body,
   .promo-1-column.body {
     font-size: 21px; } }
-.promo-1-column h3:hover,
-.promo-1-column h4:hover,
-.promo-2-column h3:hover,
-.promo-2-column h4:hover,
-.promo-3-column h3:hover,
-.promo-3-column h4:hover,
-.promo-4-column h3:hover,
-.promo-4-column h4:hover {
+.promo-1-column .h3:hover,
+.promo-1-column .h4:hover,
+.promo-2-column .h3:hover,
+.promo-2-column .h4:hover,
+.promo-3-column .h3:hover,
+.promo-3-column .h4:hover,
+.promo-4-column .h3:hover,
+.promo-4-column .h4:hover {
   cursor: pointer;
   cursor: hand; }
 
@@ -2358,11 +2370,11 @@ nav input[type=search],
     font-family: "Amplitude-Light";
     font-size: 21px; } }
 .strong {
-  font-family: "Amplitude-Medium"; }
+  font-family: "Amplitude-Medium" !important; }
 
 @media (min-width: 726px) {
   .strong {
-    font-family: "Amplitude-Regular"; } }
+    font-family: "Amplitude-Regular" !important; } }
 @media (min-width: 768px) {
   .left {
     text-align: left; }
@@ -2445,7 +2457,7 @@ ul.bullet {
   text-align: center; }
 
 .quote-author {
-  font-family: "Amplitude-Regular";
+  font-family: "Amplitude-Light";
   color: #310008;
   font-size: 16px;
   text-align: center; }

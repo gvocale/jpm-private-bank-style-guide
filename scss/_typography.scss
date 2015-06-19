@@ -21,6 +21,17 @@ p {
     line-height: 1.5;
 }
 
+.h1.center,
+.h2.center,
+.h3.center,
+.h4.center,
+.h5.center,
+.h6.center,
+p.center {
+    text-align: center;
+    max-width: 800px;
+}
+
 h1,
 .h1,
 h2,
@@ -106,21 +117,6 @@ p {
     }
 }
 
-.sub-headline {
-    font-family: $Light;
-    font-size: 21px;
-    text-align: center;
-    max-width: 30em;
-    margin: 0 auto;
-}
-
-@media (min-width: 1200px) {
-    .sub-headline {
-        font-size: 26px;
-        line-height: 1.333;
-    }
-}
-
 .h3 {
     font-family: $Light;
     font-size: 21px;
@@ -148,6 +144,12 @@ p {
     .h4 {
         font-size: 26px;
         line-height: 1.333;
+    }
+}
+
+.homepage-hero {
+    .h4 {
+        max-width: 800px;
     }
 }
 
@@ -259,6 +261,7 @@ p {
 
 @media (min-width: 1200px) {
     .eyebrow {
+        font-family: $Regular;
         font-size: 16px;
     }
 }
@@ -344,14 +347,14 @@ p {
     }
 }
 
-.promo-1-column h3:hover,
-.promo-1-column h4:hover,
-.promo-2-column h3:hover,
-.promo-2-column h4:hover,
-.promo-3-column h3:hover,
-.promo-3-column h4:hover,
-.promo-4-column h3:hover,
-.promo-4-column h4:hover {
+.promo-1-column .h3:hover,
+.promo-1-column .h4:hover,
+.promo-2-column .h3:hover,
+.promo-2-column .h4:hover,
+.promo-3-column .h3:hover,
+.promo-3-column .h4:hover,
+.promo-4-column .h3:hover,
+.promo-4-column .h4:hover {
     cursor: pointer;
     cursor: hand;
 }
@@ -722,12 +725,12 @@ nav input[type=search],
 }
 
 .strong {
-    font-family: $Medium;
+    font-family: $Medium !important;
 }
 
 @media (min-width: 726px) {
     .strong {
-        font-family: $Regular;
+        font-family: $Regular !important;
     }
 }
 
@@ -833,7 +836,7 @@ ul.bullet {
 }
 
 .quote-author {
-    font-family: $Regular;
+    font-family: $Light;
     color: $JPMBrown;
     font-size: 16px;
     text-align: center;

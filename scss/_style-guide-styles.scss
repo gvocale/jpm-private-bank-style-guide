@@ -232,6 +232,10 @@ li.primary-inverted {
     .WarmGray0 {
         background-color: $WarmGray0;
     }
+        .JPMBrown {
+        background-color: $JPMBrown;
+        color: $White;
+    }
     .has-error {
         background-color: $Red;
         color: $White;
@@ -266,5 +270,11 @@ li.primary-inverted {
 .style-guide {
     ul {
         margin-left: 20px;
+    }
+}
+
+.spacing {
+    .breakpoint {
+        color: $White;
     }
 }
