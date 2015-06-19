@@ -589,24 +589,27 @@ p.author + p.date {
     .checkboxes {
         margin-top: 30px;
     }
-    .your-needs > div:first-child,
-    .your-needs > div:nth-child(2) {
-        margin-top: 48px;
+    .your-needs > div:first-child {
+        margin-top: 20px;
     }
-    .your-needs > div:nth-child(3),
+    .your-needs > div:nth-child(2),
+    .your-needs > div:nth-child(3) {
+        margin-top: 25px;
+    }
     .your-needs > div:nth-child(4),
     .your-needs > div:nth-child(5),
     .your-needs > div:nth-child(6),
     .your-needs > div:nth-child(7),
     .your-needs > div:nth-child(8),
-    .your-needs > div:nth-child(9) {
-        margin-top: 29px;
-    }
+    .your-needs > div:nth-child(9),
     .your-needs > div:nth-child(10) {
-        margin-top: 19px;
+        margin-top: 24px;
     }
-    input[type="text"] .message {
-        height: 369px;
+    .your-needs > div:nth-child(11) {
+        margin-top: 20px;
+    }
+    textarea.message {
+        height: 377px;
     }
     @media (max-width: 767px) {
         form + div {
@@ -615,8 +618,11 @@ p.author + p.date {
         .your-needs > div:nth-child(2) {
             margin-top: 29px;
         }
-            .your-needs > div:nth-child(10) {
-        margin-top: 29px;
+        .your-needs > div:nth-child(10) {
+            margin-top: 29px;
+        }
+            textarea.message {
+        height: 200px;
     }
     }
 }
