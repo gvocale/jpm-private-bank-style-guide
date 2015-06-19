@@ -164,7 +164,7 @@ li.primary-inverted {
 }
 
 .breakpoint {
-    color: red;
+    color: $Red;
 }
 
 .breakpoint-bar .device {
@@ -190,69 +190,50 @@ li.primary-inverted {
     /* or whatever */
 }
 
-.color.White {
-    background-color: $White;
-    border: 1px solid $WarmGray0;
-}
-
-.color.JPMBrown {
-    background-color: $JPMBrown;
-    color: $White;
-}
-
-.Purple {
-    color: $White;
-    background-color: $Purple;
-}
-
-.DarkBlue {
-    color: $White;
-    background-color: $DarkBlue;
-}
-
-.Blue {
-    color: $White;
-    background-color: $Blue;
-}
-
-.Teal {
-    color: $White;
-    background-color: $Teal;
-}
-
-.Green {
-    color: $White;
-    background-color: $Green;
-}
-
-.Yellow {
-    background-color: $Yellow;
-}
-
-.Orange {
-    color: $White;
-    background-color: $Orange;
-}
-
-.WarmGray1 {
-    background-color: $WarmGray1;
-}
-
-.WarmGray4 {
-    background-color: $WarmGray4;
-}
-
-.WarmGray8 {
-    background-color: $WarmGray8;
-}
-
-.WarmGray0 {
-    background-color: $WarmGray0;
-}
-
-.RedError {
-    background-color: $RedError;
-    color: $White;
+.color-palette {
+    .Purple {
+        color: $White;
+        background-color: $Purple;
+    }
+    .DarkBlue {
+        color: $White;
+        background-color: $DarkBlue;
+    }
+    .Blue {
+        color: $White;
+        background-color: $Blue;
+    }
+    .Teal {
+        color: $White;
+        background-color: $Teal;
+    }
+    .Green {
+        color: $White;
+        background-color: $Green;
+    }
+    .Yellow {
+        background-color: $Yellow;
+    }
+    .Orange {
+        color: $White;
+        background-color: $Orange;
+    }
+    .WarmGray1 {
+        background-color: $WarmGray1;
+    }
+    .WarmGray4 {
+        background-color: $WarmGray4;
+    }
+    .WarmGray8 {
+        background-color: $WarmGray8;
+    }
+    .WarmGray0 {
+        background-color: $WarmGray0;
+    }
+    .has-error {
+        background-color: $Red;
+        color: $White;
+    }
 }
 
 // RULE

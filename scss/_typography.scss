@@ -33,6 +33,7 @@ h4,
 .h6,
 ul,
 ol,
+.form-group,
 p {
     margin: 0;
     padding: 0;
@@ -158,7 +159,7 @@ p {
 
 @media (min-width: 1200px) {
     .h5 {
-                    font-family: $Regular;
+        font-family: $Regular;
         font-size: 21px;
     }
 }
@@ -777,22 +778,6 @@ ul.bullet {
     line-height: 2;
 }
 
-.error {
-    color: $RedError;
-}
-
-input[type='checkbox'] {}
-
-input[type='text'] {
-    height: 50px;
-    width: 100%;
-    padding: 10px;
-}
-
-input.error {
-    border: 1px solid $RedError;
-}
-
 .office-name {
     font-size: 21px;
     text-transform: uppercase;
@@ -866,4 +851,28 @@ input.error {
     color: $JPMBrown;
     font-size: 16px;
     text-align: center;
+}
+
+input[type="text"],
+textarea {
+    height: 50px;
+    width: 100%;
+    outline: none;
+    padding: 10px;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid $WarmGray1;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    border: 1px solid $JPMBrown;
+}
+
+.has-error input[type="text"],
+.has-error textarea {
+    border: 1px solid $Red;
+}
+
+.has-error {
+    color: $Red;
 }

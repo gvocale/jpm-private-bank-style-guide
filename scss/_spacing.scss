@@ -520,7 +520,8 @@ p.author + p.date {
         margin-top: 20px;
     }
     .sub-headline + .secondary,
-    .sub-headline + .toggle, .author + .body {
+    .sub-headline + .toggle,
+    .author + .body {
         margin-top: 20px;
     }
     .primary + .primary,
@@ -529,7 +530,8 @@ p.author + p.date {
     .secondary + .primary {
         margin-right: 10px;
     }
-    .dash + .eyebrow, .h3 + .author {
+    .dash + .eyebrow,
+    .h3 + .author {
         margin-top: 10px;
     }
     @media (min-width: 768px) {
@@ -558,7 +560,63 @@ p.author + p.date {
     .link {
         margin-top: 10px;
     }
-    .dash + .h6, .h6.warmgray8 {
+    .dash + .h6,
+    .h6.warmgray8 {
         margin-top: 10px;
+    }
+}
+
+.form {
+    input[type="checkbox"] {
+        transform: scale(1.5);
+        margin-left: 8px;
+        margin-right: 20px;
+    }
+    .primary + .form-help,
+    input + .form-help,
+    .h6 + .legal {
+        margin-top: 5px;
+    }
+    .your-information .form-group {
+        margin-top: 20px;
+    }
+    .form-group input[type="text"] {
+        margin-top: 5px;
+    }
+    input + .strong {
+        margin-top: 20px;
+    }
+    .checkboxes {
+        margin-top: 30px;
+    }
+    .your-needs > div:first-child,
+    .your-needs > div:nth-child(2) {
+        margin-top: 48px;
+    }
+    .your-needs > div:nth-child(3),
+    .your-needs > div:nth-child(4),
+    .your-needs > div:nth-child(5),
+    .your-needs > div:nth-child(6),
+    .your-needs > div:nth-child(7),
+    .your-needs > div:nth-child(8),
+    .your-needs > div:nth-child(9) {
+        margin-top: 29px;
+    }
+    .your-needs > div:nth-child(10) {
+        margin-top: 19px;
+    }
+    input[type="text"] .message {
+        height: 369px;
+    }
+    @media (max-width: 767px) {
+        form + div {
+            margin-top: 60px;
+        }
+        .your-needs > div:nth-child(2) {
+            margin-top: 29px;
+        }
+            .your-needs > div:nth-child(10) {
+        margin-top: 29px;
+    }
     }
 }

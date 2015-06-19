@@ -132,3 +132,17 @@ img {
         flex-basis: auto;
     }
 }
+
+// FORM
+.form {
+    label {
+        display: block;
+    }
+    textarea.message {
+        height: 200px;
+    }
+    @media (min-width: 768px) {
+            textarea.message {
+        height: 387px;
+    }}
+}

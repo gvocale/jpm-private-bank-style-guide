@@ -417,7 +417,7 @@ li.primary-inverted {
   padding: 10px; }
 
 .breakpoint {
-  color: red; }
+  color: #a71010; }
 
 .breakpoint-bar .device {
   line-height: 1; }
@@ -446,54 +446,35 @@ li.primary-inverted {
   vertical-align: middle;
   /* or whatever */ }
 
-.color.White {
-  background-color: #FFFFFF;
-  border: 1px solid #ebe8e5; }
-
-.color.JPMBrown {
-  background-color: #310008;
-  color: #FFFFFF; }
-
-.Purple {
+.color-palette .Purple {
   color: #FFFFFF;
   background-color: #A73A64; }
-
-.DarkBlue {
+.color-palette .DarkBlue {
   color: #FFFFFF;
   background-color: #00587c; }
-
-.Blue {
+.color-palette .Blue {
   color: #FFFFFF;
   background-color: #00a3e0; }
-
-.Teal {
+.color-palette .Teal {
   color: #FFFFFF;
   background-color: #2cd5c4; }
-
-.Green {
+.color-palette .Green {
   color: #FFFFFF;
   background-color: #43b02a; }
-
-.Yellow {
+.color-palette .Yellow {
   background-color: #fedd00; }
-
-.Orange {
+.color-palette .Orange {
   color: #FFFFFF;
   background-color: #ff8200; }
-
-.WarmGray1 {
+.color-palette .WarmGray1 {
   background-color: #d7d2cb; }
-
-.WarmGray4 {
+.color-palette .WarmGray4 {
   background-color: #b6ada5; }
-
-.WarmGray8 {
+.color-palette .WarmGray8 {
   background-color: #8c8279; }
-
-.WarmGray0 {
+.color-palette .WarmGray0 {
   background-color: #ebe8e5; }
-
-.RedError {
+.color-palette .has-error {
   background-color: #a71010;
   color: #FFFFFF; }
 
@@ -900,6 +881,14 @@ img {
     -webkit-flex-basis: auto;
         -ms-flex-preferred-size: auto;
             flex-basis: auto; } }
+.form label {
+  display: block; }
+.form textarea.message {
+  height: 200px; }
+@media (min-width: 768px) {
+  .form textarea.message {
+    height: 387px; } }
+
 .component-wrapper {
   width: 100%;
   max-height: 435px;
@@ -1233,14 +1222,16 @@ p.author + p.date {
 .hero .h2 + .eyebrow, .hero .h2 + .dash, .hero .eyebrow + .sub-headline, .hero .sub-headline + .primary, .hero .eyebrow + .h3 {
   margin-top: 20px; }
 .hero .sub-headline + .secondary,
-.hero .sub-headline + .toggle, .hero .author + .body {
+.hero .sub-headline + .toggle,
+.hero .author + .body {
   margin-top: 20px; }
 .hero .primary + .primary,
 .hero .primary + .secondary,
 .hero .secondary + .secondary,
 .hero .secondary + .primary {
   margin-right: 10px; }
-.hero .dash + .eyebrow, .hero .h3 + .author {
+.hero .dash + .eyebrow,
+.hero .h3 + .author {
   margin-top: 10px; }
 @media (min-width: 768px) {
   .hero .body + .primary, .hero .body + .secondary, .hero .sub-headline + .secondary, .hero .sub-headline + .toggle {
@@ -1256,8 +1247,50 @@ p.author + p.date {
 
 .global-footer .link {
   margin-top: 10px; }
-.global-footer .dash + .h6, .global-footer .h6.warmgray8 {
+.global-footer .dash + .h6,
+.global-footer .h6.warmgray8 {
   margin-top: 10px; }
+
+.form input[type="checkbox"] {
+  -webkit-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+          transform: scale(1.5);
+  margin-left: 8px;
+  margin-right: 20px; }
+.form .primary + .form-help,
+.form input + .form-help,
+.form .h6 + .legal {
+  margin-top: 5px; }
+.form .your-information .form-group {
+  margin-top: 20px; }
+.form .form-group input[type="text"] {
+  margin-top: 5px; }
+.form input + .strong {
+  margin-top: 20px; }
+.form .checkboxes {
+  margin-top: 30px; }
+.form .your-needs > div:first-child,
+.form .your-needs > div:nth-child(2) {
+  margin-top: 48px; }
+.form .your-needs > div:nth-child(3),
+.form .your-needs > div:nth-child(4),
+.form .your-needs > div:nth-child(5),
+.form .your-needs > div:nth-child(6),
+.form .your-needs > div:nth-child(7),
+.form .your-needs > div:nth-child(8),
+.form .your-needs > div:nth-child(9) {
+  margin-top: 29px; }
+.form .your-needs > div:nth-child(10) {
+  margin-top: 19px; }
+.form input[type="text"] .message {
+  height: 369px; }
+@media (max-width: 767px) {
+  .form form + div {
+    margin-top: 60px; }
+  .form .your-needs > div:nth-child(2) {
+    margin-top: 29px; }
+  .form .your-needs > div:nth-child(10) {
+    margin-top: 29px; } }
 
 path.icon.twitter,
 path.icon.email,
@@ -1777,6 +1810,7 @@ h4,
 .h6,
 ul,
 ol,
+.form-group,
 p {
   margin: 0;
   padding: 0; }
@@ -2356,17 +2390,6 @@ ul.bullet {
   text-decoration: underline;
   line-height: 2; }
 
-.error {
-  color: #a71010; }
-
-input[type='text'] {
-  height: 50px;
-  width: 100%;
-  padding: 10px; }
-
-input.error {
-  border: 1px solid #a71010; }
-
 .office-name {
   font-size: 21px;
   text-transform: uppercase;
@@ -2427,6 +2450,26 @@ input.error {
   color: #310008;
   font-size: 16px;
   text-align: center; }
+
+input[type="text"],
+textarea {
+  height: 50px;
+  width: 100%;
+  outline: none;
+  padding: 10px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #d7d2cb; }
+
+input[type="text"]:focus,
+textarea:focus {
+  border: 1px solid #310008; }
+
+.has-error input[type="text"],
+.has-error textarea {
+  border: 1px solid #a71010; }
+
+.has-error {
+  color: #a71010; }
 
 .cross-link.child-pages {
   width: 100%;
