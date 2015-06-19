@@ -469,14 +469,14 @@ p.author + p.date {
 }
 
 @media (min-width: 768px) {
-    .tab-h1 + .dash,
+    .h5 + .dash,
     .dash + .tab-body {
         margin-top: 10px;
     }
 }
 
 @media (min-width: 1200px) {
-    .tab-h1 + .dash,
+    .h5 + .dash,
     .dash + .tab-body {
         margin-top: 15px;
     }
@@ -621,8 +621,33 @@ p.author + p.date {
         .your-needs > div:nth-child(10) {
             margin-top: 29px;
         }
-            textarea.message {
-        height: 200px;
+        textarea.message {
+            height: 200px;
+        }
     }
+}
+
+.style-guide {
+    @media (max-width: 991px) {
+        .row .col-xs-12.col-md-6 {
+            margin-top: 20px;
+        }
     }
+    .rule {
+        margin-bottom: 40px;
+    }
+    .row {
+        margin-bottom: 80px;
+    }
+}
+
+.share.facebook,
+.share.linkedin,
+.share.twitter,
+.share.email {
+padding-top: 20px;
+}
+
+.share:first-child {
+padding-top: 0;
 }

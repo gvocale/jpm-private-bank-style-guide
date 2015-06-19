@@ -40,7 +40,6 @@ p.spec-font p.spec-detail {
 .style-guide-h3 {
     color: $Purple;
     font-family: $Medium;
-    margin-bottom: 20px;
 }
 
 .style-guide-link {
@@ -163,8 +162,11 @@ li.primary-inverted {
     padding: 10px;
 }
 
-.breakpoint {
-    color: $Red;
+.style-guide {
+    .breakpoint {
+        color: $Orange;
+        font-family: $Regular;
+    }
 }
 
 .breakpoint-bar .device {
@@ -259,12 +261,4 @@ li.primary-inverted {
     .style-guide {
         font-size: 16px;
     }
-}
-
-.style-guide .rule {
-    margin-bottom: 20px;
-}
-
-.style-guide .row {
-    margin-bottom: 40px;
 }

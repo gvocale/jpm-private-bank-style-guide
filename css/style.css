@@ -318,8 +318,7 @@ p.spec-font p.spec-detail {
 
 .style-guide-h3 {
   color: #A73A64;
-  font-family: "Amplitude-Medium";
-  margin-bottom: 20px; }
+  font-family: "Amplitude-Medium"; }
 
 .style-guide-link {
   color: #A73A64; }
@@ -416,8 +415,9 @@ nav > ul li:hover ul {
 li.primary-inverted {
   padding: 10px; }
 
-.breakpoint {
-  color: #a71010; }
+.style-guide .breakpoint {
+  color: #ff8200;
+  font-family: "Amplitude-Regular"; }
 
 .breakpoint-bar .device {
   line-height: 1; }
@@ -494,12 +494,6 @@ li.primary-inverted {
   .breakpoint-bar,
   .style-guide {
     font-size: 16px; } }
-.style-guide .rule {
-  margin-bottom: 20px; }
-
-.style-guide .row {
-  margin-bottom: 40px; }
-
 .container-fluid.griddy {
   border: solid 1px red; }
 
@@ -1187,11 +1181,11 @@ p.author + p.date {
   margin-top: 20px; }
 
 @media (min-width: 768px) {
-  .tab-h1 + .dash,
+  .h5 + .dash,
   .dash + .tab-body {
     margin-top: 10px; } }
 @media (min-width: 1200px) {
-  .tab-h1 + .dash,
+  .h5 + .dash,
   .dash + .tab-body {
     margin-top: 15px; } }
 .content-page .h4 + .body {
@@ -1290,6 +1284,23 @@ p.author + p.date {
     margin-top: 29px; }
   .form textarea.message {
     height: 200px; } }
+
+@media (max-width: 991px) {
+  .style-guide .row .col-xs-12.col-md-6 {
+    margin-top: 20px; } }
+.style-guide .rule {
+  margin-bottom: 40px; }
+.style-guide .row {
+  margin-bottom: 80px; }
+
+.share.facebook,
+.share.linkedin,
+.share.twitter,
+.share.email {
+  padding-top: 20px; }
+
+.share:first-child {
+  padding-top: 0; }
 
 path.icon.twitter,
 path.icon.email,
@@ -1891,12 +1902,17 @@ p {
 .h5 {
   font-family: "Amplitude-Medium";
   font-size: 16px;
-  text-align: left; }
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 0.05em; }
 
 @media (min-width: 1200px) {
   .h5 {
-    font-family: "Amplitude-Regular";
     font-size: 21px; } }
+@media (min-width: 768px) {
+  .homepage-tabs .h5 {
+    text-align: center; } }
+
 .h6 {
   font-family: "Amplitude-Medium";
   font-size: 13px;
@@ -1911,11 +1927,6 @@ p {
   .h6 {
     font-size: 16px; } }
 .intro-cta {
-  font-family: "Amplitude-Medium";
-  font-weight: medium;
-  font-size: 13px;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
   text-align: center;
   -webkit-transition: -webkit-transform 0.2s ease;
           transition: transform 0.2s ease; }
@@ -1952,25 +1963,11 @@ p {
   left: calc(50% - 8px); }
 
 @media (min-width: 1200px) {
-  .intro-cta {
-    font-size: 16px; }
-
   .intro-cta::after {
     background-size: 20px 12px;
     width: 20px;
     height: 12px;
     left: calc(50% - 10px); } }
-.tab-h1 {
-  font-family: "Amplitude-Medium";
-  font-weight: medium;
-  font-size: 16px;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  text-align: center; }
-
-@media (min-width: 992px) {
-  .tab-h1 {
-    font-size: 21px; } }
 .tab-body {
   font-family: "Amplitude-Regular";
   font-size: 13px;
@@ -2109,7 +2106,7 @@ a:focus {
 
 .inverted.primary,
 .inverted .primary {
-  color: #310008;
+  color: #310008 !important;
   background-color: #FFFFFF;
   border: 1px solid #ebe8e5; }
 
@@ -2469,6 +2466,19 @@ textarea:focus {
 
 .has-error {
   color: #a71010; }
+
+.share .facebook, .share .linkedin, .share .twitter, .share .email {
+  width: 20px;
+  height: auto;
+  display: block;
+  margin-top: 20px;
+  cursor: pointer;
+  cursor: hand; }
+.share .facebook:first-child,
+.share .linkedin:first-child,
+.share .twitter:first-child,
+.share .email:first-child {
+  margin-top: 0; }
 
 .cross-link.child-pages {
   width: 100%;
