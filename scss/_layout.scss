@@ -141,8 +141,23 @@ img {
 }
 
 // LET'S CONNECT ANIMATION
-
 .flash.lets-connect {
     width: 100%;
     height: auto;
+}
+
+// TEXT IMAGE-LEFT
+// TEXT IMAGE-RIGHT
+
+@media (min-width: 768px) {
+    .text-imageRight,
+    .text-imageLeft {
+        .row {
+            display: flex;
+            .text,
+            .image {
+                align-self: center;
+            }
+        }
+    }
 }

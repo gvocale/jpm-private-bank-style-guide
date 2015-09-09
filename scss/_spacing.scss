@@ -426,7 +426,10 @@ p.author + p.date {
 }
 
 .article {
-    .dash + .eyebrow, .body + .body, .eyebrow + .side-note, .side-note + .side-note {
+    .dash + .eyebrow,
+    .body + .body,
+    .eyebrow + .side-note,
+    .side-note + .side-note {
         margin-top: 10px;
     }
     .body,
@@ -504,7 +507,8 @@ p.author + p.date {
 }
 
 .content-tray {
-    .h3 + .author, .body + .cta {
+    .h3 + .author,
+    .body + .cta {
         margin-top: 10px;
     }
     .author + .body {
@@ -513,7 +517,12 @@ p.author + p.date {
 }
 
 .hero {
-    .eyebrow + .h2, .h2 + .eyebrow, .h2 + .dash, .eyebrow + .h4, .h4 + .primary, .eyebrow + .h3 {
+    .eyebrow + .h2,
+    .h2 + .eyebrow,
+    .h2 + .dash,
+    .eyebrow + .h4,
+    .h4 + .primary,
+    .eyebrow + .h3 {
         margin-top: 20px;
     }
     .h4 + .secondary,
@@ -532,7 +541,10 @@ p.author + p.date {
         margin-top: 10px;
     }
     @media (min-width: 768px) {
-        .body + .primary, .body + .secondary, .h4 + .secondary, .h4 + .toggle {
+        .body + .primary,
+        .body + .secondary,
+        .h4 + .secondary,
+        .h4 + .toggle {
             margin-top: 30px;
         }
     }
@@ -647,4 +659,22 @@ p.author + p.date {
 
 .share:first-child {
     padding-top: 0;
+}
+
+// TEXT IMAGE-LEFT
+// TEXT IMAGE-RIGHT
+.text-imageLeft,
+.text-imageRight {
+    .promo-img-container {
+        margin-bottom: 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    .text-imageLeft,
+    .text-imageRight {
+        .promo-img-container {
+            margin-bottom: 0px;
+        }
+    }
 }
